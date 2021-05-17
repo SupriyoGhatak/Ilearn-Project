@@ -24,7 +24,7 @@
             <h4>Features</h4>
             <ul>
               <li><a href="#">Compiler</a></li>
-              <li><a href="#">Videos</a></li>
+              <li><a href="#">Video</a></li>
               <li><a href="#">Online Library</a></li>
               <li><a href="#">Report</a></li>
             </ul>
