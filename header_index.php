@@ -81,7 +81,7 @@
                 </li>
                 
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.php">Contact</a>
+                  <a class="nav-link" href="contact.php">Contact Us</a>
                 </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link search" id="search">
