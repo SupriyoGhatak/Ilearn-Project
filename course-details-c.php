@@ -253,8 +253,15 @@
                             </a>
                         </li>
                     </ul>
+                     <?php
+                        //session_start();
+                        if(isset($_SESSION['username'])){ ?>
+                    
                     <a href="course-buy-c.php" class="primary-btn2 text-uppercase enroll rounded-0 text-black">Enroll the course</a>
-
+                     <?php } else { ?> 
+                    <a href="check_login_script.php" class="primary-btn2 text-uppercase enroll rounded-0 text-black">Enroll the course</a>
+                     <?php } ?>
+<!--comme-->        
                     <h4 class="title">Reviews</h4>
                     <div class="content">
                         <div class="review-top row pt-40">
@@ -467,17 +474,7 @@
         <div class="row footer-bottom d-flex justify-content-between">
           <p class="col-lg-8 col-sm-12 footer-text m-0 text-white">
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="#" target="_blank">Ilearn</a>
-     </p>
-          <div class="col-lg-4 col-sm-12 footer-social">
-            <a href="#"><i class="ti-facebook"></i></a>
-            <a href="#"><i class="ti-twitter"></i></a>
-            <a href="#"><i class="ti-dribbble"></i></a>
-            <a href="#"><i class="ti-linkedin"></i></a>
-          </div>
-        </div>
-      </div>
-    </footer>
+
       <!--================ End footer Area  =================-->
       
           <!-- Optional JavaScript -->

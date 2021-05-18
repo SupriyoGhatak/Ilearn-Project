@@ -253,7 +253,14 @@
                             </a>
                         </li>
                     </ul>
+                     <?php
+                        //session_start();
+                        if(isset($_SESSION['username'])){ ?>
+                    
                     <a href="course-buy-java.php" class="primary-btn2 text-uppercase enroll rounded-0 text-black">Enroll the course</a>
+                     <?php } else { ?> 
+                    <a href="check_login_script.php" class="primary-btn2 text-uppercase enroll rounded-0 text-black">Enroll the course</a>
+                     <?php } ?>
                     <br>
                     <br>
                     <h4 class="title">Reviews</h4>
