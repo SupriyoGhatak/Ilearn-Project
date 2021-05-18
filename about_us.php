@@ -87,7 +87,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-5">
             <div class="main_title">
-              <h2 class="mb-3 text-white">What Different We Provide</h2>
+                <h2 class="mb-3 text-white"><a href="dashboard.php">What Different We Provide</a></h2>
               <p>
                 Replenish man have thing gathering lights yielding shall you
               </p>
