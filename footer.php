@@ -7,7 +7,7 @@
             <ul>
               <li><a href="#">C</a></li>
               <li><a href="#">C++</a></li>
-              <li><a href="#">Java</a></li>
+              <li><a href="#">JAVA</a></li>
               <li><a href="#">RDBMS</a></li>
             </ul>
           </div>
