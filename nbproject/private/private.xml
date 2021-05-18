@@ -5,17 +5,22 @@
         <group>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/view_details.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/app.js</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-buy-java.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/css/style.css</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/login_script.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-buy-c.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/css/style1.css</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-main-page.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-buy-c++.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-buy-rdbms.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/signup.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-details-rdbms.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-details-java.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-details.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/index.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-details-c.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/header_index.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/courses.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/header_other.php</file>
         </group>
     </open-files>
 </project-private>
