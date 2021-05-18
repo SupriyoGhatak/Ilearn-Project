@@ -15,7 +15,7 @@
             <h4>Quick Links</h4>
             <ul>
               <li><a href="#">Carrer</a></li>
-              <li><a href="#">Exams</a></li>
+              <li><a href="#">Exam</a></li>
               <li><a href="#">Notice Board</a></li>
               <li><a href="#">Certification</a></li>
             </ul>
