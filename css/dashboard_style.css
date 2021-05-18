@@ -12,6 +12,7 @@ and open the template in the editor.
   margin: 10px;
   opacity: 0.2;
   border-radius: 2px;
+}
 
 .sidebar {
   position: fixed;
