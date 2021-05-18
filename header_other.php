@@ -69,6 +69,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="course-details-java.php">Java</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="course-details-rdbms.php">RDBMS</a>
+                    </li>
                   </ul>
                 </li>
                 <li class="nav-item">
