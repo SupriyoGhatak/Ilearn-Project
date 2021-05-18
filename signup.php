@@ -28,10 +28,10 @@ and open the template in the editor.
                 <div class="user signinBx">
                     <div class="imgBx"><img src="img/login/bg1.jpeg"></div>
                     <div class="formBx">
-                        <form>
+                        <form action="login_script.php" method="POST">
                             <h2>LOGIN</h2>
-                            <input type="text" name="" placeholder="Username" required/>
-                            <input type="password" name="" placeholder="Password" required/>
+                            <input type="text" name="Username" placeholder="Username" required/>
+                            <input type="password" name="Password" placeholder="Password" required/>
                             <center><input type="submit" name="" value="Login"></center>
                             <br>
                             
@@ -43,12 +43,12 @@ and open the template in the editor.
                 <div class="user signupBx">
                     
                     <div class="formBx">
-                        <form>
+                        <form action="sign_up_script.php" method="POST">
                             <h2>CREATE AN ACCOUNT</h2>
-                            <input type="text" name="" placeholder="Name"  required/>
-                            <input type="email" name="" placeholder="Email"  required/>
-                            <input type="password" name="" placeholder="Create Password" required/>
-                            <input type="password" name="" placeholder="Confirm Password"  required/>
+                            <input type="text" name="Name" placeholder="Name"  required/>
+                            <input type="email" name="Email" placeholder="Email"  required/>
+                            <input type="password" name="CreatePassword" placeholder="CreatePassword" required/>
+                            <input type="password" name="ConfirmPassword" placeholder="ConfirmPassword"  required/>
                             
                             <center><input type="submit" name="" value="Sign Up"></center>
                             <br>
