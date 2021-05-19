@@ -53,7 +53,7 @@
                   <a class="nav-link" href="index.php">Home</a>
                 </li>
                 <li class="nav-item ">
-                  <a class="nav-link" href="#">My Course</a>
+                  <a class="nav-link" href="#">Dashboard</a>
                 </li>
                 <li class="nav-item ">
                   <a class="nav-link" href="#">My Profile</a>

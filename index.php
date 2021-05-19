@@ -302,38 +302,16 @@
             <div class="register_form">
               <h3>Courses for Free</h3>
               <p>It is high time for learning</p>
-              <form
-                class="form_area"
-                id="myForm"
-                action="mail.html"
-                method="post"
-              >
-                <div class="row">
-                  <div class="col-lg-12 form_group">
-                    <input
-                      name="name"
-                      placeholder="Your Name"
-                      required=""
-                      type="text"
-                    />
-                    <input
-                      name="name"
-                      placeholder="Your Phone Number"
-                      required=""
-                      type="tel"
-                    />
-                    <input
-                      name="email"
-                      placeholder="Your Email Address"
-                      pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
-                      required=""
-                      type="email"
-                    />
-                  </div>
-                  <div class="col-lg-12 text-center">
-                    <button class="primary-btn">Submit</button>
-                  </div>
-                </div>
+              <form action="sendmail.php" method="POST" class="form_area">
+                            <input type="text" name="Name" placeholder="Name"  required/>
+                            <input type="email" name="Email" placeholder="Email"  required/>
+                            <input type="tel"  name="PhoneNumber" placeholder="Your Phone Number" require/>
+                            
+                            
+                            <center><input type="submit" name="" class="primary-btn" value="Sign Up"></center>
+                            
+                            
+                  
               </form>
             </div>
           </div>
