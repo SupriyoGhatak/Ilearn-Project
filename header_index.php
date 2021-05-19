@@ -65,7 +65,7 @@
                     <a class="nav-link" href="dashboard.php">Dashboard</a>
                 </li>
                 <li class="nav-item ">
-                  <a class="nav-link" href="#">My Profile</a>
+                    <a class="nav-link" href="my_profile.php">My Profile</a>
                 </li>
                 <li class="nav-item ">
                     <a class="nav-link" href="logout.php">logout</a>
