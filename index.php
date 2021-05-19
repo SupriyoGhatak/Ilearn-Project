@@ -301,9 +301,7 @@
                             
                             
                             <center><input type="submit" name="" class="primary-btn" value="Sign Up"></center>
-                            
-                            
-                  
+        
               </form>
             </div>
           </div>
