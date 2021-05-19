@@ -3,11 +3,6 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< HEAD
-            <file>file:/C:/wamp64/www/Ilearn-Project/index.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/login_script.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/footer.php</file>
-=======
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/view_details.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/app.js</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-buy-java.php</file>
@@ -20,6 +15,7 @@
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/signup.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-details-rdbms.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-details-java.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/css/profile_style.css</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-details.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/index.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-details-c.php</file>
@@ -27,7 +23,6 @@
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/courses.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/my_profile.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/header_other.php</file>
->>>>>>> c30da918c8d0fe043cc0ec6f9664eabffba860bc
         </group>
     </open-files>
 </project-private>

@@ -7,7 +7,7 @@ require 'PHPMailer-master/src/SMTP.php';
 
 $name=$_POST['Name'];
 $email=$_POST['Email'];
-$massage=$_POST['PhoneNumber'];
+$massage="Hi welcome to the platform of Ilearn...";//$_POST['PhoneNumber'];
 
 $mail = new PHPMailer();
 $mail->IsSMTP();
