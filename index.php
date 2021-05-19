@@ -60,7 +60,7 @@
             <div class="main_title">
               <h2 class="mb-3">What special do we provide?</h2>
               <p>
-                Only iLearn has all the critical factors to deliver successful results
+                Only iLearn has all the critical factors to deliver successful results.
               </p>
             </div>
           </div>
