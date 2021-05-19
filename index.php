@@ -35,7 +35,7 @@
             <div class="col-lg-12">
               <div class="banner_content text-center">
                 <p class="text-uppercase">
-                  Best online education service In the world
+                  YOUR REVOLUTION BEGINS HERE
                 </p>
                 <h2 class="text-uppercase mt-4 mb-5">
                   One Step Ahead This Season
@@ -165,7 +165,7 @@
                       <a href="course-details-c.php">Programming With C</a>
                   </h4>
                   <p>
-                   A very well structured course to help you learn programming with C,one of the most powerful general-purpose programming languages.
+                   A very well structured course to help you master programming with C in a structured manner.
                   </p>
                   <div
                     class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4"

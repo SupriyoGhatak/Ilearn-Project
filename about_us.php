@@ -61,8 +61,9 @@
               <div class="h_blog_text_inner left right">
                 <h4>Welcome To Our Institute</h4>
                 <p>
+                 
                   In this internet connected world,there are millions to ways to gather knowledge online.
-                  However,we,here at iLearn,realised through our own experiences how difficult it is to find a platform 
+                  However,we here at iLearn,realised through our own experiences how difficult it is to find a platform 
                   which caters to the needs of both beginners and advanced learners,making it seem friendly for both.
                 </p>
                 <p>
