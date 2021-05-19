@@ -70,13 +70,13 @@
                     <div class="col-md-4">
                         <div class="profile-work">
                             <p>SOCIAL MEDIA LINKS</p>
-                           
+                            <p>Heey</p>
                             
                             <p> ADD SKILLS</p>
                             
                         </div>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-8 col-sm-8">
                         <div class="tab-content profile-tab" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                         <div class="row example">
@@ -111,6 +111,24 @@
                                             </div>
                                             <div class="col-md-6 example">
                                                 <p> <input type="text" name="ex1fld3" readonly value="7501374122"  style="border: none;font-weight: 600;
+    color: #0062cc;"/></p>
+                                            </div>
+                                        </div>
+                                    <div class="row">
+                                            <div class="col-md-6">
+                                                <label for="ex1fld3">Date of birth</label>
+                                            </div>
+                                            <div class="col-md-6 example">
+                                                <p> <input type="text" name="ex1fld3" readonly value="02/10/1998"  style="border: none;font-weight: 600;
+    color: #0062cc;"/></p>
+                                            </div>
+                                        </div>
+                                <div class="row">
+                                            <div class="col-md-6">
+                                                <label for="ex1fld3">Address</label>
+                                            </div>
+                                            <div class="col-md-6 example">
+                                                <p> <input type="text" name="ex1fld3" readonly value="kolkata"  style="border: none;font-weight: 600;
     color: #0062cc;"/></p>
                                             </div>
                                         </div>
