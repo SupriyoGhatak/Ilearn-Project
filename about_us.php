@@ -59,16 +59,20 @@
           <div class="col-lg-6">
             <div class="h_blog_text">
               <div class="h_blog_text_inner left right">
-                <h4>Welcome to our Institute</h4>
+                <h4>Welcome To Our Institute</h4>
                 <p>
-                  Subdue whales void god which living don't midst lesser
-                  yielding over lights whose. Cattle greater brought sixth fly
-                  den dry good tree isn't seed stars were.
+                 
+                  In this internet connected world,there are millions to ways to gather knowledge online.
+                  However,we here at iLearn,realised through our own experiences how difficult it is to find a platform 
+                  which caters to the needs of both beginners and advanced learners,making it seem friendly for both.
                 </p>
                 <p>
-                  Subdue whales void god which living don't midst lesser yieldi
-                  over lights whose. Cattle greater brought sixth fly den dry
-                  good tree isn't seed stars were the boring.
+                  Hence,we created this website in hope of lessening the distress of knowledge seeking individuals,irrespective
+                  of the present stage in their journey towards achieving that knowledge.
+                </p>
+                <p>
+                    Knowing that we helped even one such learner in their journey will make
+                    our efforts worth the try.
                 </p>
                 <a class="primary-btn" href="#">
                   Learn More <i class="ti-arrow-right ml-1"></i>

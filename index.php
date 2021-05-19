@@ -35,7 +35,7 @@
             <div class="col-lg-12">
               <div class="banner_content text-center">
                 <p class="text-uppercase">
-                  Best online education service In the world
+                  YOUR REVOLUTION BEGINS HERE
                 </p>
                 <h2 class="text-uppercase mt-4 mb-5">
                   One Step Ahead This Season
@@ -134,7 +134,7 @@
                       <a href="course-details.php">C++ : Basic and Advanced</a>
                   </h4>
                   <p>
-                   A complete and comprehensive C++ course to start learning from the basics and progress towards the advanced topics.                  </p>
+                   A comprehensive C++ course to start learning from the basics and progress towards the advanced topics.                  </p>
                   <div
                     class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4"
                   >
@@ -165,7 +165,7 @@
                       <a href="course-details-c.php">Programming With C</a>
                   </h4>
                   <p>
-                   A very well structured course to help you learn programming with C,one of the most powerful and first general-purpose programming languages.
+                   A very well structured course to help you master programming with C in a structured manner.
                   </p>
                   <div
                     class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4"
@@ -396,7 +396,7 @@
               <p class="designation">Senior Web Designer</p>
               <div class="mb-4">
                 <p>
-                  An expert in the field of data science with varied experience in different fields.
+                  An expert in the field of data science with varied experience in different fields including projects.
                 </p>
               </div>
               <div class="align-items-center justify-content-center d-flex">
