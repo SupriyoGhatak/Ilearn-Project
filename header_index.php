@@ -51,12 +51,12 @@
                         if(isset($_SESSION['username'])){
                             $split=$_SESSION['username'];
                         $firstname= strtok($split, ' ');
-                        $_SESSION['username']=$firstname;
+                        //$_SESSION['username']=$firstname;
                             ?>
                   
                   
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.php">Hii,&nbsp; <?php echo $_SESSION['username']; ?></a>
+                    <a class="nav-link" href="index.php">Hii,&nbsp; <?php echo $firstname; ?></a>
                 </li>
                 <li class="nav-item ">
                   <a class="nav-link" href="index.php">Home</a>
