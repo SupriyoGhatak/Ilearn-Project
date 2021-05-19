@@ -34,12 +34,14 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="banner_content text-center">
-                <p class="text-uppercase">
-                  YOUR REVOLUTION BEGINS HERE
-                </p>
-                <h2 class="text-uppercase mt-4 mb-5">
-                  One Step Ahead This Season
+                   <h2 class="text-uppercase mt-4 mb-5">
+                    YOUR REVOLUTION BEGINS HERE
+                 
                 </h2>
+                <p class="text-uppercase">
+                   One Step Ahead This Season
+                </p>
+               
                 <div>
                     <a href="about_us.php" class="primary-btn2 mb-3 mb-sm-0">learn more</a>
                   <a href="courses.php" class="primary-btn ml-sm-3 ml-0">see course</a>
