@@ -37,10 +37,10 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="profile-img">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog" alt=""/>
+                            <img src="img/demo_pic.png" alt="profile pic" id="blah"/>
                             <div class="file btn btn-lg btn-primary">
                                 Change Photo
-                                <input type="file" name="file"/>
+                                <input type="file" name="file" onchange="readURL(this);"/>
                             </div>
                         </div>
                     </div>
@@ -50,7 +50,7 @@
                                         <p id="myP">Supriyo Ghatak</p>
                                     </h5>
                                     <h6>
-                                        <p id="myP">Please Add Your Professional Details here</p>
+                                        
                                         
                                     </h6>
                                     <p class="proile-rating">RANKINGS : <span>8/10</span></p>
@@ -62,24 +62,24 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-2">
-                        <button class="profile-edit-btn" name="btnAddMore" value="Edit Profile" onclick="myFunction()">Edit Profile</button>
+                    <div class="col-md-2 example">
+                        <input  value="Edit Profile" type="button" />
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-4">
                         <div class="profile-work">
                             <p>SOCIAL MEDIA LINKS</p>
-                            <a href=""><p id="myP">Facebook link<p></a><br/>
+                           
                             
                             <p> ADD SKILLS</p>
-                            <input type="text">
+                            
                         </div>
                     </div>
                     <div class="col-md-8">
                         <div class="tab-content profile-tab" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                        <div class="row">
+                                        <div class="row example">
                                             <div class="col-md-6">
                                                 <label>User Id</label>
                                             </div>
@@ -89,26 +89,29 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <label>Name</label>
+                                                <label for="ex1fld1">Name</label>
                                             </div>
-                                            <div class="col-md-6">
-                                                <p>Supriyo Ghatak</p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>Email</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p>supriyoghatak15@gmail.com</p>
+                                            <div class="col-md-6 example">
+                                                <p> <input type="text" name="ex1fld1" readonly value="Supriyo Ghatak" style="border: none; font-weight: 600;
+    color: #0062cc;" /></p>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <label>Phone</label>
+                                                <label for="ex1fld2">Email</label>
                                             </div>
+                                            <div class="col-md-6 example">
+                                                <p> <input type="text" name="ex1fld2" readonly value="supriyoghtak15@gmail.com" size="50" style="border: none; font-weight: 600;
+    color: #0062cc;"/></p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
                                             <div class="col-md-6">
-                                                <p>+91 7501374121</p>
+                                                <label for="ex1fld3">Phone</label>
+                                            </div>
+                                            <div class="col-md-6 example">
+                                                <p> <input type="text" name="ex1fld3" readonly value="7501374122"  style="border: none;font-weight: 600;
+    color: #0062cc;"/></p>
                                             </div>
                                         </div>
                                         
@@ -139,13 +142,37 @@
           <script src="js/gmaps.min.js"></script>
           <script src="js/theme.js"></script>
           <script>
-            function myFunction()
-            {
-                document.getElementById("myP").contenteditable=true;
-                
-            }
+            
               
-           </script>
-          
+            
+              
+           
+           var readonly = true;
+            $('.example input[type="button"]').on('click', function(){
+               $('.example input[type="text"]').attr('readonly', !readonly);
+               
+               readonly=!readonly;
+               $('.example input[type="button"]').val(readonly ? 'Edit' : 'Save');
+               
+               return false;
+            });
+            
+            
+          </script>    
+          <script>
+              function readURL(input){
+                if(input.files && input.files[0])
+                {
+                    var reader = new FileReader();
+                    
+                    reader.onload = function(e){
+                        $('#blah')
+                                .attr('src', e.target.result);
+                                
+                    };
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+          </script>
   </body>
 </html>
