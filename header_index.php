@@ -47,10 +47,13 @@
                   
               <?php
                         session_start();
-                        $split=$_SESSION['username'];
+                        
+                        if(isset($_SESSION['username'])){
+                            $split=$_SESSION['username'];
                         $firstname= strtok($split, ' ');
                         $_SESSION['username']=$firstname;
-                        if(isset($_SESSION['username'])){ ?>
+                            ?>
+                  
                   
                 <li class="nav-item active">
                     <a class="nav-link" href="index.php">Hii,&nbsp; <?php echo $_SESSION['username']; ?></a>
