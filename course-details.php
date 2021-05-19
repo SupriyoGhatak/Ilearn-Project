@@ -237,24 +237,30 @@
                         <li>
                             <a class="justify-content-between d-flex" href="#">
                                 <p>Course Fee </p>
-                                <span>FREE</span>
+                                <span class="or">Rs:250</span>
                             </a>
                         </li>
                         <li>
                             <a class="justify-content-between d-flex" href="#">
                                 <p>Available Seats </p>
-                                <span>15</span>
+                                <span class="or">200</span>
                             </a>
                         </li>
                         <li>
                             <a class="justify-content-between d-flex" href="#">
-                                <p>Schedule </p>
-                                <span>2.00 pm to 4.00 pm</span>
+                                <p>Topic </p>
+                                <span class="or">Programming in C++</span>
                             </a>
                         </li>
                     </ul>
-                    <a href="#" class="primary-btn2 text-uppercase enroll rounded-0 text-black">Enroll the course</a>
-
+                   <?php
+                        //session_start();
+                        if(isset($_SESSION['username'])){ ?>
+                    
+                    <a href="course-buy-c++.php" class="primary-btn2 text-uppercase enroll rounded-0 text-black">Enroll the course</a>
+                     <?php } else { ?> 
+                    <a href="check_login_script.php" class="primary-btn2 text-uppercase enroll rounded-0 text-black">Enroll the course</a>
+                     <?php } ?>
                     <h4 class="title">Reviews</h4>
                     <div class="content">
                         <div class="review-top row pt-40">
@@ -302,6 +308,8 @@
                                 <a href="#" class="primary-btn2 text-right rounded-0 text-black">Submit</a>
                             </div>
                         </div>
+                        <br>
+                        <br>
                         <div class="comments-area mb-30">
                             <div class="comment-list">
                                 <div class="single-comment single-reviews justify-content-between d-flex">

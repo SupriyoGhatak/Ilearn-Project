@@ -237,24 +237,31 @@
                         <li>
                             <a class="justify-content-between d-flex" href="#">
                                 <p>Course Fee </p>
-                                <span>FREE</span>
+                                <span class="or">Rs:350</span>
                             </a>
                         </li>
                         <li>
                             <a class="justify-content-between d-flex" href="#">
                                 <p>Available Seats </p>
-                                <span>15</span>
+                                <span class="or">100</span>
                             </a>
                         </li>
                         <li>
                             <a class="justify-content-between d-flex" href="#">
-                                <p>Schedule </p>
-                                <span>2.00 pm to 4.00 pm</span>
+                                <p>Topic </p>
+                                <span class="or">Programming in C</span>
                             </a>
                         </li>
                     </ul>
-                    <a href="course-main-page.php" class="primary-btn2 text-uppercase enroll rounded-0 text-black">Enroll the course</a>
-
+                     <?php
+                        //session_start();
+                        if(isset($_SESSION['username'])){ ?>
+                    
+                    <a href="course-buy-c.php" class="primary-btn2 text-uppercase enroll rounded-0 text-black">Enroll the course</a>
+                     <?php } else { ?> 
+                    <a href="check_login_script.php" class="primary-btn2 text-uppercase enroll rounded-0 text-black">Enroll the course</a>
+                     <?php } ?>
+<!--comme-->        
                     <h4 class="title">Reviews</h4>
                     <div class="content">
                         <div class="review-top row pt-40">
@@ -302,6 +309,8 @@
                                 <a href="#" class="primary-btn2 text-right rounded-0 text-black">Submit</a>
                             </div>
                         </div>
+                        <br>
+                        <br>
                         <div class="comments-area mb-30">
                             <div class="comment-list">
                                 <div class="single-comment single-reviews justify-content-between d-flex">
@@ -310,7 +319,7 @@
                                             <img src="img/blog/c1.jpg" alt="">
                                         </div>
                                         <div class="desc">
-                                            <h5><a href="#">Emilly Blunt</a>
+                                            <h5><a href="#">Rohan Mehata</a>
                                                 <div class="star">
                                                     <span class="ti-star checked"></span>
                                                     <span class="ti-star checked"></span>
@@ -320,8 +329,7 @@
                                                 </div>
                                             </h5>
                                             <p class="comment">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                                eiusmod tempor incididunt ut labore et dolore.
+                                                Learned a lot from this lectures. Too informative.
                                             </p>
                                         </div>
                                     </div>
@@ -334,7 +342,7 @@
                                             <img src="img/blog/c2.jpg" alt="">
                                         </div>
                                         <div class="desc">
-                                            <h5><a href="#">Elsie Cunningham</a>
+                                            <h5><a href="#">Tarun Raj</a>
                                                 <div class="star">
                                                     <span class="ti-star checked"></span>
                                                     <span class="ti-star checked"></span>
@@ -358,7 +366,7 @@
                                             <img src="img/blog/c3.jpg" alt="">
                                         </div>
                                         <div class="desc">
-                                            <h5><a href="#">Maria Luna</a>
+                                            <h5><a href="#">Aktar Azam</a>
                                                 <div class="star">
                                                     <span class="ti-star checked"></span>
                                                     <span class="ti-star checked"></span>
@@ -466,17 +474,7 @@
         <div class="row footer-bottom d-flex justify-content-between">
           <p class="col-lg-8 col-sm-12 footer-text m-0 text-white">
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="#" target="_blank">Ilearn</a>
-     </p>
-          <div class="col-lg-4 col-sm-12 footer-social">
-            <a href="#"><i class="ti-facebook"></i></a>
-            <a href="#"><i class="ti-twitter"></i></a>
-            <a href="#"><i class="ti-dribbble"></i></a>
-            <a href="#"><i class="ti-linkedin"></i></a>
-          </div>
-        </div>
-      </div>
-    </footer>
+
       <!--================ End footer Area  =================-->
       
           <!-- Optional JavaScript -->

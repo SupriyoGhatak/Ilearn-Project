@@ -237,24 +237,32 @@
                         <li>
                             <a class="justify-content-between d-flex" href="#">
                                 <p>Course Fee </p>
-                                <span>FREE</span>
+                                <span class="or">Rs:500</span>
                             </a>
                         </li>
                         <li>
                             <a class="justify-content-between d-flex" href="#">
                                 <p>Available Seats </p>
-                                <span>15</span>
+                                <span class="or">150</span>
                             </a>
                         </li>
                         <li>
                             <a class="justify-content-between d-flex" href="#">
-                                <p>Schedule </p>
-                                <span>2.00 pm to 4.00 pm</span>
+                                <p>Topic </p>
+                                <span class="or">Fundamental ofJava</span>
                             </a>
                         </li>
                     </ul>
-                    <a href="#" class="primary-btn2 text-uppercase enroll rounded-0 text-black">Enroll the course</a>
-
+                     <?php
+                        //session_start();
+                        if(isset($_SESSION['username'])){ ?>
+                    
+                    <a href="course-buy-java.php" class="primary-btn2 text-uppercase enroll rounded-0 text-black">Enroll the course</a>
+                     <?php } else { ?> 
+                    <a href="check_login_script.php" class="primary-btn2 text-uppercase enroll rounded-0 text-black">Enroll the course</a>
+                     <?php } ?>
+                    <br>
+                    <br>
                     <h4 class="title">Reviews</h4>
                     <div class="content">
                         <div class="review-top row pt-40">

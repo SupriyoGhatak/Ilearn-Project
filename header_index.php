@@ -43,6 +43,43 @@
               id="navbarSupportedContent"
             >
               <ul class="nav navbar-nav menu_nav ml-auto">
+                  
+                  
+              <?php
+                        session_start();
+                        
+                        if(isset($_SESSION['username'])){
+                            $split=$_SESSION['username'];
+                        $firstname= strtok($split, ' ');
+                        $_SESSION['username']=$firstname;
+                            ?>
+                  
+                  
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.php">Hii,&nbsp; <?php echo $_SESSION['username']; ?></a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="index.php">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="dashboard.php">Dashboard</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="#">My Profile</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="logout.php">logout</a>
+                </li>
+                
+                  <li class="nav-item">
+                  <a href="#" class="nav-link search" id="search">
+                    <i class="ti-search"></i>
+                  </a>
+                </li> 
+                  
+                   <?php } else { ?>
+                  
+                  
                 <li class="nav-item active">
                   <a class="nav-link" href="index.php">Home</a>
                 </li>
@@ -88,6 +125,7 @@
                     <i class="ti-search"></i>
                   </a>
                 </li>
+                 <?php } ?>
               </ul>
             </div>
           </div>
