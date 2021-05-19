@@ -47,7 +47,7 @@
                     <div class="col-md-6">
                         <div class="profile-head">
                                     <h5>
-                                        <p id="myP">Supriyo Ghatak</p>
+                                        <p id="myP"><?php echo $_SESSION['username']; ?></p>
                                     </h5>
                                     <h6>
                                         
@@ -84,7 +84,7 @@
                                                 <label>User Id</label>
                                             </div>
                                             <div class="col-md-6">
-                                                <p id="myP">supriyoghatak15@gmail.com</p>
+                                                <p id="myP"><?php echo $_SESSION['id']; ?></p>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -92,7 +92,7 @@
                                                 <label for="ex1fld1">Name</label>
                                             </div>
                                             <div class="col-md-6 example">
-                                                <p> <input type="text" name="ex1fld1" readonly value="Supriyo Ghatak" style="border: none; font-weight: 600;
+                                                <p> <input type="text" name="ex1fld1" readonly value="<?php echo $_SESSION['username'];  ?>" style="border: none; font-weight: 600;
     color: #0062cc;" /></p>
                                             </div>
                                         </div>
@@ -101,7 +101,7 @@
                                                 <label for="ex1fld2">Email</label>
                                             </div>
                                             <div class="col-md-6 example">
-                                                <p> <input type="text" name="ex1fld2" readonly value="supriyoghtak15@gmail.com" size="50" style="border: none; font-weight: 600;
+                                                <p> <input type="text" name="ex1fld2" readonly value="<?php echo $_SESSION['email']; ?>" size="50" style="border: none; font-weight: 600;
     color: #0062cc;"/></p>
                                             </div>
                                         </div>
