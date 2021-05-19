@@ -58,9 +58,9 @@
         <div class="row justify-content-center">
           <div class="col-lg-5">
             <div class="main_title">
-              <h2 class="mb-3">What special we provide</h2>
+              <h2 class="mb-3">What special do we provide?</h2>
               <p>
-                Replenish man have thing gathering lights yielding shall you
+                Only iLearn has all the critical factors to deliver successful results
               </p>
             </div>
           </div>
@@ -72,8 +72,7 @@
               <div class="desc">
                 <h4 class="mt-3 mb-2">E-Library</h4>
                 <p>
-                  One make creepeth, man bearing theira firmament won't great
-                  heaven
+                  Our extensive online library provides access to PDFs of hundreds of books spanning various topics.
                 </p>
               </div>
             </div>
@@ -85,8 +84,7 @@
               <div class="desc">
                 <h4 class="mt-3 mb-2">Affordable Online Course</h4>
                 <p>
-                  One make creepeth, man bearing theira firmament won't great
-                  heaven
+                  We know the value of your money and hence we provide courses on affordable rates.
                 </p>
               </div>
             </div>
@@ -98,8 +96,7 @@
               <div class="desc">
                 <h4 class="mt-3 mb-2">Certification</h4>
                 <p>
-                  One make creepeth, man bearing theira firmament won't great
-                  heaven
+                  Earn certificates and specializations to make yourself stand out from the crowd.
                 </p>
               </div>
             </div>
@@ -117,7 +114,7 @@
             <div class="main_title">
               <h2 class="mb-3">Our Popular Courses</h2>
               <p>
-                Replenish man have thing gathering lights yielding shall you
+               Explore our programs to find the most suitable one for you.
               </p>
             </div>
           </div>
@@ -134,12 +131,10 @@
                   <span class="price">Rs250</span>
                   <span class="tag mb-4 d-inline-block">C++</span>
                   <h4 class="mb-3">
-                      <a href="course-details.php">C++ basic and Adavance</a>
+                      <a href="course-details.php">C++ : Basic and Advanced</a>
                   </h4>
                   <p>
-                    One make creepeth man bearing their one firmament won't fowl
-                    meat over sea
-                  </p>
+                   A complete and comprehensive C++ course to start learning from the basics and progress towards the advanced topics.                  </p>
                   <div
                     class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4"
                   >
@@ -167,11 +162,10 @@
                   <span class="price">Rs350</span>
                   <span class="tag mb-4 d-inline-block">C</span>
                   <h4 class="mb-3">
-                      <a href="course-details-c.php">Programming On C</a>
+                      <a href="course-details-c.php">Programming With C</a>
                   </h4>
                   <p>
-                    One make creepeth man bearing their one firmament won't fowl
-                    meat over sea
+                   A very well structured course to help you learn programming with C,one of the most powerful and first general-purpose programming languages.
                   </p>
                   <div
                     class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4"
@@ -200,11 +194,10 @@
                   <span class="price">Rs500</span>
                   <span class="tag mb-4 d-inline-block">Java</span>
                   <h4 class="mb-3">
-                      <a href="course-details-java.php">Fundamental in Java</a>
+                      <a href="course-details-java.php">Fundamentals of Java</a>
                   </h4>
                   <p>
-                    One make creepeth man bearing their one firmament won't fowl
-                    meat over sea
+                    Learn valuable core Java concepts and skills from scratch from this learner-friendly course.
                   </p>
                   <div
                     class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4"
@@ -233,11 +226,10 @@
                   <span class="price">Rs450</span>
                   <span class="tag mb-4 d-inline-block">RDBMS</span>
                   <h4 class="mb-3">
-                      <a href="course-details-c.php">Realtional Database</a>
+                      <a href="course-details-c.php">Relational Databases</a>
                   </h4>
                   <p>
-                    One make creepeth man bearing their one firmament won't fowl
-                    meat over sea
+                    This course is a quick,fun introduction to creating relational databases using proven concepts.
                   </p>
                   <div
                     class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4"
@@ -276,7 +268,7 @@
               <div class="col-lg-12">
                 <h1 class="mb-3">Register Now</h1>
                 <p>
-                  Special Offers are going registered as Soon as possible to make a 
+                  Special Offers are quickly disappearing,Register as soon as possible to be a 
                   step ahead than others.
                 </p>
               </div>
@@ -348,9 +340,9 @@
         <div class="row justify-content-center">
           <div class="col-lg-5">
             <div class="main_title">
-              <h2 class="mb-3">Our Expert Trainers</h2>
+              <h2 class="mb-3">Meet Our Faculty</h2>
               <p>
-                Replenish man have thing gathering lights yielding shall you
+                Our trainers are renowned leaders in their fields,extraordinary teachers and dedicated mentors.
               </p>
             </div>
           </div>
@@ -362,11 +354,10 @@
             </div>
             <div class="meta-text text-sm-center">
               <h4>Supriyo Ghatak</h4>
-              <p class="designation">Sr. web developer</p>
+              <p class="designation">Senior Web Developer</p>
               <div class="mb-4">
                 <p>
-                  If you are looking at blank cassettes on the web, you may be
-                  very confused at the.
+                  Experienced with months of trainings in various fields and has been part of major projects.
                 </p>
               </div>
               <div class="align-items-center justify-content-center d-flex">
@@ -384,11 +375,10 @@
             </div>
             <div class="meta-text text-sm-center">
               <h4>Tanmoy Das</h4>
-              <p class="designation">Sr. web designer</p>
+              <p class="designation">Senior Web Designer</p>
               <div class="mb-4">
                 <p>
-                  If you are looking at blank cassettes on the web, you may be
-                  very confused at the.
+                 Extremely skilled in a number of topics and has been a part of creative projects.
                 </p>
               </div>
               <div class="align-items-center justify-content-center d-flex">
@@ -406,11 +396,10 @@
             </div>
             <div class="meta-text text-sm-center">
               <h4>Amrita Pal</h4>
-              <p class="designation">Sr. Faculty Data Science</p>
+              <p class="designation">Senior Web Developer</p>
               <div class="mb-4">
                 <p>
-                  If you are looking at blank cassettes on the web, you may be
-                  very confused at the.
+                 A top of her class expert in various languages and an even more dedicated mentor.
                 </p>
               </div>
               <div class="align-items-center justify-content-center d-flex">
@@ -428,11 +417,10 @@
             </div>
             <div class="meta-text text-sm-center">
               <h4>Sanchari Acharaya</h4>
-              <p class="designation">Sr. Programmer</p>
+              <p class="designation">Senior Web Designer</p>
               <div class="mb-4">
                 <p>
-                  If you are looking at blank cassettes on the web, you may be
-                  very confused at the.
+                  An expert in the field of data science with varied experience in different fields.
                 </p>
               </div>
               <div class="align-items-center justify-content-center d-flex">
