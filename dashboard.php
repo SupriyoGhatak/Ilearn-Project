@@ -126,7 +126,26 @@
                   </div>
                 </div>
               </div>
-            </div>
+           
+            <div class="col-md-4 my-3">
+                <div class="bg-mattBlackLight p-3">
+                  <h4 class="mb-2">C</h4>
+                  <div class="progress" style="height: 16px;">
+                    <div
+                      class="progress-bar bg-success"
+                      role="progressbar"
+                      style="width: 75%;"
+                      aria-valuenow="25"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      75
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--</div>-->
+            
             <div class="row">
               <div class="col-md-6">
                 <div class="bg-mattBlackLight my-2 p-3">
@@ -144,7 +163,8 @@
                   sunt earum tempora veniam.
                 </div>
               </div>
-
+                </div>
+  </div>
 	</main>
   </div>
 </div>
