@@ -59,16 +59,20 @@
           <div class="col-lg-6">
             <div class="h_blog_text">
               <div class="h_blog_text_inner left right">
-                <h4>Welcome to our Institute</h4>
+                <h4>Welcome To Our Institute</h4>
                 <p>
-                  Subdue whales void god which living don't midst lesser
-                  yielding over lights whose. Cattle greater brought sixth fly
-                  den dry good tree isn't seed stars were.
+                 
+                  In this internet connected world,there are millions to ways to gather knowledge online.
+                  However,we here at iLearn,realised through our own experiences how difficult it is to find a platform 
+                  which caters to the needs of both beginners and advanced learners,making it seem friendly for both.
                 </p>
                 <p>
-                  Subdue whales void god which living don't midst lesser yieldi
-                  over lights whose. Cattle greater brought sixth fly den dry
-                  good tree isn't seed stars were the boring.
+                  Hence,we created this website in hope of lessening the distress of knowledge seeking individuals,irrespective
+                  of the present stage in their journey towards achieving that knowledge.
+                </p>
+                <p>
+                    Knowing that we helped even one such learner in their journey will make
+                    our efforts worth the try.
                 </p>
                 <a class="primary-btn" href="#">
                   Learn More <i class="ti-arrow-right ml-1"></i>
@@ -87,9 +91,9 @@
         <div class="row justify-content-center">
           <div class="col-lg-5">
             <div class="main_title">
-                <h2 class="mb-3 text-white"><a href="dashboard.php">What Different We Provide</a></h2>
+                <h2 class="mb-3 text-white"><a href="dashboard.php">What Different We Provide?</a></h2>
               <p>
-                Replenish man have thing gathering lights yielding shall you
+                Only iLearn has all the critical factors to deliver successful results.
               </p>
             </div>
           </div>
@@ -101,8 +105,7 @@
               <div class="desc">
                 <h4 class="mt-3 mb-2">E-library</h4>
                 <p>
-                  One make creepeth, man bearing theira firmament won't great
-                  heaven
+                  Our extensive online library provides access to PDFs of hundreds of books spanning various topics.
                 </p>
               </div>
             </div>
@@ -114,8 +117,7 @@
               <div class="desc">
                 <h4 class="mt-3 mb-2">Affordable Online Courses</h4>
                 <p>
-                  One make creepeth, man bearing theira firmament won't great
-                  heaven
+                  We know the value of your money and hence we provide courses on affordable rates.
                 </p>
               </div>
             </div>
@@ -127,8 +129,7 @@
               <div class="desc">
                 <h4 class="mt-3 mb-2">Certification</h4>
                 <p>
-                  One make creepeth, man bearing theira firmament won't great
-                  heaven
+                   Earn certificates and specializations to make yourself stand out from the crowd.
                 </p>
               </div>
             </div>
@@ -144,9 +145,9 @@
         <div class="row justify-content-center">
           <div class="col-lg-5">
             <div class="main_title">
-              <h2 class="mb-3">Client say about me</h2>
+              <h2 class="mb-3">Hear what our clients say</h2>
               <p>
-                Replenish man have thing gathering lights yielding shall you
+                Our clients share their experiences of learning from us
               </p>
             </div>
           </div>
@@ -163,9 +164,7 @@
                   <div class="testi_text">
                     <h4>Elite Martin</h4>
                     <p>
-                      Him, made can't called over won't there on divide there
-                      male fish beast own his day third seed sixth seas unto.
-                      Saw from
+                     I really liked iLearn's well structured approach to the courses.
                     </p>
                   </div>
                 </div>
@@ -180,9 +179,7 @@
                   <div class="testi_text">
                     <h4>Davil Saden</h4>
                     <p>
-                      Him, made can't called over won't there on divide there
-                      male fish beast own his day third seed sixth seas unto.
-                      Saw from
+                     The test strategy of iLearn massively helped me figure out my mistakes.
                     </p>
                   </div>
                 </div>
@@ -197,9 +194,7 @@
                   <div class="testi_text">
                     <h4>Elite Martin</h4>
                     <p>
-                      Him, made can't called over won't there on divide there
-                      male fish beast own his day third seed sixth seas unto.
-                      Saw from
+                      I am glad I found such an affordable learning oppurtunity here at iLearn.
                     </p>
                   </div>
                 </div>
@@ -214,9 +209,7 @@
                   <div class="testi_text">
                     <h4>Davil Saden</h4>
                     <p>
-                      Him, made can't called over won't there on divide there
-                      male fish beast own his day third seed sixth seas unto.
-                      Saw from
+                      Would highly recommend iLearn to my friends and family.
                     </p>
                   </div>
                 </div>
@@ -231,9 +224,7 @@
                   <div class="testi_text">
                     <h4>Elite Martin</h4>
                     <p>
-                      Him, made can't called over won't there on divide there
-                      male fish beast own his day third seed sixth seas unto.
-                      Saw from
+                     I am glad I found such an affordable learning oppurtunity here at iLearn.
                     </p>
                   </div>
                 </div>
@@ -248,9 +239,7 @@
                   <div class="testi_text">
                     <h4>Davil Saden</h4>
                     <p>
-                      Him, made can't called over won't there on divide there
-                      male fish beast own his day third seed sixth seas unto.
-                      Saw from
+                     The test strategy of iLearn massively helped me figure out my mistakes.
                     </p>
                   </div>
                 </div>

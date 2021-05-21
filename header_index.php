@@ -44,20 +44,28 @@
             >
               <ul class="nav navbar-nav menu_nav ml-auto">
                   
+                  
               <?php
                         session_start();
-                        if(isset($_SESSION['username'])){ ?>
+                        
+                        if(isset($_SESSION['username'])){
+                            $split=$_SESSION['username'];
+                        $firstname= strtok($split, ' ');
+                        //$_SESSION['username']=$firstname;
+                            ?>
+                  
+                  
                 <li class="nav-item active">
-                  <a class="nav-link" href="#"> <?php echo $_SESSION['username']; ?></a>
+                    <a class="nav-link" href="index.php">Hii,&nbsp; <?php echo $firstname; ?></a>
                 </li>
                 <li class="nav-item ">
                   <a class="nav-link" href="index.php">Home</a>
                 </li>
                 <li class="nav-item ">
-                  <a class="nav-link" href="#">My Course</a>
+                    <a class="nav-link" href="dashboard.php">Dashboard</a>
                 </li>
                 <li class="nav-item ">
-                  <a class="nav-link" href="#">My Profile</a>
+                    <a class="nav-link" href="my_profile.php">My Profile</a>
                 </li>
                 <li class="nav-item ">
                     <a class="nav-link" href="logout.php">logout</a>

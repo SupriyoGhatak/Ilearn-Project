@@ -83,7 +83,7 @@
                         <th><br></th>
                     </tr>
                 </table>
-                <a href="index.php">  <button style="background-color: #4CAF50;
+                <a href="payment.php">  <button style="background-color: #4CAF50;
                         border: none;
                         color: white;
                         padding: 15px 32px;
