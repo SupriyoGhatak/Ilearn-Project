@@ -30,10 +30,20 @@
     <!--================ Start Header Menu Area =================-->
     <?php
         include 'header_index.php';
+        include 'Connection/common.php';
+        $id=$_SESSION['id'];
+        $query = "SELECT * FROM user_details WHERE user_id = '" . $id . "'";
+        $result1 = mysqli_query($con,$query);
+        $row = mysqli_fetch_array($result1);
+        $_SESSION['email'] = $row['user_email'];
+        $_SESSION['username']=$row['user_name'];
+        $_SESSION['phone'] = $row['user_phone'];
+        $_SESSION['DOB']=$row['user_dob'];
+        $_SESSION['Adress']=$row['user_address'];
     ?>
     
     <div class="container emp-profile section_gap_top">
-            <form method="post">
+            <form name="save"  method="post">
                 <div class="row">
                     <div class="col-md-4">
                         <div class="profile-img">
@@ -47,7 +57,7 @@
                     <div class="col-md-6">
                         <div class="profile-head">
                                     <h5>
-                                        <p id="myP">Supriyo Ghatak</p>
+                                        <p id="myP"><?php echo $_SESSION['username']; ?></p>
                                     </h5>
                                     <h6>
                                         
@@ -70,13 +80,13 @@
                     <div class="col-md-4">
                         <div class="profile-work">
                             <p>SOCIAL MEDIA LINKS</p>
-                           
+                            <p>Heey</p>
                             
                             <p> ADD SKILLS</p>
                             
                         </div>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-8 col-sm-8">
                         <div class="tab-content profile-tab" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                         <div class="row example">
@@ -84,7 +94,7 @@
                                                 <label>User Id</label>
                                             </div>
                                             <div class="col-md-6">
-                                                <p id="myP">supriyoghatak15@gmail.com</p>
+                                                <p id="myP"><?php echo $_SESSION['id']; ?></p>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -92,7 +102,7 @@
                                                 <label for="ex1fld1">Name</label>
                                             </div>
                                             <div class="col-md-6 example">
-                                                <p> <input type="text" name="ex1fld1" readonly value="Supriyo Ghatak" style="border: none; font-weight: 600;
+                                                <p> <input type="text" name="name" readonly value="<?php echo $_SESSION['username'];  ?>" style="border: none; font-weight: 600;
     color: #0062cc;" /></p>
                                             </div>
                                         </div>
@@ -101,7 +111,7 @@
                                                 <label for="ex1fld2">Email</label>
                                             </div>
                                             <div class="col-md-6 example">
-                                                <p> <input type="text" name="ex1fld2" readonly value="supriyoghtak15@gmail.com" size="50" style="border: none; font-weight: 600;
+                                                <p> <input type="text" name="email" readonly value="<?php echo $_SESSION['email']; ?>" size="50" style="border: none; font-weight: 600;
     color: #0062cc;"/></p>
                                             </div>
                                         </div>
@@ -110,7 +120,25 @@
                                                 <label for="ex1fld3">Phone</label>
                                             </div>
                                             <div class="col-md-6 example">
-                                                <p> <input type="text" name="ex1fld3" readonly value="7501374122"  style="border: none;font-weight: 600;
+                                                <p> <input type="text" name="phone" readonly value="<?php echo $_SESSION['phone']; ?>"  style="border: none;font-weight: 600;
+    color: #0062cc;"/></p>
+                                            </div>
+                                        </div>
+                                    <div class="row">
+                                            <div class="col-md-6">
+                                                <label for="ex1fld3">Date of birth</label>
+                                            </div>
+                                            <div class="col-md-6 example">
+                                                <p> <input type="text" name="DOB" readonly value="<?php echo $_SESSION['DOB']; ?>"  style="border: none;font-weight: 600;
+    color: #0062cc;"/></p>
+                                            </div>
+                                        </div>
+                                <div class="row">
+                                            <div class="col-md-6">
+                                                <label for="ex1fld3">Address</label>
+                                            </div>
+                                            <div class="col-md-6 example">
+                                                <p> <input type="text" name="Address" readonly value="<?php echo $_SESSION['Adress']; ?>"  style="border: none;font-weight: 600;
     color: #0062cc;"/></p>
                                             </div>
                                         </div>
@@ -146,13 +174,22 @@
               
             
               
-           
+           var t=1;
            var readonly = true;
             $('.example input[type="button"]').on('click', function(){
                $('.example input[type="text"]').attr('readonly', !readonly);
                
                readonly=!readonly;
+               t=!t;
+               if(t==0){
                $('.example input[type="button"]').val(readonly ? 'Edit' : 'Save');
+           }
+           else
+           {
+               //$('.example input[type="button"]').val(readonly ? 'Edit' : 'Save');
+               document.forms['save'].action="my_profile_script.php";
+               document.forms['save'].submit();
+           }
                
                return false;
             });

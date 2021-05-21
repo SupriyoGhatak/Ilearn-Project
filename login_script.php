@@ -11,7 +11,7 @@ $num = mysqli_num_rows($result);
 
 
 
-if($num == 0){
+if($num ==0){
     echo '<script>alert("Enter Correct E-mail and Password Combination...!")</script>';
     echo '<script>window.location="signup.php"</script>';
 } else{
