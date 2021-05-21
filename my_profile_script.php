@@ -29,7 +29,7 @@ $update_password_result = mysqli_query($con, $update_password_query) or die($mys
 
 }
 else{
-    echo '<script>alert("This Email Is Already Present Our Database...!..Please Check Your Email Id..")</script>';
+    echo '<script>alert("This Email Is Already Present in Our Database...!..Please Check Your Email Id..")</script>';
     echo '<script>window.location="my_profile.php"</script>';
 } 
 
