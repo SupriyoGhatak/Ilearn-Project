@@ -8,6 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/dashboard_style.css" >
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css" />
     <title>dashboard!</title>
   </head>
   <body>
@@ -66,105 +68,31 @@
       </div>
     </div>
 	<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4>
-              
-	<nav aria-label="breadcrumb">
+              <!--navbar>
+        <nav aria-label="breadcrumb">
+        
   <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
-      <li class="breadcrumb-item active" aria-current="page"><a href="dashboard.php">Statistics</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="dashreports.php">Reports</a></li>
   </ol>
 </nav>
-<h1 class="h2">Dashboard</h1>
-<p>This is the homepage of a simple admin interface which is part of a tutorial written on Themesberg</p>
-<div class="col-md-4 my-3">
-                <div class="bg-mattBlackLight px-3 py-3">
-                  <h4 class="mb-2">C++</h4>
-                  <div class="progress" style="height: 16px;">
-                    <div
-                      class="progress-bar bg-warning text-mattBlackDark"
-                      role="progressbar"
-                      style="width: 25%;"
-                      aria-valuenow="25"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      25
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 my-3">
-                <div class="bg-mattBlackLight px-3 py-3">
-                  <h4 class="mb-2">JAVA</h4>
-                  <div class="progress" style="height: 16px;">
-                    <div
-                      class="progress-bar bg-info text-mattBlackDark"
-                      role="progressbar"
-                      style="width: 50%;"
-                      aria-valuenow="25"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      50
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 my-3">
-                <div class="bg-mattBlackLight p-3">
-                  <h4 class="mb-2">SQL</h4>
-                  <div class="progress" style="height: 16px;">
-                    <div
-                      class="progress-bar bg-success"
-                      role="progressbar"
-                      style="width: 80%;"
-                      aria-valuenow="25"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      80
-                    </div>
-                  </div>
-                </div>
-              </div>
-           
-            <div class="col-md-4 my-3">
-                <div class="bg-mattBlackLight p-3">
-                  <h4 class="mb-2">C</h4>
-                  <div class="progress" style="height: 16px;">
-                    <div
-                      class="progress-bar bg-success"
-                      role="progressbar"
-                      style="width: 75%;"
-                      aria-valuenow="25"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      75
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--</div>-->
-            
-            <div class="row">
-              <div class="col-md-6">
-                <div class="bg-mattBlackLight my-2 p-3">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Ratione libero totam rerum eos nam ab perspiciatis voluptatum
-                  in. Quidem natus autem quae. Velit accusamus sit, perspiciatis
-                  sunt earum tempora veniam.
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="bg-mattBlackLight my-2 p-3">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Ratione libero totam rerum eos nam ab perspiciatis voluptatum
-                  in. Quidem natus autem quae. Velit accusamus sit, perspiciatis
-                  sunt earum tempora veniam.
-                </div>
-              </div>
-                </div>
-  </div>
+
+<!--================ Start Popular Courses Area =================-->
+    <!--<div class="popular_courses section_gap_top">-->
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-5">
+            <div class="main_title">
+              <h2 class="mb-3">Reports</h2>
+              <p>
+                Replenish man have thing gathering lights yielding shall you
+              </p>
+            </div>
+          </div>
+        </div>
+       </div>
+
+
 	</main>
   </div>
 </div>

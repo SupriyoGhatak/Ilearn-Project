@@ -26,6 +26,7 @@ if($Password == $ConfirmPassword)
                      $user_signup_submit= mysqli_query($con,$user_signup_query) or die(mysqli_error($con));
                       $_SESSION['email'] = $Email;
                       $_SESSION['username']=$Name;
+                      $_SESSION['id']= mysqli_insert_id($con);
                    
                      echo '<script>alert("User successfully inserted")</script>';
                      echo '<script>window.location="index.php"</script>';
