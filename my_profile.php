@@ -147,7 +147,7 @@
                                                 <label for="ex1fld3">Address</label>
                                             </div>
                                             <div class="col-md-6 example">
-                                                <p> <input type="text" name="Address" readonly value="<?php echo $_SESSION['Adress']; ?>"  style="border: none;font-weight: 600;
+                                                <p> <input type="text" name="Address" readonly value="<?php echo $_SESSION['Adress']; ?>" size="50" style="border: none;font-weight: 600;
     color: #0062cc;"/></p>
                                             </div>
                                         </div>
