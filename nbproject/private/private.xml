@@ -3,9 +3,38 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/wamp64/www/Ilearn-Project/my_profile_script.php</file>
             <file>file:/C:/wamp64/www/Ilearn-Project/my_profile_image_script.php</file>
             <file>file:/C:/wamp64/www/Ilearn-Project/my_profile.php</file>
+=======
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/view_details.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/app.js</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-buy-java.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/dashboard.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/login_script.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/css/style1.css</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-buy-c++.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/signup.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-details-rdbms.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/dashreports.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-details-java.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/dashupcoming.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/index.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-details-c.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/courses.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/header_other.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/dashexamboard.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/css/style.css</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/my_profile_script.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-buy-c.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-buy-rdbms.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/my_profile_image_script.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-details.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/header_index.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/payment.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/my_profile.php</file>
+>>>>>>> b2057c18168abec5f5d55e29af25f805d2e8f29a
         </group>
     </open-files>
 </project-private>
