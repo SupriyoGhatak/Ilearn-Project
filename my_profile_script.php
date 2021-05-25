@@ -1,36 +1,36 @@
 <?php
 session_start();
 include 'Connection/common.php';
-$name= mysqli_real_escape_string($con,$_POST['name']);
-$email=  mysqli_real_escape_string($con,$_POST['email']);
-$phone=  $_POST['phone'];
-$DOB=  $_POST['DOB'];
-$Address=  $_POST['Address'];
 $id=$_SESSION['id'];
-//echo $name;
-//echo $email;
-//echo $phone;
-//echo $DOB;
-//echo $Address;
-$query = "SELECT  user_name ,user_id , user_email FROM  user_details WHERE user_email = '" . $email . "'";
-$result = mysqli_query($con, $query) or die($mysqli_error($con));
-$num = mysqli_num_rows($result);
-$row = mysqli_fetch_array($result);
-$id1= $row['user_id'];
+if(isset($_FILES['image'])){
+       
+       
+      //echo 'hello';
+     // $errors= array();
+      $file_name = $_FILES['image']['name'];
+      $file_size =$_FILES['image']['size'];
+      $file_tmp_loc =$_FILES['image']['tmp_name'];
+      $file_type=$_FILES['image']['type'];
+      $file_extension = explode('.', $file_name);
+      $file_ext_check = strtolower(end($file_extension));
+      //echo $file_ext_check;
+      //echo $file_name;
+      $allowed_extensions = array('jpg', 'jpeg', 'png');
+      if(!in_array($file_ext_check, $allowed_extensions)){
 
-if($id1==$id){
-
-
-$update_password_query = "UPDATE user_details SET user_name = '$name' , user_email='$email' , user_phone='$phone' , user_dob='$DOB' , user_address='$Address' WHERE user_id = '" . $id . "' ";
-$update_password_result = mysqli_query($con, $update_password_query) or die($mysqli_error($con));
- echo '<script>alert("Your Profile  update successfully...!")</script>';
- echo '<script>window.location="my_profile.php"</script>';
-
-
+         echo "<script type='text/javascript'>alert('Only  .JPG, .JPEG, .PNG  Are allowed');</script>";
+         echo '<script>window.location="my_profile.php"</script>';
+      }
+      else{
+          $file_store = "profile_img/".$file_name;
+        
+          move_uploaded_file($file_tmp_loc, $file_store);
+          $update_password_query = "UPDATE user_details SET user_image = '$file_store'  WHERE user_id = '" . $id . "' ";
+          $update_password_result = mysqli_query($con, $update_password_query) or die($mysqli_error($con));
+          echo '<script>alert("Your Profile Image  update successfully...!")</script>';
+          echo '<script>window.location="my_profile.php"</script>';
+          
+      }
 }
-else{
-    echo '<script>alert("This Email Is Already Present Our Database...!..Please Check Your Email Id..")</script>';
-    echo '<script>window.location="my_profile.php"</script>';
-} 
 
 ?>
