@@ -40,17 +40,26 @@
         $_SESSION['phone'] = $row['user_phone'];
         $_SESSION['DOB']=$row['user_dob'];
         $_SESSION['Adress']=$row['user_address'];
+         $_SESSION['user_img']=$row['user_image'];
     ?>
     
     <div class="container emp-profile section_gap_top">
-            <form name="save"  method="post">
+            <form name="save"  method="POST" enctype="multipart/form-data" >
                 <div class="row">
                     <div class="col-md-4">
                         <div class="profile-img">
+                            <?php
+                            $img=$_SESSION['user_img'];
+                            //echo $img;
+                            
+                            if($img!=2){   ?>
+                            <img src="<?php echo $_SESSION['user_img']; ?>" alt="profile pic" id="blah"/>
+                            <?php }else{?>
                             <img src="img/demo_pic.png" alt="profile pic" id="blah"/>
+                            <?php } ?>
                             <div class="file btn btn-lg btn-primary">
                                 Change Photo
-                                <input type="file" name="file" onchange="readURL(this);"/>
+                                <input type="file" name="image" onchange="readURL(this);"/>
                             </div>
                         </div>
                     </div>
@@ -138,7 +147,7 @@
                                                 <label for="ex1fld3">Address</label>
                                             </div>
                                             <div class="col-md-6 example">
-                                                <p> <input type="text" name="Address" readonly value="<?php echo $_SESSION['Adress']; ?>"  style="border: none;font-weight: 600;
+                                                <p> <input type="text" name="Address" readonly value="<?php echo $_SESSION['Adress']; ?>" size="50" style="border: none;font-weight: 600;
     color: #0062cc;"/></p>
                                             </div>
                                         </div>
@@ -198,7 +207,7 @@
           </script>    
           <script>
               function readURL(input){
-                if(input.files && input.files[0])
+                /*if(input.files && input.files[0])
                 {
                     var reader = new FileReader();
                     
@@ -207,8 +216,10 @@
                                 .attr('src', e.target.result);
                                 
                     };
-                    reader.readAsDataURL(input.files[0]);
-                }
+                    reader.readAsDataURL(input.files[0]);*/
+                    document.forms['save'].action="my_profile_image_script.php";
+                    document.forms['save'].submit();
+                //}
             }
           </script>
   </body>
