@@ -8,7 +8,7 @@
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
     <link rel="icon" href="img/logo_1.png" style="height: 40px; width: 40px;" type="image/png" />
-    <title>Reports</title>
+    <title>dashboard</title>
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css" />
@@ -105,17 +105,104 @@
            
 	<nav aria-label="breadcrumb">
   <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Reports</li>
+      <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Statistics</li>
   </ol>
 </nav>
             
-<h1 class="h2 dash-title">Reports</h1>
+<h1 class="h2 dash-title">Dashboard</h1>
 <p>This is the homepage of a simple admin interface which is part of a tutorial written on Themesberg</p>
-
-                
+<div class="col-md-4 my-3">
+                <div class="bg-mattBlackLight px-3 py-3">
+                  <h4 class="mb-2">C++</h4>
+                  <div class="progress" style="height: 16px;">
+                    <div
+                      class="progress-bar bg-warning text-mattBlackDark"
+                      role="progressbar"
+                      style="width: 25%;"
+                      aria-valuenow="25"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      25
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 my-3">
+                <div class="bg-mattBlackLight px-3 py-3">
+                  <h4 class="mb-2">JAVA</h4>
+                  <div class="progress" style="height: 16px;">
+                    <div
+                      class="progress-bar bg-info text-mattBlackDark"
+                      role="progressbar"
+                      style="width: 50%;"
+                      aria-valuenow="25"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      50
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 my-3">
+                <div class="bg-mattBlackLight p-3">
+                  <h4 class="mb-2">SQL</h4>
+                  <div class="progress" style="height: 16px;">
+                    <div
+                      class="progress-bar bg-success"
+                      role="progressbar"
+                      style="width: 80%;"
+                      aria-valuenow="25"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      80
+                    </div>
+                  </div>
+                </div>
+              </div>
+           
+            <div class="col-md-4 my-3">
+                <div class="bg-mattBlackLight p-3">
+                  <h4 class="mb-2">C</h4>
+                  <div class="progress" style="height: 16px;">
+                    <div
+                      class="progress-bar bg-success"
+                      role="progressbar"
+                      style="width: 75%;"
+                      aria-valuenow="25"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      75
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--</div>-->
+            
+            <div class="row">
+              <div class="col-md-6">
+                <div class="bg-mattBlackLight my-2 p-3">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Ratione libero totam rerum eos nam ab perspiciatis voluptatum
+                  in. Quidem natus autem quae. Velit accusamus sit, perspiciatis
+                  sunt earum tempora veniam.
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="bg-mattBlackLight my-2 p-3">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Ratione libero totam rerum eos nam ab perspiciatis voluptatum
+                  in. Quidem natus autem quae. Velit accusamus sit, perspiciatis
+                  sunt earum tempora veniam.
+                </div>
+              </div>
+                </div>
              </main>
-      </div>
+  </div>
 	
      
       
