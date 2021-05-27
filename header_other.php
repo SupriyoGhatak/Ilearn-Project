@@ -53,7 +53,7 @@
                   <a class="nav-link" href="index.php">Home</a>
                 </li>
                 <li class="nav-item ">
-                  <a class="nav-link" href="#">Dashboard</a>
+                  <a class="nav-link" href="test.php">Dashboard</a>
                 </li>
                 <li class="nav-item ">
                     <a class="nav-link" href="my_profile.php">My Profile</a>
