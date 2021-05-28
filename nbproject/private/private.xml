@@ -3,6 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/view_details.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/app.js</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-buy-java.php</file>
@@ -30,6 +31,11 @@
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/header_index.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/payment.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/my_profile.php</file>
+=======
+            <file>file:/C:/wamp64/www/Ilearn-Project/my_profile_script.php</file>
+            <file>file:/C:/wamp64/www/Ilearn-Project/my_profile_image_script.php</file>
+            <file>file:/C:/wamp64/www/Ilearn-Project/my_profile.php</file>
+>>>>>>> d56f055eb54ac780a3760a8e4236b7612a933dc6
         </group>
     </open-files>
 </project-private>
