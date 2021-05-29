@@ -3,25 +3,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< HEAD
-            <file>file:/C:/wamp64/www/Ilearn-Project/css/stylee.css</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/course-details-java.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/css/style.css</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/header_index.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/footer.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/payment.php</file>
-=======
-<<<<<<< HEAD
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/view_details.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/app.js</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-buy-java.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/dashboard.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/login_script.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/css/style1.css</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-buy-c++.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/c_video_file.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/signup.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-details-rdbms.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/dashreports.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/css/videostyle.css</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-details-java.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/dashupcoming.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/index.php</file>
@@ -30,21 +22,18 @@
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/courses.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/header_other.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/dashexamboard.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/test.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/css/style.css</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/my_profile_script.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-buy-c.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-buy-rdbms.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/footer.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/my_profile_image_script.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/css/teststyle.css</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-details.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/header_index.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/payment.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/my_profile.php</file>
-=======
-            <file>file:/C:/wamp64/www/Ilearn-Project/my_profile_script.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/my_profile_image_script.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/my_profile.php</file>
->>>>>>> d56f055eb54ac780a3760a8e4236b7612a933dc6
->>>>>>> fb8cbe4330c0877ce0f729ae1e1ec3e2c62aec27
         </group>
     </open-files>
 </project-private>
