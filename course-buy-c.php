@@ -21,7 +21,7 @@
     
   </head>
 
-  <body>
+  <body method="POST">
     <!--================ Start Header Menu Area =================-->
     <?php
         include 'header_index.php';
@@ -66,7 +66,7 @@
                         <td style="color: black; font-size: 18px;"> 
                            
                             This is the Most Elaborative and It gives the Basic Course
-                            of Programming in C which will..<a href="course-details-c.php">Read More</a>
+                            of Programming in C which will..<a href="course-details-c.php?course=C">Read More</a>
                         </td>
                     </tr>
                     <tr>
@@ -83,7 +83,7 @@
                         <th><br></th>
                     </tr>
                 </table>
-                <a href="payment.php">  <button style="background-color: #4CAF50;
+                <a href="payment.php?action=c">  <button style="background-color: #4CAF50;
                         border: none;
                         color: white;
                         padding: 15px 32px;
