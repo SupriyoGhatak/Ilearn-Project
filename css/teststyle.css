@@ -206,4 +206,13 @@ main{
 #sidebar-toggle:checked ~ .main-content header{
     left: 60px;
 }
+}
+nav{
+  
+  transform: translate(-50%, -50%);
+  
+  width: 400px;
+  line-height: 40px;
+  padding: 8px 25px;
+  border-radius: 5px;
 }*/
