@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="css/videostyle.css" />
     
   </head>
-  <body>
+  <body method="POST">
       
  <div class="wrapper">
 	
@@ -44,10 +44,10 @@
  	 		<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Why C?</a>
  	 	  <ul class="collapse list-unstyled" id="homeSubmenu">
  	 	  	<li>
- 	 	  		<a href="#video1">Brief History</a>
+                            <a href="c_video_file.php?action=video1">Brief History</a>
  	 	  	</li>
  	 	  	<li>
- 	 	  		<a href="#video2">Use of C</a>
+ 	 	  		<a href="c_video_file.php?action=video2">Use of C</a>
  	 	  	</li>
                         <li>
  	 	  		<a href="#video3">Foundation of C</a>
@@ -112,6 +112,7 @@
 
         <br><br>
            
+<<<<<<< HEAD
         
 
         <section id="video1" style="height: 100vh;">
@@ -121,43 +122,34 @@
 <!--                <source src="video/butterfly_flower_insect_nature_515.mp4" type="video/ogg">-->
               Your browser does not support the video tag.
             </video>
+=======
+        <?php
+        session_start();
+        include 'Connection/common.php';
+        if (isset($_GET["action"])){
+            
+        $c=$_GET["action"];
+        $query = "SELECT  src FROM  c_video WHERE video_id = '" . $c . "' ";
+        $result = mysqli_query($con, $query) or die($mysqli_error($con));
+        $num = mysqli_num_rows($result);
+        $row = mysqli_fetch_array($result);   
+        $src = $row['src'];
+        }
+        ?>
+        <?php if(!isset($src)){?>
+        <section style="height: 100vh;">
+            <img src="img/login/back.jpeg">
+>>>>>>> fcc0577a052c4d7890ab3b6dcc75c9c0bd1b780b
         </section>
-        
-<!--        <section id="video2" style="height: 100vh;">
-        <video width="1100" height="500" controls>
-            <source  src="https://www.youtube.com/watch?v=cuEfUi-TgAE" type="video/mp4">
-            <source src="https://www.youtube.com/watch?v=cuEfUi-TgAE" type="video/ogg">
-          Your browser does not support the video tag.
-        </video>
+        <?php }else {?>
+
+        <section style="height: 100vh;">
+
+           <iframe src="<?php echo $src; ?>" width="1100" height="500" controls style="width: 100%;max-height: 100%;"></iframe>
         </section>
-        
-        <section id="video3" style="height: 100vh;">
-            <video width="1100" height="500" controls>
-                <source  src="https://www.youtube.com/watch?v=cuEfUi-TgAE" type="video/mp4">
-                <source src="https://www.youtube.com/watch?v=cuEfUi-TgAE" type="video/ogg">
-              Your browser does not support the video tag.
-            </video> comment 
-        </section>-->
-
-
-
-
+        <?php } ?>
     </div>
-
-
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -171,19 +163,7 @@
                     });
 
 </script>
-<!--<script>
-    window.addEventListener("scroll",disableScroll);
-    
-    function disableScroll()
-    {
-        document.body.style.overflow="hidden";
-    }
-    
-    
-    </script>-->
-
-      
-      
+   
   </body>
   
 </html>
