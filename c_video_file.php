@@ -115,7 +115,8 @@
         
 
         <section id="video1" style="height: 100vh;">
-            <video width="1100" height="500" controls>
+            <video width="1100" height="500" controls style="width: 100%;
+  max-height: 100%;">
                 <source  src="video/butterfly_flower_insect_nature_515.mp4" type="video/mp4">
 <!--                <source src="video/butterfly_flower_insect_nature_515.mp4" type="video/ogg">-->
               Your browser does not support the video tag.
