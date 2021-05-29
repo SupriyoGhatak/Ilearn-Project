@@ -111,10 +111,6 @@
                 </nav>
 
         <br><br>
-           
-
-        
-
 
         <?php
         session_start();
