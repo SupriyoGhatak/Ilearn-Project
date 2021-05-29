@@ -77,7 +77,7 @@
           <div class="col-50">
             <h3>Billing Address</h3>
             <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="EnterName">
+            <input type="text" id="fname" name="firstname" placeholder="<?php echo  $_GET["course"] ; ?>">
             <label for="email"><i class="fa fa-envelope"></i> Email</label>
             <input type="text" id="email" name="email" placeholder="abc@xyz.com">
             <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>

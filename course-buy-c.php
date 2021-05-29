@@ -66,7 +66,7 @@
                         <td style="color: black; font-size: 18px;"> 
                            
                             This is the Most Elaborative and It gives the Basic Course
-                            of Programming in C which will..<a href="course-details-c.php">Read More</a>
+                            of Programming in C which will..<a href="course-details-c.php?course=C">Read More</a>
                         </td>
                     </tr>
                     <tr>
