@@ -71,11 +71,11 @@
                     <a class="nav-link" href="logout.php">logout</a>
                 </li>
                 
-                  <li class="nav-item">
-<!--                  <a href="#" class="nav-link search" id="search">
+<!--                  <li class="nav-item">
+                  <a href="#" class="nav-link search" id="search">
                     <i class="ti-search"></i>
-                  </a>-->
-                </li> 
+                  </a>
+                </li> -->
                   
                    <?php } else { ?>
                   
@@ -120,11 +120,11 @@
                 <li class="nav-item">
                   <a class="nav-link" href="contact.php">Contact Us</a>
                 </li>
-                <li class="nav-item">
+<!--                <li class="nav-item">
                   <a href="#" class="nav-link search" id="search">
                     <i class="ti-search"></i>
                   </a>
-                </li>
+                </li>-->
                  <?php } ?>
               </ul>
             </div>

@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="css/themify-icons.css" />
     <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
     <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
    
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
@@ -25,8 +27,7 @@
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/videostyle.css" />
-    
-
+    <link rel="stylesheet" href="css/try.css" />
     
   </head>
   <body method="POST">
@@ -78,7 +79,7 @@
  	 		<a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Arrays</a>
  	 		<ul class="collapse list-unstyled" id="pageSubmenu2">
  	 			<li>
- 	 				<a href="#">Array Idea</a>
+                                    <a href="#" style="pointer-events: none;">Array Idea</a>
  	 			</li>
  	 			<li>
  	 				<a href="#">Concept of Array</a>
@@ -129,16 +130,28 @@
             }
         ?>
         <?php if(!isset($src)){?>
-        <section  style="height: 100vh;">
-            <img src="img/login/back.jpeg">
+        <section  style="height: 100vh; display: flex;
+            text-align: center;
+            justify-content: center;">
+            <img style=""height="80%; width:70%;"src="img/video_bg_c.jpg" >
 
         </section>
         <?php }else {?>
 
-        <section style="height: 100vh;">
+        <section style="height: 100vh;" class="section-content">
 
            <iframe src="<?php echo $src; ?>" width="1100" height="500" controls style="width: 100%;max-height: 100%;"></iframe>
-           
+           <p><center style="font-weight: bold; font-family: oswal; font-size: 20px; color: black;">Take Notes Here</center></p>
+        <center> <textarea id="my-textarea" placeholder="Take Your Notes Here.." class="notes" style="height: 20vh; width: 100%; border: 2px solid black;"  >
+                                       
+                
+            </textarea></center>
+        <center> <button type="button" onclick="download()" class="savebutton" style="font-weight: bold;
+                
+                background-color: mediumseagreen;
+                color: white;
+                
+            }">Save</button></center>
         </section>
         <?php } ?>
         
@@ -156,6 +169,22 @@
                         });
                     });
 
+
+</script>
+<script>
+            function download(){
+            var text = document.getElementById("my-textarea").value;
+            text = text.replace(/\n/g, "\r\n"); // To retain the Line breaks.
+            var blob = new Blob([text], { type: "text/plain"});
+            var anchor = document.createElement("a");
+            anchor.download = "Notes.txt";
+            anchor.href = window.URL.createObjectURL(blob);
+            anchor.target ="_blank";
+            anchor.style.display = "none"; // just to be safe!
+            document.body.appendChild(anchor);
+            anchor.click();
+            document.body.removeChild(anchor);
+         }
 
 </script>
    
