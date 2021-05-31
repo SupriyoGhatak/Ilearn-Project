@@ -9,7 +9,7 @@
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
     <link rel="icon" href="img/logo_1.png" style="height: 40px; width: 40px;" type="image/png" />
-    <title>dashboard</title>
+     <title>Videos</title>
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css" />
@@ -17,13 +17,16 @@
     <link rel="stylesheet" href="css/themify-icons.css" />
     <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
     <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
-    <title>Collapse sidebar in Bootstrap 4</title>
+   
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+        
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/videostyle.css" />
+    
+
     
   </head>
   <body method="POST">
@@ -113,20 +116,20 @@
         <br><br>
 
         <?php
-        session_start();
-        include 'Connection/common.php';
-        if (isset($_GET["action"])){
-            
-        $c=$_GET["action"];
-        $query = "SELECT  src FROM  c_video WHERE video_id = '" . $c . "' ";
-        $result = mysqli_query($con, $query) or die($mysqli_error($con));
-        $num = mysqli_num_rows($result);
-        $row = mysqli_fetch_array($result);   
-        $src = $row['src'];
-        }
+            session_start();
+            include 'Connection/common.php';
+            if (isset($_GET["action"])){
+
+            $c=$_GET["action"];
+            $query = "SELECT  src FROM  c_video WHERE video_id = '" . $c . "' ";
+            $result = mysqli_query($con, $query) or die($mysqli_error($con));
+            $num = mysqli_num_rows($result);
+            $row = mysqli_fetch_array($result);   
+            $src = $row['src'];
+            }
         ?>
         <?php if(!isset($src)){?>
-        <section style="height: 100vh;">
+        <section  style="height: 100vh;">
             <img src="img/login/back.jpeg">
 
         </section>
@@ -135,8 +138,10 @@
         <section style="height: 100vh;">
 
            <iframe src="<?php echo $src; ?>" width="1100" height="500" controls style="width: 100%;max-height: 100%;"></iframe>
+           
         </section>
         <?php } ?>
+        
     </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -150,6 +155,7 @@
                             $('#sidebar').toggleClass('active');
                         });
                     });
+
 
 </script>
    
