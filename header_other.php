@@ -1,6 +1,6 @@
 <header class="header_area white-header">
       <div class="main_menu">
-        <div class="search_input" id="search_input_box">
+      <div class="search_input" id="search_input_box">
           <div class="container">
             <form class="d-flex justify-content-between" method="" action="">
               <input
@@ -62,11 +62,11 @@
                     <a class="nav-link" href="logout.php">logout</a>
                 </li>
                 
-                  <li class="nav-item">
+                <li class="nav-item">
                   <a href="#" class="nav-link search" id="search">
                     <i class="ti-search"></i>
                   </a>
-                </li> 
+                </li>
                   
                    <?php } else { ?> 
                   
@@ -109,7 +109,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="contact.php">Contact</a>
                 </li>
-                <li class="nav-item">
+             <li class="nav-item">
                   <a href="#" class="nav-link search" id="search">
                     <i class="ti-search"></i>
                   </a>
