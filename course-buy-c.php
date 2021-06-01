@@ -16,8 +16,10 @@
     <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
     <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/san.css" />
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css" />
+    
     
   </head>
 
@@ -74,7 +76,13 @@
                     </tr>
                     <tr>
                         <th style="color: black; font-size: 22px;">Price:</th>
-                        <td style="color: black; font-size: 20px;"> Rs:350</td>
+                        <td style="color: black; font-size: 20px;"> Rs:350 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                    <span class="help-tip">
+                                        <p>courses price :Rs 287 <br>GST(18%) :Rs 63 <br>Total : Rs 350</p>
+                            </span></td>
                     </tr>
                     <tr>
                         <th><br></th>
