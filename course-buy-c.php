@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/tooltip.css" />
     
   </head>
 
@@ -39,7 +40,7 @@
             <div class="col-sm-1 col-lg-1"></div>
             <div class="col-sm-5 col-lg-5"><br>
                 
-                <table>
+                <table id="Mytable" >
                     <tr>
                         <th style="color: black; font-size: 22px;">Title:</th>
                         <td style="color: black; font-size: 20px;"> Programming With C</td>
@@ -66,16 +67,22 @@
                         <td style="color: black; font-size: 18px;"> 
                            
                             This is the Most Elaborative and It gives the Basic Course
-                            of Programming in C which will..<a href="course-details-c.php?course=C">Read More</a>
+                            of Programming in C which will..<a href="course-details-c.php">Read More</a>
                         </td>
                     </tr>
                     <tr>
                         <th><br></th>
                     </tr>
+                
                     <tr>
-                        <th style="color: black; font-size: 22px;">Price:</th>
-                        <td style="color: black; font-size: 20px;"> Rs:350</td>
-                    </tr>
+                       
+                        <th style="color: black; font-size: 22px;">Price:</th>     
+                        <td style="color: black; font-size: 20px;"> Rs:350  <!--<span class="help-tip"> 
+                                <p>Course Price : Rs 287 <br> GST(18%) : Rs 63 <br> --> 
+                                
+                        </td>
+
+                </tr> 
                     <tr>
                         <th><br></th>
                     </tr>
