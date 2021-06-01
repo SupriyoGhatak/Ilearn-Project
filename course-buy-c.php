@@ -19,11 +19,12 @@
     <link rel="stylesheet" href="css/san.css" />
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/tooltip.css" />
     
     
   </head>
 
-  <body>
+  <body method="POST">
     <!--================ Start Header Menu Area =================-->
     <?php
         include 'header_index.php';
@@ -41,7 +42,7 @@
             <div class="col-sm-1 col-lg-1"></div>
             <div class="col-sm-5 col-lg-5"><br>
                 
-                <table>
+                <table id="Mytable" >
                     <tr>
                         <th style="color: black; font-size: 22px;">Title:</th>
                         <td style="color: black; font-size: 20px;"> Programming With C</td>
@@ -74,7 +75,9 @@
                     <tr>
                         <th><br></th>
                     </tr>
+                
                     <tr>
+<<<<<<< HEAD
                         <th style="color: black; font-size: 22px;">Price:</th>
                         <td style="color: black; font-size: 20px;"> Rs:350 </td>
                                     </tr>
@@ -84,6 +87,16 @@
                                         <p>courses price :Rs 287 <br>GST(18%) :Rs 63 <br>Total : Rs 350</p>
                             </span></td>
                     </tr>
+=======
+                       
+                        <th style="color: black; font-size: 22px;">Price:</th>     
+                        <td style="color: black; font-size: 20px;"> Rs:350  <!--<span class="help-tip"> 
+                                <p>Course Price : Rs 287 <br> GST(18%) : Rs 63 <br> --> 
+                                
+                        </td>
+
+                </tr> 
+>>>>>>> e36d889e906176582f84cfef0549b766e60c5491
                     <tr>
                         <th><br></th>
                     </tr>
@@ -91,7 +104,7 @@
                         <th><br></th>
                     </tr>
                 </table>
-                <a href="payment.php">  <button style="background-color: #4CAF50;
+                <a href="payment.php?action=c">  <button style="background-color: #4CAF50;
                         border: none;
                         color: white;
                         padding: 15px 32px;
