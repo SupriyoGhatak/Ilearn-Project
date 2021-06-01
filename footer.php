@@ -26,7 +26,7 @@
               <li><a href="#">Compiler</a></li>
               <li><a href="#">Videos</a></li>
               <li><a href="#">Online Library</a></li>
-              <li><a href="#">Report</a></li>
+              <li><a href="c_video_file.php">Report</a></li>
             </ul>
           </div>
           <div class="col-lg-2 col-md-6 single-footer-widget">
