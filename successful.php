@@ -1,4 +1,4 @@
-<html>< lang="en">
+<html>
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -25,22 +25,29 @@
   </head>
 
   <body>
-<?php
- include 'header_index.php';
-    ?> -->
-      
- <!-- <div class="popular_courses section_gap_top">   -->
-    <div class="container"> 
-        <div class="row"> 
-          <div class="col-lg-12">
+   <?php
+       // include 'header_index.php';
+    ?> 
+   <br>
+   <section class="banner_area">
+      <div class="banner_inner d-flex align-items-center">
+        <div class="overlay"></div>
+         <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
               <div class="banner_content text-center">
-                   <h2 class="text-uppercase mt-4 mb-5">
-                    PAYMENT SUCCESSFUL
-                   </h2>
-                  <p class="text-uppercase">
-                   One Step Ahead This Season
-                </p>
-              </div></div></div> </div>
+                 <h2>PAYMENT SUCCESSFUL</h2>
+                 
+                   <p class="text-uppercase">    
+                   CLICK <a href="dashcourses.php">HERE </a> TO VIEW YOUR COURSE'S CONTENTS!
+                   </p>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
             
   </body>
 </html>
