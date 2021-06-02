@@ -16,6 +16,7 @@ $cvv=mysqli_real_escape_string($con,$_POST['cvv']);
 
 $abc= "INSERT INTO billing(fullname,email,address,city,state,zip,ccname,ccnum,expmonth,expyear,cvv) VALUES('$fullname','$email','$address','$city','$state','$zip','$ccname','$ccnum','$expmonth','$expyear','$cvv')";
 $res = mysqli_query($con, $abc) or die(mysqli_error($con));
+echo '<script>window.location="successful.php"</script>';
 
  ?>
 
