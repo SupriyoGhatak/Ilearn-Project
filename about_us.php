@@ -91,7 +91,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-5">
             <div class="main_title">
-                <h2 class="mb-3 text-white"><a href="dashboard.php">What Different We Provide?</a></h2>
+                <h2 class="mb-3 text-white"><a href="test.php">What Different We Provide?</a></h2>
               <p>
                 Only iLearn has all the critical factors to deliver successful results.
               </p>

@@ -1,4 +1,6 @@
-
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -117,7 +119,7 @@
         <br><br>
 
         <?php
-            session_start();
+            //session_start();
             include 'Connection/common.php';
             if (isset($_GET["action"])){
 
