@@ -77,26 +77,24 @@
                     </tr>
                 
                     <tr>
-<<<<<<< HEAD
                         <th style="color: black; font-size: 22px;">Price:</th>
                         <td style="color: black; font-size: 20px;"> Rs:350 </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
+                    </tr>
+                    <tr>
+                            <td>
                                     <span class="help-tip">
                                         <p>courses price :Rs 287 <br>GST(18%) :Rs 63 <br>Total : Rs 350</p>
-                            </span></td>
+                                    </span>
+                            </td>
                     </tr>
-=======
                        
-                        <th style="color: black; font-size: 22px;">Price:</th>     
+                       <!-- <th style="color: black; font-size: 22px;">Price:</th>     
                         <td style="color: black; font-size: 20px;"> Rs:350  <!--<span class="help-tip"> 
                                 <p>Course Price : Rs 287 <br> GST(18%) : Rs 63 <br> --> 
                                 
                         </td>
 
                 </tr> 
->>>>>>> e36d889e906176582f84cfef0549b766e60c5491
                     <tr>
                         <th><br></th>
                     </tr>
