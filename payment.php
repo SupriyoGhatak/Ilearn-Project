@@ -76,16 +76,10 @@
             <h3>Billing Address</h3>
             <label for="fname"><i class="fa fa-user"></i> Full Name</label>
 
-<<<<<<< HEAD
-            <input type="text" id="fname" name="firstname" placeholder="<?php $p=$_GET["action"];echo $p; ?>">
-
-            <input type="text" id="fname" name="firstname" placeholder="<?php echo  $_GET["course"] ; ?>">
-=======
             <input type="text" id="fname" name="fullname" placeholder="EnterName"><!-- <?php $p=$_GET['action'];echo $p; 
             $_SESSION['course'] = $p;?> -->
 
             
->>>>>>> 207a4a2488e8933357a15cd6dfccce8e926a5750
 
             <label for="email"><i class="fa fa-envelope"></i> Email</label>
             <input type="text" id="email" name="email" placeholder="abc@xyz.com">
