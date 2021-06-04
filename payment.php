@@ -22,8 +22,6 @@
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/stylee.css"/>
-    
-  </head>
 
   <body>
     <!--================ Start Header Menu Area =================-->
@@ -68,7 +66,7 @@
     
     
     <div class="popular_courses section_gap_top">  
-    <form>
+    <form name = "form1" method = "post" action="payment_script.php">
         
        <!-- <div class="row"> -->
         <!-- <div class="col-75"> -->
@@ -78,9 +76,16 @@
             <h3>Billing Address</h3>
             <label for="fname"><i class="fa fa-user"></i> Full Name</label>
 
+<<<<<<< HEAD
             <input type="text" id="fname" name="firstname" placeholder="<?php $p=$_GET["action"];echo $p; ?>">
 
             <input type="text" id="fname" name="firstname" placeholder="<?php echo  $_GET["course"] ; ?>">
+=======
+            <input type="text" id="fname" name="fullname" placeholder="EnterName"><!-- <?php $p=$_GET['action'];echo $p; 
+            $_SESSION['course'] = $p;?> -->
+
+            
+>>>>>>> 207a4a2488e8933357a15cd6dfccce8e926a5750
 
             <label for="email"><i class="fa fa-envelope"></i> Email</label>
             <input type="text" id="email" name="email" placeholder="abc@xyz.com">
@@ -100,7 +105,8 @@
               </div>
             </div>
           </div>
-
+         
+       
            <div class="col-50">
             <h3>Payment</h3>
             <label for="fname">Accepted Cards</label>
@@ -110,8 +116,8 @@
               <i class="fa fa-cc-mastercard" style="color:red;"></i>
               <i class="fa fa-cc-discover" style="color:orange;"></i>
             </div>
-            <label for="cname">Name on Card</label>
-            <input type="text" id="cname" name="cardname" placeholder="Enter Name">
+            <label for="ccname">Name on Card</label>
+            <input type="text" id="ccname" name="cardname" placeholder="Enter Name">
             <label for="ccnum">Credit card number</label>
             <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
             <label for="expmonth">Exp Month</label>
@@ -130,7 +136,7 @@
           </div> 
 
         </div>
-        <label>
+        <label> --
           <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
         </label>
           <input type="submit" value="Continue to checkout" class="btn">
