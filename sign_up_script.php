@@ -27,11 +27,7 @@ if($Password == $ConfirmPassword)
                       $_SESSION['email'] = $Email;
                       $_SESSION['username']=$Name;
                       $_SESSION['id']= mysqli_insert_id($con);
-                      
-                      $id1=$_SESSION['id'];
-                      
-                      $user_buy_query = " insert into user_buyed_course(user_id) values ('$id1')";
-                      $user_course_submit= mysqli_query($con,$user_buy_query) or die(mysqli_error($con));
+                    
                    
                      echo '<script>alert("User successfully inserted")</script>';
                      echo '<script>window.location="index.php"</script>';

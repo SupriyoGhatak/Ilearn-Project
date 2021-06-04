@@ -35,7 +35,7 @@
           <div class="sidebar-header">
               <h3 class="brand">
                   <a href="index.php">
-                  <span>iLearn</span>
+                  <span>ILearn</span>
                   </a>
               </h3>
               <label for="sidebar-toggle" class="ti-menu-alt"></span>
@@ -80,15 +80,17 @@
           <header>
               
               
-                 <div class="search-wrapper">
+<!--                 <div class="search-wrapper">
                  <span class="ti-search"></span>
                   <input type="search" placeholder="search here">
-              </div> 
+              </div> -->
               <div class="inner_header">
                   <ul class="navigation">
-                      <a href="index.php"><li>Home</li></a>
+                      <a href="index.php" style="margin-left: -265px; text-transform: uppercase"><li>Home</li></a>
+                      <a href="#"><li>  </li></a>
                      
-                      <a href="contact.php"><li>Contact Us</li></a>
+                      <a href="contact.php" style="margin-right: 200px; text-transform: uppercase"><li>Contact Us</li></a>
+                      <a href="logout.php"style="text-transform: uppercase"><li>Logout</li></a>
                   </ul>
             </div>
               <!--<div>
