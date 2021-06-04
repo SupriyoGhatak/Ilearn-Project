@@ -82,20 +82,20 @@
             
 
             <label for="email"><i class="fa fa-envelope"></i> Email</label>
-            <input type="text" id="email" name="email" placeholder="abc@xyz.com">
+            <input type="text" id="email" name="email" placeholder="abc@xyz.com" required>
             <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-            <input type="text" id="adr" name="address" placeholder="EnterAddress">
+            <input type="text" id="adr" name="address" placeholder="EnterAddress" required>
             <label for="city"><i class="fa fa-institution"></i> City</label>
-            <input type="text" id="city" name="city" placeholder="EnterCity">
+            <input type="text" id="city" name="city" placeholder="EnterCity" required>
 
             <div class="row">
               <div class="col-50">
                 <label for="state">State</label>
-                <input type="text" id="state" name="state" placeholder="EnterState">
+                <input type="text" id="state" name="state" placeholder="EnterState" required>
               </div>
               <div class="col-50">
                 <label for="zip">Zip</label>
-                <input type="text" id="zip" name="zip" placeholder="100001">
+                <input type="text" id="zip" name="zip" placeholder="100001" required>
               </div>
             </div>
           </div>
@@ -111,20 +111,20 @@
               <i class="fa fa-cc-discover" style="color:orange;"></i>
             </div>
             <label for="ccname">Name on Card</label>
-            <input type="text" id="ccname" name="cardname" placeholder="Enter Name">
+            <input type="text" id="ccname" name="cardname" placeholder="Enter Name" required>
             <label for="ccnum">Credit card number</label>
-            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
             <label for="expmonth">Exp Month</label>
-            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+            <input type="text" id="expmonth" name="expmonth" placeholder="September" required>
 
             <div class="row">
               <div class="col-50">
                 <label for="expyear">Exp Year</label>
-                <input type="text" id="expyear" name="expyear" placeholder="2018">
+                <input type="text" id="expyear" name="expyear" placeholder="2018" required>
               </div>
               <div class="col-50">
                 <label for="cvv">CVV</label>
-                <input type="text" id="cvv" name="cvv" placeholder="352">
+                <input type="text" id="cvv" name="cvv" placeholder="352" required>
               </div>
             </div>
           </div> 
