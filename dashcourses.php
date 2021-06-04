@@ -139,13 +139,13 @@
              <div class="col-sm-4"> 
          <div class="single_course">
                 <div class="course_head">
-                    <a href="course-details-c.php"> <img class="img-fluid" src="img/courses/c.jpg" alt="centered image" style="height: 259px; width : 100%" /> </a>
+                    <a href="c_video_file.php"> <img class="img-fluid" src="img/courses/c.jpg" alt="centered image" style="height: 259px; width : 100%" /> </a>
              
                 <div class="course_content"> 
                 
                 <div class="course_head">
                   <h2 class="mb-1">
-                      <a href="course-details-c.php">Programming With C</a>
+                      <a href="c_video_file.php">Programming With C</a>
                   </h4>
                   
                         
