@@ -130,7 +130,7 @@
     ?>
         
      <?php
-     if(isset($_SESSION['c']))
+     if($_SESSION['c']>0)
      { 
      ?>
          
