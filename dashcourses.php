@@ -131,40 +131,26 @@
         
      <?php
      if(isset($_SESSION['c']))
-     {
+     { 
      ?>
          
-
-              <!-- <div class="single_course">
+<div class ="container">
+         <div class="row"> 
+             <div class="col-sm-4"> 
+         <div class="single_course">
                 <div class="course_head">
-                    <a href="course-details-c.php"> <img class="img-fluid" src="img/courses/c.jpg" alt="c" style="height: 259px;" /> </a>
-                </div>
-                <div class="course_content">
-                  <span class="price">Rs350</span>
-                  <span class="tag mb-4 d-inline-block">C</span>
-                  <h4 class="mb-3">
-                      <a href="course-details-c.php">Programming On C</a>
+                    <a href="course-details-c.php"> <img class="img-fluid" src="img/courses/c.jpg" alt="centered image" style="height: 259px; width : 100%" /> </a>
+             
+                <div class="course_content"> 
+                
+                <div class="course_head">
+                  <h2 class="mb-1">
+                      <a href="course-details-c.php">Programming With C</a>
                   </h4>
-                  <p>
-                    One make creepeth man bearing their one firmament won't fowl
-                    meat over sea
-                  </p>
-                  <div
-                    class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4"
-                  >
-                   <div class="authr_meta">
-                      <img src="img/courses/author2.png" alt="" />
-                      <span class="d-inline-block ml-2">Tanmoy</span>
+                  
+                        
                     </div>
-                    <div class="mt-lg-0 mt-3">
-                      <span class="meta_info mr-4">
-                        <a href="#"> <i class="ti-user mr-2"></i>25 </a>
-                      </span>
-                      <span class="meta_info"
-                        ><a href="#"> <i class="ti-heart mr-2"></i>35 </a></span
-                      >
                     </div>
-                  </div>
                 </div>
               </div>
         
@@ -185,7 +171,7 @@
           </div>
         </div>
         <div class="row">
-          <!-- single course -->
+         
           <div class="col-lg-12">
             <div class="owl-carousel active_course">
               <div class="single_course">
@@ -253,7 +239,7 @@
                   </div>
                 </div>
               </div>
-    <!--JAVA AMRITA-->
+   
               <div class="single_course">
                 <div class="course_head">
                     <a href="course-details-java.php"> <img class="img-fluid" src="img/courses/java.jpg" alt="java" style="height: 259px;" /> </a>
@@ -289,7 +275,7 @@
                 </div>
               </div>
                 
-       <!--RDBMS Course Sanchari-->
+       
                 <div class="single_course">
                 <div class="course_head">
                     <a href="course-details-rdbms.php"> <img class="img-fluid" src="img/courses/sql.jpeg" alt="c" style="height: 259px;" /> </a>
@@ -329,7 +315,7 @@
         </div>
       </div>
     </div>
-        
+
      <?php } ?>    
         
         

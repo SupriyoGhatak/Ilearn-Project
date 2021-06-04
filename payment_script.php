@@ -18,7 +18,7 @@ $abc= "INSERT INTO billing(fullname,email,address,city,state,zip,ccname,ccnum,ex
 $res = mysqli_query($con, $abc) or die(mysqli_error($con));
 
 
-$course=$_SESSION["course"];
+$course=$_SESSION['course'];
 $id=$_SESSION['id'];
 
 $update_course_query = "UPDATE user_buyed_course SET $course='1' WHERE user_id = '" . $id . "' ";

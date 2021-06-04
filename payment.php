@@ -76,8 +76,8 @@
             <h3>Billing Address</h3>
             <label for="fname"><i class="fa fa-user"></i> Full Name</label>
 
-            <input type="text" id="fname" name="fullname" placeholder="EnterName">  <!-- <?php $p=$_GET["action"];echo $p; 
-            $_SESSION["course"] = $p;?> -->
+            <input type="text" id="fname" name="fullname" placeholder="EnterName"><!-- <?php $p=$_GET['action'];echo $p; 
+            $_SESSION['course'] = $p;?> -->
 
             
 
