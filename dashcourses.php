@@ -135,7 +135,7 @@
      ?>
          
 
-              <div class="single_course">
+              <!-- <div class="single_course">
                 <div class="course_head">
                     <a href="course-details-c.php"> <img class="img-fluid" src="img/courses/c.jpg" alt="c" style="height: 259px;" /> </a>
                 </div>
