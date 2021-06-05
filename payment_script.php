@@ -17,6 +17,12 @@ $cvv=mysqli_real_escape_string($con,$_POST['cvv']);
 $abc= "INSERT INTO billing(fullname,email,address,city,state,zip,ccname,ccnum,expmonth,expyear,cvv) VALUES('$fullname','$email','$address','$city','$state','$zip','$ccname','$ccnum','$expmonth','$expyear','$cvv')";
 $res = mysqli_query($con, $abc) or die(mysqli_error($con));
 
+  
+                      $id1=$_SESSION['id'];
+                      
+                      $user_buy_query = " insert into user_buyed_course(user_id) values ('$id1')";
+                      $user_course_submit= mysqli_query($con,$user_buy_query) or die(mysqli_error($con));
+
 
 $course=$_SESSION['course'];
 $id=$_SESSION['id'];
