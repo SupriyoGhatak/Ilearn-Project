@@ -24,8 +24,22 @@ $update_password_result = mysqli_query($con, $update_password_query) or die($mys
 
 }
 else{
-    echo '<script>alert("This Email Is Already Present in Our Database...!..Please Check Your Email Id..")</script>';
+    
+    if($num==0){
+        $update_password_query = "UPDATE user_details SET user_name = '$name' , user_email='$email' , user_phone='$phone' , user_dob='$DOB' , user_address='$Address' WHERE user_id = '" . $id . "' ";
+$update_password_result = mysqli_query($con, $update_password_query) or die($mysqli_error($con));
+ echo '<script>alert("Your Profile  update successfully...!")</script>';
+ echo '<script>window.location="my_profile.php"</script>';
+        
+        
+    }
+ else {
+        echo '<script>alert("This Email Is Already Present in Our Database...!..Please Check Your Email Id..")</script>';
+    //echo $id1,$id;
     echo '<script>window.location="my_profile.php"</script>';
+    }
+    
+    
 } 
 
 ?>
