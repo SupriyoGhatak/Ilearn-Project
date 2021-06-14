@@ -49,16 +49,17 @@
         </div>
       </div>
     </section>
-   <main role="main" class="container ">
+   <main role="main" class="container">
   <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-blue rounded box-shadow siz">
     
-    <div class="lh-100">
-      <h6 class="mb-0 text-white lh-100 siz">Important Notice for you</h6>
+    <div class="lh-90">
+        <center><h6 class="mb-0 text-white lh-100 siz">Important Notice for you</h6></center>
       <!--<small>By our faculties</small>-->
     </div>
   </div>
-       <table cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_GridView1" style="width:680px;border-collapse:collapse;">
-		<tbody><tr>
+       <table cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_GridView1" style="width:680px;border-collapse:collapse; margin-left: auto;
+    margin-right: auto;">
+           <tbody class="table1"><tr>
 			<th align="left" scope="col" style="color:White;background-color:#04c;font-family:Arial;font-size:Medium;height: 40px">&nbsp;&nbsp;Notice Board</th>
                         <th scope="col" style="color:White;text-align: center;background-color:#04c;font-family:Arial;font-size:medium;height: 40px">Issued date</th>
 		</tr>
@@ -286,155 +287,19 @@ Information and opinions published on the Vontobel Website do not constitute, no
 			
 		</tr>
 	</tbody></table>
-       <div class="my-3 p-3 bg-white rounded box-shadow">
+     <div class="my-3 p-3 bg-white rounded box-shadow">
            <small class="d-block text-left mt-3">
       <a href="#">View All notices</a>
     </small>
        </div>
-<!--
-  <div class="my-3 p-3 bg-white rounded box-shadow">
-    <h6 class="border-bottom border-gray pb-2 mb-0">Recent updates</h6>
-    <div class="media text-muted pt-3">
-   
-      <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray ti-agenda">
-       
-        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-      </p>
-      </div>
-    
-    <div class="media text-muted pt-3">
-     
-      <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray ti-agenda">
-        
-        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-      </p>
-    </div>
-    <div class="media text-muted pt-3">
-      
-      <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray ti-agenda">
-        
-        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-      </p>
-    </div>
-    <div class="media text-muted pt-3">
-      
-      <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray ti-agenda">
-        
-        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-      </p>
-    </div>
-    <div class="media text-muted pt-3">
-      
-      <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray ti-agenda">
-        
-        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-      </p>
-    </div>
-    <small class="d-block text-right mt-3">
-      <a href="#">All notices</a>
-    </small>
-  </div>
--->
+
 </main>
 
     <?php 
         include 'footer.php';
        
      ?>
-    <!--================ Start footer Area  =================
-    <footer class="footer-area section_gap">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-2 col-md-6 single-footer-widget">
-            <h4>Best Courses</h4>
-            <ul>
-              <li><a href="#">C</a></li>
-              <li><a href="#">C++</a></li>
-              <li><a href="#">Java</a></li>
-              <li><a href="#">Web Developement</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-2 col-md-6 single-footer-widget">
-            <h4>Quick Links</h4>
-            <ul>
-              <li><a href="#">Carrer</a></li>
-              <li><a href="#">Exams</a></li>
-              <li><a href="#">Notice Board</a></li>
-              <li><a href="#">Certification</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-2 col-md-6 single-footer-widget">
-            <h4>Features</h4>
-            <ul>
-              <li><a href="#">Compiler</a></li>
-              <li><a href="#">Videos</a></li>
-              <li><a href="#">Online Library</a></li>
-              <li><a href="#">Report</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-2 col-md-6 single-footer-widget">
-            <h4>Instructors</h4>
-            <ul>
-              <li><a href="#">Amrita Pal</a></li>
-              <li><a href="#">Sanchari Acharya</a></li>
-              <li><a href="#">Supriyo Ghatak</a></li>
-              <li><a href="#">Tanmoy Das</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-4 col-md-6 single-footer-widget">
-            <h4>Newsletter</h4>
-            <p>You can trust us. we only send promo offers,</p>
-            <div class="form-wrap" id="mc_embed_signup">
-              <form
-                target="_blank"
-                action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                method="get"
-                class="form-inline"
-              >
-                <input
-                  class="form-control"
-                  name="EMAIL"
-                  placeholder="Your Email Address"
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = 'Your Email Address'"
-                  required=""
-                  type="email"
-                />
-                <button class="click-btn btn btn-default">
-                  <span>subscribe</span>
-                </button>
-                <div style="position: absolute; left: -5000px;">
-                  <input
-                    name="b_36c4fd991d266f23781ded980_aefe40901a"
-                    tabindex="-1"
-                    value=""
-                    type="text"
-                  />
-                </div>
-
-                <div class="info"></div>
-              </form>
-            </div>
-          </div>
-        </div>
-        <div class="row footer-bottom d-flex justify-content-between">
-          <p class="col-lg-8 col-sm-12 footer-text m-0 text-white">
-            
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Ilearn</a>
-
-          </p>
-          <div class="col-lg-4 col-sm-12 footer-social">
-            <a href="#"><i class="ti-facebook"></i></a>
-            <a href="#"><i class="ti-twitter"></i></a>
-            <a href="#"><i class="ti-dribbble"></i></a>
-            <a href="#"><i class="ti-linkedin"></i></a>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!--================ End footer Area  =================-->
-
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.2.1.min.js"></script>

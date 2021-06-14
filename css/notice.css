@@ -9,6 +9,13 @@ body{background:#f5f5f5}
 .ti-agenda{font-size: 10px;}
 .rm{font-size: 15px;
 }
+<<<<<<< HEAD
+.table1{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+=======
 .nm{
     color: black;
+>>>>>>> a17d86de01a3259d02cbd585d173a6f6f4e7469d
 }
