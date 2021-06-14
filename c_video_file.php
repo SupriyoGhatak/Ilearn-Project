@@ -108,7 +108,7 @@ session_start();
                               </button>
                           <button type="button" id="sidebarCollapse" class="btn  btn-info">
                                  <i class="fas fa-home"></i>
-                                      <span><a href="index.php">Home</a></span>
+                                 <span><a href="index.php">Home</a></span>
 
                               </button>
                           
