@@ -1,10 +1,11 @@
-@import url('http://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-:root{
+/*
+
+:root {
     --main-color: #00162e;
     --color-dark: #1D2231;
     --text-black: #8390A2;
     
-}
+}*/
 *{
     font-family: 'Poppins',sans-serif;
     margin: 0;
@@ -81,6 +82,7 @@
     position: relative;
     margin-left: 240px;
     transition: margin-left 500ms;
+    color: black;
 }
 header {
     position: fixed;

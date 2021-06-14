@@ -59,173 +59,143 @@
                     <div class="content_wrapper">
                         <h4 class="title">Objectives</h4>
                         <div class="content">
-                            When you enter into any new area of science, you almost always find yourself with a
-                            baffling new language of
-                            technical terms to learn before you can converse with the experts. This is certainly
-                            true in astronomy both in
-                            terms of terms that refer to the cosmos and terms that describe the tools of the trade,
-                            the most prevalent
-                            being the telescope.
+                           The course aims to provide exposure to problem-solving through programming.
+                           It aims to train the student to the basic concepts of the C-programming language. 
+                           This course involves a lab-like component which is designed to give the student hands-on experience with the concepts.
+
                             <br>
                             <br>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                            ut aliquip ex ea
-                            commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum. Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim
-                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo consequat. Duis aute
-                            irure dolor in reprehenderit in voluptate velit esse cillum.
+                            <h6 class ="text"> Learning Outcomes :</h1>
+                            <br>
+                           After the course the students are expected to be able to :
+                           <ul>
+                               <li>Identify​ situations where computational methods and computers would be useful.</li>
+                               <li>Given a computational problem, identify and abstract​the programming task involved.</li>                           
+
+                               <li> Approach​ the programming tasks using techniques learned and write​ pseudo-code.</li>
+                               <li> Write ​the program on a computer, edit, compile, debug, correct, recompile and run it.</li>
+                           </ul>
                         </div>
 
-                        <h4 class="title">Eligibility</h4>
+                        <h4 class="title">Course Prerequisites</h4>
                         <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                            ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                            This course is very much beginner friendly hence all that is needed is an understanding of fundamental programming concepts.
                             <br>
                             <br>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                            ut aliquip ex ea
-                            commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum. Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim
-                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo consequat. Duis aute
-                            irure dolor in reprehenderit in voluptate velit esse cillum.
+                           
                         </div>
 
                         <h4 class="title">Course Outline</h4>
                         <div class="content">
                             <ul class="course_list">
                                 <li class="justify-content-between d-flex">
-                                    <p>Introduction Lesson</p>
+                                    <p>C Language Overview</p>
                                 <botton class="primary-btn text-uppercase" data-toggle="collapse" data-target="#click1" type="button" style="color: black">View Details</botton>  
                                 </li>
                                 <div class="collapse" id="click1">
                                     <ul style="color: black;">
-                                        <li>hi</li>
+                                        <li>Facts about C</li>
                                             <li style="padding-bottom: 10px;">
-                                                bye
+                                                Why to use C?
                                             </li>
                                         </ul>
                                 </div> 
                                 
                                 <li class="justify-content-between d-flex">
-                                    <p>Basics of HTML</p>
+                                    <p>C Environment Setup</p>
                                     <botton class="primary-btn text-uppercase" data-toggle="collapse" data-target="#click2" type="button" style="color: black">View Details</botton>  
                                 </li>
                                 <div class="collapse" id="click2">
                                     <ul style="color: black;">
-                                        <li>hi</li>
+                                        <li>Installation on Unix/Linus</li>
                                             <li style="padding-bottom: 10px;">
-                                                bye
+                                                Installation on Windows
+                                            </li>
+                                            <li style="padding-bottom: 10px;">
+                                                Installation on Mac OS
                                             </li>
                                         </ul>
                                 </div> 
+                         
                                 <li class="justify-content-between d-flex">
-                                    <p>Getting Know about HTML</p>
-                                    <botton class="primary-btn text-uppercase" data-toggle="collapse" data-target="#click3" type="button" style="color: black">View Details</botton>  
-                                </li>
-                                <div class="collapse" id="click3">
-                                    <ul style="color: black;">
-                                        <li>hi</li>
-                                            <li style="padding-bottom: 10px;">
-                                                bye
-                                            </li>
-                                        </ul>
-                                </div> 
-                                <li class="justify-content-between d-flex">
-                                    <p>Tags and Attributes</p>
+                                    <p>C Basic Syntax</p>
                                     <botton class="primary-btn text-uppercase" data-toggle="collapse" data-target="#click4" type="button" style="color: black">View Details</botton>  
                                 </li>
                                 <div class="collapse" id="click4">
                                     <ul style="color: black;">
-                                        <li>hi</li>
+                                        <li>Tokens and Semicolons</li>
                                             <li style="padding-bottom: 10px;">
-                                                bye
+                                                Comments
+                                            </li>
+                                            <li style="padding-bottom: 10px;">
+                                               Identifiers and Keywords
+                                            </li>
+                                            <li style="padding-bottom: 10px;">
+                                               Datatypes and Variables
+                                            </li>
+                                            <li style="padding-bottom: 10px;">
+                                               Constants and Literals
+                                            </li>
+                                            <li style="padding-bottom: 10px;">
+                                               Operators
                                             </li>
                                         </ul>
                                 </div> 
                                 <li class="justify-content-between d-flex">
-                                    <p>Basics of CSS</p>
+                                    <p>Core C Topics</p>
                                     <botton class="primary-btn text-uppercase" data-toggle="collapse" data-target="#click5" type="button" style="color: black">View Details</botton>  
                                 </li>
                                 <div class="collapse" id="click5">
                                     <ul style="color: black;">
-                                        <li>hi</li>
-                                            <li style="padding-bottom: 10px;">
-                                                bye
-                                            </li>
-                                        </ul>
-                                </div> 
+                                        <li class="justify-content-between d-flex">
+                                    
+                                    <p>Loops</p> </li>
                                 <li class="justify-content-between d-flex">
-                                    <p>Getting Familiar with CSS</p>
-                                    <botton class="primary-btn text-uppercase" data-toggle="collapse" data-target="#click6" type="button" style="color: black">View Details</botton>  
-                                </li>
-                                <div class="collapse" id="click6">
-                                    <ul style="color: black;">
-                                        <li>hi</li>
-                                            <li style="padding-bottom: 10px;">
-                                                bye
-                                            </li>
+                                    <p>Functions</p> </li>
+                                <li class="justify-content-between d-flex">
+                                    <p>Scope Rules</p> </li>
+                                <li class="justify-content-between d-flex">
+                                    <p>Arrays and Pointers</p> 
+                                        </li>
+                                         <p>Structure and Unions</p> </li>
+                                        <li class="justify-content-between d-flex">   
                                         </ul>
-                                </div> 
+                                </div>
+                             
+                            
 
                                 <li class="justify-content-between d-flex">
-                                    <p>Introduction to Bootstrap</p>
+                                    <p>Input and Output</p>
                                     <botton class="primary-btn text-uppercase" data-toggle="collapse" data-target="#click7" type="button" style="color: black">View Details</botton>  
                                 </li>
                                 <div class="collapse" id="click7">
                                     <ul style="color: black;">
-                                        <li>hi</li>
-                                            <li style="padding-bottom: 10px;">
-                                                bye
-                                            </li>
+                                        <li>Standard Files</li>
+                                         <li style="padding-bottom: 10px;">
+                                                File I/O
+                                            </li>   
                                         </ul>
                                 </div> 
 
                                 <li class="justify-content-between d-flex">
-                                    <p>Responsive Design</p>
+                                    <p>Error Handling</p>
                                     <botton class="primary-btn text-uppercase" data-toggle="collapse" data-target="#click8" type="button" style="color: black">View Details</botton>  
                                 </li>
                                 <div class="collapse" id="click8">
                                     <ul style="color: black;">
-                                        <li>hi</li>
+                                        <li>Different Blocks</li>
                                             <li style="padding-bottom: 10px;">
-                                                bye
+                                                Memory Management
                                             </li>
                                         </ul>
                                 </div> 
-                                <li class="justify-content-between d-flex">
-                                    <p>Canvas in HTML 5</p>
-                                    <botton class="primary-btn text-uppercase" data-toggle="collapse" data-target="#click9" type="button" style="color: black">View Details</botton>  
-                                </li>
-                                <div class="collapse" id="click9">
-                                    <ul style="color: black;">
-                                        <li>hi</li>
-                                            <li style="padding-bottom: 10px;">
-                                                bye
-                                            </li>
+                                
                                         </ul>
                                 </div> 
-
-                            </ul>
-                            
-                        </div>
-                         
                     </div>
                 </div>
 
-
+        
                 <div class="col-lg-4 right-contents">
                     <ul>
                         <li>
@@ -319,7 +289,7 @@
                                             <img src="img/blog/c1.jpg" alt="">
                                         </div>
                                         <div class="desc">
-                                            <h5><a href="#">Rohan Mehata</a>
+                                            <h5><a href="#">Lisa Paul</a>
                                                 <div class="star">
                                                     <span class="ti-star checked"></span>
                                                     <span class="ti-star checked"></span>
@@ -329,7 +299,7 @@
                                                 </div>
                                             </h5>
                                             <p class="comment">
-                                                Learned a lot from this lectures. Too informative.
+                                                Learned a lot from these lectures,very much informative.
                                             </p>
                                         </div>
                                     </div>
@@ -352,8 +322,7 @@
                                                 </div>
                                             </h5>
                                             <p class="comment">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                                eiusmod tempor incididunt ut labore et dolore.
+                                                Concepts are well described in detail.
                                             </p>
                                         </div>
                                     </div>
@@ -366,7 +335,7 @@
                                             <img src="img/blog/c3.jpg" alt="">
                                         </div>
                                         <div class="desc">
-                                            <h5><a href="#">Aktar Azam</a>
+                                            <h5><a href="#">Rita Ghosh</a>
                                                 <div class="star">
                                                     <span class="ti-star checked"></span>
                                                     <span class="ti-star checked"></span>
@@ -376,8 +345,7 @@
                                                 </div>
                                             </h5>
                                             <p class="comment">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                                eiusmod tempor incididunt ut labore et dolore.
+                                                Would 100% recommend this course.
                                             </p>
                                         </div>
                                     </div>

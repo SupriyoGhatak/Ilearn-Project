@@ -3,6 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/view_details.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/app.js</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-buy-java.php</file>
@@ -40,6 +41,19 @@
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/payment.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/my_profile.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/payment_script.php</file>
+=======
+<<<<<<< HEAD
+            <file>file:/C:/wamp64/www/Ilearn-Project/c_video_file.php</file>
+            <file>file:/C:/wamp64/www/Ilearn-Project/sign_up_script.php</file>
+=======
+            <file>file:/C:/wamp64/www/Ilearn-Project/notice.php</file>
+            <file>file:/C:/wamp64/www/Ilearn-Project/css/teststyle.css</file>
+            <file>file:/C:/wamp64/www/Ilearn-Project/dashupcoming.php</file>
+            <file>file:/C:/wamp64/www/Ilearn-Project/css/notice.css</file>
+            <file>file:/C:/wamp64/www/Ilearn-Project/test.php</file>
+>>>>>>> f6d8f74fc7f550969e22a851c2770635ce30a366
+            <file>file:/C:/wamp64/www/Ilearn-Project/dashcourses.php</file>
+>>>>>>> a17d86de01a3259d02cbd585d173a6f6f4e7469d
         </group>
     </open-files>
 </project-private>
