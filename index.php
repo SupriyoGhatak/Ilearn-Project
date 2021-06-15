@@ -23,6 +23,7 @@
   <body>
       <?php
         include 'header_index.php';
+        include 'visitor.php';
         ?>
     
     <!--================ End Header Menu Area =================-->

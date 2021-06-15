@@ -83,7 +83,7 @@
                         <th><br></th>
                     </tr>
                 </table>
-                <a href="payment.php?action=java">  <button style="background-color: #4CAF50;
+                <a href="payment.php?action=java&price=500">  <button style="background-color: #4CAF50;
                         border: none;
                         color: white;
                         padding: 15px 32px;

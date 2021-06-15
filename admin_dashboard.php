@@ -1,3 +1,44 @@
+ <?php
+            session_start();
+            include 'Connection/common.php';
+            $sales=0;
+            $cost=0;
+            //for visitor
+            $query = "SELECT  * FROM  visit";
+            $result = mysqli_query($con, $query) or die($mysqli_error($con));
+            $num = mysqli_num_rows($result);
+            $row = mysqli_fetch_array($result);
+            $visit=$row['total_count'];
+            //for course
+            $query1 = "SELECT  * FROM  user_buyed_course WHERE c = '1'";
+            $result1 = mysqli_query($con, $query1) or die($mysqli_error($con));
+            $num1 = mysqli_num_rows($result1);
+            $cost+=($num1*350);
+            $sales+=$num1;
+            //for c++
+            $query2 = "SELECT  * FROM  user_buyed_course WHERE c_plus = '1'";
+            $result2 = mysqli_query($con, $query2) or die($mysqli_error($con));
+            $num2 = mysqli_num_rows($result2);
+            $cost+=($num2*250);
+            $sales+=$num2;
+            //for java
+            $query3 = "SELECT  * FROM  user_buyed_course WHERE java = '1'";
+            $result3 = mysqli_query($con, $query3) or die($mysqli_error($con));
+            $num3 = mysqli_num_rows($result3);
+            $cost+=($num3*500);
+            $sales+=$num3;
+            //for rdbms
+            $query4 = "SELECT  * FROM  user_buyed_course WHERE rdbms = '1'";
+            $result4 = mysqli_query($con, $query4) or die($mysqli_error($con));
+            $num4 = mysqli_num_rows($result4);
+            $cost+=($num4*450);
+            $sales+=$num4;
+            
+            
+            
+            
+            
+            ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,10 +59,10 @@
 
         var data = google.visualization.arrayToDataTable([
           ['Course', 'Participants'],
-          ['C',     11],
-          ['C++',      21],
-          ['JAVA',  19],
-          ['RDBMS', 20]
+          ['C',     <?php echo $num1; ?>],
+          ['C++',   <?php echo $num2; ?>],
+          ['JAVA',  <?php echo $num3; ?>],
+          ['RDBMS', <?php echo $num4; ?>]
         //   ['Sleep',    7]
         ]);
 
@@ -81,7 +122,7 @@
                         <span class="title">Password</span></a>
                 </li> -->
                 <li>
-                    <a href="">
+                    <a href="logout.php">
                         <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
                         <span class="title">Logout</span></a>
                 </li>
@@ -100,10 +141,11 @@
                     <img src="a.jpg" alt="" style="height: 90px; width: 90px;">
                 </div>
             </div>
+           
             <div class="cardbox">
                 <div class="card">
                     <div>
-                        <div class="number">1024</div>
+                        <div class="number"><?php echo $visit; ?></div>
                         <div class="cardName">Views</div>
                     </div>
                     <div class="iconBox">
@@ -112,7 +154,7 @@
                 </div>
                 <div class="card">
                     <div>
-                        <div class="number">10</div>
+                        <div class="number"><?php echo $sales; ?></div>
                         <div class="cardName">Sales</div>
                     </div>
                     <div class="iconBox">
@@ -121,7 +163,7 @@
                 </div>
                 <div class="card">
                     <div>
-                        <div class="number">10000</div>
+                        <div class="number"><?php echo $cost; ?></div>
                         <div class="cardName">Earning</div>
                     </div>
                     <div class="iconBox">
@@ -145,105 +187,33 @@
                                 <td>Status</td>
                             </tr>
                         </thead>
+                        <?php
+                        $query_data = "SELECT * FROM billing ORDER BY id DESC";
+                        $result_data = mysqli_query($con,$query_data);
+                         if(mysqli_num_rows($result_data) > 0) {
+
+                            while ($row = mysqli_fetch_array($result_data)) {
+                        
+                        ?>
+                        
                         <tbody>
                             <tr>
-                                <td>Rohan Raj</td>
-                                <td>1200</td>
-                                <td>Piad</td>
-                                <td>C</td>
+                                <td><?php echo $row["fullname"]; ?></td>
+                                <td><?php echo $row["price"]; ?></td>
+                                <td><?php echo $row["payment"]; ?></td>
+                                <td><?php echo $row["course"]; ?></td>
+                                <?php
+                                $s=$row["status"];
+                                if($s=="Delivered")
+                                {
+                                ?>
                                 <td><span class="status delivered">Delivered</span></td>
-                            </tr>
-
-                            <tr>
-                                <td>Supriyo Ghatak</td>
-                                <td>250</td>
-                                <td>Piad</td>
-                                <td>C</td>
-                                <td><span class="status delivered">Delivered</span></td>
-                            </tr>
-
-                            <tr>
-                                <td>Aktar azam</td>
-                                <td>350</td>
-                                <td>Piad</td>
-                                <td>C++</td>
-                                <td><span class="status progress">In Progress</span></td>
-                            </tr>
-
-                            <tr>
-                                <td>Raju</td>
-                                <td>1200</td>
-                                <td>Due</td>
-                                <td>JAVA</td>
+                                <?php }else{ ?>
                                 <td><span class="status pending">Pending</span></td>
                             </tr>
+                         <?php }}}
+                         ?>
 
-                            <tr>
-                                <td>Roshan</td>
-                                <td>1200</td>
-                                <td>Piad</td>
-                                <td>DBMS</td>
-                                <td><span class="status delivered">Delivered</span></td>
-                            </tr>
-
-                            <tr>
-                                <td>Nilay </td>
-                                <td>1200</td>
-                                <td>Due</td>
-                                <td>JAVA</td>
-                                <td><span class="status pending">Pending</span></td>
-                            </tr>
-
-
-
-
-                            <tr>
-                                <td>Rohan Raj</td>
-                                <td>1200</td>
-                                <td>Piad</td>
-                                <td>C</td>
-                                <td><span class="status delivered">Delivered</span></td>
-                            </tr>
-
-                            <tr>
-                                <td>Supriyo Ghatak</td>
-                                <td>250</td>
-                                <td>Piad</td>
-                                <td>C</td>
-                                <td><span class="status delivered">Delivered</span></td>
-                            </tr>
-
-                            <tr>
-                                <td>Aktar azam</td>
-                                <td>350</td>
-                                <td>Piad</td>
-                                <td>C++</td>
-                                <td><span class="status progress">In Progress</span></td>
-                            </tr>
-
-                            <tr>
-                                <td>Raju</td>
-                                <td>1200</td>
-                                <td>Due</td>
-                                <td>JAVA</td>
-                                <td><span class="status pending">Pending</span></td>
-                            </tr>
-
-                            <tr>
-                                <td>Roshan</td>
-                                <td>1200</td>
-                                <td>Piad</td>
-                                <td>DBMS</td>
-                                <td><span class="status delivered">Delivered</span></td>
-                            </tr>
-
-                            <tr>
-                                <td>Nilay </td>
-                                <td>1200</td>
-                                <td>Due</td>
-                                <td>JAVA</td>
-                                <td><span class="status pending">Pending</span></td>
-                            </tr>
                         </tbody>
                     </table>
                 </div>
