@@ -9,6 +9,7 @@
             $num = mysqli_num_rows($result);
             $row = mysqli_fetch_array($result);
             $visit=$row['total_count'];
+            $_SESSION['visit']=$visit;
             //for course
             $query1 = "SELECT  * FROM  user_buyed_course WHERE c = '1'";
             $result1 = mysqli_query($con, $query1) or die($mysqli_error($con));
@@ -33,6 +34,8 @@
             $num4 = mysqli_num_rows($result4);
             $cost+=($num4*450);
             $sales+=$num4;
+             $_SESSION['cost']=$cost;
+             $_SESSION['sales']=$sales;
             
             
             
