@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -28,6 +29,31 @@
     <?php
         include 'header_index.php';
     ?>
+    <?php
+           include 'Connection/common.php';
+
+           $course=$_GET['action'];
+           $_SESSION['course']=$course;
+           
+           $price=$_GET['price'];
+           $_SESSION['price'] = $price;
+           
+           $fullname=$_SESSION['username'];
+           $payment="Due";
+           $status="Pending";
+           $id1=$_SESSION['id'];
+           
+           //check it is alredy present or not
+           $query = "SELECT  * FROM  billing WHERE user_id = '" . $id1 . "' AND course = '" . $course . "' ";
+           $result = mysqli_query($con, $query) or die($mysqli_error($con));
+           $num = mysqli_num_rows($result);
+           if($num==0){
+           $abc= "INSERT INTO billing(fullname,status,price,payment,course,user_id) VALUES('$fullname','$status','$price','$payment','$course','$id1')";
+           $res = mysqli_query($con, $abc) or die(mysqli_error($con));
+           //$_SESSION['id']= mysqli_insert_id($con);
+           }
+            
+            ?>
     <!--================ End Header Menu Area =================-->
     <!-- <div class="popular_courses section_gap_top">  
     <form>
@@ -76,8 +102,8 @@
             <h3>Billing Address</h3>
             <label for="fname"><i class="fa fa-user"></i> Full Name</label>
 
-            <input type="text" id="fname" name="fullname" placeholder="EnterName"><!-- <?php $p=$_GET['action'];echo $p; 
-            $_SESSION['course'] = $p;?> -->
+            <input type="text" id="fname" name="fullname" placeholder="EnterName"><!-- 
+                 -->
 
             
 

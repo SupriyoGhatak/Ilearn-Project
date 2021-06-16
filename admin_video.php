@@ -1,3 +1,7 @@
+<?php
+            session_start();
+            include 'Connection/common.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -77,7 +81,7 @@
             <div class="cardbox">
                 <div class="card">
                     <div>
-                        <div class="number">1024</div>
+                        <div class="number"><?php echo $_SESSION['visit'] ?></div>
                         <div class="cardName">Views</div>
                     </div>
                     <div class="iconBox">
@@ -86,7 +90,7 @@
                 </div>
                 <div class="card">
                     <div>
-                        <div class="number">10</div>
+                        <div class="number"><?php echo $_SESSION['sales'] ?></div>
                         <div class="cardName">Sales</div>
                     </div>
                     <div class="iconBox">
@@ -95,7 +99,7 @@
                 </div>
                 <div class="card">
                     <div>
-                        <div class="number">10000</div>
+                        <div class="number"><?php echo $_SESSION['cost'] ?></div>
                         <div class="cardName">Earning</div>
                     </div>
                     <div class="iconBox">
@@ -109,7 +113,7 @@
                         <h2>Video Area</h2>
                     </div>
                     <div class="container1">
-                        <form action="action_page.php">
+                        <form method="POST" action="admin_video_script.php">
                           
                           
                           <div class="row">
@@ -118,10 +122,10 @@
                             </div>
                             <div class="col-75">
                               <select id="country" name="country">
-                                <option value="c">C</option>
-                                <option value="c++">C++</option>
-                                <option value="java">JAVA</option>
-                                <option value="rdbms">RDBMS</option>
+                                <option value="c_video">C</option>
+                                <option value="c_plus_video">C++</option>
+                                <option value="java_video">JAVA</option>
+                                <option value="rdbms_video">RDBMS</option>
                               </select>
                             </div>
                           </div>
