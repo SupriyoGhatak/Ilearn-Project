@@ -19,7 +19,7 @@
         <div class="navigator">
             <ul>
                 <li>
-                    <a href="">
+                    <a href="index.php">
                         <span class="icon"><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>
                         <span class="title">
                             <h2>Ilearn</h2>
