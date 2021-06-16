@@ -1,3 +1,4 @@
+<?php  include 'visitor.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -23,7 +24,7 @@
   <body>
       <?php
         include 'header_index.php';
-        include 'visitor.php';
+       
         ?>
     
     <!--================ End Header Menu Area =================-->
