@@ -99,6 +99,7 @@
                     
                    
                 </table>
+<<<<<<< HEAD
                 <!--<div class="form-group">
       <!--<label for="promo_code">Apply Promocode:</label> 
       <input type="text" class="form-control" id="coupon_code" placeholder="Apply Promocode" name="coupon_code">
@@ -110,6 +111,9 @@
   
 </div>   -->
                 <a href="payment.php?action=c">  <button style="background-color: #4CAF50;
+=======
+                <a href="payment.php?action=c&price=350">  <button style="background-color: #4CAF50;
+>>>>>>> 98b71b950d7bdd0bb5e02f03d8fa46e421ea1aaf
                         border: none;
                         color: white;
                         padding: 15px 32px;

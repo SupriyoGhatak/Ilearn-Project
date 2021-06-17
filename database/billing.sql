@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jun 01, 2021 at 10:25 AM
+-- Generation Time: Jun 15, 2021 at 07:53 AM
 -- Server version: 10.4.10-MariaDB
 -- PHP Version: 7.3.12
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `payment`
+-- Database: `ilearn`
 --
 
 -- --------------------------------------------------------
@@ -32,36 +32,32 @@ DROP TABLE IF EXISTS `billing`;
 CREATE TABLE IF NOT EXISTS `billing` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `fullname` varchar(250) NOT NULL,
-  `email` varchar(250) NOT NULL,
-  `address` varchar(250) NOT NULL,
-  `city` varchar(50) NOT NULL,
-  `state` varchar(50) NOT NULL,
-  `zip` bigint(25) NOT NULL,
-  `ccname` varchar(250) NOT NULL,
-  `ccnum` varchar(250) NOT NULL,
-  `expmonth` varchar(50) NOT NULL,
-  `expyear` bigint(15) NOT NULL,
-  `cvv` bigint(15) NOT NULL,
+  `email` varchar(250) DEFAULT NULL,
+  `address` varchar(250) DEFAULT NULL,
+  `city` varchar(50) DEFAULT NULL,
+  `state` varchar(50) DEFAULT NULL,
+  `zip` bigint(25) DEFAULT NULL,
+  `ccname` varchar(250) DEFAULT NULL,
+  `ccnum` varchar(250) DEFAULT NULL,
+  `expmonth` varchar(50) DEFAULT NULL,
+  `expyear` bigint(15) DEFAULT NULL,
+  `cvv` bigint(15) DEFAULT NULL,
+  `status` varchar(255) NOT NULL,
+  `price` int(11) NOT NULL,
+  `payment` varchar(255) NOT NULL,
+  `course` varchar(255) NOT NULL,
+  `user_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=42 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `billing`
 --
 
-INSERT INTO `billing` (`id`, `fullname`, `email`, `address`, `city`, `state`, `zip`, `ccname`, `ccnum`, `expmonth`, `expyear`, `cvv`) VALUES
-(1, 'Sanchari Acharya', 'sanchari1999@gmail.com', 'No 1 S N Bose Road,Shivmandir,Kadamtala,Darjeeling', 'Siliguri', 'West Bengal', 734011, '', '0', '', 0, 0),
-(2, 'Sanchari Acharya', 'sanchari1999@gmail.com', 'No 1 S N Bose Road,Shivmandir,Kadamtala,Darjeeling', 'Siliguri', 'West Bengal', 734011, '', '', 'September', 2022, 352),
-(3, 'Sanchari Acharya', 'sanchari1999@gmail.com', 'No 1 S N Bose Road,Shivmandir,Kadamtala,Darjeeling', 'Siliguri', 'West Bengal', 734011, 'Sanchari Acharya', '11001100011000', 'September', 2022, 352),
-(4, 'Sanchari Acharya', 'sanchari1999@gmail.com', 'No 1 S N Bose Road,Shivmandir,Kadamtala,Darjeeling', 'Siliguri', 'West Bengal', 734011, 'Sanchari Acharya', '11001100011000', 'September', 2022, 352),
-(5, 'Sanchari Acharya', 'sanchari1999@gmail.com', 'No 1 S N Bose Road,Shivmandir,Kadamtala,Darjeeling', 'Siliguri', 'West Bengal', 734011, 'Sanchari Acharya', '11001100011000', 'September', 2022, 352),
-(6, 'Sanchari Acharya', 'sanchari1999@gmail.com', 'No 1 S N Bose Road,Shivmandir,Kadamtala,Darjeeling', 'Siliguri', 'West Bengal', 734011, 'Sanchari Acharya', '11001100011000', 'September', 2022, 352),
-(7, 'Sanchari Acharya', 'sanchari1999@gmail.com', 'No 1 S N Bose Road,Shivmandir,Kadamtala,Darjeeling', 'Siliguri', 'West Bengal', 734011, 'Sanchari Acharya', '11001100011000', 'September', 2022, 352),
-(8, 'Sanchari Acharya', 'sanchari1999@gmail.com', 'No 1 S N Bose Road,Shivmandir,Kadamtala,Darjeeling', 'Siliguri', 'West Bengal', 734011, 'Sanchari Acharya', '11001100011000', 'September', 2022, 352),
-(9, 'Sanchari Acharyaaaaa', 'sanchari1999@gmail.com', 'No 1 S N Bose Road,Shivmandir,Kadamtala,Darjeeling', 'Siliguri', 'West Bengal', 734011, 'Sanchari Acharya', '11001100011000', 'September', 2022, 352),
-(10, 'Sanchari Acharyaaaaa', 'sanchari1999@gmail.com', 'No 1 S N Bose Road,Shivmandir,Kadamtala,Darjeeling', 'Siliguri', 'West Bengal', 734011, 'Sanchari Acharya', '11001100011000', 'September', 2022, 352),
-(11, 'Sanchari Acharyaaaaa', 'sanchari1999@gmail.com', 'No 1 S N Bose Road,Shivmandir,Kadamtala,Darjeeling', 'Siliguri', 'West Bengal', 734011, 'Sanchari Acharya', '11001100011000', 'September', 2022, 352),
-(12, 'Sanchari Achar', 'sanchari1999@gmail.com', 'No 1 S N Bose Road,Shivmandir,Kadamtala,Darjeeling', 'Siliguri', 'West Bengal', 734011, 'Sanchari Acharya', '11001100011000', 'September', 2022, 352);
+INSERT INTO `billing` (`id`, `fullname`, `email`, `address`, `city`, `state`, `zip`, `ccname`, `ccnum`, `expmonth`, `expyear`, `cvv`, `status`, `price`, `payment`, `course`, `user_id`) VALUES
+(39, 'Tanmoy Das', 'td632149@gmail.com', '2/76 sucheta Nagar post-haltu Kolkata 70078', 'Kolkata', 'West Bengal', 1101000, 'Tanmoy das', '2222222', 'ddff', 2015, 456, 'Delivered', 350, 'Paid', 'c', 13),
+(40, 'Tanmoy Das', 'td632149@gmail.com', '2/76 sucheta Nagar post-haltu Kolkata 70078', 'Kolkata', 'West Bengal', 1101000, 'Tanmoy das', '222222222', 'sept', 2014, 356, 'Delivered', 500, 'Paid', 'java', 13),
+(41, 'Ilearn', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Pending', 450, 'Due', 'rdbms', 13);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -47,50 +47,117 @@ session_start();
 
              <p><strong><center>C Concepts</center></strong></p>
  	 	<li class="active">
- 	 		<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Why C?</a>
+ 	 		<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">C Language Overview</a>
  	 	  <ul class="collapse list-unstyled" id="homeSubmenu">
  	 	  	<li>
-                            <a href="c_video_file.php?action=video1">Brief History</a>
+                            <a href="c_video_file.php?action=video1">Fact About C</a>
  	 	  	</li>
  	 	  	<li>
- 	 	  		<a href="c_video_file.php?action=video2">Use of C</a>
+ 	 	  		<a href="c_video_file.php?action=video2">Why We Use C</a>
  	 	  	</li>
-                        <li>
+<!--                        <li>
  	 	  		<a href="#video3">Foundation of C</a>
- 	 	  	</li>
+ 	 	  	</li>-->
 
  	 	  </ul>
  	 	</li>
+ 	 	
  	 	<li>
- 	 		<a href="#">Basic Of C</a>
- 	 	</li>
- 	 	<li>
- 	 		<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Syntax</a>
+ 	 		<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">C Environment Setup</a>
  	 		<ul class="collapse list-unstyled" id="pageSubmenu">
  	 			<li>
-                                    <a href="#">Basic Syntax</a>
+                                    <a href="#">Installation On Unix/Linux</a>
  	 			</li>
  	 			<li>
- 	 				<a href="#">First Program</a>
+ 	 				<a href="#">Installation On Windows</a>
+ 	 			</li>
+                                <li>
+ 	 				<a href="#">Installation On Mac Os</a>
  	 			</li>
  	 			
 
  	 		</ul>
  	 	</li>
                 <li>
- 	 		<a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Arrays</a>
+ 	 		<a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">C Basic Syntax</a>
  	 		<ul class="collapse list-unstyled" id="pageSubmenu2">
+ 	 			
  	 			<li>
-                                    <a href="#" style="pointer-events: none;">Array Idea</a>
+ 	 				<a href="#">Tokens And Semicolons</a>
  	 			</li>
- 	 			<li>
- 	 				<a href="#">Concept of Array</a>
+                                <li>
+ 	 				<a href="#">Comments</a>
+ 	 			</li>
+                                <li>
+ 	 				<a href="#">Identifiers And Keywords</a>
+ 	 			</li>
+                                <li>
+ 	 				<a href="#">DataTypes And Variables</a>
+                                </li><!-- comment -->
+                                <li>
+ 	 				<a href="#">Constants And Literals</a>
+ 	 			</li>
+                                <li>
+ 	 				<a href="#">Operators</a>
  	 			</li>
  	 			
 
  	 		</ul>
  	 	</li>
-
+                
+                <li>
+ 	 		<a href="#pageSubmenu3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Core C Topics</a>
+ 	 		<ul class="collapse list-unstyled" id="pageSubmenu3">
+ 	 			
+ 	 			<li>
+ 	 				<a href="#">Loops</a>
+ 	 			</li>
+                                <li>
+ 	 				<a href="#">Functions</a>
+ 	 			</li>
+                                <li>
+ 	 				<a href="#">Scope Rules</a>
+ 	 			</li>
+                                <li>
+ 	 				<a href="#">Arrays and Pointers</a>
+                                </li><!-- comment -->
+                                <li>
+ 	 				<a href="#">Structure and Unions</a>
+ 	 			</li>
+                                
+ 	 		</ul>
+ 	 	</li>
+                
+                <li>
+ 	 		<a href="#pageSubmenu4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Input And Output</a>
+ 	 		<ul class="collapse list-unstyled" id="pageSubmenu4">
+ 	 			
+ 	 			<li>
+                                    <a href="#">Standard Files</a>
+ 	 			</li>
+                                <li>
+ 	 				<a href="#">Files I/O</a>
+ 	 			</li>
+                                
+                                
+ 	 		</ul>
+ 	 	</li>
+                
+                
+                <li>
+ 	 		<a href="#pageSubmenu5" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Error Handling</a>
+ 	 		<ul class="collapse list-unstyled" id="pageSubmenu5">
+ 	 			
+ 	 			<li>
+                                    <a href="#">Different Blocks</a>
+ 	 			</li>
+                                <li>
+ 	 				<a href="#">Memory Management</a>
+ 	 			</li>
+                                
+                                
+ 	 		</ul>
+ 	 	</li>
  	 	 	 	
 
  	 </ul>
@@ -108,7 +175,7 @@ session_start();
                               </button>
                           <button type="button" id="sidebarCollapse" class="btn  btn-info">
                                  <i class="fas fa-home"></i>
-                                      <span><a href="index.php">Home</a></span>
+                                 <span><a href="index.php">Home</a></span>
 
                               </button>
                           

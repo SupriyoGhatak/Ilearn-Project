@@ -69,7 +69,7 @@
                   <li>
                       <a href="dashupcoming.php">
                           <span class="ti-clipboard"></span>
-                          <span> Upcoming Events</span>
+                          <span><a href="notice.php"> Upcoming Events</a></span>
                       </a>
                   </li>
                   <li>
@@ -92,11 +92,11 @@
               </div> -->
               <div class="inner_header">
                   <ul class="navigation">
-                      <a href="index.php" style="margin-left: -265px; text-transform: uppercase"><li>Home</li></a>
+                      <a href="index.php"><li>Home</li></a>
                       <a href="#"><li>  </li></a>
                      
-                      <a href="contact.php" style="margin-right: 200px; text-transform: uppercase"><li>Contact Us</li></a>
-                      <a href="logout.php"style="text-transform: uppercase"><li>Logout</li></a>
+                      <a href="contact.php" ><li>Contact Us</li></a>
+                      <a href="logout.php"><li>Logout</li></a>
                   </ul>
             </div>
               <!--<div>

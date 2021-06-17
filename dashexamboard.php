@@ -19,6 +19,7 @@
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/teststyle.css" />
+    <link rel="stylesheet" href="css/eboard.css" />
   </head>
 
   <body>
@@ -93,7 +94,7 @@
                   <ul class="navigation">
                       <a href="index.php"><li>Home</li></a>
                      
-                      <a href="contact.php"><li>Contact Us</li></a>
+                      <a href="logout.php"><li>Logout</li></a>
                   </ul>
             </div>
               <!--<div>
@@ -119,7 +120,196 @@
 <h1 class="h2 dash-title">Exam Board</h1>
 <p>This is the homepage of a simple admin interface which is part of a tutorial written on Themesberg</p>
 
+
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <div class="row">
+            <div class="col">
+            <h6 class="m-0 font-weight-bold text-primary">Exam Subject List</h6>
+            </div>
+            </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <table class="table table-bordered dataTable no-footer">
+            <thead>
+                <tr role="row">
+                    <th class="sorting" tabindex="0" aria-controls="exam_subject_table" rowspan="1" colspan="1" aria-label="Exam Name: activate to sort column ascending" style="width: 56px;">Exam Name</th>
+                    <th class="sorting_asc" tabindex="0" aria-controls="exam_subject_table" rowspan="1" colspan="1" aria-label="Subject: activate to sort column descending" style="width: 81px;" aria-sort="ascending">Subject</th>
+                    <th class="sorting" tabindex="0" aria-controls="exam_subject_table" rowspan="1" colspan="1" aria-label="Exam Datetime: activate to sort column ascending" style="width: 86px;">Exam Datetime</th>
+                    <th class="sorting" tabindex="0" aria-controls="exam_subject_table" rowspan="1" colspan="1" aria-label="Total Question: activate to sort column ascending" style="width: 77px;">Total Question</th>
+                    <th class="sorting" tabindex="0" aria-controls="exam_subject_table" rowspan="1" colspan="1" aria-label="Total Question: activate to sort column ascending" style="width: 77px;">Status</th>
+                    <th class="sorting" tabindex="0" aria-controls="exam_subject_table" rowspan="1" colspan="1" aria-label="Right Answer Mark: activate to sort column ascending" style="width: 77px;">Right Answer Mark</th>
+                    <th class="sorting" tabindex="0" aria-controls="exam_subject_table" rowspan="1" colspan="1" aria-label="Wrong Answer Mark: activate to sort column ascending" style="width: 80px;">Wrong Answer Mark</th>
+                    <th class="sorting_disabled" rowspan="1" colspan="1" aria-label="Action" style="width: 54px;">Action</th>
+                </tr>
+            </thead>  
+            <tbody>
+                <tr role="row" class="odd">
+                    <td>1st term</td>
+                    <td class="sorting_1">C</td>
+                    <td>2021-06-18 18:00:00</td>
+                    <td>10 Question/topic</td>
+                    <td><span class="badge badge-secondary">Incomplete</span></td>
+                    <td>4 Mark</td>
+                    <td>-1 Mark</td>
+                    <td>
+                        <div align="center">
+                            <a href="qctopic.php" class="btn btn-success small btn-sm active" role="button" aria-pressed="true">See EXAM</a>
+
+                           
+			</div>
+				</td></tr>
+                <tr role="row" class="even">
+                    <td>1st term</td>
+                    <td class="sorting_1">C++</td>
+                    <td>2021-05-13 17:45:00</td>
+                    <td>10 Question/topic</td>
+                    <td><span class="badge badge-secondary">Incomplete</span></td>
+                    <td>4 Mark</td>
+                    <td>-1 Mark</td>
+                    <td>
+                        <div align="center">
+                            
+                            <a href="qc++topic.php" class="btn btn-success small btn-sm active" role="button" aria-pressed="true">See EXAM</a>
+
+			</div>
+                    </td>
+                </tr>
+                <tr role="row" class="even">
+                    <td>1st term</td>
+                    <td class="sorting_1">JAVA</td>
+                    <td>2021-05-13 17:45:00</td>
+                    <td>10 Question/topic</td>
+                    <td><span class="badge badge-success">Completed</span></td>
+                    <td>4 Mark</td>
+                    <td>-1 Mark</td>
+                    <td>
+                        <div align="center">
+                            <a href="qjtopic.php" class="btn btn-success small btn-sm active" role="button" aria-pressed="true">See EXAM</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr role="row" class="even">
+                    <td>1st term</td>
+                    <td class="sorting_1">RDBMS</td>
+                    <td>2021-05-13 17:45:00</td>
+                    <td>10 Question/topic</td>
+                    <td><span class="badge badge-secondary">Incomplete</span></td>
+                    <td>4 Mark</td>
+                    <td>-1 Mark</td>
+                    <td>
+                        <div align="center">
+                            <a href="qrtopic.php" class="btn btn-success small btn-sm active" role="button" aria-pressed="true">See EXAM</a>
+                        </div>
+                    </td>
+                </tr>
                 
+            </tbody>
+        </table>
+    </div>
+</div>
+      <!--          <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Upcoming Events</li>
+  </ol>
+</nav>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Upcoming Events</li>
+  </ol>
+</nav>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Upcoming Events</li>
+  </ol>
+</nav>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Upcoming Events</li>
+  </ol>
+</nav>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Upcoming Events</li>
+  </ol>
+</nav>-->
+                <!--<div class="my-3 p-3 bg-white rounded box-shadow">
+    <h6 class="border-bottom border-gray pb-2 mb-0">Recent updates</h6>
+    <div class="media text-dark pt-3">
+   
+      <p class="media-body pb-3 mb-0  lh-125 border-bottom border-gray ti-agenda nm">
+       
+          Notice regarding upcoming new batch &nbsp;
+          <button type="button" class="btn btn-outline-info btn-sm " data-toggle="modal" data-target="#exampleModal">
+  Read more
+</button>
+
+       
+       </p>
+      </div>
+    
+    
+    
+    <div class="media text-dark pt-3">
+     
+      <p class="media-body pb-3 mb-0  lh-125 border-bottom border-gray ti-agenda">
+        
+        Notice regarding exams of previous batch&nbsp;
+          <button type="button" class="btn btn-outline-info btn-sm " data-toggle="modal" data-target="#exampleModa2">
+  Read more
+</button></p>
+    </div>
+    <div class="media text-dark pt-3">
+      
+      <p class="media-body pb-3 mb-0  lh-125 border-bottom border-gray ti-agenda">
+        
+        Notice for students having c course&nbsp;
+          <button type="button" class="btn btn-outline-info btn-sm " data-toggle="modal" data-target="#exampleModa3">
+  Read more
+</button>
+      </p>
+    </div>
+    <div class="media text-dark pt-3">
+      
+      <p class="media-body pb-3 mb-0  lh-125 border-bottom border-gray ti-agenda">
+        
+        Notice for students having c++ course&nbsp;
+          <button type="button" class="btn btn-outline-info btn-sm " data-toggle="modal" data-target="#exampleModa4">
+  Read more
+</button>
+      </p>
+    </div>
+    <div class="media text-dark pt-3">
+      
+      <p class="media-body pb-3 mb-0  lh-125 border-bottom border-gray ti-agenda">
+        
+        Notice for students having JAVA course&nbsp;
+          <button type="button" class="btn btn-outline-info btn-sm " data-toggle="modal" data-target="#exampleModa5">
+  Read more
+</button>
+      </p>
+    </div>
+    <div class="media text-dark pt-3">
+      
+      <p class="media-body pb-3 mb-0 lh-125 border-bottom border-gray ti-agenda">
+        
+        Notice for students having SQL course&nbsp;
+          <button type="button" class="btn btn-outline-info btn-sm " data-toggle="modal" data-target="#exampleModa6">
+  Read more
+</button>
+      </p>
+    </div>
+    <small class="d-block text-right mt-3">
+      <a href="#">All notices</a>
+    </small>
+  </div>-->
              </main>
       </div>
 	
