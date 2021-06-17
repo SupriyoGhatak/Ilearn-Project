@@ -49,11 +49,11 @@ session_start();
  	 	<li class="active">
  	 		<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">C Language Overview</a>
  	 	  <ul class="collapse list-unstyled" id="homeSubmenu">
- 	 	  	<li>
+ 	 	  	<!--<li>
                             <a href="c_video_file.php?action=video1">Fact About C</a>
- 	 	  	</li>
+ 	 	  	</li>-->
  	 	  	<li>
- 	 	  		<a href="c_video_file.php?action=video2">Why We Use C</a>
+ 	 	  		<a href="c_video_file.php?action=video1">Introduction to c</a>
  	 	  	</li>
 <!--                        <li>
  	 	  		<a href="#video3">Foundation of C</a>
