@@ -91,7 +91,7 @@
                   <ul class="navigation">
                       <a href="index.php"><li>Home</li></a>
                      
-                      <a href="contact.php"><li>Contact Us</li></a>
+                      <a href="logout.php"><li>Logout</li></a>
                   </ul>
             </div>
               <!--<div>

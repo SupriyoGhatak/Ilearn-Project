@@ -1,0 +1,31 @@
+main
+{
+     margin-top: 100px;
+    background: #f1f5f9;
+    min-height: 110vh;
+    padding: 3rem 1rem;
+    color: black;
+}
+
+.header_areaa {
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  z-index: 100;
+  display: block;
+  top: 0;
+  }
+  .header_areaa .navbar .nav .nav-item .nav-link {
+        font: 500 14px/80px "Rubik", sans-serif;
+        text-transform: capitalize;
+        color: #002347;
+        padding: 0px;
+        display: inline-block; }
+   .header_areaa .navbar {
+    background: transparent;
+    padding: 0px;
+    border: 0px;
+    border-radius: 0px; }
+    .header_areaa .navbar .nav .nav-item {
+      margin-right: 45px; }
+    
