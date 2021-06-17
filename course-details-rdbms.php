@@ -272,7 +272,7 @@
                             <?php }else { ?>
                     
                     <a href="course-buy-rdbms.php" class="primary-btn2 text-uppercase enroll rounded-0 text-black">Enroll the course</a>
-                            <?php} } else { ?> 
+                        <?php}  }else { ?> 
                     <a href="check_login_script.php" class="primary-btn2 text-uppercase enroll rounded-0 text-black">Enroll the course</a>
                      <?php } ?>
 
