@@ -208,8 +208,8 @@ main{
 #sidebar-toggle:checked ~ .main-content header{
     left: 60px;
 }
-}
-nav{
+}*/
+/*nav{
   
   transform: translate(-50%, -50%);
   
@@ -217,4 +217,5 @@ nav{
   line-height: 40px;
   padding: 8px 25px;
   border-radius: 5px;
-}*/
+}
+*/

@@ -255,10 +255,26 @@
                     </ul>
                      <?php
                         //session_start();
-                        if(isset($_SESSION['username'])){ ?>
+                        if(isset($_SESSION['username'])){ 
+                             include 'Connection/common.php';
+                            $id=$_SESSION['id'];
+                             $temp=0;
+                              $query = "SELECT * FROM user_buyed_course WHERE user_id = '" . $id . "'";
+                              $result1 = mysqli_query($con,$query);
+                              $row = mysqli_fetch_array($result1);
+                              $java= $row['java'];
+                            if($java>0){
+                            
+                            ?>
+                    
+                            <a onmouseover="this.style.background='black'" class="primary-btn2 text-uppercase enroll rounded-0 text-black" ><button class="dis" style="text-decoration: none; border:none; background: none; color: white;"  value="Enroll the course"disabled="true">Enroll the course</button></a>
+                            <?php }else { ?>
                     
                     <a href="course-buy-java.php" class="primary-btn2 text-uppercase enroll rounded-0 text-black">Enroll the course</a>
-                     <?php } else { ?> 
+                    
+                    
+                    
+                         <?php }} else { ?> 
                     <a href="check_login_script.php" class="primary-btn2 text-uppercase enroll rounded-0 text-black">Enroll the course</a>
                      <?php } ?>
                     <br>

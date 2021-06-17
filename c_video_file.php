@@ -66,13 +66,13 @@ session_start();
  	 		<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">C Environment Setup</a>
  	 		<ul class="collapse list-unstyled" id="pageSubmenu">
  	 			<li>
-                                    <a href="#">Installation On Unix/Linux</a>
+                                    <a href="c_video_file.php?action=video3">Installation On Unix/Linux</a>
  	 			</li>
  	 			<li>
- 	 				<a href="#">Installation On Windows</a>
+ 	 				<a href="c_video_file.php?action=video4">Installation On Windows</a>
  	 			</li>
                                 <li>
- 	 				<a href="#">Installation On Mac Os</a>
+ 	 				<a href="c_video_file.php?action=video5">Installation On Mac Os</a>
  	 			</li>
  	 			
 
@@ -83,22 +83,22 @@ session_start();
  	 		<ul class="collapse list-unstyled" id="pageSubmenu2">
  	 			
  	 			<li>
- 	 				<a href="#">Tokens And Semicolons</a>
+ 	 				<a href="c_video_file.php?action=video6">Tokens And Semicolons</a>
  	 			</li>
                                 <li>
- 	 				<a href="#">Comments</a>
+ 	 				<a href="c_video_file.php?action=video7">Comments</a>
  	 			</li>
                                 <li>
- 	 				<a href="#">Identifiers And Keywords</a>
+ 	 				<a href="c_video_file.php?action=video8">Identifiers And Keywords</a>
  	 			</li>
                                 <li>
- 	 				<a href="#">DataTypes And Variables</a>
+ 	 				<a href="c_video_file.php?action=video9">DataTypes And Variables</a>
                                 </li><!-- comment -->
                                 <li>
- 	 				<a href="#">Constants And Literals</a>
+ 	 				<a href="c_video_file.php?action=video10">Constants And Literals</a>
  	 			</li>
                                 <li>
- 	 				<a href="#">Operators</a>
+ 	 				<a href="c_video_file.php?action=video11">Operators</a>
  	 			</li>
  	 			
 
@@ -110,19 +110,19 @@ session_start();
  	 		<ul class="collapse list-unstyled" id="pageSubmenu3">
  	 			
  	 			<li>
- 	 				<a href="#">Loops</a>
+ 	 				<a href="c_video_file.php?action=video12">Loops</a>
  	 			</li>
                                 <li>
- 	 				<a href="#">Functions</a>
+ 	 				<a href="c_video_file.php?action=video13">Functions</a>
  	 			</li>
                                 <li>
- 	 				<a href="#">Scope Rules</a>
+ 	 				<a href="c_video_file.php?action=video14">Scope Rules</a>
  	 			</li>
                                 <li>
- 	 				<a href="#">Arrays and Pointers</a>
+ 	 				<a href="c_video_file.php?action=video15">Arrays and Pointers</a>
                                 </li><!-- comment -->
                                 <li>
- 	 				<a href="#">Structure and Unions</a>
+ 	 				<a href="c_video_file.php?action=video16">Structure and Unions</a>
  	 			</li>
                                 
  	 		</ul>
@@ -133,10 +133,10 @@ session_start();
  	 		<ul class="collapse list-unstyled" id="pageSubmenu4">
  	 			
  	 			<li>
-                                    <a href="#">Standard Files</a>
+                                    <a href="c_video_file.php?action=video17">Standard Files</a>
  	 			</li>
                                 <li>
- 	 				<a href="#">Files I/O</a>
+ 	 				<a href="c_video_file.php?action=video18">Files I/O</a>
  	 			</li>
                                 
                                 
@@ -149,10 +149,10 @@ session_start();
  	 		<ul class="collapse list-unstyled" id="pageSubmenu5">
  	 			
  	 			<li>
-                                    <a href="#">Different Blocks</a>
+                                    <a href="c_video_file.php?action=video19">Different Blocks</a>
  	 			</li>
                                 <li>
- 	 				<a href="#">Memory Management</a>
+ 	 				<a href="c_video_file.php?action=video20">Memory Management</a>
  	 			</li>
                                 
                                 
