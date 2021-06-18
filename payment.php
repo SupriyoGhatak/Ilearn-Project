@@ -55,7 +55,6 @@
             
             ?>
     <!--================ End Header Menu Area =================-->
-    <
     
     
     <div class="popular_courses section_gap_top">  
