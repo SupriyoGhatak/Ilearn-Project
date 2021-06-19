@@ -180,7 +180,7 @@
     
 </div>
           -->
-<div class ="container col-md-7">
+  <div class ="container col-md-7" style="margin-top:20px; margin-bottom:20px;">
      <div class="row">
      <?php
      if($temp>0)

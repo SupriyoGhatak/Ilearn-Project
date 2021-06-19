@@ -34,7 +34,7 @@
             <ul>
               <li><a href="#">Amrita Pal</a></li>
               <li><a href="#">Sanchari Acharya</a></li>
-              <li><a href="#">Supriyo Ghatak</a></li>
+              <li><a href="quiz.php">Supriyo Ghatak</a></li>
               <li><a href="#">Tanmoy Das</a></li>
             </ul>
           </div>
