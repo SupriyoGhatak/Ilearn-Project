@@ -127,6 +127,15 @@ session_start();
                                 
  	 		</ul>
  	 	</li>
+                <li>
+ 	 		<a href="#pageSubmenu10" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">C Quiz</a>
+ 	 		<ul class="collapse list-unstyled" id="pageSubmenu10">
+ 	 			
+ 	 			<li>
+ 	 				<a href="#">Take a Quiz for accesssing next content </a>
+ 	 			</li>
+                        </ul>
+                </li>
                 
                 <li>
  	 		<a href="#pageSubmenu4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Input And Output</a>
