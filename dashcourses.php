@@ -58,6 +58,12 @@
                       </a>
                   </li>
                   <li>
+                      <a href="dashlibrary.php">
+                          <span class="ti-book"></span>
+                          <span> E-Library</span>
+                      </a>
+                  </li>
+                  <li>
                       <a href="dashexamboard.php">
                           <span class="ti-agenda"></span>
                           <span> Exam board</span>
