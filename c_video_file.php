@@ -1,5 +1,7 @@
 <?php
 session_start();
+include 'Connection/common.php';
+ $id=$_SESSION['id'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -124,21 +126,25 @@ session_start();
                                 <li>
  	 				<a href="c_video_file.php?action=video16">Structure and Unions</a>
  	 			</li>
+                                <li>
+                                    <a href="quiz.php?type=c_1st&course=c">Quiz</a>
+ 	 			</li>
                                 
  	 		</ul>
  	 	</li>
-                <li>
- 	 		<a href="#pageSubmenu10" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">C Quiz</a>
- 	 		<ul class="collapse list-unstyled" id="pageSubmenu10">
- 	 			
- 	 			<li>
- 	 				<a href="#">Take a Quiz for accesssing next content </a>
- 	 			</li>
-                        </ul>
-                </li>
-                
-                <li>
- 	 		<a href="#pageSubmenu4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Input And Output</a>
+        <?php 
+        
+       $sql_r = "SELECT * FROM user_exam_result WHERE  user_id = '" . $id . "' ";
+       $result1 = mysqli_query($con, $sql_r);
+        if (mysqli_num_rows($result1) > 0) {
+            $row1 = mysqli_fetch_assoc($result1);
+            $check= $row1['c_1st'];
+            if($check>70)
+            {
+        
+           ?>
+             <li>
+                 <a href="#pageSubmenu4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Input And Output</a>
  	 		<ul class="collapse list-unstyled" id="pageSubmenu4">
  	 			
  	 			<li>
@@ -151,9 +157,7 @@ session_start();
                                 
  	 		</ul>
  	 	</li>
-                
-                
-                <li>
+                <li >
  	 		<a href="#pageSubmenu5" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Error Handling</a>
  	 		<ul class="collapse list-unstyled" id="pageSubmenu5">
  	 			
@@ -167,6 +171,40 @@ session_start();
                                 
  	 		</ul>
  	 	</li>
+            <?php }}else{ ?>     
+           <li style="pointer-events: none; color: red;">
+ 	 		<a href="#pageSubmenu4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Input And Output</a>
+ 	 		<ul class="collapse list-unstyled" id="pageSubmenu4">
+ 	 			
+ 	 			<li>
+                                    <a href="c_video_file.php?action=video17">Standard Files</a>
+ 	 			</li>
+                                <li>
+ 	 				<a href="c_video_file.php?action=video18">Files I/O</a>
+ 	 			</li>
+                                
+                                
+ 	 		</ul>
+ 	 	</li>
+                <li style="pointer-events: none; color: red;">
+ 	 		<a href="#pageSubmenu5" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Error Handling</a>
+ 	 		<ul class="collapse list-unstyled" id="pageSubmenu5">
+ 	 			
+ 	 			<li>
+                                    <a href="c_video_file.php?action=video19">Different Blocks</a>
+ 	 			</li>
+                                <li>
+ 	 				<a href="c_video_file.php?action=video20">Memory Management</a>
+ 	 			</li>
+                                
+                                
+ 	 		</ul>
+ 	 	</li>
+                
+        <?php } ?>
+                
+                
+                
  	 	 	 	
 
  	 </ul>
