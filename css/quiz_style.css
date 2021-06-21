@@ -1,0 +1,101 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19-Jun-2021, 8:51:33 am
+    Author     : supriyoghatak
+*/
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body{
+    margin: 0;
+    font-size: 16px;
+    background-color: #009688;
+}
+h2{
+   
+    align-items: center;
+}
+
+.custom-box{
+    max-width: 700px;
+    background-color: #ffffff;
+    margin: 130px auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.custom-box.hide
+{
+    display: none;
+}
+
+.home-box h2{
+    font-size: 18px;
+    color: #000000;
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 25px;
+}
+
+.home-box p{
+    font-size: 16px;
+    margin-bottom: 10px;line-height: 22px;
+    color: #000000;
+    font-weight: 400;
+}
+
+.home-box p span{
+    font-weight: 500;
+}
+ .quiz-box .question-text
+{
+    font-size: 22px;
+    color: black;
+     
+    font-weight: 40;
+    padding: 20px 0;
+    margin: 0;
+} 
+
+/* .quiz-box .option-container .option
+{
+    background-color: #cccccc;
+    padding: 15px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer; 
+} */
+
+.btn
+{
+    padding: 15px 45px;
+    background-color: #009688;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.quiz-box .question-number
+{
+    font-size: 18px;
+    color: #009688;
+    font-weight: 600;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    line-height: 25px;
+}
