@@ -58,7 +58,7 @@ $type=$_GET['type'];
          while($row = mysqli_fetch_assoc($result)) {
           ?>
         
-        <input style="padding:5px; font-size: 18px;" type="radio" name="quizcheck[<?php  echo $row['ans_id']; ?>]" id="<?php echo $row['ans_id']; ?>" value="<?php echo $row['aid']; ?>" required="true">
+        <input style="padding:5px; font-size: 18px;" type="radio" name="quizcheck[<?php  echo $i; ?>]" id="<?php echo $row['ans_id']; ?>" value="<?php echo $row['aid']; ?>" required="true">
         <label for="<?php echo $row['ans_id']; ?>" style="padding:5px; font-size: 18px;"><?php echo $row['answers']; ?></label><br><br>
         
     <!--<input type="radio" id="1" name="1" value="1">

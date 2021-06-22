@@ -193,7 +193,7 @@ include 'Connection/common.php';
  	 				<a href="c_video_file.php?action=video20">Memory Management</a>
  	 			</li>
                                 <li>
- 	 				<a href="#">Quiz</a>
+ 	 				<a href="quiz.php?type=c_2nd&course=c">Quiz</a>
  	 			</li>
                                 
                                 

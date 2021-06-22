@@ -5,20 +5,25 @@ include 'Connection/common.php';
  $type=$_GET['type'];
  $course=$_GET['course'];
  //echo $type;
+ //echo $course;
          $Resultans = 0;
             if(isset($_POST['submit'])){
             if(!empty($_POST['quizcheck'])) {
             // Counting number of checked checkboxes.
             $checked_count = count($_POST['quizcheck']);
-            // print_r($_POST['quizcheck']);
+             print_r($_POST['quizcheck']);
             $selected = $_POST['quizcheck'];
             
-            $q1= " select ans_id from question WHERE  type = '" . $type . "' AND course = '" . $course . "'";
+            $q1= " select ans_id from question WHERE  type = '".$type."' AND course = '".$course."'";
             $ansresults = mysqli_query($con,$q1);
+           $e= mysqli_num_rows($ansresults);
+          // echo $e;
             $i = 1;
             while($rows = mysqli_fetch_array($ansresults)) {
                
-              // print_r($rows);
+               print_r($rows);
+               //echo $rows['ans_id'];
+              // print_r ($selected[$i] );
             	$flag = $rows['ans_id'] == $selected[$i];
             	
             			if($flag){
@@ -40,11 +45,11 @@ include 'Connection/common.php';
             $q="INSERT INTO user_exam_result (user_id ,c_1st) values ('$id','$persentage')";
             $q_submit= mysqli_query($con,$q) or die(mysqli_error($con));
              echo '<script>alert("Congrats, New Modules Unloacked")</script>';
-             echo '<script>window.location="c_video_file.php"</script>';
+            // echo '<script>window.location="c_video_file.php"</script>';
             }
             else{
              echo '<script>alert("Better Luck Next Time, Try Again")</script>';
-             echo '<script>window.location="c_video_file.php"</script>';
+             //echo '<script>window.location="c_video_file.php"</script>';
             }
             
 ?>
