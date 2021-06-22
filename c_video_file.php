@@ -106,6 +106,12 @@ include 'Connection/common.php';
 
  	 		</ul>
  	 	</li>
+                <?php
+                
+                $check=0;
+                $check1=0;
+                
+                ?>
                 
                 <li>
  	 		<a href="#pageSubmenu3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Core C Topics</a>
@@ -126,9 +132,27 @@ include 'Connection/common.php';
                                 <li>
  	 				<a href="c_video_file.php?action=video16">Structure and Unions</a>
  	 			</li>
-                                <li>
+                                <?php 
+                                $sql_r1 = "SELECT * FROM user_exam_result WHERE  user_id = '" . $id . "' ";
+                                $result12 = mysqli_query($con, $sql_r1);
+                                $row1 = mysqli_fetch_assoc($result12);
+                                $check= $row1['c_1st'];
+                                if($check>70)
+                                {
+                                ?>
+                                <li style="pointer-events: none; color: red;">
                                     <a href="quiz.php?type=c_1st&course=c">Quiz</a>
  	 			</li>
+                                <?php
+                                }else{
+                                    ?>
+                                <li >
+                                    <a href="quiz.php?type=c_1st&course=c">Quiz</a>
+ 	 			</li>
+                                <?php
+                                }
+                                ?>
+                                
                                 
  	 		</ul>
  	 	</li>
@@ -139,6 +163,7 @@ include 'Connection/common.php';
         if (mysqli_num_rows($result1) > 0) {
             $row1 = mysqli_fetch_assoc($result1);
             $check= $row1['c_1st'];
+            $check1=$row1['c_2nd'];
             if($check>70)
             {
         
@@ -167,10 +192,14 @@ include 'Connection/common.php';
                                 <li>
  	 				<a href="c_video_file.php?action=video20">Memory Management</a>
  	 			</li>
+                                <li>
+ 	 				<a href="#">Quiz</a>
+ 	 			</li>
                                 
                                 
  	 		</ul>
  	 	</li>
+               
             <?php }}else{ ?>     
            <li style="pointer-events: none; color: red;">
  	 		<a href="#pageSubmenu4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Input And Output</a>
@@ -204,7 +233,22 @@ include 'Connection/common.php';
         <?php } ?>
                 
                 
-                
+                <?php
+                 if($check1>70)
+                 {
+                ?>
+                 <li>
+ 	 				<a href="#">Final Assassment</a>
+ 	        </li>
+                <?php
+                 }else{
+                ?>
+                <li style="pointer-events: none; color: red;">
+ 	 				<a href="#">Final Assassment</a>
+ 	        </li>
+                <?php
+                 }
+                ?>
  	 	 	 	
 
  	 </ul>
