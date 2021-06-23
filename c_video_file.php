@@ -110,6 +110,7 @@ include 'Connection/common.php';
                 
                 $check=0;
                 $check1=0;
+                $check2=0;
                 
                 ?>
                 
@@ -192,9 +193,26 @@ include 'Connection/common.php';
                                 <li>
  	 				<a href="c_video_file.php?action=video20">Memory Management</a>
  	 			</li>
+                                <?php 
+                                $sql_r3 = "SELECT * FROM user_exam_result WHERE  user_id = '" . $id . "' ";
+                                $result13 = mysqli_query($con, $sql_r3);
+                                $row3 = mysqli_fetch_assoc($result13);
+                                $check2= $row3['c_2nd'];
+                                if($check2>70)
+                                {
+                                ?>
+                                <li style="pointer-events: none; color: red;">
+ 	 				<a href="quiz.php?type=c_2nd&course=c">Quiz</a>
+ 	 			</li>
+                                 <?php
+                                }else{
+                                    ?>
                                 <li>
  	 				<a href="quiz.php?type=c_2nd&course=c">Quiz</a>
  	 			</li>
+                                 <?php
+                                }
+                                ?>
                                 
                                 
  	 		</ul>
