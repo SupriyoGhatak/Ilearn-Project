@@ -62,9 +62,19 @@
     padding: 10px 15px;
     width: 200px;
 }
-.foot {
+.footer {
     display: flex;
     padding: 20px 50px;
+    justify-content: space-between;
+}
+.optionBox button {
+    background-color: #04AA6D;
+    border-radius: 5px;
+    padding: 7px 15px;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 20px;
 }
 .resultBox {
     margin-bottom: 30px;

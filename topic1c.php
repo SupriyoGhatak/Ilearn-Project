@@ -34,7 +34,7 @@
         <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
           <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <a class="navbar-brand logo_h" href="index.php"
+            <a class="navbar-brand logo_h" href="#"
                ><img src="img/logo_1111.png" alt="" 
             /></a>
             <button
@@ -59,16 +59,7 @@
                   
              
                 
-                <li class="nav-item ">
-                  <a class="nav-link" href="index.php">Home</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="test.php">Dashboard</a>
-                </li>
                 
-                <li class="nav-item ">
-                    <a class="nav-link" href="logout.php">logout</a>
-                </li>
                 
                
                   
@@ -88,7 +79,7 @@
      <div class="maini">
          
          
-         <div class="box" id="questionScreen">
+         <div class="box" id="questionScreen1">
               <div class="hee">
               <div class="titlee" style="font-size: 30px;">
                   QUESTIONS:
@@ -100,118 +91,114 @@
               </div>
               <div class="optionBox">
                   
-                  <span>jbkb</span>
-                  <span>jbkb</span>
-                  <span>jbkb</span>
-                  <span>jbkb</span>
+                  <span><form>
+                  <input type="radio" id="html" name="fav_language" value="HTML">
+                  <label for="html">HTML</label><br>
+                  <input type="radio" id="css" name="fav_language" value="CSS">
+                  <label for="css">CSS</label><br>
+                  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                  <label for="javascript">JavaScript</label><br>
+                 <input type="radio" id="hello" name="fav_language" value="hello">
+                  <label for="hello">JavaScript</label>
+                      </form> </span>
+              
+              
               </div>
               <div class="questionBox">
                   1)&nbsp;What is c?
               </div>
-              <div class="optionBox">
+                 <div class="optionBox">
                   
-                  <span>jbkb</span>
-                  <span>jbkb</span>
-                  <span>jbkb</span>
-                  <span>jbkb</span>
+                  <span><form>
+                  <input type="radio" id="html" name="fav_language" value="HTML">
+                  <label for="html">HTML</label><br>
+                  <input type="radio" id="css" name="fav_language" value="CSS">
+                  <label for="css">CSS</label><br>
+                  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                  <label for="javascript">JavaScript</label><br>
+                 <input type="radio" id="hello" name="fav_language" value="hello">
+                  <label for="hello">JavaScript</label>
+                      </form> </span>
+               
               </div>
-              <div class="questionBox">
-                  1)&nbsp;What is c?
-              </div>
-              <div class="optionBox">
+                 
+              <div class="footer">
+                  <button onclick="showResult()" style="background-color: #04AA6D;
+    border-radius: 5px;
+    padding: 7px 15px;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 20px;width: 100px;" >
+                      Next 
+                  </button>
                   
-                  <span>jbkb</span>
-                  <span>jbkb</span>
-                  <span>jbkb</span>
-                  <span>jbkb</span>
-              </div>
-              <div class="questionBox">
-                  1)&nbsp;What is c?
-              </div>
-              <div class="optionBox">
                   
-                  <span>jbkb</span>
-                  <span>jbkb</span>
-                  <span>jbkb</span>
-                  <span>jbkb</span>
-              </div>
-              <div class="questionBox">
-                  1)&nbsp;What is c?
-              </div>
-              <div class="optionBox">
                   
-                  <span>jbkb</span>
-                  <span>jbkb</span>
-                  <span>jbkb</span>
-                  <span>jbkb</span>
-              </div>
-              <div class="questionBox">
-                  1)&nbsp;What is c?
-              </div>
-              <div class="optionBox">
-                  
-                  <span>jbkb</span>
-                  <span>jbkb</span>
-                  <span>jbkb</span>
-                  <span>jbkb</span>
-              </div>
-              <div class="questionBox">
-                  1)&nbsp;What is c?
-              </div>
-              <div class="optionBox">
-                  
-                  <span>jbkb</span>
-                  <span>jbkb</span>
-                  <span>jbkb</span>
-                  <span>jbkb</span>
-              </div>
-              <div class="questionBox">
-                  1)&nbsp;What is c?
-              </div>
-              <div class="optionBox">
-                  
-                  <span>jbkb</span>
-                  <span>jbkb</span>
-                  <span>jbkb</span>
-                  <span>jbkb</span>
-              </div>
-              <div class="questionBox">
-                  1)&nbsp;What is c?
-              </div>
-              <div class="optionBox">
-                  
-                  <span>jbkb</span>
-                  <span>jbkb</span>
-                  <span>jbkb</span>
-                  <span>jbkb</span>
-              </div>
-              <div class="questionBox">
-                  1)&nbsp;What is c?
-              </div>
-              <div class="optionBox">
-                  
-                  <span>jbkb</span>
-                  <span>jbkb</span>
-                  <span>jbkb</span>
-                  <span>jbkb</span>
-              </div>
-              <div class="questionBox">
-                  1)&nbsp;What is c?
-              </div>
-              <div class="optionBox">
-                  
-                  <span>jbkb</span>
-                  <span>jbkb</span>
-                  <span>jbkb</span>
-                  <span>jbkb</span>
-              </div>
-              <div class="foot">
-                  
-
-                  <a class="btn btn-success btn-lg" href="topicresult.php" style="width: 200px; ">Submit</a>
+                 
               </div>
           </div>
-        <!--<div class="box" id="resultScreen" style="display: none;">
+        <!-- <div class="box" id="questionScreen2" style="display: none;">
+              <div class="hee">
+              <div class="titlee" style="font-size: 30px;">
+                  QUESTIONS:
+              </div>
+              <div class="timerBox">Time Left:&nbsp; <span></span></div>
+               </div>
+              <div class="questionBox">
+                  1)&nbsp;What is chdkwah?
+              </div>
+              <div class="optionBox">
+                  
+                  <span><form>
+                  <input type="radio" id="html" name="fav_language" value="HTML">
+                  <label for="html">HTML</label><br>
+                  <input type="radio" id="css" name="fav_language" value="CSS">
+                  <label for="css">CSS</label><br>
+                  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                  <label for="javascript">JavaScript</label><br>
+                 <input type="radio" id="hello" name="fav_language" value="hello">
+                  <label for="hello">JavaScript</label>
+                      </form> </span>
+              
+              
+              </div>
+              <div class="questionBox">
+                  1)&nbsp;What is c?
+              </div>
+                 <div class="optionBox">
+                  
+                  <span><form>
+                  <input type="radio" id="html" name="fav_language" value="HTML">
+                  <label for="html">HTML</label><br>
+                  <input type="radio" id="css" name="fav_language" value="CSS">
+                  <label for="css">CSS</label><br>
+                  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                  <label for="javascript">JavaScript</label><br>
+                 <input type="radio" id="hello" name="fav_language" value="hello">
+                  <label for="hello">JavaScript</label>
+                      </form> </span>
+               
+              </div>
+                 
+              <div class="footer">
+                  <button onclick="showNext()" style="background-color: #04AA6D;
+    border-radius: 5px;
+    padding: 7px 15px;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 20px;width: 100px;" >
+                     submit
+                  </button>
+                  
+                  
+                  
+                 
+              </div>
+          </div>-->
+         
+        <div class="box" id="resultScreen" style="display: none;">
              <div class="titlee" style="border-bottom: 1px solid #000; font-size: 50px;  margin-bottom: 30px; padding-bottom: 20px; ">
                   Your Result:
               </div>
@@ -225,10 +212,11 @@
                  <label>Wrong : </label>
                  <span id="WrongQuestions">10</span>
              </div>
-         </div>-->
+         </div>
          
       
   </div>
+      
       </body>
       <script src="js/jquery-3.2.1.min.js"></script>
       <script src="js/topictimer.js"></script>
