@@ -98,7 +98,7 @@
                   <label for="css">CSS</label><br>
                   <input type="radio" id="javascript" name="fav_language" value="JavaScript">
                   <label for="javascript">JavaScript</label><br>
-                 <input type="radio" id="hello" name="fav_language" value="hello">
+                &nbsp;&nbsp;<input type="radio" id="hello" name="fav_language" value="hello">
                   <label for="hello">JavaScript</label>
                       </form> </span>
               
@@ -116,7 +116,7 @@
                   <label for="css">CSS</label><br>
                   <input type="radio" id="javascript" name="fav_language" value="JavaScript">
                   <label for="javascript">JavaScript</label><br>
-                 <input type="radio" id="hello" name="fav_language" value="hello">
+                  &nbsp;&nbsp;<input type="radio" id="hello" name="fav_language" value="hello">
                   <label for="hello">JavaScript</label>
                       </form> </span>
                
