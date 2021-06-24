@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/teststyle.css" />
   </head>
-
+  
   <body>
     <!--================ Start Header Menu Area =================-->
    
@@ -55,6 +55,12 @@
                       <a href="dashcourses.php">
                           <span class="ti-face-smile"></span>
                           <span> Courses</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="dashlibrary.php">
+                          <span class="ti-book"></span>
+                          <span> E-Library</span>
                       </a>
                   </li>
                   <li>
@@ -147,10 +153,41 @@
             );
           $_SESSION["cart"][1] = $item_array;  
         }
+        if($_SESSION['c_plus']>0)
+        { 
+          $temp=1;
+          $item_array = array(
+                'product_name' => "Programming With java",
+                'picture_src' => "img/courses/java.jpg"
+                
+            );
+          $_SESSION["cart"][2] = $item_array;  
+        }
+        if($_SESSION['rdbms']>0)
+        { 
+          $temp=1;
+          $item_array = array(
+                'product_name' => "Programming With java",
+                'picture_src' => "img/courses/java.jpg"
+                
+            );
+          $_SESSION["cart"][3] = $item_array;  
+        }
         
        
     ?>
+<!--     <div class="container12">
+    <div class="items">
         
+    </div> comment 
+    <div class="items">
+        <a href="#">hellow</a>
+    </div>
+    
+</div>
+          -->
+  <div class ="container col-md-7" style="margin-top:20px; margin-bottom:20px;">
+     <div class="row">
      <?php
      if($temp>0)
      { 
@@ -160,12 +197,11 @@
                         
      ?>
          
-<div class ="container">
-         <div class="row"> 
-             <div class="col-sm-4"> 
-         <div class="single_course">
+
+             <div class="col-sm-6 col-md-6"> 
+                 <div class="single_course">
                 <div class="course_head">
-                    <a href="c_video_file.php"> <img class="img-fluid" src="<?php echo $value["picture_src"]; ?>" alt="centered image" style="height: 259px; width : 100%" /> </a>
+                    <a href="c_video_file.php"> <img class="img-fluid" src="<?php echo $value["picture_src"]; ?>" alt="centered image" style="height: 259px; width : 100%;" /> </a>
              
                 <div class="course_content"> 
                 
@@ -180,12 +216,13 @@
                 </div>
               </div>
              </div>
-         </div>
+                    <?php } ?>
+        </div>
 </div>
-        
+ 
      
      
-     <?php } }}else { ?>  
+     <?php  }}else { ?>  
 
      <div class="popular_courses section_gap_top">
       <div class="container">

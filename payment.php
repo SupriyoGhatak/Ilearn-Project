@@ -55,40 +55,6 @@
             
             ?>
     <!--================ End Header Menu Area =================-->
-    <!-- <div class="popular_courses section_gap_top">  
-    <form>
-        <table class="table table-borderless">
-            <thead>
-                    <tr>
-                      <th scope="col"></th>
-                      <th scope="col">First</th>
-                      <th scope="col"></th>
-                      
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row"></th>
-                      <td>Mark</td>
-                      
-                      <td>@mdo</td>
-                    </tr>
-                    <tr>
-                      <th scope="row"></th>
-                      <td>Jacob</td>
-                      
-                      <td>@fat</td>
-                    </tr>
-                    <tr>
-                      <th scope="row"></th>
-                      <td colspan="2">Larry the Bird</td>
-                      
-                    </tr>
-                  </tbody>
-           </table>
-       
-    </form>
-    </div> -->
     
     
     <div class="popular_courses section_gap_top">  

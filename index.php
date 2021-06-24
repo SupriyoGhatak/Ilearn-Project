@@ -396,7 +396,7 @@
               <img class="img-fluid" src="img/trainer/t4.jpg" alt="" />
             </div>
             <div class="meta-text text-sm-center">
-              <h4>Sanchari Acharaya</h4>
+              <h4>Sanchari Acharya</h4>
               <p class="designation">Senior Web Designer</p>
               <div class="mb-4">
                 <p>
