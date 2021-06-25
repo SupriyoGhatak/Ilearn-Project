@@ -12,11 +12,15 @@ $(function(){
           clearInterval(timer);
       }
     }, 1000);
+    showResult();
 });
 function showResult() {
     $("questionScreen").hide();
     $("resultScreen").show();
 }
+/*function showNext() {
+    console.log("next");
+}*/
 
 
 
