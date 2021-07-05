@@ -74,6 +74,7 @@
             </div>
           </div>
         </nav>
+               <div class="ab" style="color: red;font-size: 20px;padding-left: 450px;">You have to score more than 70% to qualify for next assessment.</div>
      
     </header>
      <div class="maini">
