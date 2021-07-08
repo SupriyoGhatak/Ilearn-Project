@@ -59,69 +59,58 @@
                     <div class="content_wrapper">
                         <h4 class="title">Objectives</h4>
                         <div class="content">
-                            When you enter into any new area of science, you almost always find yourself with a
-                            baffling new language of
-                            technical terms to learn before you can converse with the experts. This is certainly
-                            true in astronomy both in
-                            terms of terms that refer to the cosmos and terms that describe the tools of the trade,
-                            the most prevalent
-                            being the telescope.
+                           In this introductory Java programming course, you will be introduced to powerful concepts such as functional abstraction and the object oriented programming (OOP) paradigm.
+                           Examples and case studies will be provided so that you can implement simple programs on your own or collaborate with peers.
                             <br>
                             <br>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                            ut aliquip ex ea
-                            commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum. Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim
-                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo consequat. Duis aute
-                            irure dolor in reprehenderit in voluptate velit esse cillum.
-                        </div>
+                            Emphasis is put on immediate feedback and on having a fun experience.
+                            Programming knowledge is not only useful to be able to program today’s devices such as computers and smartphones. 
+                            It also opens the door to computational thinking, i.e. the application of computing techniques to every-day processes.
+                            <br>
+                            <br>
+                            <h6 class ="text"> Learning Outcomes :</h1>
+                            <br>
+                           After the course the students are expected to be able to :
+                           <ul>
+                               <li>Basic knowledge on algorithms and Java programming.</li>
+                               <li>Develop programs with conditionals and loops.</li>
+                               <li>Design and implement recursive algorithms.</li>
+                              <li>Understand basic mechanisms of the OOP paradigm.</li>
 
-                        <h4 class="title">Eligibility</h4>
-                        <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                            ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
-                            <br>
-                            <br>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                            ut aliquip ex ea
-                            commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum. Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim
-                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo consequat. Duis aute
-                            irure dolor in reprehenderit in voluptate velit esse cillum.
+                           </ul>
                         </div>
+                        <h4 class="title">Course Prerequisites</h4>
+                        <div class="content">
+                            This course is very much beginner friendly hence all that is needed is an understanding of fundamental programming concepts.
+                            <br>
+                            <br>
+                           
+                        </div>
+                        
+                        
+                        
+
+                         
 
                         <h4 class="title">Course Outline</h4>
                         <div class="content">
                             <ul class="course_list">
                                 <li class="justify-content-between d-flex">
-                                    <p>Introduction Lesson</p>
+                                    <p>Introduction to Java</p>
                                 <botton class="primary-btn text-uppercase" data-toggle="collapse" data-target="#click1" type="button" style="color: black">View Details</botton>  
                                 </li>
                                 <div class="collapse" id="click1">
                                     <ul style="color: black;">
-                                        <li>hi</li>
+                                        <li>Installation of JDK</li>
                                             <li style="padding-bottom: 10px;">
-                                                bye
+                                                Installation of JDK in MacOS
                                             </li>
                                         </ul>
                                 </div> 
                                 
                                 <li class="justify-content-between d-flex">
-                                    <p>Basics of HTML</p>
-                                    <botton class="primary-btn text-uppercase" data-toggle="collapse" data-target="#click2" type="button" style="color: black">View Details</botton>  
+                                    <p>Variables and Types in Java</p>
+                                    <!--<botton class="primary-btn text-uppercase" data-toggle="collapse" data-target="#click2" type="button" style="color: black">View Details</botton>  
                                 </li>
                                 <div class="collapse" id="click2">
                                     <ul style="color: black;">
@@ -130,94 +119,46 @@
                                                 bye
                                             </li>
                                         </ul>
-                                </div> 
+                                </div> -->
                                 <li class="justify-content-between d-flex">
-                                    <p>Getting Know about HTML</p>
+                                    <p>Loop Statements</p>
                                     <botton class="primary-btn text-uppercase" data-toggle="collapse" data-target="#click3" type="button" style="color: black">View Details</botton>  
                                 </li>
                                 <div class="collapse" id="click3">
                                     <ul style="color: black;">
-                                        <li>hi</li>
+                                        <li>for loop</li>
+                                            <li style="padding-bottom: 5px;">
+                                                while loop
+                                            </li>
                                             <li style="padding-bottom: 10px;">
-                                                bye
+                                                do-while loop
                                             </li>
                                         </ul>
                                 </div> 
                                 <li class="justify-content-between d-flex">
-                                    <p>Tags and Attributes</p>
-                                    <botton class="primary-btn text-uppercase" data-toggle="collapse" data-target="#click4" type="button" style="color: black">View Details</botton>  
-                                </li>
-                                <div class="collapse" id="click4">
-                                    <ul style="color: black;">
-                                        <li>hi</li>
-                                            <li style="padding-bottom: 10px;">
-                                                bye
-                                            </li>
-                                        </ul>
-                                </div> 
+                                    <p>Parameter Passing and Returning Value</p></li>
+                                    
                                 <li class="justify-content-between d-flex">
-                                    <p>Basics of CSS</p>
-                                    <botton class="primary-btn text-uppercase" data-toggle="collapse" data-target="#click5" type="button" style="color: black">View Details</botton>  
-                                </li>
-                                <div class="collapse" id="click5">
-                                    <ul style="color: black;">
-                                        <li>hi</li>
-                                            <li style="padding-bottom: 10px;">
-                                                bye
-                                            </li>
-                                        </ul>
-                                </div> 
+                                    <p>Arrays in Java</p></li>
+                                    
                                 <li class="justify-content-between d-flex">
-                                    <p>Getting Familiar with CSS</p>
-                                    <botton class="primary-btn text-uppercase" data-toggle="collapse" data-target="#click6" type="button" style="color: black">View Details</botton>  
-                                </li>
-                                <div class="collapse" id="click6">
-                                    <ul style="color: black;">
-                                        <li>hi</li>
-                                            <li style="padding-bottom: 10px;">
-                                                bye
-                                            </li>
-                                        </ul>
-                                </div> 
+                                    <p>Classes and Objects in Java</p></li>
+                                    
+                                <li class="justify-content-between d-flex">
+                                    <p>Inheritence in Java</p></li>
+                                    
+                                <li class="justify-content-between d-flex">
+                                    <p>Polymorphism in Java</p></li>
+                                    
 
                                 <li class="justify-content-between d-flex">
-                                    <p>Introduction to Bootstrap</p>
-                                    <botton class="primary-btn text-uppercase" data-toggle="collapse" data-target="#click7" type="button" style="color: black">View Details</botton>  
-                                </li>
-                                <div class="collapse" id="click7">
-                                    <ul style="color: black;">
-                                        <li>hi</li>
-                                            <li style="padding-bottom: 10px;">
-                                                bye
-                                            </li>
-                                        </ul>
-                                </div> 
-
+                                    <p>Class Constructors</p></li>
+                                    
                                 <li class="justify-content-between d-flex">
-                                    <p>Responsive Design</p>
-                                    <botton class="primary-btn text-uppercase" data-toggle="collapse" data-target="#click8" type="button" style="color: black">View Details</botton>  
-                                </li>
-                                <div class="collapse" id="click8">
-                                    <ul style="color: black;">
-                                        <li>hi</li>
-                                            <li style="padding-bottom: 10px;">
-                                                bye
-                                            </li>
-                                        </ul>
-                                </div> 
+                                    <p>Exception Handling</p></li>
+                                
                                 <li class="justify-content-between d-flex">
-                                    <p>Canvas in HTML 5</p>
-                                    <botton class="primary-btn text-uppercase" data-toggle="collapse" data-target="#click9" type="button" style="color: black">View Details</botton>  
-                                </li>
-                                <div class="collapse" id="click9">
-                                    <ul style="color: black;">
-                                        <li>hi</li>
-                                            <li style="padding-bottom: 10px;">
-                                                bye
-                                            </li>
-                                        </ul>
-                                </div> 
-
+                                    <p>Introduction to Java Threads</p>  </li>  
                             </ul>
                             
                         </div>

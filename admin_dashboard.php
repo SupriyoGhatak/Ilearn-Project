@@ -119,11 +119,11 @@
                         <span class="icon"><i class="fa fa-book" aria-hidden="true"></i></span>
                         <span class="title">Exam Deatils</span></a>
                 </li>
-                <!-- <li>
-                    <a href="">
+                <li>
+                    <a href="admin_query.php">
                         <span class="icon"><i class="fa fa-unlock-alt" aria-hidden="true"></i></span>
-                        <span class="title">Password</span></a>
-                </li> -->
+                        <span class="title">Manage Queries</span></a>
+                </li>
                 <li>
                     <a href="logout.php">
                         <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>

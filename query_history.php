@@ -1,3 +1,8 @@
+<?php
+session_start();
+include 'Connection/common.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -109,8 +114,8 @@
                      
                       <a href="logout.php"><li>Logout</li></a>
                   </ul>
-            </div>-->
-              <!--<div>
+            </div>
+              <div>
                  <span class="ti-search"></span>
                   <input type="search" placeholder="search">
               </div>
@@ -118,30 +123,83 @@
                   <span class="ti-bell"></span>
                   <span class="ti-comment"></span>
                   <div></div>
-              </div>-->
+              </div> -->
           </header>
-         <!-- <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">-->
+         <!--<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4"> -->
          <main>
            
 	<nav aria-label="breadcrumb">
   <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Reports</li>
+    <li class="breadcrumb-item active" aria-current="page">Query History</li>
   </ol>
 </nav>
             
-<h1 class="h2 dash-title">Reports</h1>
-<p>This is the homepage of a simple admin interface which is part of a tutorial written on Themesberg</p>
-
+<div class="row mt">
+			  		<div class="col-lg-12">
+                      <div class="content-panel">
+                          <section id="unseen">
+                            <table class="table table-bordered table-striped table-condensed">
+                              <thead>
+                              <tr>
+                                  <th>Complaint Number</th>
+                                  <th>Reg Date</th>
+                                  <th>Last Updation Date</th>
+                                  <th>Status</th>
+                                  <th>Action</th>
+                                  
+                              </tr>
+                              </thead>
+                              <tbody>
                 
              </main>
       </div>
-	
+	<?php 
+        $query4="select * from complaints where user_id='".$_SESSION['id']."'";
+        $res4 = mysqli_query($con, $query4) or die(mysqli_error($con));
+while($row=mysqli_fetch_array($res4))
+{
+  ?>
+                              <tr>
+                                  <td align="center"><?php echo htmlentities($row['complaintNumber']);?></td>
+                                  <td align="center"><?php echo htmlentities($row['regDate']);?></td>
+                                 <td align="center"><?php echo  htmlentities($row['lastUpdationDate']);
+
+                                 ?></td>
+                                  <td align="center"><?php 
+                                    $status=$row['status'];
+                                    if($status=="" or $status=="NULL") {
+                                     ?>
+                                      <button type="button" class="btn btn-theme04">Not Processed Yet</button> 
+                                    <?php }
+ if($status=="in process") { ?>
+<button type="button" class="btn btn-warning">In Process</button>
+ <?php }
+if($status=="closed") 
+{
+?>
+<button type="button" class="btn btn-success">Closed</button>
+<?php } ?>
+                                   <td align="center">
+                                   <a href="user_complaintdetails.php?cid=<?php echo htmlentities($row['complaintNumber']);?>">
+<button type="button" class="btn btn-primary">View Details</button></a>
+                                   </td>
+                                </tr>
+                              <?php } ?>
+                            
+                              </tbody>
+                          </table>
+                          </section>
+                  </div>
+               </div>		
+		  	</div>
+		  	
+		  	
      
       
 
    
-    <!--================ End Testimonial Area =================-->-->
+    <!--================ End Testimonial Area =================-->
 
     <!--================ Start footer Area  =================
     <footer class="footer-area section_gap">

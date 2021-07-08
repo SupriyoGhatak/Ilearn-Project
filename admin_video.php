@@ -51,7 +51,12 @@
                 <li>
                     <a href="admin_exam.php">
                         <span class="icon"><i class="fa fa-book" aria-hidden="true"></i></span>
-                        <span class="title">Exam Deatils</span></a>
+                        <span class="title">Exam Details</span></a>
+                </li>
+                <li>
+                    <a href="admin_query.php">
+                        <span class="icon"><i class="fa fa-unlock-alt" aria-hidden="true"></i></span>
+                        <span class="title">Manage Queries</span></a>
                 </li>
                 <!-- <li>
                     <a href="">
