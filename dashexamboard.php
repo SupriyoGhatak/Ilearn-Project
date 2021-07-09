@@ -1,3 +1,8 @@
+<?php
+  session_start();
+  include 'Connection/common.php';
+?>
+<!D
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -155,9 +160,9 @@
             </thead>  
             <tbody>
                 <tr role="row" class="odd">
-                    <td>1st term</td>
+                    <td>Final Assassment</td>
                     <td class="sorting_1">C</td>
-                    <td>2021-06-18 18:00:00</td>
+                    <td>2021-06-18</td>
                     <td>10 Question/topic</td>
                     <td><span class="badge badge-secondary">Incomplete</span></td>
                     <td>4 Mark</td>
