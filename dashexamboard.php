@@ -83,7 +83,12 @@
                           <span> Reports</span>
                       </a>
                   </li>
-                 
+                 <li>
+                    <a href="query_history.php">
+                        <span class="ti-help"></span>
+                        <span>Query History</span>
+                    </a>
+                </li>
               </ul>
           </div>
        </div>

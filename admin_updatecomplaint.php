@@ -1,3 +1,7 @@
+<?php
+            session_start();
+            include 'Connection/common.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -82,7 +86,7 @@
             <div class="cardbox">
                 <div class="card">
                     <div>
-                        <div class="number">1024</div>
+                        <div class="number"><?php echo $_SESSION['visit'] ?></div>
                         <div class="cardName">Views</div>
                     </div>
                     <div class="iconBox">
@@ -91,7 +95,7 @@
                 </div>
                 <div class="card">
                     <div>
-                        <div class="number">10</div>
+                        <div class="number"><?php echo $_SESSION['sales'] ?></div>
                         <div class="cardName">Sales</div>
                     </div>
                     <div class="iconBox">
@@ -100,7 +104,7 @@
                 </div>
                 <div class="card">
                     <div>
-                        <div class="number">10000</div>
+                        <div class="number"><?php echo $_SESSION['cost'] ?></div>
                         <div class="cardName">Earning</div>
                     </div>
                     <div class="iconBox">
@@ -110,79 +114,62 @@
             </div>
             <div class="details_notice">
                 <div class="recentNotice">
-                    <div class="cardHeader">
-                        <h2>Notice Board Area</h2>
-                    </div>
-                    <div class="container1">
-                        <form action="action_page.php">
-                          <div class="row">
-                            <div class="col-25">
-                              <label for="fname">Enter The Title</label>
-                            </div>
-                            <div class="col-75">
-                              <input type="text" id="title" name="firstname" placeholder="Your Notice Title..">
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-25">
-                              <label for="lname">Enter the samll description</label>
-                            </div>
-                            <div class="col-75">
-                              <input type="text" id="desc" name="desc" placeholder="Small description">
-                            </div>
-                          </div>
+                    <div class="module">
 
-                          <div class="row">
-                            <div class="col-25">
-                              <label for="lname">Enter the Date</label>
-                            </div>
-                            <div class="col-75">
-                              <input type="date" id="date" name="date" placeholder="Enter The Date">
-                            </div>
-                          </div>
+<div style="margin-left:50px;">
+ <form name="updateticket" method="POST" action="updatecomplaint_script.php?cid=<?php echo $_GET['cid']; ?>"> 
+ <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td  >&nbsp;</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr height="50">
+      <td><b>Complaint Number</b></td>
+     <td><?php echo($_GET['cid']); ?></td> 
+    </tr>
+    <tr height="50">
+      <td><b>Status</b></td>
+      <td><select name="status" required="required">
+      <option value="">Select Status</option>
+      <option value="in process">In Process</option>
+    <option value="closed">Closed</option>
+        
+      </select></td>
+    </tr>
 
 
-                          <div class="row">
-                            <div class="col-25">
-                              <label for="country">Course</label>
-                            </div>
-                            <div class="col-75">
-                              <select id="course" name="course">
-                                <option value="c">C</option>
-                                <option value="c++">C++</option>
-                                <option value="Java">JAVA</option>
-                                <option value="rdbms">RDBMS</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-25">
-                              <label for="subject">Content Of Notice</label>
-                            </div>
-                            <div class="col-75">
-                              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <input type="submit" value="Submit">
-                          </div>
-                        </form>
-                      </div>
-                </div>
-            </div>
+      <tr height="50">
+      <td><b>Remark</b></td>
+      <td><textarea name="remark" cols="50" rows="10" required="required"></textarea></td>
+    </tr>
+    
 
-        </div>
+
+        <tr height="50">
+      <td>&nbsp;</td>
+      <td><input type="submit" name="update" value="Submit"></td>
+    </tr>
+
+
+
+       <tr><td colspan="2">&nbsp;</td></tr>
+    
+    <tr>
+  <td></td>
+      
+                            </tr>
+
+
+ <?php
+
+ //echo "<script>alert('Complaint details updated successfully');</script>";
+ ?>
+
+ 
+</table>
+ </form>
 </div>
-</body>
-<script>
-    function toggleMenu() {
-        let toggle = document.querySelector('.toggle');
-        let navigator = document.querySelector('.navigator');
-        let main = document.querySelector('.main');
-        toggle.classList.toggle('active');
-        navigator.classList.toggle('active');
-        main.classList.toggle('active');
-    }
-</script>
 
+</body>
 </html>
+

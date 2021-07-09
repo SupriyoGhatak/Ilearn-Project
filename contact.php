@@ -77,40 +77,45 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-9">
-            <form
-              class="row contact_form"
-              action="contact_process.php"
-              method="post"
-              id="contactForm"
-              novalidate="novalidate"
-            >
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="name"
-                    name="name"
-                    placeholder="Enter your name"
-                    onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = 'Enter your name'"
-                    required=""
-                  />
+           <div class="col-lg-9"> 
+           <form name = "form2" method = "post" action="contact_script.php">
+            
+                
+             <div class="col-md-9"> 
+                  <h3> ASK US ANYTHING ! </h3>
+                  <!--<div class="form-group">
+<label class="col-sm-2 col-sm-2 control-label">Nature of Complaint</label>
+<div class="col-sm-4">
+<input type="text" name="noc" required="required" value="" required="" class="form-control">
+</div>
+
+</div>
+
+<div class="form-group">
+<label class="col-sm-2 col-sm-2 control-label">Complaint Details (max 2000 words) </label>
+<div class="col-sm-6">
+<textarea  name="complaindetails" required="required" cols="10" rows="10" class="form-control" maxlength="2000"></textarea>
+</div>
+</div>
+<div class="form-group">
+<label class="col-sm-2 col-sm-2 control-label">Complaint Related Doc(if any) </label>
+<div class="col-sm-6">
+<input type="file" name="compfile" class="form-control" value="">
+</div>
+</div> -->
+
+               <div class="form-group">
+                   <label class="col-sm-6 col-sm-6 control-label" style="font-size: 18px"><h9>Nature of Query</h9></label>
+                    <div class="col-sm-9">
+                    <input type="text" name="noc" required="required" value="" required="" class="form-control">  
+                    </div>
+               <div class="form-group">
+                   <label class="col-sm-6 col-sm-6 control-label" style="font-size: 18px">Query Details(max 2000 words)</label>
+                   <div class="col-sm-6">
+                    <textarea  name="complaintdetails" required="required" cols="10" rows="10" class="form-control" maxlength="2000"></textarea>
+                   </div>
                 </div>
-                <div class="form-group">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    name="email"
-                    placeholder="Enter email address"
-                    onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = 'Enter email address'"
-                    required=""
-                  />
-                </div>
-                <div class="form-group">
+                <!--<div class="form-group">
                   <input
                     type="text"
                     class="form-control"
@@ -136,7 +141,7 @@
                     required=""
                   ></textarea>
                 </div>
-              </div>
+              </div> -->
               <div class="col-md-12 text-right">
                 <button type="submit" value="submit" class="btn primary-btn">
                   Send Message

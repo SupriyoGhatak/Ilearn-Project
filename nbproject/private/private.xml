@@ -4,6 +4,14 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
 <<<<<<< HEAD
+            <file>file:/C:/wamp64/www/Ilearn-Project/contact.php</file>
+            <file>file:/C:/wamp64/www/Ilearn-Project/admin_updatecomplaint.php</file>
+            <file>file:/C:/wamp64/www/Ilearn-Project/contact_script.php</file>
+            <file>file:/C:/wamp64/www/Ilearn-Project/admin_complaintdetails.php</file>
+            <file>file:/C:/wamp64/www/Ilearn-Project/admin_query.php</file>
+            <file>file:/C:/wamp64/www/Ilearn-Project/payment.php</file>
+=======
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
             <file>file:/C:/wamp64/www/Ilearn-Project/course-buy-c.php</file>
@@ -45,6 +53,7 @@
             <file>file:/C:/wamp64/www/Ilearn-Project/dashcourses.php</file>
 >>>>>>> 8aadd991c1bc86077f64ac1592a81995a7291aba
 >>>>>>> b6000e1efdfe31ad7fdfc670e4b7425190bed878
+>>>>>>> 19869c195e8943d305834d7290e05c050c29cc9e
         </group>
     </open-files>
 </project-private>
