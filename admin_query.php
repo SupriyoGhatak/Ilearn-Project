@@ -12,6 +12,12 @@
     <title>Admin Notice Board</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/admin_style.css">
+    <style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
 </head>
 
 <body>
@@ -124,20 +130,18 @@
 
 
 							
-				<table cellpadding="0" cellspacing="0" border="0" class="datatable-1 table table-bordered table-striped	 display" >
-				<thead>
-				<tr>
-				<th>Complaint No</th>
-				<th>Complainant Name</th>
-				<th>Reg Date</th>
-				<th>Status</th>
-											
-				<th>Action</th>
-											
-										
-				</tr>
-				</thead>
-                    </div>
+				 <table>
+            <thead>
+  <tr>
+    <th class="sorting" tabindex="0" rowspan="1" colspan="1" style="width: 200px;height: 30px;">Complaint no</th>
+                    <th class="sorting_asc" tabindex="0" rowspan="1" colspan="1" style="width: 200px;height: 30px;">Complaint name</th>
+                    <th class="sorting" tabindex="0" rowspan="1" colspan="1" style="width: 200px;height: 30px;">Reg date</th>
+                    <th class="sorting" tabindex="0" rowspan="1" colspan="1" style="width: 200px;height: 30px;">Status</th>
+                    <th class="sorting" tabindex="0" rowspan="1" colspan="1" style="width: 200px;height: 30px;">Action</th>
+  </tr>
+            </thead>
+                                <tbody>
+                    
                             <?php 
 $complaint_query1="select complaints.*,user_details.user_name as name from complaints join user_details on user_details.user_id=complaints.user_id where complaints.status is null ";
 $ress = mysqli_query($con, $complaint_query1) or die(mysqli_error($con));
@@ -159,7 +163,13 @@ while($row=mysqli_fetch_array($ress))
 										</tbody>
 								</table>
 							</div>
-						</div>						
-
+						</div>	
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+    
 						
 						
