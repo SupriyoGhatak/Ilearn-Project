@@ -81,15 +81,28 @@
                           <span> Reports</span>
                       </a>
                   </li>
-                 
+                 <li>
+                    <a href="query_history.php">
+                        <span class="ti-help"></span>
+                        <span>Query History</span>
+                    </a>
+                </li>
               </ul>
           </div>
        </div>
       <div class="main-content">
           <header>
               
-              
-                 <div class="search-wrapper">
+              <div class="inner_header">
+                  <ul class="navigation">
+                      <a href="index.php"><li>Home</li></a>
+                      <a href="#"><li>  </li></a>
+                     
+                      <a href="contact.php" ><li>Contact Us</li></a>
+                      <a href="logout.php"><li>Logout</li></a>
+                  </ul>
+            </div>
+                <!-- <div class="search-wrapper">
                  <span class="ti-search"></span>
                   <input type="search" placeholder="search here">
               </div> 
@@ -99,7 +112,7 @@
                      
                       <a href="contact.php"><li>Contact Us</li></a>
                   </ul>
-            </div>
+            </div>-->
               <!--<div>
                  <span class="ti-search"></span>
                   <input type="search" placeholder="search">
@@ -147,6 +160,23 @@
         flex-direction: row;
 
     }
+    body {background-color: #ddd; margin: 3rem;}
+
+#tv {
+  position: relative;
+  width: 350px;
+  height: 550px;
+  background: white;
+  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+  color: white;
+  box-shadow: 20px 20px rgba(0,0,0,.15);
+  transition: all .4s ease;
+}
+#tv:hover {
+  border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+  box-shadow: 10px 10px rgba(0,0,0,.25);
+}
+
     
     
 }
@@ -161,10 +191,15 @@
     ?>
      <?php 
      $cid = isset($_GET['category_id']) ? $_GET['category_id'] : 0;
+     if(isset($_GET['course'])){
+         
+     $course= $_GET['course'];
+     
+     }
      ?>
     
     
-    
+   
     <div class="container1">
         <div class="course_head" style="display:flex; flex-direction: row;">
             <div class="col-md-3">
@@ -172,34 +207,40 @@
                     <div class="card-header"><h3>Categories</div></h3>
                     <div class="card-body">
                         <ul class='list-group' id='cat-list'>
-                            <li class='list-group-item' data-id='all' data-href="dashlibrary.php?page=home&category_id=all"><h6>All</li></h6>
-                        <br>
-                            <?php
-                                $cat = $con->query("SELECT * FROM categories order by name asc");
-                                while($row=$cat->fetch_assoc()):
-                                    $cat_arr[$row['id']] = $row['name'];
-                             ?>
-                        <h6><li class='list-group-item' data-id='<?php echo $row['id'] ?>' data-href="dashlibrary.php?page=home&category_id=<?php echo $row['id'] ?>"><?php echo ucwords($row['name']) ?></li> </h6>
-
-                            <?php endwhile; ?>
+                            
+                        <h6><li class='list-group-item' data-id='' data-href="dashlibrary.php?page=home&category_id=1&course=c">C</li> </h6>
+                        <h6><li class='list-group-item' data-id='' data-href="dashlibrary.php?page=home&category_id=2&course=c_plus">C++</li> </h6><!-- comment -->
+                        <h6><li class='list-group-item' data-id='' data-href="dashlibrary.php?page=home&category_id=3&course=java">JAVA</li> </h6><!-- comment -->
+                        <h6><li class='list-group-item' data-id='' data-href="dashlibrary.php?page=home&category_id=4&course=rdbms">RDBMS</li> </h6>
+                           
                         </ul>
                     </div>
                  </div>
             </div>
-            
-        
        
     
           
-            <div class="row-md-3">
-             <div class="card">
-                    <!-- <div class="card-body"> -->
-                        <div class="row">
+           
+             <div class="card col-sm-4">
+                    <!--<div class="card-body"> -->
+                        <!--<div class="row"> -->
                             <?php
-                                $where = "";
+                            $id=$_SESSION['id'];
+                            if(isset($_GET['course'])){
+                                
+                            
+                            $temp=0;
+                            $query = "SELECT $course FROM user_buyed_course WHERE user_id = '" . $id . "'";
+                            $result1 = mysqli_query($con,$query);
+                           $row = mysqli_fetch_array($result1);
+                            $num=mysqli_num_rows($result1);
+                            if($num>0 && $row[$course]>0)
+                            {
+                             
+                               $where = "";
                                if($cid > 0){
-                                    $where  = " where CONCAT('[',REPLACE(category_ids,',','],['),']') LIKE '%[".$cid."]%'  ";
-                                } 
+                                   $where  = " where CONCAT('[',REPLACE(category_ids,',','],['),']') LIKE '%[".$cid."]%'  ";
+                               } 
                                 $books = $con->query("SELECT * from books $where order by title asc");
                                 if($books->num_rows <= 0){
                                     echo "<center><h4><i>No Available Product.</i></h4></center>";
@@ -208,11 +249,11 @@
                              ?>
                          
                             
-                             <div class="col-sm-6">
-                                 <div class="card">
+                             <div class="col-sm-8">
+                                 <!--<div class="card">-->
                                     
-                                     <div class="card-img-top d-flex" allowtransparency="true" frameborder="0" style="background:white; height: 350px; width: 350px; display: flex; justify-content: center; align-items: center;">
-                                         <iframe allowtransparency="true" style="background:#fff; height: 300px; width: 350px;" frameborder="0" src="<?php echo $row['image_path']  ?>"  alt="c" ></iframe>
+                                     <div class="card-img-top d-flex" allowtransparency="true" frameborder="0" style="background:white; height: 300px; width: 300px; display: flex; justify-content: center; align-items: center;">
+                                         <iframe allowtransparency="true" style="background:#fff; height: 300px; width: 350px;" frameborder="0" src="<?php echo $row['image_path']  ?>"  alt="c" style="background-color: #FFFFFF" width="1000" height="400" frameborder="0"  ></iframe>
                                      
                                      </div>
                                       <div class="float-right align-top d-flex">
@@ -224,31 +265,24 @@
                                          <p>
                                             
                                          </h5>
-                                          <?php 
-                                          $cats = '';
-                                          $cat = explode(',', $row['category_ids']);
-                                          foreach ($cat as $key => $value) {
-                                            if(!empty($cats)){
-                                              $cats .=", ";
-                                            }
-                                            if(isset($cat_arr[$value])){
+                                         <!-- t($cat_arr[$value])){
                                               $cats .= $cat_arr[$value];
                                             }
                                           }
                                           //echo $cats;
-                                          ?>
+                                          ?> -->
 </small>                                  
                                          <h7> <p class="truncate"><?php echo $row['description'] ?></p></h7>
                                          
                                          
-                                         <a href="<?php echo $row['pdf_path'] ?> "> <button class="btn btn-primary btn-sm view_prod" type="button" style="background-color: #4CAF50;
+                                         <a href="<?php echo $row['pdf_path'] ?> "> <button class="btn btn-primary btn-sm view_prod" type="button" style="background-color: #4682B4;
                         border: none;
                         color: white;
                         padding: 15px 32px;
                         text-align: left;
                         /*text-decoration: none;*/
                         display: inline-block;
-                        font-size: 8px;
+                        font-size: 12px;
                         border-radius: 6px;
  
                         position: relative;
@@ -258,12 +292,68 @@
                                      </div>
                                  </div>
                              </div>
-                            <?php endwhile; ?>
-                            </div>
+                         </div>
                     </div>
                 </div>
             </div>
         </div>
+                            <?php endwhile;
+                            }else{ ?>
+                            
+                              <!--<div id="design" style="padding : 90px 7px 7px 7px;"> -->
+                              <div class="sketchy" style="padding: 2rem 5rem;
+    display: inline-block;
+    border: 3px solid #333333;
+    font-size: 1.5rem;
+    border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+    text-transform: uppercase;
+    letter-spacing: 0.3ch;
+    background: #ffffff;
+    position: relative;
+    ">  
+                              <h5>SEEMS LIKE YOU HAVE YET TO BUY THIS COURSE</53>
+                              <br>
+                              <h3>PLEASE PURCHASE THE COURSE TO VIEW THE E-BOOKS</h3>
+                              <a href="courses.php"> <button class="btn btn-primary btn-sm view_prod" type="button" style="background-color: #4682B4;
+                        border: none;
+                        color: white;
+                        padding: 15px 32px;
+                        text-align: left;
+                        /*text-decoration: none;*/
+                        display: inline-block;
+                        font-size: 12px;
+                        border-radius: 6px;
+ 
+                        position: relative;
+    left: 38%;">VIEW COURSES
+                                             </button></a>
+                                      
+                            </div> </div></div>
+                          <?php  }
+                            
+                                }else{ ?>
+                            
+                            <div class="sketchy" style="padding: 2rem 5rem;
+    display: inline-block;
+    border: 3px solid #333333;
+    font-size: 1.5rem;
+    border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+    text-transform: uppercase;
+    letter-spacing: 0.3ch;
+    background: #ffffff;
+    position: relative;
+    ">  
+                                
+                                
+                                <h1>PLEASE SELECT THE COURSE BOUGHT </h1>
+                            </div>
+                                  
+                               
+                            </div>
+                          <?php  }
+                            ?>
+                           
+           
     </div>
 </div>
 </div>        
@@ -306,5 +396,11 @@
         uni_modal_right('View Book','view_prod.php?id='+$(this).attr('data-id'))
      })
 </script>
+<script>
+    $('iframe').css('background', 'white');
+$('iframe').contents().find('body').css('backgroundColor', 'white');
+    
+</script>
+
   </body>
 </html>

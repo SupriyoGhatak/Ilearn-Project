@@ -1,3 +1,7 @@
+<?php
+            session_start();
+            include 'Connection/common.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,6 +12,12 @@
     <title>Admin Notice Board</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/admin_style.css">
+    <style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
 </head>
 
 <body>
@@ -82,7 +92,7 @@
             <div class="cardbox">
                 <div class="card">
                     <div>
-                        <div class="number">1024</div>
+                        <div class="number"><?php echo $_SESSION['visit'] ?></div>
                         <div class="cardName">Views</div>
                     </div>
                     <div class="iconBox">
@@ -91,7 +101,7 @@
                 </div>
                 <div class="card">
                     <div>
-                        <div class="number">10</div>
+                        <div class="number"><?php echo $_SESSION['sales'] ?></div>
                         <div class="cardName">Sales</div>
                     </div>
                     <div class="iconBox">
@@ -100,7 +110,7 @@
                 </div>
                 <div class="card">
                     <div>
-                        <div class="number">10000</div>
+                        <div class="number"><?php echo $_SESSION['cost'] ?></div>
                         <div class="cardName">Earning</div>
                     </div>
                     <div class="iconBox">
@@ -110,79 +120,56 @@
             </div>
             <div class="details_notice">
                 <div class="recentNotice">
-                    <div class="cardHeader">
-                        <h2>Notice Board Area</h2>
-                    </div>
-                    <div class="container1">
-                        <form action="action_page.php">
-                          <div class="row">
-                            <div class="col-25">
-                              <label for="fname">Enter The Title</label>
-                            </div>
-                            <div class="col-75">
-                              <input type="text" id="title" name="firstname" placeholder="Your Notice Title..">
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-25">
-                              <label for="lname">Enter the samll description</label>
-                            </div>
-                            <div class="col-75">
-                              <input type="text" id="desc" name="desc" placeholder="Small description">
-                            </div>
-                          </div>
-
-                          <div class="row">
-                            <div class="col-25">
-                              <label for="lname">Enter the Date</label>
-                            </div>
-                            <div class="col-75">
-                              <input type="date" id="date" name="date" placeholder="Enter The Date">
-                            </div>
-                          </div>
+                    <!--<div class="cardHeader">
+                        <h2>Query Management</h2> -->
+                        <div class="module">
+				<div class="module-head">
+				<h3>Complaints</h3>
+				</div>
+				<div class="module-body table">
 
 
-                          <div class="row">
-                            <div class="col-25">
-                              <label for="country">Course</label>
-                            </div>
-                            <div class="col-75">
-                              <select id="course" name="course">
-                                <option value="c">C</option>
-                                <option value="c++">C++</option>
-                                <option value="Java">JAVA</option>
-                                <option value="rdbms">RDBMS</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-25">
-                              <label for="subject">Content Of Notice</label>
-                            </div>
-                            <div class="col-75">
-                              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <input type="submit" value="Submit">
-                          </div>
-                        </form>
-                      </div>
-                </div>
+							
+				 <table>
+            <thead>
+  <tr>
+    <th class="sorting" tabindex="0" rowspan="1" colspan="1" style="width: 200px;height: 30px;">Complaint no</th>
+                    <th class="sorting_asc" tabindex="0" rowspan="1" colspan="1" style="width: 200px;height: 30px;">Complaint name</th>
+                    <th class="sorting" tabindex="0" rowspan="1" colspan="1" style="width: 200px;height: 30px;">Reg date</th>
+                    <th class="sorting" tabindex="0" rowspan="1" colspan="1" style="width: 200px;height: 30px;">Status</th>
+                    <th class="sorting" tabindex="0" rowspan="1" colspan="1" style="width: 200px;height: 30px;">Action</th>
+  </tr>
+            </thead>
+                                <tbody>
+                    
+                            <?php 
+$complaint_query1="select complaints.*,user_details.user_name as name from complaints join user_details on user_details.user_id=complaints.user_id where complaints.status is null ";
+$ress = mysqli_query($con, $complaint_query1) or die(mysqli_error($con));
+while($row=mysqli_fetch_array($ress))
+{
+?>										
+										<tr>
+											<td><?php echo htmlentities($row['complaintNumber']);?></td>
+											<td><?php echo htmlentities($row['name']);?></td>
+											<td><?php echo htmlentities($row['regDate']);?></td>
+										
+											<td><button type="button" class="btn btn-danger">Not processed yet</button></td>
+											
+											<td>   <a href="admin_complaintdetails.php?cid=<?php echo htmlentities($row['complaintNumber']);?>"> View Details</a> 
+											</td>
+											</tr>
+
+										<?php  } ?>
+										</tbody>
+								</table>
+							</div>
+						</div>	
             </div>
-
         </div>
+    </div>
 </div>
 </body>
-<script>
-    function toggleMenu() {
-        let toggle = document.querySelector('.toggle');
-        let navigator = document.querySelector('.navigator');
-        let main = document.querySelector('.main');
-        toggle.classList.toggle('active');
-        navigator.classList.toggle('active');
-        main.classList.toggle('active');
-    }
-</script>
-
 </html>
+    
+						
+						

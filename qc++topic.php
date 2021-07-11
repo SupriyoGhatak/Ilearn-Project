@@ -92,8 +92,8 @@
                         <div class="content">
                             <ul class="course_list" style="color: black; font-size: larger;">
                                 <li class="justify-content-between d-flex">
-                                    <p>C Language Overview</p>
-                                    <a href="topic1c+.php" class="btn btn-success  active ti-agenda" role="button" aria-pressed="true">&nbsp;&nbsp;Give Exam&nbsp;&nbsp;</a>
+                                     <p>Final assessment-I</p>
+                                    <a href="topic1c.php" class="btn btn-success  active ti-agenda" role="button" aria-pressed="true">&nbsp;&nbsp;Give Exam&nbsp;&nbsp;</a>
                                 </li>
                                 <div class="collapse" id="click1">
                                     <ul style="color: black;">
@@ -105,8 +105,8 @@
                                 </div> 
                                 
                                 <li class="justify-content-between d-flex">
-                                    <p>C Environment Setup</p>
-                                    <a href="topic2c+.php" class="btn btn-success  active ti-agenda" role="button" aria-pressed="true">&nbsp;&nbsp;Give Exam&nbsp;&nbsp;</a>  
+                                    <p>Final assessment-II</p>
+                                    <a href="topic1c.php" class="btn btn-success  active ti-agenda" role="button" aria-pressed="true">&nbsp;&nbsp;Give Exam&nbsp;&nbsp;</a>  
                                 </li>
                                 <div class="collapse" id="click2">
                                     <ul style="color: black;">
@@ -118,67 +118,9 @@
                                                 Installation on Mac OS
                                             </li>
                                         </ul>
-                                </div> 
-                         
-                                <li class="justify-content-between d-flex">
-                                    <p>C Basic Syntax</p>
-                                    <a href="topic3c+.php" class="btn btn-success  active ti-agenda" role="button" aria-pressed="true">&nbsp;&nbsp;Give Exam&nbsp;&nbsp;</a>  
-                                </li>
-                                <div class="collapse" id="click4">
-                                    <ul style="color: black;">
-                                        <li>Tokens and Semicolons</li>
-                                            <li style="padding-bottom: 10px;">
-                                                Comments
-                                            </li>
-                                            <li style="padding-bottom: 10px;">
-                                               Identifiers and Keywords
-                                            </li>
-                                            <li style="padding-bottom: 10px;">
-                                               Datatypes and Variables
-                                            </li>
-                                            <li style="padding-bottom: 10px;">
-                                               Constants and Literals
-                                            </li>
-                                            <li style="padding-bottom: 10px;">
-                                               Operators
-                                            </li>
-                                        </ul>
-                                </div> 
-                                <li class="justify-content-between d-flex">
-                                    <p>Core C Topics</p>
-                                    <a href="topic4c+.php" class="btn btn-success  active ti-agenda" role="button" aria-pressed="true">&nbsp;&nbsp;Give Exam&nbsp;&nbsp;</a>  
-                                </li>
-                                <div class="collapse" id="click5">
-                                    <ul style="color: black;">
-                                        <li class="justify-content-between d-flex">
-                                    
-                                    <p>Loops</p> </li>
-                                <li class="justify-content-between d-flex">
-                                    <p>Functions</p> </li>
-                                <li class="justify-content-between d-flex">
-                                    <p>Scope Rules</p> </li>
-                                <li class="justify-content-between d-flex">
-                                    <p>Arrays and Pointers</p> 
-                                        </li>
-                                         <p>Structure and Unions</p> </li>
-                                        <li class="justify-content-between d-flex">   
-                                        </ul>
-                                </div>
-                             
-                            
-
-                                <li class="justify-content-between d-flex">
-                                    <p>Input and Output</p>
-                                    <a href="topic5c+.php" class="btn btn-success  active ti-agenda" role="button" aria-pressed="true">&nbsp;&nbsp;Give Exam&nbsp;&nbsp;</a>  
-                                </li>
-                                <div class="collapse" id="click7">
-                                    <ul style="color: black;">
-                                        <li>Standard Files</li>
-                                         <li style="padding-bottom: 10px;">
-                                                File I/O
-                                            </li>   
-                                        </ul>
-                                </div> 
+                                </div>  
+                                 
+                                 
 
                                 
                                 

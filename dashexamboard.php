@@ -1,3 +1,8 @@
+<?php
+  session_start();
+  include 'Connection/common.php';
+?>
+<!D
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -78,15 +83,28 @@
                           <span> Reports</span>
                       </a>
                   </li>
-                 
+                 <li>
+                    <a href="query_history.php">
+                        <span class="ti-help"></span>
+                        <span>Query History</span>
+                    </a>
+                </li>
               </ul>
           </div>
        </div>
       <div class="main-content">
           <header>
               
-              
-                 <div class="search-wrapper">
+              <div class="inner_header">
+                  <ul class="navigation">
+                      <a href="index.php"><li>Home</li></a>
+                      <a href="#"><li>  </li></a>
+                     
+                      <a href="contact.php" ><li>Contact Us</li></a>
+                      <a href="logout.php"><li>Logout</li></a>
+                  </ul>
+            </div>
+               <!--  <div class="search-wrapper">
                  <span class="ti-search"></span>
                   <input type="search" placeholder="search here">
               </div> 
@@ -96,7 +114,7 @@
                      
                       <a href="logout.php"><li>Logout</li></a>
                   </ul>
-            </div>
+            </div>-->
               <!--<div>
                  <span class="ti-search"></span>
                   <input type="search" placeholder="search">
@@ -147,9 +165,9 @@
             </thead>  
             <tbody>
                 <tr role="row" class="odd">
-                    <td>1st term</td>
+                    <td>Final Assassment</td>
                     <td class="sorting_1">C</td>
-                    <td>2021-06-18 18:00:00</td>
+                    <td>2021-06-18</td>
                     <td>10 Question/topic</td>
                     <td><span class="badge badge-secondary">Incomplete</span></td>
                     <td>4 Mark</td>

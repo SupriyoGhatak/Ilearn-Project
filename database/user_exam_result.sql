@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: May 18, 2021 at 05:44 AM
+-- Generation Time: Jun 29, 2021 at 07:24 AM
 -- Server version: 10.4.10-MariaDB
 -- PHP Version: 7.3.12
 
@@ -25,20 +25,25 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user_details`
+-- Table structure for table `user_exam_result`
 --
 
-DROP TABLE IF EXISTS `user_details`;
-CREATE TABLE IF NOT EXISTS `user_details` (
-  `user_id` int(11) NOT NULL AUTO_INCREMENT,
-  `user_name` varchar(255) NOT NULL,
-  `user_email` varchar(255) NOT NULL,
-  `user_phone` bigint(13) DEFAULT NULL,
-  `user_dob` varchar(255) DEFAULT NULL,
-  `user_address` varchar(255) DEFAULT NULL,
-  `user_password` varchar(255) NOT NULL,
-  PRIMARY KEY (`user_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='User details table';
+DROP TABLE IF EXISTS `user_exam_result`;
+CREATE TABLE IF NOT EXISTS `user_exam_result` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `c_1st` double(11,2) NOT NULL DEFAULT 0.00,
+  `c_2nd` double(11,2) NOT NULL DEFAULT 0.00,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=18 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `user_exam_result`
+--
+
+INSERT INTO `user_exam_result` (`id`, `user_id`, `c_1st`, `c_2nd`) VALUES
+(11, 13, 75.00, 0.00),
+(17, 15, 75.00, 75.00);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

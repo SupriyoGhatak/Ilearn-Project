@@ -47,15 +47,15 @@ include 'Connection/common.php';
  	 </div>
  	 <ul class="lisst-unstyled components">
 
-             <p><strong><center>C Concepts</center></strong></p>
+             <p><strong><center>Java Concepts</center></strong></p>
  	 	<li class="active">
- 	 		<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">C Language Overview</a>
+ 	 		<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Introduction to Java</a>
  	 	  <ul class="collapse list-unstyled" id="homeSubmenu">
- 	 	  	<!--<li>
-                            <a href="c_video_file.php?action=video1">Fact About C</a>
- 	 	  	</li>-->
  	 	  	<li>
- 	 	  		<a href="c_video_file.php?action=video2">Introduction to c</a>
+                            <a href="java_video_file.php?action=video1">Installation of JDK</a>
+ 	 	  	</li>
+ 	 	  	<li>
+ 	 	  		<a href="java_video_file.php?action=video2">Installation of JDK in MacOS</a>
  	 	  	</li>
 <!--                        <li>
  	 	  		<a href="#video3">Foundation of C</a>
@@ -63,49 +63,62 @@ include 'Connection/common.php';
 
  	 	  </ul>
  	 	</li>
- 	 	
- 	 	<li>
- 	 		<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">C Environment Setup</a>
- 	 		<ul class="collapse list-unstyled" id="pageSubmenu">
- 	 			<li>
-                                    <a href="c_video_file.php?action=video3">Installation On Unix/Linux</a>
- 	 			</li>
- 	 			<li>
- 	 				<a href="c_video_file.php?action=video4">Installation On Windows</a>
- 	 			</li>
-                                <li>
- 	 				<a href="c_video_file.php?action=video5">Installation On Mac Os</a>
- 	 			</li>
- 	 			
-
- 	 		</ul>
+                 <li>
+ 	 		<a href="java_video_file.php?action=video3" data-toggle="collapse" aria-expanded="false">Variables and Types</a>
+ 	 		
  	 	</li>
-                <li>
- 	 		<a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">C Basic Syntax</a>
+ 	 	<li>
+ 	 		<a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Loop Statements</a>
  	 		<ul class="collapse list-unstyled" id="pageSubmenu2">
  	 			
  	 			<li>
- 	 				<a href="c_video_file.php?action=video6">Tokens And Semicolons</a>
+ 	 				<a href="java_video_file.php?action=video4">for loop</a>
  	 			</li>
                                 <li>
- 	 				<a href="c_video_file.php?action=video7">Comments</a>
+ 	 				<a href="java_video_file.php?action=video5">while loop</a>
  	 			</li>
                                 <li>
- 	 				<a href="c_video_file.php?action=video8">Identifiers And Keywords</a>
+ 	 				<a href="java_video_file.php?action=video6">do-while loop</a>
  	 			</li>
-                                <li>
- 	 				<a href="c_video_file.php?action=video9">DataTypes And Variables</a>
-                                </li><!-- comment -->
-                                <li>
- 	 				<a href="c_video_file.php?action=video10">Constants And Literals</a>
- 	 			</li>
-                                <li>
- 	 				<a href="c_video_file.php?action=video11">Operators</a>
- 	 			</li>
+                                
  	 			
 
  	 		</ul>
  	 	</li>
+ 	 	<li>
+ 	 		<a href="java_video_file.php?action=video7" data-toggle="collapse" aria-expanded="false">Parameter Passing and Returning Value</a>
+ 	 		
+ 	 	</li>
+                <li>
+ 	 		<a href="java_video_file.php?action=video8" data-toggle="collapse" aria-expanded="false">Arrays in Java</a>
+ 	 		
+                </li>
+                <li>
+ 	 		<a href="java_video_file.php?action=video9" data-toggle="collapse" aria-expanded="false">Classes and Objects in Java</a>
+ 	 		
+ 	 	</li>
+                <li>
+ 	 		<a href="java_video_file.php?action=video10" data-toggle="collapse" aria-expanded="false">Inheritence in Java</a>
+ 	 		
+ 	 	</li>
+                <li>
+ 	 		<a href="java_video_file.php?action=video11" data-toggle="collapse" aria-expanded="false">Polymorphism in Java</a>
+ 	 		
+ 	 	</li>
+                <li>
+ 	 		<a href="java_video_file.php?action=video12" data-toggle="collapse" aria-expanded="false">Class Constructors</a>
+ 	 		
+ 	 	</li>
+                 <li>
+ 	 		<a href="java_video_file.php?action=video13" data-toggle="collapse" aria-expanded="false">Exception Handling</a>
+ 	 		
+ 	 	</li>
+                 <li>
+ 	 		<a href="java_video_file.php?action=video14" data-toggle="collapse" aria-expanded="false">Introduction to Java Threads</a>
+ 	 		
+ 	 	</li>
+                
+                
                 <?php
                 
                 $check=0;
@@ -114,7 +127,7 @@ include 'Connection/common.php';
                 
                 ?>
                 
-                <li>
+                <!--<li>
  	 		<a href="#pageSubmenu3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Core C Topics</a>
  	 		<ul class="collapse list-unstyled" id="pageSubmenu3">
  	 			
@@ -129,10 +142,10 @@ include 'Connection/common.php';
  	 			</li>
                                 <li>
  	 				<a href="c_video_file.php?action=video15">Arrays and Pointers</a>
-                                </li><!-- comment -->
+                                </li>
                                 <li>
  	 				<a href="c_video_file.php?action=video16">Structure and Unions</a>
- 	 			</li>
+                                </li> -->
                                 <?php 
                                 $sql_r1 = "SELECT * FROM user_exam_result WHERE  user_id = '" . $id . "' ";
                                 $result12 = mysqli_query($con, $sql_r1);
@@ -256,13 +269,13 @@ include 'Connection/common.php';
                  {
                 ?>
                  <li>
- 	 				<a href="#">Final Assassment</a>
+ 	 				<a href="#">Final Assessment</a>
  	        </li>
                 <?php
                  }else{
                 ?>
                 <li style="pointer-events: none; color: red;">
- 	 				<a href="#">Final Assassment</a>
+ 	 				<a href="#">Final Assessment</a>
  	        </li>
                 <?php
                  }
@@ -300,7 +313,7 @@ include 'Connection/common.php';
             if (isset($_GET["action"])){
 
             $c=$_GET["action"];
-            $query = "SELECT  src FROM  c_video WHERE video_id = '" . $c . "' ";
+            $query = "SELECT  src FROM  java_video WHERE video_id = '" . $c . "' ";
             $result = mysqli_query($con, $query) or die($mysqli_error($con));
             $num = mysqli_num_rows($result);
             $row = mysqli_fetch_array($result);   
