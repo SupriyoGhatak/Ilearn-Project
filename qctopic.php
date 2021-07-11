@@ -95,19 +95,7 @@
                                     <p>Final assessment-I</p>
                                     <a href="topic1c.php" class="btn btn-success  active ti-agenda" role="button" aria-pressed="true">&nbsp;&nbsp;Give Exam&nbsp;&nbsp;</a>
                                 </li>
-                                <div class="collapse" id="click1">
-                                    <ul style="color: black;">
-                                        <li>Facts about C</li>
-                                            <li style="padding-bottom: 10px;">
-                                                Why to use C?
-                                            </li>
-                                        </ul>
-                                </div> 
                                 
-                                <li class="justify-content-between d-flex">
-                                    <p>Final assessment-II</p>
-                                    <a href="topic1c.php" class="btn btn-success  active ti-agenda" role="button" aria-pressed="true">&nbsp;&nbsp;Give Exam&nbsp;&nbsp;</a>  
-                                </li>
                                 <div class="collapse" id="click2">
                                     <ul style="color: black;">
                                         <li>Installation on Unix/Linus</li>
