@@ -3,103 +3,56 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <file>file:/C:/wamp64/www/Ilearn-Project/dashlibrary.php</file>
-=======
->>>>>>> 3f9ebb0fe0b5a4d0af4e092cae003d5cfb97c65a
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/view_details.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/app.js</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-buy-java.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/admin_exam.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/notice.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/Connection/common.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/login_script.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/css/style1.css</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-buy-c++.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/c_video_file.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/signup.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-details-rdbms.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/dashreports.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/admin_dashboard.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/css/videostyle.css</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/topic1c.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/course_c.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-details-java.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/dashupcoming.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/qctopic.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/index.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-details-c.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/newdash.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/dashcourses.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/courses.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/header_other.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/dashexamboard.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/test.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/quiz.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/sign_up_script.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/css/style.css</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/my_profile_script.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-buy-c.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-buy-rdbms.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/admin_video.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/sendmail.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/footer.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/my_profile_image_script.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/css/teststyle.css</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/css/notice.css</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-details.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/visitor.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/admin_notice.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/header_index.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/payment.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/my_profile.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/topic1c+.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/payment_script.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/css/admin_style.css</file>
-<<<<<<< HEAD
-=======
->>>>>>> fdd325e9e7b982d1c842a725ec87abd237d0c972
-=======
-            <file>file:/C:/wamp64/www/Ilearn-Project/topic1c.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/topic4c.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/topic1r.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/js/topictimer.js</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/css/notice.css</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/topic4c+.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/topic2j.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/topic4r.php</file>
->>>>>>> 98b71b950d7bdd0bb5e02f03d8fa46e421ea1aaf
-            <file>file:/C:/wamp64/www/Ilearn-Project/dashcourses.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/topic1c+.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/topic3c.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/notice.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/topicresult.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/topic5j.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/dashexamboard.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/qjtopic.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/topic5r.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/qc++topic.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/css/qstn.css</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/topic1j.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/topic4j.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/qrtopic.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/qctopic.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/topic5c+.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/topic2r.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/css/teststyle.css</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/topic3c+.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/dashupcoming.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/topic3r.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/topic2c+.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/dashreports.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/topic5c.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/topic3j.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/topic2c.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/test.php</file>
->>>>>>> d9a801349f1366a5f9d89d8e553ad08adbab317f
->>>>>>> 3f9ebb0fe0b5a4d0af4e092cae003d5cfb97c65a
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-buy-java.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/admin_exam.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/css/style1.css</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-buy-c++.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/dashreports.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/admin_dashboard.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/css/videostyle.css</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/course_c.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/dashupcoming.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/qctopic.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/index.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-details-c.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/newdash.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/dashexamboard.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/test.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/admin_video.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/footer.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-details.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/visitor.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/css/quiz_style.css</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/admin_notice.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/payment.php</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/my_profile.php</file>
         </group>
     </open-files>
 </project-private>
