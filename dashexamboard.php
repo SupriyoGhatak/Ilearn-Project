@@ -164,12 +164,31 @@
                 </tr>
             </thead>  
             <tbody>
+                <?php
+                 $id=$_SESSION['id'];
+                 $sql_f = "SELECT * FROM user_exam_result WHERE  user_id = '" . $id . "' ";
+                 $result13 = mysqli_query($con, $sql_f);
+                 if (mysqli_num_rows($result13) > 0) {
+                 $row1 = mysqli_fetch_assoc($result13);
+                 $c_f= $row1['c_f'];
+                 $check1=$row1['c_2nd'];
+                if($check1>70){
+                ?>
                 <tr role="row" class="odd">
                     <td>Final Assassment</td>
                     <td class="sorting_1">C</td>
-                    <td>2021-06-18</td>
-                    <td>10 Question/topic</td>
+                    <td><?php
+                    date_default_timezone_set("Asia/kolkata");
+                    echo  date("Y-m-d h:i:sa"); ?></td>
+                    <td>4 Question/topic</td>
+                    <?php 
+                    if($c_f>70)
+                    {
+                    ?>
+                    <td><span class="badge badge-success">Completed</span></td>
+                    <?php }else{ ?>
                     <td><span class="badge badge-secondary">Incomplete</span></td>
+                    <?php } ?>
                     <td>4 Mark</td>
                     <td>-1 Mark</td>
                     <td>
@@ -178,7 +197,9 @@
 
                            
 			</div>
-				</td></tr>
+	            </td>
+                </tr>
+                 <?php }} ?>
                 <tr role="row" class="even">
                     <td>1st term</td>
                     <td class="sorting_1">C++</td>
