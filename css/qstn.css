@@ -11,6 +11,7 @@
     color: purple;
     font-size: 20px;
     padding-left: 50px;
+    padding-bottom: 80px;
 }
 .maini
 {
@@ -25,14 +26,14 @@
     background-color: #ECECEC;
     box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
     min-height: 900px;
-    padding: 130px 90px;
+    padding: 10px 90px;
    
    
     
 }
 .titlee {
     
-    color: #002752;
+    color: #002a80;
     font-weight: 600;
     margin-bottom: 20px;
  
@@ -99,4 +100,34 @@
 .resultBox label {
     font-weight: 600;
     color: #002752;
+}
+.cardbox{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+.cardbox .card{
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.cardbox .card .number{
+    position: relative;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.cardbox .card .cardName{
+    color: #999;
+}
+.cardbox .card .iconBox{
+    font-size: 2rem;
+    color: #03a9f4;
 }

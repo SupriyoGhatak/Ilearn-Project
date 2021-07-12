@@ -74,13 +74,15 @@
             </div>
           </div>
         </nav>
-               <div class="ab" style="color: red;font-size: 20px;padding-left: 450px;">You have to score more than 70% to qualify for next assessment.</div>
+               
      
     </header>
+      
      <div class="maini">
          
          
          <div class="box" id="questionScreen1">
+             <div class="ab" style="color: red;font-size: 20px;">You have to score more than 70% to qualify for next assessment.</div>
               <div class="hee">
               <div class="titlee" style="font-size: 30px;">
                   QUESTIONS:
