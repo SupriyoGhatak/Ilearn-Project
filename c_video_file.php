@@ -252,6 +252,7 @@ include 'Connection/common.php';
                 
                 
                 <?php
+               // $_SESSION['c_result']=$check1;
                  if($check1>70)
                  {
                 ?>
