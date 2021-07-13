@@ -36,7 +36,7 @@ include 'Connection/common.php';
   </head>
   <body method="POST">
       
- <div class="wrapper">
+<div class="wrapper">
 	
  <nav id="sidebar">
  	
@@ -120,6 +120,9 @@ include 'Connection/common.php';
  	 			
  	 			<li>
  	 				<a href="c_video_file.php?action=video12">Loops</a>
+ 	 			</li>
+                                <li>
+                                    <a href="c_video_file.php?action=coding">Coding</a>
  	 			</li>
                                 <li>
  	 				<a href="c_video_file.php?action=video13">Functions</a>
@@ -308,15 +311,29 @@ include 'Connection/common.php';
             $src = $row['src'];
             }
         ?>
-        <?php if(!isset($src)){?>
+        <?php if(!isset($_GET["action"])){?>
         <section  style="height: 100vh; display: flex;
             text-align: center;
             justify-content: center;">
             <img style=""height="80%; width:70%;"src="img/video_bg_c.jpg" >
 
         </section>
-        <?php }else {?>
-
+        <?php
+        }
+        else
+        {
+            
+            if($c=="coding"){
+            ?>
+             <h1><center>Coding Question</center></h1>
+      <p>This is a coding Question....</p>
+      <center><button class="success" onclick="window.location.href='http://tpcg.io/MqVMJoo2';">Click Here For Coding</button></center>
+            <?php 
+            
+            }
+            else
+            {    
+            ?>
         <section style="height: 100vh;" class="section-content">
 
            <iframe src="<?php echo $src; ?>" width="1100" height="500" controls style="width: 100%;max-height: 100%;"></iframe>
@@ -332,7 +349,7 @@ include 'Connection/common.php';
                 
             }">Save</button></center>
         </section>
-        <?php } ?>
+            <?php }} ?>
         
     </div>
 </div>

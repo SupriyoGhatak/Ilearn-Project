@@ -3,12 +3,6 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> e12cbf2417c7e9fd63bb3242a6937334b5b8fbdc
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/view_details.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/app.js</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/notice.php</file>
@@ -34,6 +28,7 @@
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/my_profile_image_script.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/css/teststyle.css</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/css/notice.css</file>
+            <file>file:/Applications/XAMPP/htdocs/ilearnmain/coding_question.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/header_index.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/payment_script.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/css/admin_style.css</file>
@@ -60,59 +55,6 @@
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/admin_notice.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/payment.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/my_profile.php</file>
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-            <file>file:/C:/wamp64/www/Ilearn-Project/contact.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/admin_updatecomplaint.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/contact_script.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/admin_complaintdetails.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/admin_query.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/payment.php</file>
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            <file>file:/C:/wamp64/www/Ilearn-Project/course-buy-c.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/quiz.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/c_video_file.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/Quiz_script.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/payment_script.php</file>
-=======
-<<<<<<< HEAD
->>>>>>> b6000e1efdfe31ad7fdfc670e4b7425190bed878
->>>>>>> 3c038f5bad048e393d1f6fb62f43adff3ac7b8ba
-            <file>file:/C:/wamp64/www/Ilearn-Project/topic1c.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/css/qstn.css</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/dashexamboard.php</file>
-<<<<<<< HEAD
-            <file>file:/C:/wamp64/www/Ilearn-Project/css/admin_style.css</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/css/style.css</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/admin_complaintdetails.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/admin_query.php</file>
-=======
-            <file>file:/C:/wamp64/www/Ilearn-Project/dashreports.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/qjtopic.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/css/stylee1.css</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/test.php</file>
-<<<<<<< HEAD
-=======
-=======
-            <file>file:/C:/wamp64/www/Ilearn-Project/index.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/dashlibrary.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/elib.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/css/tooltip.css</file>
->>>>>>> 118e2b872de965d28a7c5ef078eb4fc44cfe97f4
-            <file>file:/C:/wamp64/www/Ilearn-Project/payment.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/sign_up_script.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/dashcourses.php</file>
->>>>>>> 8aadd991c1bc86077f64ac1592a81995a7291aba
->>>>>>> b6000e1efdfe31ad7fdfc670e4b7425190bed878
->>>>>>> 19869c195e8943d305834d7290e05c050c29cc9e
->>>>>>> c78e8b1a0fc26f195134bbb38b12bf1c65fc5bbf
->>>>>>> 3c038f5bad048e393d1f6fb62f43adff3ac7b8ba
->>>>>>> e12cbf2417c7e9fd63bb3242a6937334b5b8fbdc
         </group>
     </open-files>
 </project-private>

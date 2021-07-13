@@ -79,19 +79,19 @@
      <div class="ab" style="color: red;font-size: 20px;padding-left: 450px;position: -webkit-sticky; position:sticky;">You have to score more than 70% to qualify for next assessment.</div>
                
             </header>
->>>>>>> 3c038f5bad048e393d1f6fb62f43adff3ac7b8ba
+
      <div class="maini">
          
         
          <div class="box" id="questionScreen1">
-<<<<<<< HEAD
+
              <div class="ab" style="color: red;font-size: 20px;">You have to score more than 70% to qualify for next assessment.</div>
               <div class="hee">
               <div class="titlee" style="font-size: 30px;">
-=======
+
             <div class="hee">
             <div class="titlee" style="font-size: 30px;">
->>>>>>> 3c038f5bad048e393d1f6fb62f43adff3ac7b8ba
+
                   QUESTIONS:
             </div>
             <div class="timerBox"  id="countdown">Time Left:&nbsp;<span></span></div>
