@@ -801,7 +801,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/gmaps.min.js"></script>
     <script src="js/theme.js"></script>
     <script>
-        var dest= new Date("June 30, 2021 10:00:00").getTime();
+        var dest= new Date("September 30, 2021 10:00:00").getTime();
         var x =setInterval(function(){
         var now= new Date().getTime();
         var diff = dest - now;
