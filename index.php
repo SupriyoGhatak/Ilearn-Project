@@ -452,7 +452,7 @@
                   One make creepeth man for so bearing their firmament won't
                   fowl meat over seas great
                 </p>
-                <a href="#" class="primary-btn rounded-0 mt-3">View Details</a>
+                <a href="view_details.php" class="primary-btn rounded-0 mt-3">View Details</a>
               </div>
             </div>
           </div>
@@ -479,7 +479,7 @@
                   One make creepeth man for so bearing their firmament won't
                   fowl meat over seas great
                 </p>
-                <a href="#" class="primary-btn rounded-0 mt-3">View Details</a>
+                <a href="view_details.php" class="primary-btn rounded-0 mt-3">View Details</a>
               </div>
             </div>
           </div>
@@ -506,7 +506,7 @@
                   One make creepeth man for so bearing their firmament won't
                   fowl meat over seas great
                 </p>
-                <a href="#" class="primary-btn rounded-0 mt-3">View Details</a>
+                <a href="view_details.php" class="primary-btn rounded-0 mt-3">View Details</a>
               </div>
             </div>
           </div>
@@ -544,7 +544,7 @@
                   One make creepeth man for so bearing their firmament won't
                   fowl meat over seas great
                 </p>
-                <a href="#" class="primary-btn rounded-0 mt-3">View Details</a>
+                <a href="view_details.php" class="primary-btn rounded-0 mt-3">View Details</a>
               </div>
             </div>
           </div>

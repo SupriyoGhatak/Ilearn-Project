@@ -122,7 +122,7 @@ include 'Connection/common.php';
  	 				<a href="c_video_file.php?action=video12">Loops</a>
  	 			</li>
                                 <li>
-                                    <a href="c_video_file.php?action=coding">Coding</a>
+                                    <a href="c_video_file.php?action=coding1">Coding1</a>
  	 			</li>
                                 <li>
  	 				<a href="c_video_file.php?action=video13">Functions</a>
@@ -133,6 +133,9 @@ include 'Connection/common.php';
                                 <li>
  	 				<a href="c_video_file.php?action=video15">Arrays and Pointers</a>
                                 </li><!-- comment -->
+                                <li>
+                                    <a href="c_video_file.php?action=coding2">Coding2</a>
+ 	 			</li>
                                 <li>
  	 				<a href="c_video_file.php?action=video16">Structure and Unions</a>
  	 			</li>
@@ -323,17 +326,94 @@ include 'Connection/common.php';
         else
         {
             
-            if($c=="coding"){
+            if($c=="coding1"){
             ?>
              <h1><center>Coding Question</center></h1>
-      <p>This is a coding Question....</p>
-      <center><button class="success" onclick="window.location.href='http://tpcg.io/MqVMJoo2';">Click Here For Coding</button></center>
+             <p style="color: black;"><strong><h2><center>Find minimum and maximum element in an array</center></h2></strong><br>
+
+          Given an array A of size N of integers.<br><!-- comment -->Your task is to find the minimum and maximum elements in the array.<br>
+
+ 
+
+          Example 1:<br>
+          <br>
+          Input:<br>
+          N = 6<br>
+          A[] = {3, 2, 1, 56, 10000, 167}<br>
+          Output:<br><!-- comment -->
+          min = 1, max =  10000<br>
+ 
+
+          Example 2:<br>
+
+          Input:<br>
+          N = 5<br>
+          A[]  = {1, 345, 234, 21, 56789}<br>
+          Output:<br>
+          min = 1, max = 56789<br>
+ 
+          <br><!-- comment -->
+          
+          Your Task:  <br>
+          Your task is to complete the function getMinMax() which takes the array A[] and its size N as inputs and returns the minimum and maximum element of the array.<br>
+
+ 
+          <br><!-- comment -->
+          <!-- comment -->
+         
+          Expected Time Complexity: O(N)<br>
+          Expected Auxiliary Space: O(1)<br><!-- comment -->
+
+ 
+
+          Constraints:<br><!-- comment -->
+          1 <= N <= 105<br>
+          1 <= Ai <=1012</p><br>
+             <center><button style="color: black; border-radius: 2px; background: yellow;" onclick="window.location.href='http://tpcg.io/MqVMJoo2';" target="_blank">Click Here For Coding</button></center>
             <?php 
             
             }
-            else
+            else if($c=="coding2")
             {    
             ?>
+             
+             <h1><center>Coding Question</center></h1>
+             <p style="color: black;"><strong><h2><center>Rotate the Array</center></h2></strong><br>
+             <p style="color: black;"> Given an unsorted array arr[] of size N, rotate it by D elements (clockwise).<br><!-- comment --> 
+                 <br>
+                 Input:<br>
+                 The first line of the input contains T denoting the number of testcases.<br><!-- comment --> First line of each test case contains two space separated elements, N denoting the size of the array and an integer D denoting the number size of the rotation. Subsequent line will be the N space separated array elements.<br><!-- comment -->
+
+                 Output:<br>
+                 For each testcase, in a new line, output the rotated array.<br>
+                 <br>
+                 Constraints:<br>
+                 1 <= T <= 200<br>
+                 1 <= N <= 107<br>
+                 1 <= D <= N<br>
+                 0 <= arr[i] <= 105<br>
+                 <br>
+                 Example:<br>
+                 Input:<br>
+                 2<br>
+                 5 2<br>
+                 1 2 3 4 5 <br>
+                 10 3<br>
+                 2 4 6 8 10 12 14 16 18 20<br>
+                 <br>
+                 Output:<br>
+                 3 4 5 1 2<br>
+                 8 10 12 14 16 18 20 2 4 6<br><!-- comment -->
+                 <br>
+                 Explanation :<br>
+                 Testcase 1: <br><!-- comment -->1 2 3 4 5  when rotated by 2 elements, it becomes 3 4 5 1 2.<br></p>
+             <center><button style="color: black; border-radius: 2px; background: yellow;" onclick="window.location.href='http://tpcg.io/MqVMJoo2';" target="_blank">Click Here For Coding</button></center>
+             
+             <?php 
+            }
+            else 
+            {
+             ?>
         <section style="height: 100vh;" class="section-content">
 
            <iframe src="<?php echo $src; ?>" width="1100" height="500" controls style="width: 100%;max-height: 100%;"></iframe>
