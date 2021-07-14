@@ -69,18 +69,29 @@
         </nav>
                
      
+<<<<<<< HEAD
+    </header>
+      
+=======
     </header>-->
             <header>
                 <div class="ab" style="color: red;font-size: 20px;padding-left: 450px;position: -webkit-sticky; position:sticky; margin-top: 40px;"> </div>
      <div class="ab" style="color: red;font-size: 20px;padding-left: 450px;position: -webkit-sticky; position:sticky;">You have to score more than 70% to qualify for next assessment.</div>
                
             </header>
+
      <div class="maini">
          
         
          <div class="box" id="questionScreen1">
+
+             <div class="ab" style="color: red;font-size: 20px;">You have to score more than 70% to qualify for next assessment.</div>
+              <div class="hee">
+              <div class="titlee" style="font-size: 30px;">
+
             <div class="hee">
             <div class="titlee" style="font-size: 30px;">
+
                   QUESTIONS:
             </div>
             <div class="timerBox"  id="countdown">Time Left:&nbsp;<span></span></div>
