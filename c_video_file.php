@@ -398,7 +398,7 @@ include 'Connection/common.php';
                  {
                 ?>
                  <li>
- 	 				<a href="#">Final Assassment</a>
+                     <a href="dashexamboard.php">Final Assassment</a>
  	        </li>
                 <?php
                  }else{

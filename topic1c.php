@@ -1,8 +1,8 @@
 <?php
   session_start();
   include 'Connection/common.php';
-  $type="c_2nd";
-  $course="c";
+  $type=$_GET['type'];
+ $course=$_GET['course'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -100,7 +100,7 @@
                   
                   <?php
                   $i=1;
-                  $sql1 = "SELECT * FROM `question` WHERE  type = '" . $type . "' AND course = '" . $course . "' ";
+                  $sql1 = "SELECT * FROM question WHERE  type = '" . $type . "' AND course = '" . $course . "' ";
                   $result1 = mysqli_query($con, $sql1);
                    if (mysqli_num_rows($result1) > 0) {
                    while($row1 = mysqli_fetch_assoc($result1)) {
@@ -111,7 +111,7 @@
                   </div>
                    <?php
                     $qid=$row1['qid'];
-                    $sql = "SELECT * FROM `answer` WHERE `ans_id` = $qid  AND type = '" . $type . "' AND course = '" . $course . "'";
+                    $sql = "SELECT * FROM answer WHERE `ans_id` = $qid  AND type = '" . $type . "' AND course = '" . $course . "'";
                     $result = mysqli_query($con, $sql);
                    ?>
                  <div class="optionBox">
