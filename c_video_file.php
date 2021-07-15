@@ -424,11 +424,11 @@ include 'Connection/common.php';
                                       <span>Toggle</span>
 
                               </button>
-                          <button type="button" id="sidebarCollapse" class="btn  btn-info">
+                         <a href="index.php"> <button type="button" id="sidebarCollapse" class="btn  btn-info">
                                  <i class="fas fa-home"></i>
-                                 <span><a href="index.php">Home</a></span>
+                                 <span>Home</span>
 
-                              </button>
+                             </button></a>
                           
                              
                       </div>
