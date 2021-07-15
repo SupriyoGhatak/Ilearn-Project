@@ -1,6 +1,7 @@
 <?php
 session_start();
 include 'Connection/common.php';
+include 'statictics_script.php';
  $id=$_SESSION['id'];
 ?>
 <!DOCTYPE html>
@@ -305,8 +306,9 @@ include 'Connection/common.php';
             //session_start();
             include 'Connection/common.php';
             if (isset($_GET["action"])){
-
             $c=$_GET["action"];
+            
+            Insert($c,"c","c_statictics");
             $query = "SELECT  src FROM  c_video WHERE video_id = '" . $c . "' ";
             $result = mysqli_query($con, $query) or die($mysqli_error($con));
             $num = mysqli_num_rows($result);
@@ -369,7 +371,7 @@ include 'Connection/common.php';
           Constraints:<br><!-- comment -->
           1 <= N <= 105<br>
           1 <= Ai <=1012</p><br>
-             <center><button style="color: black; border-radius: 2px; background: yellow;" onclick="window.location.href='http://tpcg.io/MqVMJoo2';" target="_blank">Click Here For Coding</button></center>
+             <center><button style="color: black; border-radius: 2px; background: yellow;" ><a href="http://tpcg.io/MqVMJoo2" target="_blank">Click Here For Coding</a></button></center>
             <?php 
             
             }
@@ -407,7 +409,7 @@ include 'Connection/common.php';
                  <br>
                  Explanation :<br>
                  Testcase 1: <br><!-- comment -->1 2 3 4 5  when rotated by 2 elements, it becomes 3 4 5 1 2.<br></p>
-             <center><button style="color: black; border-radius: 2px; background: yellow;" onclick="window.location.href='http://tpcg.io/MqVMJoo2';" target="_blank">Click Here For Coding</button></center>
+             <center><button style="color: black; border-radius: 2px; background: yellow;"><a href="http://tpcg.io/MqVMJoo2" target="_blank">Click Here For Coding</a></button></center>
              
              <?php 
             }
