@@ -132,7 +132,49 @@
 </nav>
             
 <h1 class="h2 dash-title">Reports</h1>
-<p>This is the homepage of a simple admin interface which is part of a tutorial written on Themesberg</p>
+
+<a href="#" style="text-decoration: none; color: white;"><button type="button"style="background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin-left: 1px;
+  cursor: pointer;">C</button></a>
+  
+  <a href="#" style="text-decoration: none; color: white;"><button type="button" style="background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;">Java</button></a>
+  <a href="#" style="text-decoration: none; color: white;"><button type="button" style="background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;">C++</button></a>
+  <a href="#" style="text-decoration: none; color: white;"><button type="button" style="background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; margin: 4px 2px;
+  margin-bottom: 10px;
+  cursor: pointer;">DBMS</button></a>
 
              <div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
@@ -168,7 +210,7 @@
                  
 </div> 
 <div class="serti">
-    <a href="#" class="cert">Get Certificate</a>
+    <a href="#" class="cert" style="text-decoration: none;color: white;">Get Certificate</a>
 </div>
               
 
