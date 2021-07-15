@@ -164,29 +164,103 @@
                 </tr>
             </thead>  
             <tbody>
+                <?php
+                 $id=$_SESSION['id'];
+                 $sql_f = "SELECT * FROM user_exam_result WHERE  user_id = '" . $id . "' ";
+                 $result13 = mysqli_query($con, $sql_f);
+                 if (mysqli_num_rows($result13) > 0) {
+                 $row1 = mysqli_fetch_assoc($result13);
+                 //for c
+                 $c_f= $row1['c_f'];
+                 $check1=$row1['c_2nd'];
+                 //for java
+                 $check2=$row1['java_2nd'];
+                 $java_f=$row1['java_f'];
+                 //for c++
+                 $check3=$row1['c_plus_2nd'];
+                 $c_plus_f=$row1['c_plus_f'];
+                 //for RDBMS
+                 $check4=$row1['rdbms_2nd'];
+                 $rdbms_f=$row1['rdbms_f'];
+                 
+                if($check1>70){
+                ?>
                 <tr role="row" class="odd">
                     <td>Final Assessment</td>
                     <td class="sorting_1">C</td>
-                    <td>2021-06-18</td>
-                    <td>10 Question/topic</td>
+                    <td><?php
+                    date_default_timezone_set("Asia/kolkata");
+                    echo  date("Y-m-d h:i:sa"); ?></td>
+                    <td>7 Question</td>
+                    <?php 
+                    if($c_f>70)
+                    {
+                    ?>
+                    <td><span class="badge badge-success">Completed</span></td>
+                    <?php }else{ ?>
                     <td><span class="badge badge-secondary">Incomplete</span></td>
+                    <?php } ?>
                     <td>4 Mark</td>
                     <td>-1 Mark</td>
+                    <?php 
+                    if($c_f>70)
+                    {
+                    ?>
+                    <td>
+                        <div align="center" >
+                            <a href="qctopic.php" class="btn btn-secondary small btn-sm disabled" role="button" aria-pressed="true">See EXAM</a>
+
+                           
+			</div>
+	            </td>
+                     <?php }else{ ?>
                     <td>
                         <div align="center">
                             <a href="qctopic.php" class="btn btn-success small btn-sm active" role="button" aria-pressed="true">See EXAM</a>
 
                            
 			</div>
-				</td></tr>
+	            </td>
+                    <?php } ?>
+                </tr>
+                 <?php } ?>
+                
+                
+                
+                
+                 <?php
+                if($check3>70){
+                ?>
+                
                 <tr role="row" class="even">
-                    <td>1st term</td>
+                    <td>Final Assessment</td>
                     <td class="sorting_1">C++</td>
-                    <td>2021-05-13 17:45:00</td>
-                    <td>10 Question/topic</td>
+                    <td><?php
+                    date_default_timezone_set("Asia/kolkata");
+                    echo  date("Y-m-d h:i:sa"); ?></td>
+                    <td>7 Question</td>
+                     <?php 
+                    if($c_plus_f>70)
+                    {
+                    ?>
+                    <td><span class="badge badge-success">Completed</span></td>
+                    <?php }else{ ?>
                     <td><span class="badge badge-secondary">Incomplete</span></td>
+                    <?php } ?>
                     <td>4 Mark</td>
                     <td>-1 Mark</td>
+                     <?php 
+                    if($c_plus_f>70)
+                    {
+                    ?>
+                     <td>
+                        <div align="center">
+                            
+                            <a href="qc++topic.php" class="btn btn-secondary small btn-sm disabled" role="button" aria-pressed="true">See EXAM</a>
+
+			</div>
+                    </td>
+                     <?php }else{ ?>
                     <td>
                         <div align="center">
                             
@@ -194,35 +268,103 @@
 
 			</div>
                     </td>
+                     <?php } ?>
                 </tr>
+                <?php } ?>
+                
+                
+                
+                
+                <?php
+                if($check2>70){
+                ?>
+                
                 <tr role="row" class="even">
-                    <td>1st term</td>
+                    <td>Final Assessment</td>
                     <td class="sorting_1">JAVA</td>
-                    <td>2021-05-13 17:45:00</td>
-                    <td>10 Question/topic</td>
+                    <td><?php
+                    date_default_timezone_set("Asia/kolkata");
+                    echo  date("Y-m-d h:i:sa"); ?></td>
+                    <td>7 Question</td>
+                    <?php 
+                    if($java_f>70)
+                    {
+                    ?>
                     <td><span class="badge badge-success">Completed</span></td>
+                    <?php }else{ ?>
+                    <td><span class="badge badge-secondary">Incomplete</span></td>
+                    <?php } ?>
                     <td>4 Mark</td>
                     <td>-1 Mark</td>
+                    <?php 
+                    if($java_f>70)
+                    {
+                    ?>
+                    <td>
+                        <div align="center">
+                            <a href="qjtopic.php" class="btn btn-secondary small btn-sm disabled" role="button" aria-pressed="true">See EXAM</a>
+                        </div>
+                    </td>
+                    <?php }else{ ?>
                     <td>
                         <div align="center">
                             <a href="qjtopic.php" class="btn btn-success small btn-sm active" role="button" aria-pressed="true">See EXAM</a>
                         </div>
                     </td>
+                    <?php } ?>
                 </tr>
+                <?php } ?>
+                
+                
+                
+                
+                
+                <?php
+                if($check2>70){
+                ?>
+                
                 <tr role="row" class="even">
-                    <td>1st term</td>
+                    <td>Final Assessment</td>
                     <td class="sorting_1">RDBMS</td>
-                    <td>2021-05-13 17:45:00</td>
-                    <td>10 Question/topic</td>
+                    <td><?php
+                    date_default_timezone_set("Asia/kolkata");
+                    echo  date("Y-m-d h:i:sa"); ?></td>
+                    <td>7 Question</td>
+                    <?php 
+                    if($rdbms_f>70)
+                    {
+                    ?>
+                    <td><span class="badge badge-success">Completed</span></td>
+                    <?php }else{ ?>
                     <td><span class="badge badge-secondary">Incomplete</span></td>
+                    <?php } ?>
                     <td>4 Mark</td>
                     <td>-1 Mark</td>
+                    <?php 
+                    if($rdbms_f>70)
+                    {
+                    ?>
+                    <td>
+                        <div align="center">
+                            <a href="qrtopic.php" class="btn btn-secondary small btn-sm disabled" role="button" aria-pressed="true">See EXAM</a>
+                        </div>
+                    </td>
+                     <?php }else{ ?>
                     <td>
                         <div align="center">
                             <a href="qrtopic.php" class="btn btn-success small btn-sm active" role="button" aria-pressed="true">See EXAM</a>
                         </div>
                     </td>
+                     <?php } ?>
                 </tr>
+                
+                 <?php }} ?>
+                
+                
+                
+                
+                
+                
                 
             </tbody>
         </table>

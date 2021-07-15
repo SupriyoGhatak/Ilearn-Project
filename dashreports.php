@@ -19,6 +19,7 @@
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/teststyle.css" />
+    <link rel="stylesheet" href="css/reportstyle.css"/>
   </head>
 
   <body>
@@ -131,9 +132,88 @@
 </nav>
             
 <h1 class="h2 dash-title">Reports</h1>
-<p>This is the homepage of a simple admin interface which is part of a tutorial written on Themesberg</p>
 
-                
+<a href="#" style="text-decoration: none; color: white;"><button type="button"style="background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin-left: 1px;
+  cursor: pointer;">C</button></a>
+  
+  <a href="#" style="text-decoration: none; color: white;"><button type="button" style="background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;">Java</button></a>
+  <a href="#" style="text-decoration: none; color: white;"><button type="button" style="background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;">C++</button></a>
+  <a href="#" style="text-decoration: none; color: white;"><button type="button" style="background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; margin: 4px 2px;
+  margin-bottom: 10px;
+  cursor: pointer;">DBMS</button></a>
+
+             <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+        <img src="img/quiz.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title" style="font-size: 35px;">Quiz-1</h5>
+        <p class="card-text" style="font-size: 25px;padding-top: 10px;padding-bottom: 20px;">Your Score:-0%</p>
+      </div>
+      
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+        <img src="img/quiz.png" class="card-img-top" alt="...">
+      <div class="card-body">
+          <h5 class="card-title" style="font-size: 35px;">Quiz-2</h5>
+        <p class="card-text" style="font-size: 25px;padding-top: 10px;padding-bottom: 20px;">Your Score:&nbsp;&nbsp;0%</p>
+      </div>
+      
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+        <img src="img/final-assessment.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title" style="font-size: 35px;">final-assessment</h5>
+        <p class="card-text" style="font-size: 25px;padding-top: 10px;padding-bottom: 20px;">Your Score:-0%</p>
+      </div>
+      
+    </div>
+  </div>
+                 
+</div> 
+<div class="serti">
+    <a href="#" class="cert" style="text-decoration: none;color: white;">Get Certificate</a>
+</div>
+              
+
              </main>
       </div>
 	

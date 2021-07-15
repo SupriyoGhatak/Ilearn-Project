@@ -333,7 +333,7 @@
                     One make creepeth man bearing their one firmament won't fowl
                     meat over sea d
                     
-                    ahsdbkasbdkjasdbkasjdb
+                    
                   </p>
                   <div
                     class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4"
