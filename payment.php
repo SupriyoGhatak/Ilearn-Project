@@ -23,6 +23,11 @@
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/stylee.css"/>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css">
+    <link rel="stylesheet" href="/vendors/formvalidation/dist/css/formValidation.min.css">
 
   <body>
     <!--================ Start Header Menu Area =================-->
@@ -31,7 +36,7 @@
     ?>
     <?php
            include 'Connection/common.php';
-
+          
            $course=$_GET['action'];
            $_SESSION['course']=$course;
            
@@ -68,7 +73,7 @@
             <h3>Billing Address</h3>
             <label for="fname"><i class="fa fa-user"></i> Full Name</label>
 
-            <input type="text" id="fname" name="fullname" placeholder="EnterName"><!-- 
+            <input type="text" id="fname" name="fullname" placeholder="EnterName" required="true"><!-- 
                  -->
 
             
@@ -98,31 +103,31 @@
             <label for="fname">Accepted Cards</label>
             <div class="icon-container">
               <i class="fa fa-cc-visa" style="color:navy;"></i>
-              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <!--<i class="fa fa-cc-amex" style="color:blue;"></i>-->
               <i class="fa fa-cc-mastercard" style="color:red;"></i>
               <i class="fa fa-cc-discover" style="color:orange;"></i>
             </div>
             <label for="ccname">Name on Card</label>
             <input type="text" id="ccname" name="cardname" placeholder="Enter Name" required>
             <label for="ccnum">Credit card number</label>
-            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
-            <label for="expmonth">Exp Month</label>
-            <input type="text" id="expmonth" name="expmonth" placeholder="September" required>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" class ="input-reset ba b--black-20 pa2 mb2 db w-100" required>
+            <label for="expmonth">Card Expiry Date</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="mm/yyyy" required>
 
-            <div class="row">
+           <div class="row">
               <div class="col-50">
                 <label for="expyear">Exp Year</label>
                 <input type="text" id="expyear" name="expyear" placeholder="2018" required>
-              </div>
-              <div class="col-50">
+              </div> 
+              <div class="col-50"> 
                 <label for="cvv">CVV</label>
                 <input type="text" id="cvv" name="cvv" placeholder="352" required>
               </div>
-            </div>
-          </div> 
+           </div>
+       <!--   </div> -->
 
         </div>
-        <label> --
+        <label> 
           <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
         </label>
           <input type="submit" value="Continue to checkout" class="btn">
@@ -150,5 +155,81 @@
           <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
           <script src="js/gmaps.min.js"></script>
           <script src="js/theme.js"></script>
+          
+          
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.3/es6-shim.min.js"></script>
+   <!-- <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/> -->
+<script src="/vendors/formvalidation/dist/js/FormValidation.min.js"></script>
+<script src="/vendors/formvalidation/dist/js/plugins/Tachyons.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function(e) {
+    FormValidation.formValidation(
+        document.getElementById('form1'),
+        {
+            fields: {
+                ccnum: {
+                    validators: {
+                        notEmpty: {
+                            message: 'The credit card number is required'
+                        },
+                        creditCard: {
+                            message: 'The credit card number is not valid'
+                        },
+                    }
+                }
+            },
+            plugins: {
+                trigger: new FormValidation.plugins.Trigger(),
+                tachyons: new FormValidation.plugins.Tachyons(),
+                submitButton: new FormValidation.plugins.SubmitButton(),
+                icon: new FormValidation.plugins.Icon({
+                    valid: 'fa fa-check',
+                    invalid: 'fa fa-times',
+                    validating: 'fa fa-refresh'
+                }),
+            },
+        }
+    )
+    .on('core.validator.validated', function(e) {
+        if (e.field === 'ccnum' && e.validator === 'creditCard' && e.result.valid) {
+            let icon = '';
+            // e.result.meta.type can be one of
+            // AMERICAN_EXPRESS, DINERS_CLUB, DINERS_CLUB_US, DISCOVER, JCB, LASER,
+            // MAESTRO, MASTERCARD, SOLO, UNIONPAY, VISA
+            switch (e.result.meta.type) {
+                
+                
+                case 'DISCOVER':
+                    icon = 'fa-cc-discover';
+                    break;
+                
+                case 'MASTERCARD':
+                
+                    icon = 'fa-cc-mastercard';
+                    break;
+                
+                case 'VISA':
+                    icon = 'fa-cc-visa';
+                    break;
+                
+                default:
+                    icon = 'fa-credit-card';
+                    break;
+            }
+
+            // Query the icon element
+            const iconEle = e.element.nextSibling;
+            iconEle.setAttribute('class', 'fv-plugins-icon ' + icon);
+        }
+    })
+    .on('core.element.validated', function(e) {
+        if (e.field === 'ccnum' && !e.valid) {
+            const iconEle = e.element.nextSibling;
+            iconEle.setAttribute('class', 'fv-plugins-icon fa fa-times');
+        }
+    });
+});
+</script>
   </body>
 </html>

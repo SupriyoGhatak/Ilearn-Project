@@ -69,7 +69,7 @@
                   <li>
                       <a href="dashupcoming.php">
                           <span class="ti-clipboard"></span>
-                          <span><a href="notice.php"> Upcoming Events</a></span>
+                          <span> Upcoming Events</span>
                       </a>
                   </li>
                   <li>

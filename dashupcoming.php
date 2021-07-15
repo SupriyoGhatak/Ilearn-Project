@@ -1,3 +1,7 @@
+<?php
+session_start();
+include 'Connection/common.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,7 +9,7 @@
     <meta charset="utf-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
+      content="width=device-width,initial-scale=1, maximum-scale=1"
     />
     <link rel="icon" href="img/logo_1.png" style="height: 40px; width: 40px;" type="image/png" />
     <title>Upcoming Events</title>
@@ -129,198 +133,79 @@
     <li class="breadcrumb-item active" aria-current="page">Upcoming Events</li>
   </ol>
 </nav>
-            
-<h1 class="h2 dash-title">Upcoming Events</h1>
-<p>This is the homepage of a simple admin interface which is part of a tutorial written on Themesberg</p>
-
-                <div class="my-3 p-3 bg-white rounded box-shadow">
-    <h6 class="border-bottom border-gray pb-2 mb-0">Recent updates</h6>
-    <div class="media text-dark pt-3">
-   
-      <p class="media-body pb-3 mb-0  lh-125 border-bottom border-gray ti-agenda nm">
-       
-          Notice regarding upcoming new batch &nbsp;
-          <button type="button" class="btn btn-outline-info btn-sm " data-toggle="modal" data-target="#exampleModal">
-  Read more
-</button>
-
-       
-       </p>
-      </div>
-    <!-- Modal -->
-    
-    
-    <div class="media text-dark pt-3">
-     
-      <p class="media-body pb-3 mb-0  lh-125 border-bottom border-gray ti-agenda">
-        
-        Notice regarding exams of previous batch&nbsp;
-          <button type="button" class="btn btn-outline-info btn-sm " data-toggle="modal" data-target="#exampleModa2">
-  Read more
-</button></p>
-    </div>
-    <div class="media text-dark pt-3">
-      
-      <p class="media-body pb-3 mb-0  lh-125 border-bottom border-gray ti-agenda">
-        
-        Notice for students having c course&nbsp;
-          <button type="button" class="btn btn-outline-info btn-sm " data-toggle="modal" data-target="#exampleModa3">
-  Read more
-</button>
-      </p>
-    </div>
-    <div class="media text-dark pt-3">
-      
-      <p class="media-body pb-3 mb-0  lh-125 border-bottom border-gray ti-agenda">
-        
-        Notice for students having c++ course&nbsp;
-          <button type="button" class="btn btn-outline-info btn-sm " data-toggle="modal" data-target="#exampleModa4">
-  Read more
-</button>
-      </p>
-    </div>
-    <div class="media text-dark pt-3">
-      
-      <p class="media-body pb-3 mb-0  lh-125 border-bottom border-gray ti-agenda">
-        
-        Notice for students having JAVA course&nbsp;
-          <button type="button" class="btn btn-outline-info btn-sm " data-toggle="modal" data-target="#exampleModa5">
-  Read more
-</button>
-      </p>
-    </div>
-    <div class="media text-dark pt-3">
-      
-      <p class="media-body pb-3 mb-0 lh-125 border-bottom border-gray ti-agenda">
-        
-        Notice for students having SQL course&nbsp;
-          <button type="button" class="btn btn-outline-info btn-sm " data-toggle="modal" data-target="#exampleModa6">
-  Read more
-</button>
-      </p>
-    </div>
-    <small class="d-block text-right mt-3">
-      <a href="#">All notices</a>
-    </small>
-  </div>
-<!--modal-->
-<div class="modal fade" id="exampleModal" >
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-          <div class="modal-title">
-          <h4>Upcoming new batch</h4>
-          </div>
-      </div>
-      <div class="modal-body">
-        The new batch will be started from 1st July.Kind request to everyone to get enrolled first.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="exampleModa2" >
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-          <div class="modal-title">
-          <h4>Exams of previous batch</h4>
-          </div>
-      </div>
-      <div class="modal-body">
-         The exam of each student will be started as soon as the complete every topic of each course.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="exampleModa3" >
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-          <div class="modal-title">
-          <h4>Events for c-course students</h4>
-          </div>
-      </div>
-      <div class="modal-body">
-        The Student persuing C course,all the topic has been updated(including pdfs and videos).Plese go through them.Exams will be taken once you complete the courses.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="exampleModa4" >
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-          <div class="modal-title">
-          <h4>Events for c++ course students</h4>
-          </div>
-      </div>
-      <div class="modal-body">
-        The Student persuing C++ course,all the topic has been updated(including pdfs and videos).Plese go through them.Exams will be taken once you complete the courses.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-    <div class="modal fade" id="exampleModa5" >
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-          <div class="modal-title">
-          <h4>Events for JAVA course students</h4>
-          </div>
-      </div>
-      <div class="modal-body">
-        The Student persuing JAVA course,all the topic has been updated(including pdfs and videos).Plese go through them.Exams will be taken once you complete the courses.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-    </div>
-<div class="modal fade" id="exampleModa6" >
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-          <div class="modal-title">
-          <h4>Events for RDBMS course students</h4>
-          </div>
-      </div>
-      <div class="modal-body">
-        The Student persuing RDBMS course,all the topic has been updated(including pdfs and videos).Plese go through them.Exams will be taken once you complete the courses.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-    </div>
-
+ <!-- <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-blue rounded box-shadow siz">
+      <div class="lh-90">
+        <center><h6 class="mb-0 text-blue lh-100 siz">Upcoming Events</h6></center>  
+<h1 class="h2 dash-title">Upcoming Events</h1>-->
+<div class="my-3 p-3 bg-white rounded box-shadow">
+    <h2 class="border-gray pb-2 mb-0" style="text-align:center">RECENT UPDATES</h2> 
+   <table class="table table-bordered table-striped table-condensed">
+                              <thead>
+                              <tr>
+                                  <th>Notices</th>
+                                  <th>Issued Date</th>
+                                  
+                              </tr>
+                              </thead>
+                              <tbody>
+                
              </main>
       </div>
-	
-     
-      
+<?php
+$i=1;
+$notice_query1="select * from notice";
+$result_notice= mysqli_query($con, $notice_query1) or die(mysqli_error($con));
+while($row = mysqli_fetch_array($result_notice))
+{
+?>
 
+
+
+     <div class="media text-dark pt-3">          
+     
+       
+     <h8> <tr>
+             <td align="left"><p class="border-gray ti-agenda nm"> <h8><?php echo $row['title'];echo "-"; echo $row['descrip']; ?> </h8>
+                                  
+          <button type="button" class="btn btn-outline-info btn-sm " data-toggle="modal" data-target="#exampleModal<?php echo $i; ?>">
+Read more
+</button> </td>
+         <td align="center"><?php echo htmlentities($row['noticedate']);?></td></h8>
    
-    <!--================ End Testimonial Area =================-->-->
+    </div>
+    <!--modal -->
+    <div class="modal fade" id="exampleModal<?php echo $i; ?>" >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+          <div class="modal-title">
+          <h4><?php echo $row['title']; ?></h4>
+          </div>
+      </div>
+      <div class="modal-body">
+       <?php echo $row['noticecontent']; ?>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+    
+  </div>
+    </div>
+       
+       
+<?php
+$i++;
+
+} ?>
+     
+                </div>
+
+    
+    
+   
+    <!--================ End Testimonial Area =================-->
 
     <!--================ Start footer Area  =================
     <footer class="footer-area section_gap">
@@ -416,7 +301,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     
     <!--================ End footer Area  =================-->
 
-    
+<?php// } ?>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.2.1.min.js"></script>

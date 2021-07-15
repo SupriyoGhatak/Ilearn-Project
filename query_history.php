@@ -135,9 +135,9 @@ include 'Connection/common.php';
   </ol>
 </nav>
             
-<div class="row mt">
-			  		<div class="col-lg-12">
-                      <div class="content-panel">
+<!--<div class="row mt">
+			  		<div class="col-lg-12"> 
+                      <div class="content-panel"> -->
                           <section id="unseen">
                             <table class="table table-bordered table-striped table-condensed">
                               <thead>
@@ -150,10 +150,11 @@ include 'Connection/common.php';
                                   
                               </tr>
                               </thead>
-                              <tbody>
+                              
                 
-             </main>
-      </div>
+            
+     <!--</div> -->
+     </main>
 	<?php 
         $query4="select * from complaints where user_id='".$_SESSION['id']."'";
         $res4 = mysqli_query($con, $query4) or die(mysqli_error($con));
@@ -187,7 +188,7 @@ if($status=="closed")
                                 </tr>
                               <?php } ?>
                             
-                              </tbody>
+                              
                           </table>
                           </section>
                   </div>
@@ -196,7 +197,7 @@ if($status=="closed")
 		  	
 		  	
      
-      
+                     
 
    
     <!--================ End Testimonial Area =================-->

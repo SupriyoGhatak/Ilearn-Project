@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 include 'Connection/common.php';
 
 $userid1=$_SESSION['id'];
@@ -20,4 +21,5 @@ while($row=mysqli_fetch_array($res1))
 $complainno=$cmpn;
 echo '<script> alert("Your Query has been successfully submitted and your Query Number is  "+"'.$complainno.'")</script>';
 echo '<script>window.location="contact.php"</script>';
+
 ?>

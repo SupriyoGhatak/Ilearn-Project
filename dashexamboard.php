@@ -165,7 +165,7 @@
             </thead>  
             <tbody>
                 <tr role="row" class="odd">
-                    <td>Final Assassment</td>
+                    <td>Final Assessment</td>
                     <td class="sorting_1">C</td>
                     <td>2021-06-18</td>
                     <td>10 Question/topic</td>
