@@ -1,3 +1,8 @@
+<?php
+  session_start();
+  include 'Connection/common.php';
+  $id=$_SESSION['id'];
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,7 +27,7 @@
     <link rel="stylesheet" href="css/reportstyle.css"/>
   </head>
 
-  <body>
+  <body method="POST">
     <!--================ Start Header Menu Area =================-->
    
     <!--================ End Header Menu Area =================-->
@@ -133,7 +138,7 @@
             
 <h1 class="h2 dash-title">Reports</h1>
 
-<a href="#" style="text-decoration: none; color: white;"><button type="button"style="background-color: #4CAF50; /* Green */
+<a href="dashreports.php?action=c" style="text-decoration: none; color: white;"><button type="button"style="background-color: #4CAF50; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -145,7 +150,7 @@
   margin-left: 1px;
   cursor: pointer;">C</button></a>
   
-  <a href="#" style="text-decoration: none; color: white;"><button type="button" style="background-color: #4CAF50; /* Green */
+  <a href="dashreports.php?action=java" style="text-decoration: none; color: white;"><button type="button" style="background-color: #4CAF50; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -155,7 +160,7 @@
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;">Java</button></a>
-  <a href="#" style="text-decoration: none; color: white;"><button type="button" style="background-color: #4CAF50; /* Green */
+  <a href="dashreports.php?action=c_plus" style="text-decoration: none; color: white;"><button type="button" style="background-color: #4CAF50; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -165,7 +170,7 @@
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;">C++</button></a>
-  <a href="#" style="text-decoration: none; color: white;"><button type="button" style="background-color: #4CAF50; /* Green */
+  <a href="dashreports.php?action=rdbms" style="text-decoration: none; color: white;"><button type="button" style="background-color: #4CAF50; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -174,54 +179,105 @@
   display: inline-block;
   font-size: 16px; margin: 4px 2px;
   margin-bottom: 10px;
-  cursor: pointer;">DBMS</button></a>
+  cursor: pointer;">RDBMS</button></a>
+  <?php
+  if (isset($_GET["action"])){
+  $c=$_GET["action"];
+  //echo $c;
+  $query5 = "SELECT  $c FROM  user_buyed_course WHERE user_id = '" . $id . "' ";
+  $result5 = mysqli_query($con, $query5) or die($mysqli_error($con));
+  $num5 = mysqli_num_rows($result5);
+  if($num5>0){
+  $row5 = mysqli_fetch_array($result5);
+  $course1=$row5[$c];
+ if($course1>0){
+    // echo $course1;
+     $query45 = "SELECT *   FROM  user_exam_result WHERE user_id = '" . $id . "'";
+      $result451 = mysqli_query($con, $query45) or die($mysqli_error($con));
+      $num55 = mysqli_num_rows($result451);
+     if($num55>0){
+         $row51 = mysqli_fetch_array($result451);
+         if($c=="c"){
+         $quiz1=$row51['c_1st'];
+         $quiz2=$row51['c_2nd'];
+         $final=$row51['c_f'];
+         }
+         if($c=="java"){
+         $quiz1=$row51['java_1st'];
+         $quiz2=$row51['java_2nd'];
+         $final=$row51['java_f'];
+         }
+         if($c=="c_plus"){
+         $quiz1=$row51['c_plus_1st'];
+         $quiz2=$row51['c_plus_2nd'];
+         $final=$row51['c_plus_f'];
+         }
+         if($c=="rdbms"){
+         $quiz1=$row51['rdbms_1st'];
+         $quiz2=$row51['rdbms_2nd'];
+         $final=$row51['rdbms_f'];
+         }
+         
+  ?>
 
-             <div class="row row-cols-1 row-cols-md-3 g-4">
-  <div class="col">
-    <div class="card h-100">
-        <img src="img/quiz.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title" style="font-size: 35px;">Quiz-1</h5>
-        <p class="card-text" style="font-size: 25px;padding-top: 10px;padding-bottom: 20px;">Your Score:-0%</p>
-      </div>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+   <div class="col">
+       <div class="card h-100">
+            <img src="img/quiz.png" class="card-img-top" alt="...">
+         <div class="card-body">
+           <h5 class="card-title" style="font-size: 35px;">Quiz-1</h5>
+           <p class="card-text" style="font-size: 25px;padding-top: 10px;padding-bottom: 20px;">Your Score:&nbsp;&nbsp;<?php echo $quiz1; ?>%</p>
+         </div>
       
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-        <img src="img/quiz.png" class="card-img-top" alt="...">
-      <div class="card-body">
-          <h5 class="card-title" style="font-size: 35px;">Quiz-2</h5>
-        <p class="card-text" style="font-size: 25px;padding-top: 10px;padding-bottom: 20px;">Your Score:&nbsp;&nbsp;0%</p>
-      </div>
+       </div>
+   </div>
+   <div class="col">
+       <div class="card h-100">
+           <img src="img/quiz.png" class="card-img-top" alt="...">
+       <div class="card-body">
+           <h5 class="card-title" style="font-size: 35px;">Quiz-2</h5>
+           <p class="card-text" style="font-size: 25px;padding-top: 10px;padding-bottom: 20px;">Your Score:&nbsp;&nbsp;<?php echo $quiz2; ?>%</p>
+       </div>
       
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-        <img src="img/final-assessment.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title" style="font-size: 35px;">final-assessment</h5>
-        <p class="card-text" style="font-size: 25px;padding-top: 10px;padding-bottom: 20px;">Your Score:-0%</p>
-      </div>
+       </div>
+   </div>
+   <div class="col">
+       <div class="card h-100">
+           <img src="img/final-assessment.jpg" class="card-img-top" alt="...">
+       <div class="card-body">
+           <h5 class="card-title" style="font-size: 35px;">final-assessment</h5>
+           <p class="card-text" style="font-size: 25px;padding-top: 10px;padding-bottom: 20px;">Your Score:&nbsp;&nbsp;<?php echo $final; ?>%</p>
+       </div>
       
-    </div>
-  </div>
+       </div>
+   </div>
                  
-</div> 
-<div class="serti">
-    <a href="#" class="cert" style="text-decoration: none;color: white;">Get Certificate</a>
+ </div> 
+
+
+
+  <div class="serti">
+      <a href="certificate/certificate.php" class="cert" style="text-decoration: none;color: white;">Get Certificate</a>
 </div>
               
 
              </main>
       </div>
+      <?php
+      }else{
+       
+      ?>
+      <h1>PLease complete atleast 1  quiz from any topic to show your result</h1>
 	
-     
+    <?php 
+  }}}}
+    
+    
+    ?>
       
 
    
-    <!--================ End Testimonial Area =================-->-->
+    <!--================ End Testimonial Area =================-->
 
     <!--================ Start footer Area  =================
     <footer class="footer-area section_gap">

@@ -137,6 +137,8 @@ include 'statictics_script.php';
         <?php 
         $query = "SELECT * FROM user_buyed_course WHERE user_id = '" . $id . "'";
         $result1 = mysqli_query($con,$query);
+        $num52 = mysqli_num_rows($result1);
+        if($num52>0){
         $row = mysqli_fetch_array($result1);
         $_SESSION['c'] = $row['c'];
         $_SESSION['c_plus']=$row['c_plus'];
@@ -235,7 +237,7 @@ include 'statictics_script.php';
                   </div>
                 </div>
               </div>
-        <?php } ?>
+        <?php }} ?>
               <!--</div>
             
             <div class="row">
