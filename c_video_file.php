@@ -278,6 +278,8 @@ include 'statictics_script.php';
                                 <?php 
                                 $sql_r1 = "SELECT * FROM user_exam_result WHERE  user_id = '" . $id . "' ";
                                 $result12 = mysqli_query($con, $sql_r1);
+                                $num7 = mysqli_num_rows($result12);
+                                if($num7>0){
                                 $row1 = mysqli_fetch_assoc($result12);
                                 $check= $row1['c_1st'];
                                 if($check>70)
@@ -287,7 +289,7 @@ include 'statictics_script.php';
                                     <a href="quiz.php?type=c_1st&course=c">Quiz</a>
  	 			</li>
                                 <?php
-                                }else{
+                                }}else{
                                     ?>
                                 <li >
                                     <a href="quiz.php?type=c_1st&course=c">Quiz</a>

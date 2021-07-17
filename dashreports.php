@@ -138,7 +138,7 @@
             
 <h1 class="h2 dash-title">Reports</h1>
 
-<a href="dashreports.php?action=c" style="text-decoration: none; color: white;"><button type="button"style="background-color: #4CAF50; /* Green */
+<a href="dashreports.php?action=c&c_n=C Programing Language.&duration=6" style="text-decoration: none; color: white;"><button type="button"style="background-color: #4CAF50; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -150,7 +150,7 @@
   margin-left: 1px;
   cursor: pointer;">C</button></a>
   
-  <a href="dashreports.php?action=java" style="text-decoration: none; color: white;"><button type="button" style="background-color: #4CAF50; /* Green */
+  <a href="dashreports.php?action=java&c_n=Java Programing Language.&duration=8" style="text-decoration: none; color: white;"><button type="button" style="background-color: #4CAF50; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -160,7 +160,7 @@
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;">Java</button></a>
-  <a href="dashreports.php?action=c_plus" style="text-decoration: none; color: white;"><button type="button" style="background-color: #4CAF50; /* Green */
+  <a href="dashreports.php?action=c_plus&c_n=c_plus&duration=7" style="text-decoration: none; color: white;"><button type="button" style="background-color: #4CAF50; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -170,7 +170,7 @@
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;">C++</button></a>
-  <a href="dashreports.php?action=rdbms" style="text-decoration: none; color: white;"><button type="button" style="background-color: #4CAF50; /* Green */
+  <a href="dashreports.php?action=rdbms&c_n=Rdbms Programing Language.&duration=6" style="text-decoration: none; color: white;"><button type="button" style="background-color: #4CAF50; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -183,7 +183,9 @@
   <?php
   if (isset($_GET["action"])){
   $c=$_GET["action"];
-  //echo $c;
+  $c_n=$_GET["c_n"];
+  $duration=$_GET["duration"];
+   //echo $c,$c_n,$duration;
   $query5 = "SELECT  $c FROM  user_buyed_course WHERE user_id = '" . $id . "' ";
   $result5 = mysqli_query($con, $query5) or die($mysqli_error($con));
   $num5 = mysqli_num_rows($result5);
@@ -254,12 +256,27 @@
                  
  </div> 
 
+<?php 
+if($final>70){
 
+?>
 
   <div class="serti">
-      <a href="certificate/certificate.php" class="cert" style="text-decoration: none;color: white;">Get Certificate</a>
+      <a href="certificate/certificate.php?c_n=<?php echo $c_n; ?>&duration=<?php echo $duration; ?>&marks=<?php echo $final;?>" class="cert" style="text-decoration: none;color: white;">Get Certificate</a>
 </div>
-              
+<?php 
+
+}
+ else {
+     ?>
+
+<div class="serti ">
+      <a href="#" class="cert btn-secondary disabled" style="text-decoration: none;color: white;">Get Certificate</a>
+</div>
+
+<?php
+ }
+    ?>          
 
              </main>
       </div>
@@ -270,13 +287,15 @@
       <h1>PLease complete atleast 1  quiz from any topic to show your result</h1>
 	
     <?php 
-  }}}}
-    
-    
-    ?>
-      
+  }
+  
+  
+ }
+ else {
+ ?>
+      <h1>Please Purchcse this course to unlock the module's.</h1>
 
-   
+  <?php } } } ?>
     <!--================ End Testimonial Area =================-->
 
     <!--================ Start footer Area  =================
