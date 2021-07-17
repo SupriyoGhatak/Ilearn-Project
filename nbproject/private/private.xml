@@ -3,6 +3,29 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+            <file>file:/C:/wamp64/www/Ilearn-Project/payment_script.php</file>
+            <file>file:/C:/wamp64/www/Ilearn-Project/dashupcoming.php</file>
+            <file>file:/C:/wamp64/www/Ilearn-Project/payment.php</file>
+            <file>file:/C:/wamp64/www/Ilearn-Project/sign_up_script.php</file>
+            <file>file:/C:/wamp64/www/Ilearn-Project/query_history.php</file>
+            <file>file:/C:/wamp64/www/Ilearn-Project/test.php</file>
+=======
+            <file>file:/C:/wamp64/www/Ilearn-Project/statictics_script.php</file>
+            <file>file:/C:/wamp64/www/Ilearn-Project/quiz.php</file>
+            <file>file:/C:/wamp64/www/Ilearn-Project/dashexamboard.php</file>
+            <file>file:/C:/wamp64/www/Ilearn-Project/c_video_file.php</file>
+<<<<<<< HEAD
+            <file>file:/C:/wamp64/www/Ilearn-Project/sign_up_script.php</file>
+            <file>file:/C:/wamp64/www/Ilearn-Project/test.php</file>
+            <file>file:/C:/wamp64/www/Ilearn-Project/dashcourses.php</file>
+=======
+            <file>file:/C:/wamp64/www/Ilearn-Project/Quiz_script.php</file>
+            <file>file:/C:/wamp64/www/Ilearn-Project/final_exam_script.php</file>
+=======
+>>>>>>> db75ba4c2ce4bc876241bf2a4bc5f5bd339b988e
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/view_details.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/app.js</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/notice.php</file>
@@ -57,6 +80,12 @@
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/dashlibrary.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/payment.php</file>
             <file>file:/Applications/XAMPP/htdocs/ilearnmain/my_profile.php</file>
+<<<<<<< HEAD
+=======
+>>>>>>> 9770118aec0e6cb13d2cccc773060b13a6e9ba59
+>>>>>>> dd1a377eab99d8b81f195672cddca90ca2bf4e0c
+>>>>>>> 81ea4598ef10ad3899a315bfcdbe66ed1af2e8f9
+>>>>>>> db75ba4c2ce4bc876241bf2a4bc5f5bd339b988e
         </group>
     </open-files>
 </project-private>

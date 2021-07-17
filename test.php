@@ -1,3 +1,10 @@
+<?php
+session_start();
+include 'Connection/common.php';
+include 'statictics_script.php';
+ $id=$_SESSION['id'];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -127,23 +134,46 @@
             
 <h1 class="h2 dash-title">Dashboard</h1>
 <p>This is the homepage of a simple admin interface which is part of a tutorial written on Themesberg</p>
-<div class="col-md-4 my-3">
+        <?php 
+        $query = "SELECT * FROM user_buyed_course WHERE user_id = '" . $id . "'";
+        $result1 = mysqli_query($con,$query);
+        $num52 = mysqli_num_rows($result1);
+        if($num52>0){
+        $row = mysqli_fetch_array($result1);
+        $_SESSION['c'] = $row['c'];
+        $_SESSION['c_plus']=$row['c_plus'];
+        $_SESSION['java'] = $row['java'];
+        $_SESSION['rdbms']=$row['rdbms'];
+        if($_SESSION['c']>0)
+        { 
+          $sum=calculate("c","c_statictics"); 
+          $sum=($sum/19)*100;
+          $sum=number_format((float)$sum, 2, '.', '');
+        ?>
+               <div class="col-md-4 my-3">
                 <div class="bg-mattBlackLight px-3 py-3">
-                  <h4 class="mb-2">C++</h4>
+                  <h4 class="mb-2">C</h4>
                   <div class="progress" style="height: 16px;">
                     <div
                       class="progress-bar bg-warning text-mattBlackDark"
                       role="progressbar"
-                      style="width: 25%;"
+                      style="width: <?php echo $sum; ?>%;"
                       aria-valuenow="25"
                       aria-valuemin="0"
                       aria-valuemax="100"
                     >
-                      25
+                      <?php echo $sum; ?>&nbsp;%
                     </div>
                   </div>
                 </div>
               </div>
+        <?php } ?>
+
+         <?php 
+        if($_SESSION['java']>0)
+        { 
+            
+        ?>
               <div class="col-md-4 my-3">
                 <div class="bg-mattBlackLight px-3 py-3">
                   <h4 class="mb-2">JAVA</h4>
@@ -161,9 +191,15 @@
                   </div>
                 </div>
               </div>
+        <?php } ?>
+         <?php 
+        if($_SESSION['rdbms']>0)
+        { 
+            
+        ?>
               <div class="col-md-4 my-3">
                 <div class="bg-mattBlackLight p-3">
-                  <h4 class="mb-2">SQL</h4>
+                  <h4 class="mb-2">RDBMS</h4>
                   <div class="progress" style="height: 16px;">
                     <div
                       class="progress-bar bg-success"
@@ -178,10 +214,15 @@
                   </div>
                 </div>
               </div>
-           
+        <?php } ?>
+         <?php 
+        if($_SESSION['c_plus']>0)
+        { 
+            
+        ?>
             <div class="col-md-4 my-3">
                 <div class="bg-mattBlackLight p-3">
-                  <h4 class="mb-2">C</h4>
+                  <h4 class="mb-2">C++</h4>
                   <div class="progress" style="height: 16px;">
                     <div
                       class="progress-bar bg-success"
@@ -196,7 +237,8 @@
                   </div>
                 </div>
               </div>
-              <!--</div>-->
+        <?php }} ?>
+              <!--</div>
             
             <div class="row">
               <div class="col-md-6">
@@ -215,7 +257,7 @@
                   sunt earum tempora veniam.
                 </div>
               </div>
-                </div>
+                </div>-->
              </main>
   </div>
 	

@@ -142,6 +142,8 @@
         $query = "SELECT * FROM user_buyed_course WHERE user_id = '" . $id . "'";
         $result1 = mysqli_query($con,$query);
         $row = mysqli_fetch_array($result1);
+        $num51 = mysqli_num_rows($result1);
+        if($num51>0){
         $_SESSION['c'] = $row['c'];
         $_SESSION['c_plus']=$row['c_plus'];
         $_SESSION['java'] = $row['java'];
@@ -151,7 +153,8 @@
           $temp=1;
           $item_array = array(
                 'product_name' => "Programming With C",
-                'picture_src' => "img/courses/c.jpg"
+                'picture_src' => "img/courses/c.jpg",
+                'video_src' => "c_video_file.php"
                 
             );
           $_SESSION["cart"][0] = $item_array;  
@@ -161,7 +164,8 @@
           $temp=1;
           $item_array = array(
                 'product_name' => "Programming With java",
-                'picture_src' => "img/courses/java.jpg"
+                'picture_src' => "img/courses/java.jpg",
+                'video_src' => "java_video_file.php"
                 
             );
           $_SESSION["cart"][1] = $item_array;  
@@ -171,7 +175,8 @@
           $temp=1;
           $item_array = array(
                 'product_name' => "Programming With java",
-                'picture_src' => "img/courses/java.jpg"
+                'picture_src' => "img/courses/java.jpg",
+                'video_src' => "java_video_file.php"
                 
             );
           $_SESSION["cart"][2] = $item_array;  
@@ -181,7 +186,8 @@
           $temp=1;
           $item_array = array(
                 'product_name' => "Programming With java",
-                'picture_src' => "img/courses/java.jpg"
+                'picture_src' => "img/courses/java.jpg",
+              'video_src' => "java_video_file.php"
                 
             );
           $_SESSION["cart"][3] = $item_array;  
@@ -214,7 +220,7 @@
              <div class="col-sm-6 col-md-6"> 
                  <div class="single_course">
                 <div class="course_head">
-                    <a href="c_video_file.php"> <img class="img-fluid" src="<?php echo $value["picture_src"]; ?>" alt="centered image" style="height: 259px; width : 100%;" /> </a>
+                    <a href="<?php echo $value["video_src"]; ?>"> <img class="img-fluid" src="<?php echo $value["picture_src"]; ?>" alt="centered image" style="height: 259px; width : 100%;" /> </a>
              
                 <div class="course_content"> 
                 
@@ -235,7 +241,7 @@
  
      
      
-     <?php  }}else { ?>  
+        <?php  }}}else { ?>  
 
      <div class="popular_courses section_gap_top">
       <div class="container">
