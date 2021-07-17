@@ -114,34 +114,34 @@
                         <h2>Notice Board Area</h2>
                     </div>
                     <div class="container1">
-                        <form action="action_page.php">
+                        <form name="noticeboard" action="notice_script.php" method = "post">
                           <div class="row">
                             <div class="col-25">
-                              <label for="fname">Enter The Title</label>
+                              <label for="fname">Enter Title</label>
                             </div>
                             <div class="col-75">
-                              <input type="text" id="title" name="firstname" placeholder="Your Notice Title..">
+                              <input type="text"  name="title" placeholder="Your Notice Title..">
                             </div>
                           </div>
                           <div class="row">
                             <div class="col-25">
-                              <label for="lname">Enter the samll description</label>
+                              <label for="lname">Enter Small Description</label>
                             </div>
                             <div class="col-75">
-                              <input type="text" id="desc" name="desc" placeholder="Small description">
+                              <input type="text"  name="descrip" placeholder="Small description">
                             </div>
                           </div>
 
                           <div class="row">
                             <div class="col-25">
-                              <label for="lname">Enter the Date</label>
+                              <label for="lname">Enter Date</label>
                             </div>
                             <div class="col-75">
-                              <input type="date" id="date" name="date" placeholder="Enter The Date">
+                              <input type="date" name="noticedate" placeholder="Enter The Date">
                             </div>
                           </div>
 
-
+                            <!--
                           <div class="row">
                             <div class="col-25">
                               <label for="country">Course</label>
@@ -155,12 +155,13 @@
                               </select>
                             </div>
                           </div>
+                            -->
                           <div class="row">
                             <div class="col-25">
                               <label for="subject">Content Of Notice</label>
                             </div>
                             <div class="col-75">
-                              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                              <textarea id="subject" name="noticecontent" placeholder="Write something.." style="height:200px"></textarea>
                             </div>
                           </div>
                           <div class="row">

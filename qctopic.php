@@ -93,7 +93,7 @@
                             <ul class="course_list" style="color: black; font-size: larger;">
                                 <li class="justify-content-between d-flex">
                                     <p>Final assessment-I</p>
-                                    <a href="topic1c.php" class="btn btn-success  active ti-agenda" role="button" aria-pressed="true">&nbsp;&nbsp;Give Exam&nbsp;&nbsp;</a>
+                                    <a href="topic1c.php?type=c_f&course=c" class="btn btn-success  active ti-agenda" role="button" aria-pressed="true">&nbsp;&nbsp;Give Exam&nbsp;&nbsp;</a>
                                 </li>
                                 
                                 <div class="collapse" id="click2">

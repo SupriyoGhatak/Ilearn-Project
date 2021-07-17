@@ -452,7 +452,7 @@
                   One make creepeth man for so bearing their firmament won't
                   fowl meat over seas great
                 </p>
-                <a href="#" class="primary-btn rounded-0 mt-3">View Details</a>
+                <a href="view_details.php" class="primary-btn rounded-0 mt-3">View Details</a>
               </div>
             </div>
           </div>
@@ -479,7 +479,7 @@
                   One make creepeth man for so bearing their firmament won't
                   fowl meat over seas great
                 </p>
-                <a href="#" class="primary-btn rounded-0 mt-3">View Details</a>
+                <a href="view_details.php" class="primary-btn rounded-0 mt-3">View Details</a>
               </div>
             </div>
           </div>
@@ -506,7 +506,7 @@
                   One make creepeth man for so bearing their firmament won't
                   fowl meat over seas great
                 </p>
-                <a href="#" class="primary-btn rounded-0 mt-3">View Details</a>
+                <a href="view_details.php" class="primary-btn rounded-0 mt-3">View Details</a>
               </div>
             </div>
           </div>
@@ -544,7 +544,7 @@
                   One make creepeth man for so bearing their firmament won't
                   fowl meat over seas great
                 </p>
-                <a href="#" class="primary-btn rounded-0 mt-3">View Details</a>
+                <a href="view_details.php" class="primary-btn rounded-0 mt-3">View Details</a>
               </div>
             </div>
           </div>
@@ -801,7 +801,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/gmaps.min.js"></script>
     <script src="js/theme.js"></script>
     <script>
-        var dest= new Date("June 30, 2021 10:00:00").getTime();
+        var dest= new Date("September 30, 2021 10:00:00").getTime();
         var x =setInterval(function(){
         var now= new Date().getTime();
         var diff = dest - now;

@@ -53,8 +53,40 @@
             		$i++;
                 }
             }
-            $persentage=$Resultans*(100/$checked_count);
-            echo $persentage,$Resultans,$counter,$checked_count,$leave;
+            $right=$Resultans*4;
+            $right=$right-$counter;
+            $persentage=($right/($checked_count*4))*100;
+           // echo $persentage,$Resultans,$counter,$checked_count,$leave;
+            $id=$_SESSION['id'];
+            if($persentage>70){
+                
+            $query4 = "SELECT user_id   FROM  user_exam_result WHERE user_id = '" . $id . "'";
+            $result41 = mysqli_query($con, $query4) or die($mysqli_error($con));
+            $num = mysqli_num_rows($result41);
+            if($num==0){    
+                
+            $q="INSERT INTO user_exam_result (user_id ,$type) values ('$id','$persentage')";
+            $q_submit= mysqli_query($con,$q) or die(mysqli_error($con));
+             echo '<script>alert("Congrats, Download Your Certificate")</script>';
+             echo '<script>window.location="dashreports.php"</script>';
+            }
+            else{
+             
+                 $update_exam = "UPDATE user_exam_result SET $type='$persentage' WHERE user_id = '" . $id . "' ";
+                 $update_exam_result = mysqli_query($con, $update_exam) or die($mysqli_error($con));
+                 echo '<script>alert("Congrats, Download Your Certificate")</script>';
+                 echo '<script>window.location="dashreports.php"</script>';
+                
+                
+            }
+            }
+            else{
+             echo '<script>alert("Better Luck Next Time, Try Again")</script>';
+            echo '<script>window.location="dashexamboard.php"</script>';
+            }
   
+ }else{
+     echo '<script>alert("Please select one of ")</script>';
+     echo '<script>window.location="dashexamboard.php"</script>';
  }
 ?>
