@@ -174,9 +174,9 @@
         { 
           $temp=1;
           $item_array = array(
-                'product_name' => "Programming With java",
-                'picture_src' => "img/courses/java.jpg",
-                'video_src' => "java_video_file.php"
+                'product_name' => "Programming With C++",
+                'picture_src' => "img/courses/c++.jpg",
+                'video_src' => "error1.php"
                 
             );
           $_SESSION["cart"][2] = $item_array;  
@@ -185,9 +185,9 @@
         { 
           $temp=1;
           $item_array = array(
-                'product_name' => "Programming With java",
-                'picture_src' => "img/courses/java.jpg",
-              'video_src' => "java_video_file.php"
+                'product_name' => "Relational Database Management System",
+                'picture_src' => "img/courses/sql.jpeg",
+              'video_src' => "error1.php"
                 
             );
           $_SESSION["cart"][3] = $item_array;  
@@ -226,7 +226,7 @@
                 
                 <div class="course_head">
                   <h2 class="mb-1">
-                      <a href="c_video_file.php"><?php echo $value["product_name"]; ?></a>
+                      <a href="<?php echo $value["video_src"]; ?>"><?php echo $value["product_name"]; ?></a>
                   </h4>
                   
                         

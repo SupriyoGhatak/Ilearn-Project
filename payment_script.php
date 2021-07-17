@@ -18,8 +18,8 @@ $payment="Paid";
 $status="Delivered";
  $course=$_SESSION['course'];
   $ccnum= MD5($ccnum);
-  $cvv= MD5($cvv);
-  $cvv=MD5($cvv);
+ // $cvv= MD5($cvv);
+ // $cvv=MD5($cvv);
 $abc= "UPDATE  billing SET fullname='$fullname',email='$email',address='$address',city='$city',state='$state',zip='$zip',ccname='$ccname',ccnum='$ccnum',expmonth='$expmonth',expyear='$expyear',
         cvv='$cvv',payment='$payment',status='$status' WHERE user_id = '" . $id1 . "' AND course = '" . $course . "'   ";
 $res = mysqli_query($con, $abc) or die(mysqli_error($con));
