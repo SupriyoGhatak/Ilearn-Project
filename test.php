@@ -3,9 +3,7 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"
     />
     <link rel="icon" href="img/logo_1.png" style="height: 40px; width: 40px;" type="image/png" />
     <title>dashboard</title>
@@ -43,44 +41,45 @@
           <div class="sidebar-menu">
               <ul>
                   <li>
-                      <a href="test.php">
+                      
+                      <a class="dashstat" href="test.php" title="Statistics" >
                           <span class="ti-home"></span>
                           <span> Statistics</span>
                       </a>
                   </li>
                   <li>
-                      <a href="dashcourses.php">
+                      <a class="dashco" href="dashcourses.php" title="Courses">
                           <span class="ti-face-smile"></span>
                           <span> Courses</span>
                       </a>
                   </li>
                   <li>
-                      <a href="dashlibrary.php">
+                      <a class="dashlib" href="dashlibrary.php" title="E-library">
                           <span class="ti-book"></span>
                           <span> E-Library</span>
                       </a>
                   </li>
                   <li>
-                      <a href="dashexamboard.php">
+                      <a class="dashexam" href="dashexamboard.php" title="Exam board">
                           <span class="ti-agenda"></span>
                           <span> Exam board</span>
                       </a>
                   </li>
                   <li>
-                      <a href="dashupcoming.php">
-                          <span class="ti-clipboard"></span>
+                      <a class="dashup" href="dashupcoming.php"title="Upcoming Events">
+                          <span class="ti-clipboard" ></span>
                           <span> Upcoming Events</span>
                       </a>
                   </li>
                   <li>
-                      <a href="dashreports.php">
+                      <a class="dashre" href="dashreports.php" title="Reports">
                           <span class="ti-folder"></span>
                           <span> Reports</span>
                       </a>
                   </li>
                   <li>
-                    <a href="query_history.php">
-                        <span class="ti-help"></span>
+                    <a class="dashquery" href="query_history.php" title="Query history">
+                        <span class="ti-help" ></span>
                         <span>Query History</span>
                     </a>
                 </li>
@@ -98,8 +97,8 @@
               </div> -->
               <div class="inner_header">
                   <ul class="navigation">
-                      <a href="index.php"><li>Home</li></a>
-                      <a href="#"><li>  </li></a>
+                      <a href="index.php" ><li>Home</li></a>
+                     
                      
                       <a href="contact.php" ><li>Contact Us</li></a>
                       <a href="logout.php"><li>Logout</li></a>
