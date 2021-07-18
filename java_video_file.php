@@ -57,9 +57,7 @@ include 'Connection/common.php';
  	 	  	<li>
  	 	  		<a href="java_video_file.php?action=video2">Installation of JDK in MacOS</a>
  	 	  	</li>
-<!--                        <li>
- 	 	  		<a href="#video3">Foundation of C</a>
- 	 	  	</li>-->
+
 
  	 	  </ul>
  	 	</li>
@@ -93,6 +91,41 @@ include 'Connection/common.php';
  	 		<a href="java_video_file.php?action=video8" data-toggle="collapse" aria-expanded="false">Arrays in Java</a>
  	 		
                 </li>
+                <?php 
+                                $sql_r1 = "SELECT * FROM user_exam_result WHERE  user_id = '" . $id . "' ";
+                                $result12 = mysqli_query($con, $sql_r1);
+                                $row1 = mysqli_fetch_assoc($result12);
+                                $check= $row1['java_1st'];
+                                if($check>70)
+                                {
+                                ?>
+                                <li style="pointer-events: none; color: red;">
+                                    <a href="quiz.php?type=java_1st&course=java">Quiz 1</a>
+ 	 			</li>
+                                <?php
+                                }else{
+                                    ?>
+                                <li >
+                                    <a href="quiz.php?type=java_1st&course=java">Quiz 1</a>
+ 	 			</li>
+                                <?php
+                                }
+                                ?>
+                                
+                 <?php 
+        
+       $sql_r = "SELECT * FROM user_exam_result WHERE  user_id = '" . $id . "' ";
+       $result1 = mysqli_query($con, $sql_r);
+        if (mysqli_num_rows($result1) > 0) {
+            $row1 = mysqli_fetch_assoc($result1);
+            $check= $row1['java_1st'];
+            $check1=$row1['java_2nd'];
+            if($check>70)
+            {
+        
+           ?>           
+ 	 		
+ 	 	
                 <li>
  	 		<a href="java_video_file.php?action=video9" data-toggle="collapse" aria-expanded="false">Classes and Objects in Java</a>
  	 		
@@ -109,6 +142,28 @@ include 'Connection/common.php';
  	 		<a href="java_video_file.php?action=video12" data-toggle="collapse" aria-expanded="false">Class Constructors</a>
  	 		
  	 	</li>
+                <?php 
+                                $sql_r3 = "SELECT * FROM user_exam_result WHERE  user_id = '" . $id . "' ";
+                                $result13 = mysqli_query($con, $sql_r3);
+                                $row3 = mysqli_fetch_assoc($result13);
+                                $check2= $row3['java_2nd'];
+                                if($check2>70)
+                                {
+                                ?>
+                                <li style="pointer-events: none; color: red;">
+ 	 				<a href="quiz.php?type=java_2nd&course=java">Quiz</a>
+ 	 			</li>
+                                 <?php
+                                }else{
+                                    ?>
+                                <li>
+ 	 				<a href="quiz.php?type=java_2nd&course=java">Quiz</a>
+ 	 			</li>
+                                 <?php
+                                }
+                                ?>
+            <?php }}else{ ?>
+                                
                  <li>
  	 		<a href="java_video_file.php?action=video13" data-toggle="collapse" aria-expanded="false">Exception Handling</a>
  	 		
@@ -117,159 +172,16 @@ include 'Connection/common.php';
  	 		<a href="java_video_file.php?action=video14" data-toggle="collapse" aria-expanded="false">Introduction to Java Threads</a>
  	 		
  	 	</li>
+                <?php } ?>
                 
                 
                 <?php
-                
-                $check=0;
-                $check1=0;
-                $check2=0;
-                
-                ?>
-                
-                <!--<li>
- 	 		<a href="#pageSubmenu3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Core C Topics</a>
- 	 		<ul class="collapse list-unstyled" id="pageSubmenu3">
- 	 			
- 	 			<li>
- 	 				<a href="c_video_file.php?action=video12">Loops</a>
- 	 			</li>
-                                <li>
- 	 				<a href="c_video_file.php?action=video13">Functions</a>
- 	 			</li>
-                                <li>
- 	 				<a href="c_video_file.php?action=video14">Scope Rules</a>
- 	 			</li>
-                                <li>
- 	 				<a href="c_video_file.php?action=video15">Arrays and Pointers</a>
-                                </li>
-                                <li>
- 	 				<a href="c_video_file.php?action=video16">Structure and Unions</a>
-                                </li> -->
-                                <?php 
-                                $sql_r1 = "SELECT * FROM user_exam_result WHERE  user_id = '" . $id . "' ";
-                                $result12 = mysqli_query($con, $sql_r1);
-                                $row1 = mysqli_fetch_assoc($result12);
-                                $check= $row1['c_1st'];
-                                if($check>70)
-                                {
-                                ?>
-                                <li style="pointer-events: none; color: red;">
-                                    <a href="quiz.php?type=c_1st&course=c">Quiz</a>
- 	 			</li>
-                                <?php
-                                }else{
-                                    ?>
-                                <li >
-                                    <a href="quiz.php?type=c_1st&course=c">Quiz</a>
- 	 			</li>
-                                <?php
-                                }
-                                ?>
-                                
-                                
- 	 		</ul>
- 	 	</li>
-        <?php 
-        
-       $sql_r = "SELECT * FROM user_exam_result WHERE  user_id = '" . $id . "' ";
-       $result1 = mysqli_query($con, $sql_r);
-        if (mysqli_num_rows($result1) > 0) {
-            $row1 = mysqli_fetch_assoc($result1);
-            $check= $row1['c_1st'];
-            $check1=$row1['c_2nd'];
-            if($check>70)
-            {
-        
-           ?>
-             <li>
-                 <a href="#pageSubmenu4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Input And Output</a>
- 	 		<ul class="collapse list-unstyled" id="pageSubmenu4">
- 	 			
- 	 			<li>
-                                    <a href="c_video_file.php?action=video17">Standard Files</a>
- 	 			</li>
-                                <li>
- 	 				<a href="c_video_file.php?action=video18">Files I/O</a>
- 	 			</li>
-                                
-                                
- 	 		</ul>
- 	 	</li>
-                <li >
- 	 		<a href="#pageSubmenu5" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Error Handling</a>
- 	 		<ul class="collapse list-unstyled" id="pageSubmenu5">
- 	 			
- 	 			<li>
-                                    <a href="c_video_file.php?action=video19">Different Blocks</a>
- 	 			</li>
-                                <li>
- 	 				<a href="c_video_file.php?action=video20">Memory Management</a>
- 	 			</li>
-                                <?php 
-                                $sql_r3 = "SELECT * FROM user_exam_result WHERE  user_id = '" . $id . "' ";
-                                $result13 = mysqli_query($con, $sql_r3);
-                                $row3 = mysqli_fetch_assoc($result13);
-                                $check2= $row3['c_2nd'];
-                                if($check2>70)
-                                {
-                                ?>
-                                <li style="pointer-events: none; color: red;">
- 	 				<a href="quiz.php?type=c_2nd&course=c">Quiz</a>
- 	 			</li>
-                                 <?php
-                                }else{
-                                    ?>
-                                <li>
- 	 				<a href="quiz.php?type=c_2nd&course=c">Quiz</a>
- 	 			</li>
-                                 <?php
-                                }
-                                ?>
-                                
-                                
- 	 		</ul>
- 	 	</li>
-               
-            <?php }}else{ ?>     
-           <li style="pointer-events: none; color: red;">
- 	 		<a href="#pageSubmenu4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Input And Output</a>
- 	 		<ul class="collapse list-unstyled" id="pageSubmenu4">
- 	 			
- 	 			<li>
-                                    <a href="c_video_file.php?action=video17">Standard Files</a>
- 	 			</li>
-                                <li>
- 	 				<a href="c_video_file.php?action=video18">Files I/O</a>
- 	 			</li>
-                                
-                                
- 	 		</ul>
- 	 	</li>
-                <li style="pointer-events: none; color: red;">
- 	 		<a href="#pageSubmenu5" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Error Handling</a>
- 	 		<ul class="collapse list-unstyled" id="pageSubmenu5">
- 	 			
- 	 			<li>
-                                    <a href="c_video_file.php?action=video19">Different Blocks</a>
- 	 			</li>
-                                <li>
- 	 				<a href="c_video_file.php?action=video20">Memory Management</a>
- 	 			</li>
-                                
-                                
- 	 		</ul>
- 	 	</li>
-                
-        <?php } ?>
-                
-                
-                <?php
+               // $_SESSION['c_result']=$check1;
                  if($check1>70)
                  {
                 ?>
                  <li>
- 	 				<a href="#">Final Assessment</a>
+                     <a href="dashexamboard.php">Final Assessment</a>
  	        </li>
                 <?php
                  }else{
@@ -280,6 +192,21 @@ include 'Connection/common.php';
                 <?php
                  }
                 ?>
+ 	 	 	
+               
+                <?php
+                
+                $check=0;
+                $check1=0;
+                $check2=0;
+                
+                ?>
+                
+                
+                               
+            
+                                
+ 	 	
  	 	 	 	
 
  	 </ul>
@@ -313,7 +240,7 @@ include 'Connection/common.php';
             if (isset($_GET["action"])){
 
             $c=$_GET["action"];
-            $query = "SELECT  src FROM  java_video WHERE video_id = '" . $c . "' ";
+            $query = "SELECT  src FROM  java_video WHERE video_id = '" . $java . "' ";
             $result = mysqli_query($con, $query) or die($mysqli_error($con));
             $num = mysqli_num_rows($result);
             $row = mysqli_fetch_array($result);   
