@@ -286,13 +286,13 @@ include 'statictics_script.php';
                                 {
                                 ?>
                                 <li style="pointer-events: none; color: red;">
-                                    <a href="quiz.php?type=c_1st&course=c">Quiz</a>
+                                    <a href="quiz.php?type=c_1st&course=c">Quiz-1</a>
  	 			</li>
                                 <?php
                                 }}else{
                                     ?>
                                 <li >
-                                    <a href="quiz.php?type=c_1st&course=c">Quiz</a>
+                                    <a href="quiz.php?type=c_1st&course=c">Quiz-1</a>
  	 			</li>
                                 <?php
                                 }
@@ -346,13 +346,13 @@ include 'statictics_script.php';
                                 {
                                 ?>
                                 <li style="pointer-events: none; color: red;">
- 	 				<a href="quiz.php?type=c_2nd&course=c">Quiz</a>
+ 	 				<a href="quiz.php?type=c_2nd&course=c">Quiz-2</a>
  	 			</li>
                                  <?php
                                 }else{
                                     ?>
                                 <li>
- 	 				<a href="quiz.php?type=c_2nd&course=c">Quiz</a>
+ 	 				<a href="quiz.php?type=c_2nd&course=c">Quiz-2</a>
  	 			</li>
                                  <?php
                                 }

@@ -100,13 +100,13 @@ include 'Connection/common.php';
                                 {
                                 ?>
                                 <li style="pointer-events: none; color: red;">
-                                    <a href="quiz.php?type=java_1st&course=java">Quiz 1</a>
+                                    <a href="quiz.php?type=java_1st&course=java">Quiz-1</a>
  	 			</li>
                                 <?php
                                 }else{
                                     ?>
                                 <li >
-                                    <a href="quiz.php?type=java_1st&course=java">Quiz 1</a>
+                                    <a href="quiz.php?type=java_1st&course=java">Quiz-1</a>
  	 			</li>
                                 <?php
                                 }
@@ -151,27 +151,55 @@ include 'Connection/common.php';
                                 {
                                 ?>
                                 <li style="pointer-events: none; color: red;">
- 	 				<a href="quiz.php?type=java_2nd&course=java">Quiz</a>
+ 	 				<a href="quiz.php?type=java_2nd&course=java">Quiz-2</a>
  	 			</li>
                                  <?php
                                 }else{
                                     ?>
                                 <li>
- 	 				<a href="quiz.php?type=java_2nd&course=java">Quiz</a>
+ 	 				<a href="quiz.php?type=java_2nd&course=java">Quiz-2</a>
  	 			</li>
                                  <?php
                                 }
                                 ?>
             <?php }}else{ ?>
                                 
-                 <li>
+                  <li style="pointer-events: none; color: red;">
+                  
+ 	 		<a href="java_video_file.php?action=video9" data-toggle="collapse" aria-expanded="false">Classes and Objects in Java</a>
+ 	 		
+ 	 	
+         </li>
+                 <li style="pointer-events: none; color: red;">
+                
+ 	 		<a href="java_video_file.php?action=video10" data-toggle="collapse" aria-expanded="false">Inheritence in Java</a>
+ 	 		
+ 	 
+               </li>
+                <li style="pointer-events: none; color: red;">
+                
+ 	 		<a href="java_video_file.php?action=video11" data-toggle="collapse" aria-expanded="false">Polymorphism in Java</a>
+ 	 		
+ 	 	
+               </li>
+                <li style="pointer-events: none; color: red;">
+               
+ 	 		<a href="java_video_file.php?action=video12" data-toggle="collapse" aria-expanded="false">Class Constructors</a>
+ 	 		
+ 	 	
+               </li>
+                <li style="pointer-events: none; color: red;">
+                 
  	 		<a href="java_video_file.php?action=video13" data-toggle="collapse" aria-expanded="false">Exception Handling</a>
  	 		
- 	 	</li>
-                 <li>
+
+               </li>
+                <li style="pointer-events: none; color: red;">
+                 
  	 		<a href="java_video_file.php?action=video14" data-toggle="collapse" aria-expanded="false">Introduction to Java Threads</a>
  	 		
- 	 	</li>
+ 	 	
+         </li>
                 <?php } ?>
                 
                 
@@ -192,16 +220,11 @@ include 'Connection/common.php';
                 <?php
                  }
                 ?>
- 	 	 	
+ 	 	 </ul>
+ </nav>
+
+ 	
                
-                <?php
-                
-                $check=0;
-                $check1=0;
-                $check2=0;
-                
-                ?>
-                
                 
                                
             
@@ -209,10 +232,7 @@ include 'Connection/common.php';
  	 	
  	 	 	 	
 
- 	 </ul>
- </nav>
-
-
+ 
 <div id="content">
 	
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
