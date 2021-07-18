@@ -299,7 +299,7 @@ if($final>70){
 
   <?php } } } ?>
     <!--================ End Testimonial Area =================-->
-ti-heart" aria-hidden="true"></i> by <a href="#" target="_blank">Ilearn</a>
+
 
 
     
