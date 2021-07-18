@@ -289,7 +289,15 @@ include 'statictics_script.php';
                                     <a href="quiz.php?type=c_1st&course=c">Quiz-1</a>
  	 			</li>
                                 <?php
-                                }}else{
+                                }
+                                else {
+                                  ?>
+                                <li >
+                                    <a href="quiz.php?type=c_1st&course=c">Quiz-1</a>
+ 	 			</li>
+                                <?php
+                                }
+                                }else{
                                     ?>
                                 <li >
                                     <a href="quiz.php?type=c_1st&course=c">Quiz-1</a>
@@ -362,7 +370,40 @@ include 'statictics_script.php';
  	 		</ul>
  	 	</li>
                
-            <?php }}else{ ?>     
+            <?php }
+            else{
+                ?>
+                 <li style="pointer-events: none; color: red;">
+ 	 		<a href="#pageSubmenu4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Input And Output</a>
+ 	 		<ul class="collapse list-unstyled" id="pageSubmenu4">
+ 	 			
+ 	 			<li>
+                                    <a href="c_video_file.php?action=video17">Standard Files</a>
+ 	 			</li>
+                                <li>
+ 	 				<a href="c_video_file.php?action=video18">Files I/O</a>
+ 	 			</li>
+                                
+                                
+ 	 		</ul>
+ 	 	</li>
+                <li style="pointer-events: none; color: red;">
+ 	 		<a href="#pageSubmenu5" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Error Handling</a>
+ 	 		<ul class="collapse list-unstyled" id="pageSubmenu5">
+ 	 			
+ 	 			<li>
+                                    <a href="c_video_file.php?action=video19">Different Blocks</a>
+ 	 			</li>
+                                <li>
+ 	 				<a href="c_video_file.php?action=video20">Memory Management</a>
+ 	 			</li>
+                                
+                                
+ 	 		</ul>
+ 	 	</li>
+                <?php
+            }
+                                }else{ ?>     
            <li style="pointer-events: none; color: red;">
  	 		<a href="#pageSubmenu4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Input And Output</a>
  	 		<ul class="collapse list-unstyled" id="pageSubmenu4">

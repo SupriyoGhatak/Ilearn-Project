@@ -323,7 +323,7 @@
                 
                 
                 <?php
-                if($check2>70){
+                if($check4>70){
                 ?>
                 
                 <tr role="row" class="even">
