@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jul 17, 2021 at 04:48 PM
+-- Generation Time: Jul 18, 2021 at 10:15 AM
 -- Server version: 10.4.10-MariaDB
--- PHP Version: 7.4.0
+-- PHP Version: 7.3.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `question` (
   `type` varchar(255) NOT NULL,
   `course` varchar(255) NOT NULL,
   PRIMARY KEY (`qid`)
-) ENGINE=MyISAM AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=31 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `question`
@@ -57,7 +57,22 @@ INSERT INTO `question` (`qid`, `question`, `ans_id`, `type`, `course`) VALUES
 (12, 'fseek() should be preferred over rewind() mainly because\r\n', 47, 'c_f', 'c'),
 (13, 'Which of the following is not a valid variable name declaration?', 52, 'c_f', 'c'),
 (14, 'Which of the following cannot be a variable name in C?', 53, 'c_f', 'c'),
-(15, 'Which is valid C expression?', 58, 'c_f', 'c');
+(15, 'Which is valid C expression?', 58, 'c_f', 'c'),
+(16, 'Which of the following is a valid declaration of a char?', 61, 'java_1st', 'java'),
+(17, 'Given,ArrayList list = new ArrayList();  \r\nWhat is the initial quantity of the ArrayList list?', 66, 'java_1st', 'java'),
+(18, 'What does the expression float a = 35 / 0 return?', 71, 'java_1st', 'java'),
+(19, 'Which of the following for loop declaration is not valid?', 73, 'java_1st', 'java'),
+(20, 'What is false about constructor?', 79, 'java_2nd', 'java'),
+(21, 'What would be the behaviour if one parameterized constructor is explicitly defined?', 84, 'java_2nd', 'java'),
+(22, 'Which of these is correct way of inheriting class A by class B?', 87, 'java_2nd', 'java'),
+(23, 'Which of these keywords can be used to prevent Method overriding?', 92, 'java_2nd', 'java'),
+(24, 'Which of these method of Object class is used to obtain class of an object at run time?', 95, 'java_f', 'java'),
+(25, 'Which of these keywords must be used to handle the exception thrown by try block in some rational manner?', 100, 'java_f', 'java'),
+(26, 'Which of these method of Thread class is used to Suspend a thread for a period of time?', 101, 'java_f', 'java'),
+(27, 'Which function of pre defined class Thread is used to check weather current thread being checked is still running?', 105, 'java_f', 'java'),
+(28, 'What is the process of defining more than one method in a class differentiated by parameters?', 110, 'java_f', 'java'),
+(29, 'Which of these is correct about passing an argument by call-by-value process?', 113, 'java_f', 'java'),
+(30, 'Which of these method is used to tell the calling thread to give up a monitor and go to sleep until some other thread enters the same monitor?', 117, 'java_f', 'java');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

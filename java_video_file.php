@@ -32,7 +32,142 @@ include 'Connection/common.php';
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/videostyle.css" />
     <link rel="stylesheet" href="css/try.css" />
-    
+    <style>
+        .confetti {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1000;
+}
+.confetti-piece {
+    position: absolute;
+    width: 10px;
+    height: 30px;
+    background: #ffd300;
+    top: 0;
+    opacity: 0;
+}
+.confetti-piece:nth-child(1) {
+    left: 7%;
+    -webkit-transform: rotate(-40deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 182ms;
+    -webkit-animation-duration: 1116ms;
+}
+.confetti-piece:nth-child(2) {
+    left: 14%;
+    -webkit-transform: rotate(4deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 161ms;
+    -webkit-animation-duration: 1076ms;
+}
+.confetti-piece:nth-child(3) {
+    left: 21%;
+    -webkit-transform: rotate(-51deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 481ms;
+    -webkit-animation-duration: 1103ms;
+}
+.confetti-piece:nth-child(4) {
+    left: 28%;
+    -webkit-transform: rotate(61deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 334ms;
+    -webkit-animation-duration: 708ms;
+}
+.confetti-piece:nth-child(5) {
+    left: 35%;
+    -webkit-transform: rotate(-52deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 302ms;
+    -webkit-animation-duration: 776ms;
+}
+.confetti-piece:nth-child(6) {
+    left: 42%;
+    -webkit-transform: rotate(38deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 180ms;
+    -webkit-animation-duration: 1168ms;
+}
+.confetti-piece:nth-child(7) {
+    left: 49%;
+    -webkit-transform: rotate(11deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 395ms;
+    -webkit-animation-duration: 1200ms;
+}
+.confetti-piece:nth-child(8) {
+    left: 56%;
+    -webkit-transform: rotate(49deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 14ms;
+    -webkit-animation-duration: 887ms;
+}
+.confetti-piece:nth-child(9) {
+    left: 63%;
+    -webkit-transform: rotate(-72deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 149ms;
+    -webkit-animation-duration: 805ms;
+}
+.confetti-piece:nth-child(10) {
+    left: 70%;
+    -webkit-transform: rotate(10deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 351ms;
+    -webkit-animation-duration: 1059ms;
+}
+.confetti-piece:nth-child(11) {
+    left: 77%;
+    -webkit-transform: rotate(4deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 307ms;
+    -webkit-animation-duration: 1132ms;
+}
+.confetti-piece:nth-child(12) {
+    left: 84%;
+    -webkit-transform: rotate(42deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 464ms;
+    -webkit-animation-duration: 776ms;
+}
+.confetti-piece:nth-child(13) {
+    left: 91%;
+    -webkit-transform: rotate(-72deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 429ms;
+    -webkit-animation-duration: 818ms;
+}
+.confetti-piece:nth-child(odd) {
+    background: #7431e8;
+}
+.confetti-piece:nth-child(even) {
+    z-index: 1;
+}
+.confetti-piece:nth-child(4n) {
+    width: 5px;
+    height: 12px;
+    -webkit-animation-duration: 2000ms;
+}
+.confetti-piece:nth-child(3n) {
+    width: 3px;
+    height: 10px;
+    -webkit-animation-duration: 2500ms;
+    -webkit-animation-delay: 1000ms;
+}
+.confetti-piece:nth-child(4n-7) {
+  background: red;
+}
+@-webkit-keyframes makeItRain {
+    from {opacity: 0;}
+    50% {opacity: 1;}
+    to {-webkit-transform: translateY(350px);}
+}
+        </style>
   </head>
   <body method="POST">
       
@@ -57,14 +192,12 @@ include 'Connection/common.php';
  	 	  	<li>
  	 	  		<a href="java_video_file.php?action=video2">Installation of JDK in MacOS</a>
  	 	  	</li>
-<!--                        <li>
- 	 	  		<a href="#video3">Foundation of C</a>
- 	 	  	</li>-->
+
 
  	 	  </ul>
  	 	</li>
                  <li>
- 	 		<a href="java_video_file.php?action=video3" data-toggle="collapse" aria-expanded="false">Variables and Types</a>
+ 	 		<a href="java_video_file.php?action=video3"  aria-expanded="false">Variables and Types</a>
  	 		
  	 	</li>
  	 	<li>
@@ -86,190 +219,132 @@ include 'Connection/common.php';
  	 		</ul>
  	 	</li>
  	 	<li>
- 	 		<a href="java_video_file.php?action=video7" data-toggle="collapse" aria-expanded="false">Parameter Passing and Returning Value</a>
+ 	 		<a href="java_video_file.php?action=video7"  aria-expanded="false">Parameter Passing and Returning Value</a>
  	 		
  	 	</li>
                 <li>
- 	 		<a href="java_video_file.php?action=video8" data-toggle="collapse" aria-expanded="false">Arrays in Java</a>
+ 	 		<a href="java_video_file.php?action=video8"  aria-expanded="false">Arrays in Java</a>
  	 		
                 </li>
-                <li>
- 	 		<a href="java_video_file.php?action=video9" data-toggle="collapse" aria-expanded="false">Classes and Objects in Java</a>
- 	 		
- 	 	</li>
-                <li>
- 	 		<a href="java_video_file.php?action=video10" data-toggle="collapse" aria-expanded="false">Inheritence in Java</a>
- 	 		
- 	 	</li>
-                <li>
- 	 		<a href="java_video_file.php?action=video11" data-toggle="collapse" aria-expanded="false">Polymorphism in Java</a>
- 	 		
- 	 	</li>
-                <li>
- 	 		<a href="java_video_file.php?action=video12" data-toggle="collapse" aria-expanded="false">Class Constructors</a>
- 	 		
- 	 	</li>
-                 <li>
- 	 		<a href="java_video_file.php?action=video13" data-toggle="collapse" aria-expanded="false">Exception Handling</a>
- 	 		
- 	 	</li>
-                 <li>
- 	 		<a href="java_video_file.php?action=video14" data-toggle="collapse" aria-expanded="false">Introduction to Java Threads</a>
- 	 		
- 	 	</li>
-                
-                
-                <?php
-                
-                $check=0;
-                $check1=0;
-                $check2=0;
-                
-                ?>
-                
-                <!--<li>
- 	 		<a href="#pageSubmenu3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Core C Topics</a>
- 	 		<ul class="collapse list-unstyled" id="pageSubmenu3">
- 	 			
- 	 			<li>
- 	 				<a href="c_video_file.php?action=video12">Loops</a>
- 	 			</li>
-                                <li>
- 	 				<a href="c_video_file.php?action=video13">Functions</a>
- 	 			</li>
-                                <li>
- 	 				<a href="c_video_file.php?action=video14">Scope Rules</a>
- 	 			</li>
-                                <li>
- 	 				<a href="c_video_file.php?action=video15">Arrays and Pointers</a>
-                                </li>
-                                <li>
- 	 				<a href="c_video_file.php?action=video16">Structure and Unions</a>
-                                </li> -->
-                                <?php 
+                <?php 
                                 $sql_r1 = "SELECT * FROM user_exam_result WHERE  user_id = '" . $id . "' ";
                                 $result12 = mysqli_query($con, $sql_r1);
                                 $row1 = mysqli_fetch_assoc($result12);
-                                $check= $row1['c_1st'];
+                                $check= $row1['java_1st'];
                                 if($check>70)
                                 {
                                 ?>
                                 <li style="pointer-events: none; color: red;">
-                                    <a href="quiz.php?type=c_1st&course=c">Quiz</a>
+                                    <a href="quiz.php?type=java_1st&course=java">Quiz-1</a>
  	 			</li>
                                 <?php
                                 }else{
                                     ?>
                                 <li >
-                                    <a href="quiz.php?type=c_1st&course=c">Quiz</a>
+                                    <a href="quiz.php?type=java_1st&course=java">Quiz-1</a>
  	 			</li>
                                 <?php
                                 }
                                 ?>
                                 
-                                
- 	 		</ul>
- 	 	</li>
-        <?php 
+                 <?php 
         
        $sql_r = "SELECT * FROM user_exam_result WHERE  user_id = '" . $id . "' ";
        $result1 = mysqli_query($con, $sql_r);
         if (mysqli_num_rows($result1) > 0) {
             $row1 = mysqli_fetch_assoc($result1);
-            $check= $row1['c_1st'];
-            $check1=$row1['c_2nd'];
+            $check= $row1['java_1st'];
+            $check1=$row1['java_2nd'];
             if($check>70)
             {
         
-           ?>
-             <li>
-                 <a href="#pageSubmenu4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Input And Output</a>
- 	 		<ul class="collapse list-unstyled" id="pageSubmenu4">
- 	 			
- 	 			<li>
-                                    <a href="c_video_file.php?action=video17">Standard Files</a>
- 	 			</li>
-                                <li>
- 	 				<a href="c_video_file.php?action=video18">Files I/O</a>
- 	 			</li>
-                                
-                                
- 	 		</ul>
+           ?>           
+ 	 		
+ 	 	
+                <li>
+ 	 		<a href="java_video_file.php?action=video9"  aria-expanded="false">Classes and Objects in Java</a>
+ 	 		
  	 	</li>
-                <li >
- 	 		<a href="#pageSubmenu5" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Error Handling</a>
- 	 		<ul class="collapse list-unstyled" id="pageSubmenu5">
- 	 			
- 	 			<li>
-                                    <a href="c_video_file.php?action=video19">Different Blocks</a>
- 	 			</li>
-                                <li>
- 	 				<a href="c_video_file.php?action=video20">Memory Management</a>
- 	 			</li>
-                                <?php 
+                <li>
+ 	 		<a href="java_video_file.php?action=video10"  aria-expanded="false">Inheritence in Java</a>
+ 	 		
+ 	 	</li>
+                <li>
+ 	 		<a href="java_video_file.php?action=video11"  aria-expanded="false">Polymorphism in Java</a>
+ 	 		
+ 	 	</li>
+                <li>
+ 	 		<a href="java_video_file.php?action=video12"  aria-expanded="false">Class Constructors</a>
+ 	 		
+ 	 	</li>
+                <?php 
                                 $sql_r3 = "SELECT * FROM user_exam_result WHERE  user_id = '" . $id . "' ";
                                 $result13 = mysqli_query($con, $sql_r3);
                                 $row3 = mysqli_fetch_assoc($result13);
-                                $check2= $row3['c_2nd'];
+                                $check2= $row3['java_2nd'];
                                 if($check2>70)
                                 {
                                 ?>
                                 <li style="pointer-events: none; color: red;">
- 	 				<a href="quiz.php?type=c_2nd&course=c">Quiz</a>
+ 	 				<a href="quiz.php?type=java_2nd&course=java">Quiz-2</a>
  	 			</li>
                                  <?php
                                 }else{
                                     ?>
                                 <li>
- 	 				<a href="quiz.php?type=c_2nd&course=c">Quiz</a>
+ 	 				<a href="quiz.php?type=java_2nd&course=java">Quiz-2</a>
  	 			</li>
                                  <?php
                                 }
                                 ?>
+            <?php }}else{ ?>
                                 
-                                
- 	 		</ul>
- 	 	</li>
-               
-            <?php }}else{ ?>     
-           <li style="pointer-events: none; color: red;">
- 	 		<a href="#pageSubmenu4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Input And Output</a>
- 	 		<ul class="collapse list-unstyled" id="pageSubmenu4">
- 	 			
- 	 			<li>
-                                    <a href="c_video_file.php?action=video17">Standard Files</a>
- 	 			</li>
-                                <li>
- 	 				<a href="c_video_file.php?action=video18">Files I/O</a>
- 	 			</li>
-                                
-                                
- 	 		</ul>
- 	 	</li>
-                <li style="pointer-events: none; color: red;">
- 	 		<a href="#pageSubmenu5" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Error Handling</a>
- 	 		<ul class="collapse list-unstyled" id="pageSubmenu5">
- 	 			
- 	 			<li>
-                                    <a href="c_video_file.php?action=video19">Different Blocks</a>
- 	 			</li>
-                                <li>
- 	 				<a href="c_video_file.php?action=video20">Memory Management</a>
- 	 			</li>
-                                
-                                
- 	 		</ul>
- 	 	</li>
+                  <li style="pointer-events: none; color: red;">
+                  
+ 	 		<a href="java_video_file.php?action=video9"  aria-expanded="false">Classes and Objects in Java</a>
+ 	 		
+ 	 	
+         </li>
+                 <li style="pointer-events: none; color: red;">
                 
-        <?php } ?>
+ 	 		<a href="java_video_file.php?action=video10"  aria-expanded="false">Inheritence in Java</a>
+ 	 		
+ 	 
+               </li>
+                <li style="pointer-events: none; color: red;">
+                
+ 	 		<a href="java_video_file.php?action=video11"  aria-expanded="false">Polymorphism in Java</a>
+ 	 		
+ 	 	
+               </li>
+                <li style="pointer-events: none; color: red;">
+               
+ 	 		<a href="java_video_file.php?action=video12"  aria-expanded="false">Class Constructors</a>
+ 	 		
+ 	 	
+               </li>
+                <li style="pointer-events: none; color: red;">
+                 
+ 	 		<a href="java_video_file.php?action=video13"  aria-expanded="false">Exception Handling</a>
+ 	 		
+
+               </li>
+                <li style="pointer-events: none; color: red;">
+                 
+ 	 		<a href="java_video_file.php?action=video14"  aria-expanded="false">Introduction to Java Threads</a>
+ 	 		
+ 	 	
+         </li>
+                <?php } ?>
                 
                 
                 <?php
+               // $_SESSION['c_result']=$check1;
                  if($check1>70)
                  {
                 ?>
                  <li>
- 	 				<a href="#">Final Assessment</a>
+                     <a href="dashexamboard.php">Final Assessment</a>
  	        </li>
                 <?php
                  }else{
@@ -280,12 +355,19 @@ include 'Connection/common.php';
                 <?php
                  }
                 ?>
- 	 	 	 	
-
- 	 </ul>
+ 	 	 </ul>
  </nav>
 
+ 	
+               
+                
+                               
+            
+                                
+ 	 	
+ 	 	 	 	
 
+ 
 <div id="content">
 	
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -312,20 +394,34 @@ include 'Connection/common.php';
             include 'Connection/common.php';
             if (isset($_GET["action"])){
 
-            $c=$_GET["action"];
-            $query = "SELECT  src FROM  java_video WHERE video_id = '" . $c . "' ";
+            $java=$_GET["action"];
+            $query = "SELECT  src FROM  java_video WHERE video_id = '" . $java . "' ";
             $result = mysqli_query($con, $query) or die($mysqli_error($con));
             $num = mysqli_num_rows($result);
             $row = mysqli_fetch_array($result);   
             $src = $row['src'];
             }
         ?>
-        <?php if(!isset($src)){?>
-        <section  style="height: 100vh; display: flex;
-            text-align: center;
-            justify-content: center;">
-            <img style=""height="80%; width:70%;"src="img/video_bg_c.jpg" >
-
+        <?php if(!isset($_GET["action"])){?>
+        <section  style="height: 100vh"> 
+            <div class="confetti">
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+</div>
+             <center> <p style="margin-top: 60px; color: black; text-transform: uppercase; font-family: arial; font-size: 80px;">Welcome</p></center>
+            <center><p style="margin-top: 100px; color: gray; text-transform: uppercase; font-family: arial; font-size: 22px;">To learn JAVA and Get your Concepts clear</p></center>
+                <center><p style="margin-top: 150px; color: black; text-transform: uppercase; font-family: arial; font-size: 18px;">with revisions and also a final assessment test.</p></center>
         </section>
         <?php }else {?>
 
