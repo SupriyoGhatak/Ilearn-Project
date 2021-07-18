@@ -176,7 +176,7 @@
           $item_array = array(
                 'product_name' => "Programming With C++",
                 'picture_src' => "img/courses/c++.jpg",
-                'video_src' => "error1.php"
+                'video_src' => "c++_video_file"
                 
             );
           $_SESSION["cart"][2] = $item_array;  
