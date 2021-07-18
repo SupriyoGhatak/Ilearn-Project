@@ -295,11 +295,11 @@ if($final>70){
  }
  else {
  ?>
-      <h1>Please Purchcse this course to unlock the module's.</h1>
+      <h1>Please Purchase this course to unlock the module's.</h1>
 
   <?php } } } ?>
     <!--================ End Testimonial Area =================-->
-ti-heart" aria-hidden="true"></i> by <a href="#" target="_blank">Ilearn</a>
+
 
 
     
