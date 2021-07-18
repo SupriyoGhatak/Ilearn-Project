@@ -3,67 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< HEAD
-            <file>file:/C:/wamp64/www/Ilearn-Project/java_video_file.php</file>
-            <file>file:/C:/wamp64/www/Ilearn-Project/c_video_file.php</file>
-=======
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/view_details.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/app.js</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/notice.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/css/stylee1.css</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/Connection/common.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/login_script.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/c_video_file.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/signup.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-details-rdbms.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/topic1c.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/contact_script.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-details-java.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/dashcourses.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/courses.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/header_other.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/java_video_file.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/quiz.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/sign_up_script.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/css/style.css</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/my_profile_script.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-buy-c.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-buy-rdbms.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/sendmail.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/my_profile_image_script.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/css/teststyle.css</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/css/notice.css</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/coding_question.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/header_index.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/payment_script.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/css/admin_style.css</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-buy-java.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/admin_exam.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/css/style1.css</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-buy-c++.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/dashreports.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/admin_dashboard.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/css/videostyle.css</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/course_c.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/dashupcoming.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/qctopic.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/index.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-details-c.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/newdash.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/error1.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/dashexamboard.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/statictics_script.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/test.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/admin_video.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/footer.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/course-details.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/visitor.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/css/quiz_style.css</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/admin_notice.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/dashlibrary.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/payment.php</file>
-            <file>file:/Applications/XAMPP/htdocs/ilearnmain/my_profile.php</file>
->>>>>>> f057879ed969efdbdb742f5565fc99db997e68ec
+            <file>file:/C:/wamp64/www/Ilearn-Project/topic1c.php</file>
+            <file>file:/C:/wamp64/www/Ilearn-Project/css/qstn.css</file>
         </group>
     </open-files>
 </project-private>
