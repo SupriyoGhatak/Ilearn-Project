@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jul 17, 2021 at 04:48 PM
+-- Generation Time: Jul 18, 2021 at 10:15 AM
 -- Server version: 10.4.10-MariaDB
--- PHP Version: 7.4.0
+-- PHP Version: 7.3.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `answer` (
   `type` varchar(255) NOT NULL,
   `course` varchar(255) NOT NULL,
   PRIMARY KEY (`aid`)
-) ENGINE=MyISAM AUTO_INCREMENT=61 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=121 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `answer`
@@ -102,7 +102,67 @@ INSERT INTO `answer` (`aid`, `answers`, `ans_id`, `type`, `course`) VALUES
 (57, 'int my_num = 100,000;', 15, 'c_f', 'c'),
 (58, 'int my_num = 100000;', 15, 'c_f', 'c'),
 (59, ' int my num = 1000;', 15, 'c_f', 'c'),
-(60, 'int $my_num = 10000;', 15, 'c_f', 'c');
+(60, 'int $my_num = 10000;', 15, 'c_f', 'c'),
+(61, 'char ch = \'\\utea\';', 16, 'java_1st', 'java'),
+(62, 'char ca = \'tea\';', 16, 'java_1st', 'java'),
+(63, 'char cr = \\u0223;', 16, 'java_1st', 'java'),
+(64, 'char cc = \'\\itea\';', 16, 'java_1st', 'java'),
+(65, '5', 17, 'java_1st', 'java'),
+(66, '10', 17, 'java_1st', 'java'),
+(67, '0', 17, 'java_1st', 'java'),
+(68, '100', 17, 'java_1st', 'java'),
+(69, '0', 18, 'java_1st', 'java'),
+(70, 'Not a number', 18, 'java_1st', 'java'),
+(71, 'Infinity', 18, 'java_1st', 'java'),
+(72, 'Run time exception', 18, 'java_1st', 'java'),
+(73, 'for ( int i = 99; i >= 0; i / 9 )', 19, 'java_1st', 'java'),
+(74, 'for ( int i = 7; i <= 77; i += 7 )', 19, 'java_1st', 'java'),
+(75, 'for ( int i = 20; i >= 2; - -i )', 19, 'java_1st', 'java'),
+(76, 'for ( int i = 2; i <= 20; i = 2* i )', 19, 'java_1st', 'java'),
+(77, 'Constructors cannot be synchronized in Java', 20, 'java_2nd', 'java'),
+(78, ' Java does not provide default copy constructor', 20, 'java_2nd', 'java'),
+(79, 'Constructor can have a return type', 20, 'java_2nd', 'java'),
+(80, '“this” and “super” can be used in a constructor', 20, 'java_2nd', 'java'),
+(81, 'Compilation error', 21, 'java_2nd', 'java'),
+(82, 'Compilation succeeds', 21, 'java_2nd', 'java'),
+(83, 'Runtime error', 21, 'java_2nd', 'java'),
+(84, 'Compilation succeeds but at the time of creating object using default constructor, it throws compilation error', 21, 'java_2nd', 'java'),
+(85, 'class B + class A {}', 22, 'java_2nd', 'java'),
+(86, 'class B inherits class A {}', 22, 'java_2nd', 'java'),
+(87, 'class B extends A {}', 22, 'java_2nd', 'java'),
+(88, 'class B extends class A {}', 22, 'java_2nd', 'java'),
+(89, 'static', 23, 'java_2nd', 'java'),
+(90, 'constant', 23, 'java_2nd', 'java'),
+(91, 'protected', 23, 'java_2nd', 'java'),
+(92, 'final', 23, 'java_2nd', 'java'),
+(93, 'get()', 24, 'java_f', 'java'),
+(94, 'void getclass()', 24, 'java_f', 'java'),
+(95, 'Class getclass()', 24, 'java_f', 'java'),
+(96, 'None of the mentioned', 24, 'java_f', 'java'),
+(97, 'try', 25, 'java_f', 'java'),
+(98, 'finally', 25, 'java_f', 'java'),
+(99, 'throw', 25, 'java_f', 'java'),
+(100, 'catch', 25, 'java_f', 'java'),
+(101, 'sleep()', 26, 'java_f', 'java'),
+(102, 'terminate()', 26, 'java_f', 'java'),
+(103, 'suspend()', 26, 'java_f', 'java'),
+(104, 'stop()', 26, 'java_f', 'java'),
+(105, 'isAlive()', 27, 'java_f', 'java'),
+(106, 'Join()', 27, 'java_f', 'java'),
+(107, 'isRunning()', 27, 'java_f', 'java'),
+(108, 'Alive()', 27, 'java_f', 'java'),
+(109, 'Function overriding', 28, 'java_f', 'java'),
+(110, 'Function overloading', 28, 'java_f', 'java'),
+(111, 'Function doubling', 28, 'java_f', 'java'),
+(112, 'None of the mentioned', 28, 'java_f', 'java'),
+(113, 'Copy of argument is made into the formal parameter of the subroutine', 29, 'java_f', 'java'),
+(114, 'Reference to original argument is passed to formal parameter of the subroutine', 29, 'java_f', 'java'),
+(115, 'Copy of argument is made into the formal parameter of the subroutine and changes made on parameters of subroutine have effect on original argument', 29, 'java_f', 'java'),
+(116, 'Reference to original argument is passed to formal parameter of the subroutine and changes made on parameters of subroutine have effect on original argument', 29, 'java_f', 'java'),
+(117, 'wait()', 30, 'java_f', 'java'),
+(118, 'notify()', 30, 'java_f', 'java'),
+(119, 'notifyAll()', 30, 'java_f', 'java'),
+(120, 'sleep()', 30, 'java_f', 'java');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
