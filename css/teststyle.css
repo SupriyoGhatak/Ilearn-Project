@@ -1,4 +1,4 @@
-/*
+ /*
 
 :root {
     --main-color: #00162e;
@@ -46,6 +46,31 @@
 .sidebar-menu{
     padding: 1.6rem;
 }
+
+.sidebar-menu .dashexam:hover {
+    color: blue;
+}
+.sidebar-menu .dashstat:hover {
+    color: blue;
+}
+.sidebar-menu .dashco:hover {
+    color: blue;
+}
+.sidebar-menu .dashlib:hover {
+    color: blue;
+}
+.sidebar-menu .dashup:hover {
+    color: blue;
+}
+.sidebar-menu .dashquery:hover {
+    color: blue;
+}
+.sidebar-menu .dashre:hover {
+    color: blue;
+}
+.sidebar-menu .ti-menu-alt:hover {
+    color: blue;
+}
 .sidebar li{
     margin-bottom: 1.6rem;
 }
@@ -83,6 +108,10 @@
     margin-left: 240px;
     transition: margin-left 500ms;
     color: black;
+}
+body{
+    background-color: #f1f5f9;
+    min-width: 100%;
 }
 header {
     position: fixed;
@@ -165,7 +194,7 @@ main{
 .dash-title{
     color: var(--color-dark);
 }
-/*
+
 @media only screen and (max-width: 1200px) {
     .sidebar {
         width: 60px;
@@ -208,7 +237,7 @@ main{
 #sidebar-toggle:checked ~ .main-content header{
     left: 60px;
 }
-}*/
+} 
 /*nav{
   
   transform: translate(-50%, -50%);
