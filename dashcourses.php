@@ -44,49 +44,51 @@
               <label for="sidebar-toggle" class="ti-menu-alt"></span>
           </div>
           <div class="sidebar-menu">
-              <ul>
+               <ul>
                   <li>
-                      <a href="test.php">
+                      
+                      <a class="dashstat" href="test.php" title="Statistics" >
                           <span class="ti-home"></span>
                           <span> Statistics</span>
                       </a>
                   </li>
                   <li>
-                      <a href="dashcourses.php">
+                      <a class="dashco" href="dashcourses.php" title="Courses">
                           <span class="ti-face-smile"></span>
                           <span> Courses</span>
                       </a>
                   </li>
                   <li>
-                      <a href="dashlibrary.php">
+                      <a class="dashlib" href="dashlibrary.php" title="E-library">
                           <span class="ti-book"></span>
                           <span> E-Library</span>
                       </a>
                   </li>
                   <li>
-                      <a href="dashexamboard.php">
+                      <a class="dashexam" href="dashexamboard.php" title="Exam board">
                           <span class="ti-agenda"></span>
                           <span> Exam board</span>
                       </a>
                   </li>
                   <li>
-                      <a href="dashupcoming.php">
-                          <span class="ti-clipboard"></span>
+                      <a class="dashup" href="dashupcoming.php"title="Upcoming Events">
+                          <span class="ti-clipboard" ></span>
                           <span> Upcoming Events</span>
                       </a>
                   </li>
                   <li>
-                      <a href="dashreports.php">
+                      <a class="dashre" href="dashreports.php" title="Reports">
                           <span class="ti-folder"></span>
                           <span> Reports</span>
                       </a>
                   </li>
-                 <li>
-                    <a href="query_history.php">
-                        <span class="ti-help"></span>
+                  <li>
+                    <a class="dashquery" href="query_history.php" title="Query history">
+                        <span class="ti-help" ></span>
                         <span>Query History</span>
                     </a>
                 </li>
+                 
               </ul>
           </div>
        </div>
@@ -96,7 +98,7 @@
               <div class="inner_header">
                   <ul class="navigation">
                       <a href="index.php"><li>Home</li></a>
-                      <a href="#"><li>  </li></a>
+                     
                      
                       <a href="contact.php" ><li>Contact Us</li></a>
                       <a href="logout.php"><li>Logout</li></a>
@@ -142,6 +144,8 @@
         $query = "SELECT * FROM user_buyed_course WHERE user_id = '" . $id . "'";
         $result1 = mysqli_query($con,$query);
         $row = mysqli_fetch_array($result1);
+        $num51 = mysqli_num_rows($result1);
+        if($num51>0){
         $_SESSION['c'] = $row['c'];
         $_SESSION['c_plus']=$row['c_plus'];
         $_SESSION['java'] = $row['java'];
@@ -151,7 +155,8 @@
           $temp=1;
           $item_array = array(
                 'product_name' => "Programming With C",
-                'picture_src' => "img/courses/c.jpg"
+                'picture_src' => "img/courses/c.jpg",
+                'video_src' => "c_video_file.php"
                 
             );
           $_SESSION["cart"][0] = $item_array;  
@@ -161,7 +166,8 @@
           $temp=1;
           $item_array = array(
                 'product_name' => "Programming With java",
-                'picture_src' => "img/courses/java.jpg"
+                'picture_src' => "img/courses/java.jpg",
+                'video_src' => "java_video_file.php"
                 
             );
           $_SESSION["cart"][1] = $item_array;  
@@ -170,8 +176,9 @@
         { 
           $temp=1;
           $item_array = array(
-                'product_name' => "Programming With java",
-                'picture_src' => "img/courses/java.jpg"
+                'product_name' => "Programming With C++",
+                'picture_src' => "img/courses/c++.jpg",
+                'video_src' => "c++_video_file"
                 
             );
           $_SESSION["cart"][2] = $item_array;  
@@ -180,8 +187,9 @@
         { 
           $temp=1;
           $item_array = array(
-                'product_name' => "Programming With java",
-                'picture_src' => "img/courses/java.jpg"
+                'product_name' => "Relational Database Management System",
+                'picture_src' => "img/courses/sql.jpeg",
+              'video_src' => "error1.php"
                 
             );
           $_SESSION["cart"][3] = $item_array;  
@@ -214,13 +222,13 @@
              <div class="col-sm-6 col-md-6"> 
                  <div class="single_course">
                 <div class="course_head">
-                    <a href="c_video_file.php"> <img class="img-fluid" src="<?php echo $value["picture_src"]; ?>" alt="centered image" style="height: 259px; width : 100%;" /> </a>
+                    <a href="<?php echo $value["video_src"]; ?>"> <img class="img-fluid" src="<?php echo $value["picture_src"]; ?>" alt="centered image" style="height: 259px; width : 100%;" /> </a>
              
                 <div class="course_content"> 
                 
                 <div class="course_head">
                   <h2 class="mb-1">
-                      <a href="c_video_file.php"><?php echo $value["product_name"]; ?></a>
+                      <a href="<?php echo $value["video_src"]; ?>"><?php echo $value["product_name"]; ?></a>
                   </h4>
                   
                         
@@ -235,7 +243,7 @@
  
      
      
-     <?php  }}else { ?>  
+        <?php  }}}else { ?>  
 
      <div class="popular_courses section_gap_top">
       <div class="container">

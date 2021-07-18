@@ -14,7 +14,7 @@ include 'statictics_script.php';
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
     <link rel="icon" href="img/logo_1.png" style="height: 40px; width: 40px;" type="image/png" />
-     <title>Videos</title>
+     <title>C++ Videos</title>
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css" />
@@ -183,15 +183,15 @@ include 'statictics_script.php';
  	 </div>
  	 <ul class="lisst-unstyled components">
 
-             <p><strong><center>C Concepts</center></strong></p>
+             <p><strong><center>C++ Concepts</center></strong></p>
  	 	<li class="active">
- 	 		<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">C Language Overview</a>
+ 	 		<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Starting With C++</a>
  	 	  <ul class="collapse list-unstyled" id="homeSubmenu">
  	 	  	<!--<li>
                             <a href="c_video_file.php?action=video1">Fact About C</a>
  	 	  	</li>-->
  	 	  	<li>
- 	 	  		<a href="c_video_file.php?action=video2">Introduction to c</a>
+ 	 	  		<a href="c_video_file.php?action=video2">Installing of IDE</a>
  	 	  	</li>
 <!--                        <li>
  	 	  		<a href="#video3">Foundation of C</a>
@@ -200,7 +200,7 @@ include 'statictics_script.php';
  	 	  </ul>
  	 	</li>
  	 	
- 	 	<li>
+<!-- 	 	<li>
  	 		<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">C Environment Setup</a>
  	 		<ul class="collapse list-unstyled" id="pageSubmenu">
  	 			<li>
@@ -215,29 +215,29 @@ include 'statictics_script.php';
  	 			
 
  	 		</ul>
- 	 	</li>
+ 	 	</li>-->
                 <li>
- 	 		<a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">C Basic Syntax</a>
+ 	 		<a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">C++ Basic</a>
  	 		<ul class="collapse list-unstyled" id="pageSubmenu2">
  	 			
  	 			<li>
- 	 				<a href="c_video_file.php?action=video6">Tokens And Semicolons</a>
+ 	 				<a href="c_video_file.php?action=video6">Input and Output</a>
  	 			</li>
                                 <li>
- 	 				<a href="c_video_file.php?action=video7">Comments</a>
+ 	 				<a href="c_video_file.php?action=video7">Constants Operators</a>
  	 			</li>
-                                <li>
+<!--                                <li>
  	 				<a href="c_video_file.php?action=video8">Identifiers And Keywords</a>
  	 			</li>
                                 <li>
  	 				<a href="c_video_file.php?action=video9">DataTypes And Variables</a>
-                                </li><!-- comment -->
+                                </li> comment 
                                 <li>
  	 				<a href="c_video_file.php?action=video10">Constants And Literals</a>
  	 			</li>
                                 <li>
  	 				<a href="c_video_file.php?action=video11">Operators</a>
- 	 			</li>
+ 	 			</li>-->
  	 			
 
  	 		</ul>
@@ -251,37 +251,37 @@ include 'statictics_script.php';
                 ?>
                 
                 <li>
- 	 		<a href="#pageSubmenu3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Core C Topics</a>
+ 	 		<a href="#pageSubmenu3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Core C++ Concepts</a>
  	 		<ul class="collapse list-unstyled" id="pageSubmenu3">
  	 			
  	 			<li>
- 	 				<a href="c_video_file.php?action=video12">Loops</a>
+ 	 				<a href="c_video_file.php?action=video12">If Else</a>
  	 			</li>
                                 <li>
                                     <a href="c_video_file.php?action=coding1">Coding1</a>
  	 			</li>
                                 <li>
- 	 				<a href="c_video_file.php?action=video13">Functions</a>
+ 	 				<a href="c_video_file.php?action=video13">For While Do While</a>
  	 			</li>
                                 <li>
- 	 				<a href="c_video_file.php?action=video14">Scope Rules</a>
+ 	 				<a href="c_video_file.php?action=video14">Arrays and Pointers</a>
  	 			</li>
-                                <li>
+<!--                                <li>
  	 				<a href="c_video_file.php?action=video15">Arrays and Pointers</a>
-                                </li><!-- comment -->
+                                </li> comment -->
                                 <li>
                                     <a href="c_video_file.php?action=coding2">Coding2</a>
  	 			</li>
-                                <li>
+<!--                                <li>
  	 				<a href="c_video_file.php?action=video16">Structure and Unions</a>
- 	 			</li>
+ 	 			</li>-->
                                 <?php 
                                 $sql_r1 = "SELECT * FROM user_exam_result WHERE  user_id = '" . $id . "' ";
                                 $result12 = mysqli_query($con, $sql_r1);
                                 $num7 = mysqli_num_rows($result12);
                                 if($num7>0){
                                 $row1 = mysqli_fetch_assoc($result12);
-                                $check= $row1['c_1st'];
+                                $check= $row1['c_plus_1st'];
                                 if($check>70)
                                 {
                                 ?>
@@ -289,7 +289,12 @@ include 'statictics_script.php';
                                     <a href="quiz.php?type=c_1st&course=c">Quiz</a>
  	 			</li>
                                 <?php
-                                }}else{
+                                }
+                                else { ?>
+                                <li >
+                                    <a href="quiz.php?type=c_1st&course=c">Quiz</a>
+ 	 			</li>
+                                <?php }  }else{
                                     ?>
                                 <li >
                                     <a href="quiz.php?type=c_1st&course=c">Quiz</a>
@@ -307,41 +312,46 @@ include 'statictics_script.php';
        $result1 = mysqli_query($con, $sql_r);
         if (mysqli_num_rows($result1) > 0) {
             $row1 = mysqli_fetch_assoc($result1);
-            $check= $row1['c_1st'];
-            $check1=$row1['c_2nd'];
+            $check= $row1['c_plus_1st'];
+            $check1=$row1['c_plus_2nd'];
             if($check>70)
             {
         
            ?>
              <li>
-                 <a href="#pageSubmenu4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Input And Output</a>
+                 <a href="#pageSubmenu4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">OOPS Concept</a>
  	 		<ul class="collapse list-unstyled" id="pageSubmenu4">
  	 			
  	 			<li>
-                                    <a href="c_video_file.php?action=video17">Standard Files</a>
+                                    <a href="c_video_file.php?action=video17">Access Modifiers</a>
  	 			</li>
                                 <li>
- 	 				<a href="c_video_file.php?action=video18">Files I/O</a>
+ 	 				<a href="c_video_file.php?action=video18">Constructors</a>
+ 	 			</li>
+                                <li>
+ 	 				<a href="c_video_file.php?action=video18">Inheritance And Encapsulation</a>
+ 	 			</li>
+                                <li>
+ 	 				<a href="c_video_file.php?action=video18">Polymorphism</a>
  	 			</li>
                                 
                                 
  	 		</ul>
  	 	</li>
+                
                 <li >
- 	 		<a href="#pageSubmenu5" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Error Handling</a>
+ 	 		<a href="#pageSubmenu5" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Friend Function</a>
  	 		<ul class="collapse list-unstyled" id="pageSubmenu5">
  	 			
  	 			<li>
-                                    <a href="c_video_file.php?action=video19">Different Blocks</a>
+                                    <a href="c_video_file.php?action=video19">Friend Function</a>
  	 			</li>
-                                <li>
- 	 				<a href="c_video_file.php?action=video20">Memory Management</a>
- 	 			</li>
+                                
                                 <?php 
                                 $sql_r3 = "SELECT * FROM user_exam_result WHERE  user_id = '" . $id . "' ";
                                 $result13 = mysqli_query($con, $sql_r3);
                                 $row3 = mysqli_fetch_assoc($result13);
-                                $check2= $row3['c_2nd'];
+                                $check2= $row3['c_plus_2nd'];
                                 if($check2>70)
                                 {
                                 ?>
@@ -361,36 +371,229 @@ include 'statictics_script.php';
                                 
  	 		</ul>
  	 	</li>
-               
-            <?php }}else{ ?>     
-           <li style="pointer-events: none; color: red;">
- 	 		<a href="#pageSubmenu4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Input And Output</a>
- 	 		<ul class="collapse list-unstyled" id="pageSubmenu4">
- 	 			
- 	 			<li>
-                                    <a href="c_video_file.php?action=video17">Standard Files</a>
- 	 			</li>
-                                <li>
- 	 				<a href="c_video_file.php?action=video18">Files I/O</a>
- 	 			</li>
-                                
-                                
- 	 		</ul>
- 	 	</li>
-                <li style="pointer-events: none; color: red;">
- 	 		<a href="#pageSubmenu5" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Error Handling</a>
+                
+                
+                <li>
+ 	 		<a href="#pageSubmenu5" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Maps</a>
  	 		<ul class="collapse list-unstyled" id="pageSubmenu5">
  	 			
  	 			<li>
-                                    <a href="c_video_file.php?action=video19">Different Blocks</a>
+                                    <a href="c_video_file.php?action=video19">Details of Map</a>
+ 	 			</li>
+<!--                                <li>
+ 	 				<a href="c_video_file.php?action=video20">Memory Management</a>
+ 	 			</li>-->
+                                
+                                
+ 	 		</ul>
+ 	 	</li>
+                
+                <li>
+ 	 		<a href="#pageSubmenu6" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Template</a>
+ 	 		<ul class="collapse list-unstyled" id="pageSubmenu6">
+ 	 			
+ 	 			<li>
+                                    <a href="c_video_file.php?action=video19">STL and Template</a>
+ 	 			</li>
+<!--                                <li>
+ 	 				<a href="c_video_file.php?action=video20">Memory Management</a>
+ 	 			</li>-->
+                                
+                                
+ 	 		</ul>
+ 	 	</li>
+                
+                
+               
+            <?php
+            }
+            else{
+                
+            ?>
+             <li style="pointer-events: none; color: red;">
+                 <a href="#pageSubmenu4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" >OOPS Concept</a>
+ 	 		<ul class="collapse list-unstyled" id="pageSubmenu4">
+ 	 			
+ 	 			<li>
+                                    <a href="c_video_file.php?action=video17">Access Modifiers</a>
  	 			</li>
                                 <li>
- 	 				<a href="c_video_file.php?action=video20">Memory Management</a>
+ 	 				<a href="c_video_file.php?action=video18">Constructors</a>
+ 	 			</li>
+                                <li>
+ 	 				<a href="c_video_file.php?action=video18">Inheritance And Encapsulation</a>
+ 	 			</li>
+                                <li>
+ 	 				<a href="c_video_file.php?action=video18">Polymorphism</a>
  	 			</li>
                                 
                                 
  	 		</ul>
  	 	</li>
+                
+                
+                 <li style="pointer-events: none; color: red;">
+ 	 		<a href="#pageSubmenu5" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Friend Function</a>
+ 	 		<ul class="collapse list-unstyled" id="pageSubmenu5">
+ 	 			
+ 	 			<li>
+                                    <a href="c_video_file.php?action=video19">Friend Function</a>
+ 	 			</li>
+                                
+                                <?php 
+                                $sql_r3 = "SELECT * FROM user_exam_result WHERE  user_id = '" . $id . "' ";
+                                $result13 = mysqli_query($con, $sql_r3);
+                                $row3 = mysqli_fetch_assoc($result13);
+                                $check2= $row3['c_plus_2nd'];
+                                if($check2>70)
+                                {
+                                ?>
+                                <li style="pointer-events: none; color: red;">
+ 	 				<a href="quiz.php?type=c_2nd&course=c">Quiz</a>
+ 	 			</li>
+                                 <?php
+                                }else{
+                                    ?>
+                                <li>
+ 	 				<a href="quiz.php?type=c_2nd&course=c">Quiz</a>
+ 	 			</li>
+                                 <?php
+                                }
+                                ?>
+                                
+                                
+ 	 		</ul>
+ 	 	</li>
+                
+                
+                <li style="pointer-events: none; color: red;">
+ 	 		<a href="#pageSubmenu5" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Maps</a>
+ 	 		<ul class="collapse list-unstyled" id="pageSubmenu5">
+ 	 			
+ 	 			<li>
+                                    <a href="c_video_file.php?action=video19">Details of Map</a>
+ 	 			</li>
+<!--                                <li>
+ 	 				<a href="c_video_file.php?action=video20">Memory Management</a>
+ 	 			</li>-->
+                                
+                                
+ 	 		</ul>
+ 	 	</li>
+                
+                <li style="pointer-events: none; color: red;">
+ 	 		<a href="#pageSubmenu6" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Template</a>
+ 	 		<ul class="collapse list-unstyled" id="pageSubmenu6">
+ 	 			
+ 	 			<li>
+                                    <a href="c_video_file.php?action=video19">STL and Template</a>
+ 	 			</li>
+<!--                                <li>
+ 	 				<a href="c_video_file.php?action=video20">Memory Management</a>
+ 	 			</li>-->
+                                
+                                
+ 	 		</ul>
+ 	 	</li>
+                
+                
+            <?php }  }else{ ?>     
+
+                
+                
+                 <li style="pointer-events: none; color: red;">
+                 <a href="#pageSubmenu4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" >OOPS Concept</a>
+ 	 		<ul class="collapse list-unstyled" id="pageSubmenu4">
+ 	 			
+ 	 			<li>
+                                    <a href="c_video_file.php?action=video17">Access Modifiers</a>
+ 	 			</li>
+                                <li>
+ 	 				<a href="c_video_file.php?action=video18">Constructors</a>
+ 	 			</li>
+                                <li>
+ 	 				<a href="c_video_file.php?action=video18">Inheritance And Encapsulation</a>
+ 	 			</li>
+                                <li>
+ 	 				<a href="c_video_file.php?action=video18">Polymorphism</a>
+ 	 			</li>
+                                
+                                
+ 	 		</ul>
+ 	 	</li>
+                
+                
+                 <li style="pointer-events: none; color: red;">
+ 	 		<a href="#pageSubmenu5" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Friend Function</a>
+ 	 		<ul class="collapse list-unstyled" id="pageSubmenu5">
+ 	 			
+ 	 			<li>
+                                    <a href="c_video_file.php?action=video19">Friend Function</a>
+ 	 			</li>
+                                
+                                <?php 
+                                $sql_r3 = "SELECT * FROM user_exam_result WHERE  user_id = '" . $id . "' ";
+                                $result13 = mysqli_query($con, $sql_r3);
+                                $row3 = mysqli_fetch_assoc($result13);
+                                $check2= $row3['c_plus_2nd'];
+                                if($check2>70)
+                                {
+                                ?>
+                                <li style="pointer-events: none; color: red;">
+ 	 				<a href="quiz.php?type=c_2nd&course=c">Quiz</a>
+ 	 			</li>
+                                 <?php
+                                }else{
+                                    ?>
+                                <li>
+ 	 				<a href="quiz.php?type=c_2nd&course=c">Quiz</a>
+ 	 			</li>
+                                 <?php
+                                }
+                                ?>
+                                
+                                
+ 	 		</ul>
+ 	 	</li>
+                
+                
+                <li style="pointer-events: none; color: red;">
+ 	 		<a href="#pageSubmenu5" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Maps</a>
+ 	 		<ul class="collapse list-unstyled" id="pageSubmenu5">
+ 	 			
+ 	 			<li>
+                                    <a href="c_video_file.php?action=video19">Details of Map</a>
+ 	 			</li>
+<!--                                <li>
+ 	 				<a href="c_video_file.php?action=video20">Memory Management</a>
+ 	 			</li>-->
+                                
+                                
+ 	 		</ul>
+ 	 	</li>
+                
+                <li style="pointer-events: none; color: red;">
+ 	 		<a href="#pageSubmenu6" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Template</a>
+ 	 		<ul class="collapse list-unstyled" id="pageSubmenu6">
+ 	 			
+ 	 			<li>
+                                    <a href="c_video_file.php?action=video19">STL and Template</a>
+ 	 			</li>
+<!--                                <li>
+ 	 				<a href="c_video_file.php?action=video20">Memory Management</a>
+ 	 			</li>-->
+                                
+                                
+ 	 		</ul>
+ 	 	</li>
+                
+                
+                
+                
+                
+                
+                
+                
                 
         <?php } ?>
                 
@@ -401,7 +604,7 @@ include 'statictics_script.php';
                  {
                 ?>
                  <li>
-                     <a href="dashexamboard.php">Final Assassment</a>
+                     <a href="dashexamboard.php">Final Assessment</a>
  	        </li>
                 <?php
                  }else{
@@ -478,7 +681,7 @@ include 'statictics_script.php';
     <div class="confetti-piece"></div>
 </div>
             <center> <p style="margin-top: 60px; color: black; text-transform: uppercase; font-family: arial; font-size: 80px;">Welcome</p></center>
-            <center><p style="margin-top: 100px; color: gray; text-transform: uppercase; font-family: arial; font-size: 22px;">To learn C and Get your Concepts clear</p></center>
+            <center><p style="margin-top: 100px; color: gray; text-transform: uppercase; font-family: arial; font-size: 22px;">To learn C++ and Get your Concepts clear</p></center>
                 <center><p style="margin-top: 150px; color: black; text-transform: uppercase; font-family: arial; font-size: 18px;">with revisions and also a final assesment test.</p></center>
         </section>
         <?php

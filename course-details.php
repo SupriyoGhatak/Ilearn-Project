@@ -112,88 +112,101 @@
                                 </li>
                                 <div class="collapse" id="click1">
                                     <ul style="color: black;">
-                                        <li>hi</li>
-                                            <li style="padding-bottom: 10px;">
+                                        <li>Installation of Vs Code</li>
+<!--                                            <li style="padding-bottom: 10px;">
                                                 bye
-                                            </li>
+                                            </li>-->
                                         </ul>
                                 </div> 
                                 
                                 <li class="justify-content-between d-flex">
-                                    <p>Basics of HTML</p>
+                                    <p>Basics of C++</p>
                                     <botton class="primary-btn text-uppercase" data-toggle="collapse" data-target="#click2" type="button" style="color: black">View Details</botton>  
                                 </li>
                                 <div class="collapse" id="click2">
                                     <ul style="color: black;">
-                                        <li>hi</li>
+                                        <li>Input and Output</li>
                                             <li style="padding-bottom: 10px;">
-                                                bye
+                                                Constants,Operator and Precedence
                                             </li>
                                         </ul>
                                 </div> 
                                 <li class="justify-content-between d-flex">
-                                    <p>Getting Know about HTML</p>
+                                    <p>Core Concepts</p>
                                     <botton class="primary-btn text-uppercase" data-toggle="collapse" data-target="#click3" type="button" style="color: black">View Details</botton>  
                                 </li>
                                 <div class="collapse" id="click3">
                                     <ul style="color: black;">
-                                        <li>hi</li>
+                                        <li>If Else </li>
                                             <li style="padding-bottom: 10px;">
-                                                bye
+                                                For, While,do-while loop
                                             </li>
+                                            <li style="padding-bottom: 8px;">
+                                                Arrays & Pointers
+                                            </li>
+<!--                                            <li style="padding-bottom: 10px;">
+                                                For, While,do-while loop
+                                            </li>-->
                                         </ul>
                                 </div> 
                                 <li class="justify-content-between d-flex">
-                                    <p>Tags and Attributes</p>
+                                    <p>OOPS Concepts</p>
                                     <botton class="primary-btn text-uppercase" data-toggle="collapse" data-target="#click4" type="button" style="color: black">View Details</botton>  
                                 </li>
                                 <div class="collapse" id="click4">
                                     <ul style="color: black;">
-                                        <li>hi</li>
+                                        <li>Access Modifiers</li>
+                                        <li style="padding-bottom: 10px;">
+                                                Constructors
+                                            </li>
                                             <li style="padding-bottom: 10px;">
-                                                bye
+                                                Inheritance And Encapsulation
+                                            </li>
+                                            
+                                            <li style="padding-bottom: 10px;">
+                                                Polymorphism
                                             </li>
                                         </ul>
                                 </div> 
                                 <li class="justify-content-between d-flex">
-                                    <p>Basics of CSS</p>
-                                    <botton class="primary-btn text-uppercase" data-toggle="collapse" data-target="#click5" type="button" style="color: black">View Details</botton>  
+                                    <p>Friend Function</p>
+                                    <botton class="primary-btn text-uppercase" data-toggle="collapse" data-target="#click5" type="button" style="color: black">View Details</botton>
                                 </li>
                                 <div class="collapse" id="click5">
                                     <ul style="color: black;">
-                                        <li>hi</li>
-                                            <li style="padding-bottom: 10px;">
+                                        <li>Friend Function</li>
+<!--                                            <li style="padding-bottom: 10px;">
                                                 bye
-                                            </li>
+                                            </li>-->
                                         </ul>
-                                </div> 
+                                </div>
                                 <li class="justify-content-between d-flex">
-                                    <p>Getting Familiar with CSS</p>
+                                    <p>Maps</p>
                                     <botton class="primary-btn text-uppercase" data-toggle="collapse" data-target="#click6" type="button" style="color: black">View Details</botton>  
                                 </li>
                                 <div class="collapse" id="click6">
                                     <ul style="color: black;">
-                                        <li>hi</li>
-                                            <li style="padding-bottom: 10px;">
+                                        <li>Map Concept In C++</li>
+<!--                                            <li style="padding-bottom: 10px;">
                                                 bye
-                                            </li>
+                                            </li>-->
                                         </ul>
                                 </div> 
 
                                 <li class="justify-content-between d-flex">
-                                    <p>Introduction to Bootstrap</p>
+                                    <p>Template Library</p>
                                     <botton class="primary-btn text-uppercase" data-toggle="collapse" data-target="#click7" type="button" style="color: black">View Details</botton>  
                                 </li>
                                 <div class="collapse" id="click7">
                                     <ul style="color: black;">
-                                        <li>hi</li>
-                                            <li style="padding-bottom: 10px;">
+                                        <li>STL in C++</li>
+<!--                                            <li style="padding-bottom: 10px;">
                                                 bye
-                                            </li>
+                                            </li>-->
                                         </ul>
                                 </div> 
 
-                                <li class="justify-content-between d-flex">
+<!--                                <li class="justify-content-between d-flex">
                                     <p>Responsive Design</p>
                                     <botton class="primary-btn text-uppercase" data-toggle="collapse" data-target="#click8" type="button" style="color: black">View Details</botton>  
                                 </li>
@@ -204,19 +217,19 @@
                                                 bye
                                             </li>
                                         </ul>
-                                </div> 
-                                <li class="justify-content-between d-flex">
+                                </div> -->
+<!--                                <li class="justify-content-between d-flex">
                                     <p>Canvas in HTML 5</p>
                                     <botton class="primary-btn text-uppercase" data-toggle="collapse" data-target="#click9" type="button" style="color: black">View Details</botton>  
-                                </li>
-                                <div class="collapse" id="click9">
+                                </li>-->
+<!--                                <div class="collapse" id="click9">
                                     <ul style="color: black;">
                                         <li>hi</li>
                                             <li style="padding-bottom: 10px;">
                                                 bye
                                             </li>
                                         </ul>
-                                </div> 
+                                </div> -->
 
                             </ul>
                             
@@ -261,6 +274,8 @@
                              $temp=0;
                               $query = "SELECT * FROM user_buyed_course WHERE user_id = '" . $id . "'";
                               $result1 = mysqli_query($con,$query);
+                              $num= mysqli_num_rows($result1);
+                              if($num>0){
                               $row = mysqli_fetch_array($result1);
                               $c_plus= $row['c_plus'];
                             if($c_plus>0){
@@ -268,7 +283,7 @@
                             ?>
                     
                             <a onmouseover="this.style.background='black'" class="primary-btn2 text-uppercase enroll rounded-0 text-black" ><button class="dis" style="text-decoration: none; border:none; background: none; color: white;"  value="Enroll the course"disabled="true">Enroll the course</button></a>
-                            <?php }else { ?>
+                              <?php }}else { ?>
                     
                     <a href="course-buy-c++.php" class="primary-btn2 text-uppercase enroll rounded-0 text-black">Enroll the course</a>
                         <?php }} else { ?> 
