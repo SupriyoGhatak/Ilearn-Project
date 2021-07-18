@@ -197,7 +197,11 @@ include 'Connection/common.php';
  	 	  </ul>
  	 	</li>
                  <li>
+<<<<<<< HEAD
  	 		<a href="java_video_file.php?action=video3" >Variables and Types</a>
+=======
+ 	 		<a href="java_video_file.php?action=video3"  aria-expanded="false">Variables and Types</a>
+>>>>>>> 3dc235823ed6e391c71cab613525b5c1eb2bf653
  	 		
  	 	</li>
  	 	<li>
@@ -219,11 +223,19 @@ include 'Connection/common.php';
  	 		</ul>
  	 	</li>
  	 	<li>
+<<<<<<< HEAD
  	 		<a href="java_video_file.php?action=video7">Parameter Passing and Returning Value</a>
  	 		
  	 	</li>
                 <li>
  	 		<a href="java_video_file.php?action=video8">Arrays in Java</a>
+=======
+ 	 		<a href="java_video_file.php?action=video7"  aria-expanded="false">Parameter Passing and Returning Value</a>
+ 	 		
+ 	 	</li>
+                <li>
+ 	 		<a href="java_video_file.php?action=video8"  aria-expanded="false">Arrays in Java</a>
+>>>>>>> 3dc235823ed6e391c71cab613525b5c1eb2bf653
  	 		
                 </li>
                 <?php 
@@ -272,19 +284,19 @@ include 'Connection/common.php';
  	 		
  	 	
                 <li>
- 	 		<a href="java_video_file.php?action=video9" data-toggle="collapse" aria-expanded="false">Classes and Objects in Java</a>
+ 	 		<a href="java_video_file.php?action=video9"  aria-expanded="false">Classes and Objects in Java</a>
  	 		
  	 	</li>
                 <li>
- 	 		<a href="java_video_file.php?action=video10" data-toggle="collapse" aria-expanded="false">Inheritence in Java</a>
+ 	 		<a href="java_video_file.php?action=video10"  aria-expanded="false">Inheritence in Java</a>
  	 		
  	 	</li>
                 <li>
- 	 		<a href="java_video_file.php?action=video11" data-toggle="collapse" aria-expanded="false">Polymorphism in Java</a>
+ 	 		<a href="java_video_file.php?action=video11"  aria-expanded="false">Polymorphism in Java</a>
  	 		
  	 	</li>
                 <li>
- 	 		<a href="java_video_file.php?action=video12" data-toggle="collapse" aria-expanded="false">Class Constructors</a>
+ 	 		<a href="java_video_file.php?action=video12"  aria-expanded="false">Class Constructors</a>
  	 		
  	 	</li>
                 <li>
@@ -362,37 +374,37 @@ include 'Connection/common.php';
                                 
                   <li style="pointer-events: none; color: red;">
                   
- 	 		<a href="java_video_file.php?action=video9" data-toggle="collapse" aria-expanded="false">Classes and Objects in Java</a>
+ 	 		<a href="java_video_file.php?action=video9"  aria-expanded="false">Classes and Objects in Java</a>
  	 		
  	 	
          </li>
                  <li style="pointer-events: none; color: red;">
                 
- 	 		<a href="java_video_file.php?action=video10" data-toggle="collapse" aria-expanded="false">Inheritence in Java</a>
+ 	 		<a href="java_video_file.php?action=video10"  aria-expanded="false">Inheritence in Java</a>
  	 		
  	 
                </li>
                 <li style="pointer-events: none; color: red;">
                 
- 	 		<a href="java_video_file.php?action=video11" data-toggle="collapse" aria-expanded="false">Polymorphism in Java</a>
+ 	 		<a href="java_video_file.php?action=video11"  aria-expanded="false">Polymorphism in Java</a>
  	 		
  	 	
                </li>
                 <li style="pointer-events: none; color: red;">
                
- 	 		<a href="java_video_file.php?action=video12" data-toggle="collapse" aria-expanded="false">Class Constructors</a>
+ 	 		<a href="java_video_file.php?action=video12"  aria-expanded="false">Class Constructors</a>
  	 		
  	 	
                </li>
                 <li style="pointer-events: none; color: red;">
                  
- 	 		<a href="java_video_file.php?action=video13" data-toggle="collapse" aria-expanded="false">Exception Handling</a>
+ 	 		<a href="java_video_file.php?action=video13"  aria-expanded="false">Exception Handling</a>
  	 		
 
                </li>
                 <li style="pointer-events: none; color: red;">
                  
- 	 		<a href="java_video_file.php?action=video14" data-toggle="collapse" aria-expanded="false">Introduction to Java Threads</a>
+ 	 		<a href="java_video_file.php?action=video14"  aria-expanded="false">Introduction to Java Threads</a>
  	 		
  	 	
                 </li>
