@@ -1,6 +1,7 @@
 <?php
 session_start();
 include 'Connection/common.php';
+include 'statictics_script.php';
  $id=$_SESSION['id'];
 ?>
 <!DOCTYPE html>
@@ -197,7 +198,8 @@ include 'Connection/common.php';
  	 	  </ul>
  	 	</li>
                  <li>
- 	 		<a href="java_video_file.php?action=video3"  aria-expanded="false">Variables and Types</a>
+                        <a href="java_video_file.php?action=video3" >Variables and Types</a>
+ 	 		<!--<a href="java_video_file.php?action=video3"  aria-expanded="false">Variables and Types</a>-->
  	 		
  	 	</li>
  	 	<li>
@@ -219,17 +221,22 @@ include 'Connection/common.php';
  	 		</ul>
  	 	</li>
  	 	<li>
- 	 		<a href="java_video_file.php?action=video7"  aria-expanded="false">Parameter Passing and Returning Value</a>
+
+ 	 		<a href="java_video_file.php?action=video7">Parameter Passing and Returning Value</a>
  	 		
  	 	</li>
                 <li>
- 	 		<a href="java_video_file.php?action=video8"  aria-expanded="false">Arrays in Java</a>
+ 	 		<a href="java_video_file.php?action=video8">Arrays in Java</a>
+
  	 		
-                </li>
+ 	 	</li>
+               
                 <?php 
                                 $sql_r1 = "SELECT * FROM user_exam_result WHERE  user_id = '" . $id . "' ";
                                 $result12 = mysqli_query($con, $sql_r1);
                                 $row1 = mysqli_fetch_assoc($result12);
+                                $num7 = mysqli_num_rows($result12);
+                                if($num7>0){
                                 $check= $row1['java_1st'];
                                 if($check>70)
                                 {
@@ -238,6 +245,14 @@ include 'Connection/common.php';
                                     <a href="quiz.php?type=java_1st&course=java">Quiz-1</a>
  	 			</li>
                                 <?php
+                                }
+                                else{
+                                ?>
+                                <li >
+                                    <a href="quiz.php?type=java_1st&course=java">Quiz-1</a>
+ 	 			</li>
+                                <?php
+                                }
                                 }else{
                                     ?>
                                 <li >
@@ -262,21 +277,33 @@ include 'Connection/common.php';
  	 		
  	 	
                 <li>
- 	 		<a href="java_video_file.php?action=video9"  aria-expanded="false">Classes and Objects in Java</a>
+ 	 		<a href="java_video_file.php?action=video9"  >Classes and Objects in Java</a>
  	 		
  	 	</li>
                 <li>
- 	 		<a href="java_video_file.php?action=video10"  aria-expanded="false">Inheritence in Java</a>
+ 	 		<a href="java_video_file.php?action=video10"  >Inheritence in Java</a>
  	 		
  	 	</li>
                 <li>
- 	 		<a href="java_video_file.php?action=video11"  aria-expanded="false">Polymorphism in Java</a>
+ 	 		<a href="java_video_file.php?action=video11"  >Polymorphism in Java</a>
  	 		
  	 	</li>
                 <li>
- 	 		<a href="java_video_file.php?action=video12"  aria-expanded="false">Class Constructors</a>
+ 	 		<a href="java_video_file.php?action=video12"  >Class Constructors</a>
  	 		
  	 	</li>
+                <li>
+                 
+ 	 		<a href="java_video_file.php?action=video13" >Exception Handling</a>
+ 	 		
+
+               </li>
+                <li>
+                 
+ 	 		<a href="java_video_file.php?action=video14" >Introduction to Java Threads</a>
+ 	 		
+ 	 	
+                </li>
                 <?php 
                                 $sql_r3 = "SELECT * FROM user_exam_result WHERE  user_id = '" . $id . "' ";
                                 $result13 = mysqli_query($con, $sql_r3);
@@ -297,6 +324,45 @@ include 'Connection/common.php';
                                  <?php
                                 }
                                 ?>
+            <?php }
+            else{ 
+                  ?>
+                   <li style="pointer-events: none; color: red;">
+                  
+ 	 		<a href="java_video_file.php?action=video9" data-toggle="collapse" aria-expanded="false">Classes and Objects in Java</a>
+ 	 		
+ 	 	
+         </li>
+                 <li style="pointer-events: none; color: red;">
+                
+ 	 		<a href="java_video_file.php?action=video10" data-toggle="collapse" aria-expanded="false">Inheritence in Java</a>
+ 	 		
+ 	 
+               </li>
+                <li style="pointer-events: none; color: red;">
+                
+ 	 		<a href="java_video_file.php?action=video11" data-toggle="collapse" aria-expanded="false">Polymorphism in Java</a>
+ 	 		
+ 	 	
+               </li>
+                <li style="pointer-events: none; color: red;">
+               
+ 	 		<a href="java_video_file.php?action=video12" data-toggle="collapse" aria-expanded="false">Class Constructors</a>
+ 	 		
+ 	 	
+               </li>
+                <li style="pointer-events: none; color: red;">
+                 
+ 	 		<a href="java_video_file.php?action=video13" data-toggle="collapse" aria-expanded="false">Exception Handling</a>
+ 	 		
+
+               </li>
+                <li style="pointer-events: none; color: red;">
+                 
+ 	 		<a href="java_video_file.php?action=video14" data-toggle="collapse" aria-expanded="false">Introduction to Java Threads</a>
+ 	 		
+ 	 	
+                </li>
             <?php }}else{ ?>
                                 
                   <li style="pointer-events: none; color: red;">
@@ -334,7 +400,7 @@ include 'Connection/common.php';
  	 		<a href="java_video_file.php?action=video14"  aria-expanded="false">Introduction to Java Threads</a>
  	 		
  	 	
-         </li>
+                </li>
                 <?php } ?>
                 
                 
@@ -350,7 +416,7 @@ include 'Connection/common.php';
                  }else{
                 ?>
                 <li style="pointer-events: none; color: red;">
- 	 				<a href="#">Final Assessment</a>
+ 	 	     <a href="#">Final Assessment</a>
  	        </li>
                 <?php
                  }
@@ -393,8 +459,9 @@ include 'Connection/common.php';
             //session_start();
             include 'Connection/common.php';
             if (isset($_GET["action"])){
-
+                    
             $java=$_GET["action"];
+            Insert($java,"java","java_statictics");
             $query = "SELECT  src FROM  java_video WHERE video_id = '" . $java . "' ";
             $result = mysqli_query($con, $query) or die($mysqli_error($con));
             $num = mysqli_num_rows($result);

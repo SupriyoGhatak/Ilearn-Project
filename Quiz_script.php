@@ -57,15 +57,45 @@ include 'Connection/common.php';
              
                  $update_exam = "UPDATE user_exam_result SET $type='$persentage' WHERE user_id = '" . $id . "' ";
                  $update_exam_result = mysqli_query($con, $update_exam) or die($mysqli_error($con));
+                 if($course=="c"){
                  echo '<script>alert("Congrats, New Modules Unloacked")</script>';
                  echo '<script>window.location="c_video_file.php"</script>';
+                 }
+                 if($course=="java"){
+                 echo '<script>alert("Congrats, New Modules Unloacked")</script>';
+                 echo '<script>window.location="java_video_file.php"</script>';
+                 }
+                 if($course=="c_plus"){
+                 echo '<script>alert("Congrats, New Modules Unloacked")</script>';
+                 echo '<script>window.location="c++_video_file.php"</script>';
+                 }
+                  if($course=="rdbms"){
+                 echo '<script>alert("Congrats, New Modules Unloacked")</script>';
+                 echo '<script>window.location="rdbms_video_file.php"</script>';
+                 }
                 
                 
             }
             }
             else{
-             echo '<script>alert("Better Luck Next Time, Try Again")</script>';
-            echo '<script>window.location="c_video_file.php"</script>';
+                 if($course=="c"){
+                 echo '<script>alert("Better Luck Next Time, Try Again")</script>';
+                 echo '<script>window.location="c_video_file.php"</script>';
+                 }
+                 if($course=="java"){
+                 echo '<script>alert("Better Luck Next Time, Try Again")</script>';
+                 echo '<script>window.location="java_video_file.php"</script>';
+                 }
+                 if($course=="c_plus"){
+                 echo '<script>alert("Better Luck Next Time, Try Again")</script>';
+                 echo '<script>window.location="c++_video_file.php"</script>';
+                 }
+                  if($course=="rdbms"){
+                 echo '<script>alert("Better Luck Next Time, Try Again")</script>';
+                 echo '<script>window.location="rdbms_video_file.php"</script>';
+                 }
+             //echo '<script>alert("Better Luck Next Time, Try Again")</script>';
+            //echo '<script>window.location="c_video_file.php"</script>';
             }
             
 ?>
