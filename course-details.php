@@ -283,7 +283,10 @@
                             ?>
                     
                             <a onmouseover="this.style.background='black'" class="primary-btn2 text-uppercase enroll rounded-0 text-black" ><button class="dis" style="text-decoration: none; border:none; background: none; color: white;"  value="Enroll the course"disabled="true">Enroll the course</button></a>
-                              <?php }}else { ?>
+                              <?php }
+                              else{?>
+                            <a href="course-buy-c++.php" class="primary-btn2 text-uppercase enroll rounded-0 text-black">Enroll the course</a>
+                              <?php } }else { ?>
                     
                     <a href="course-buy-c++.php" class="primary-btn2 text-uppercase enroll rounded-0 text-black">Enroll the course</a>
                         <?php }} else { ?> 
