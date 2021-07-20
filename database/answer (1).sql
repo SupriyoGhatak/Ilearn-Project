@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jul 18, 2021 at 10:15 AM
+-- Generation Time: Jul 20, 2021 at 05:08 AM
 -- Server version: 10.4.10-MariaDB
 -- PHP Version: 7.3.12
 
@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `answer` (
   `type` varchar(255) NOT NULL,
   `course` varchar(255) NOT NULL,
   PRIMARY KEY (`aid`)
-) ENGINE=MyISAM AUTO_INCREMENT=121 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=180 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `answer`
@@ -162,7 +162,66 @@ INSERT INTO `answer` (`aid`, `answers`, `ans_id`, `type`, `course`) VALUES
 (117, 'wait()', 30, 'java_f', 'java'),
 (118, 'notify()', 30, 'java_f', 'java'),
 (119, 'notifyAll()', 30, 'java_f', 'java'),
-(120, 'sleep()', 30, 'java_f', 'java');
+(120, 'sleep()', 30, 'java_f', 'java'),
+(121, '7var_name', 31, 'c_plus_1st', 'c_plus'),
+(122, '7VARNAME', 31, 'c_plus_1st', 'c_plus'),
+(123, 'VAR_1234', 31, 'c_plus_1st', 'c_plus'),
+(124, '$var_name', 31, 'c_plus_1st', 'c_plus'),
+(125, 'An array is a series of elements of the same type in contiguous memory locations', 32, 'c_plus_1st', 'c_plus'),
+(126, ' An array is a series of element', 32, 'c_plus_1st', 'c_plus'),
+(127, 'An array is a series of elements of the same type placed in non-contiguous memory locations', 32, 'c_plus_1st', 'c_plus'),
+(128, 'An array is an element of the different type', 32, 'c_plus_1st', 'c_plus'),
+(129, 'int *ip;', 33, 'c_plus_1st', 'c_plus'),
+(130, 'string s, *sp = 0;', 33, 'c_plus_1st', 'c_plus'),
+(131, ' int i; double* dp = &i;', 33, 'c_plus_1st', 'c_plus'),
+(132, 'int *pi = 0;', 33, 'c_plus_1st', 'c_plus'),
+(133, 'integer numerals', 34, 'c_plus_1st', 'c_plus'),
+(134, 'floating-point numerals', 34, 'c_plus_1st', 'c_plus'),
+(135, 'strings and boolean values', 34, 'c_plus_1st', 'c_plus'),
+(136, 'all of the mentioned', 34, 'c_plus_1st', 'c_plus'),
+(137, 'Using Inheritance', 35, 'c_plus_2nd', 'c_plus'),
+(138, 'Using Virtual functions', 35, 'c_plus_2nd', 'c_plus'),
+(139, 'Using Templates', 35, 'c_plus_2nd', 'c_plus'),
+(140, 'Using Inheritance and Virtual functions', 35, 'c_plus_2nd', 'c_plus'),
+(141, 'A function which can access all the private, protected and public members of a class', 36, 'c_plus_2nd', 'c_plus'),
+(142, 'A function which is not allowed to access any member of any class', 36, 'c_plus_2nd', 'c_plus'),
+(143, 'A function which is allowed to access public and protected members of a class', 36, 'c_plus_2nd', 'c_plus'),
+(144, 'A function which is allowed to access only public members of a class', 36, 'c_plus_2nd', 'c_plus'),
+(145, 'Error occurs', 37, 'c_plus_2nd', 'c_plus'),
+(146, 'Segmentation fault', 37, 'c_plus_2nd', 'c_plus'),
+(147, 'Objects are not created properly', 37, 'c_plus_2nd', 'c_plus'),
+(148, 'Constructor of A followed by B', 38, 'c_plus_2nd', 'c_plus'),
+(149, 'Constructor of B followed by A', 38, 'c_plus_2nd', 'c_plus'),
+(150, 'Constructor of A only', 38, 'c_plus_2nd', 'c_plus'),
+(151, 'Constructor of B only', 38, 'c_plus_2nd', 'c_plus'),
+(152, 'Contiguous', 39, 'c_plus_f', 'c_plus'),
+(153, 'Non-Contiguous', 39, 'c_plus_f', 'c_plus'),
+(154, 'Both A and B', 39, 'c_plus_f', 'c_plus'),
+(155, 'Neither A or B', 39, 'c_plus_f', 'c_plus'),
+(156, 'It checks that the specified variable is of the array or not', 40, 'c_plus_f', 'c_plus'),
+(157, 'It checks that the specified array of single dimension or not', 40, 'c_plus_f', 'c_plus'),
+(158, 'It checks that the array specified of multi-dimension or not', 40, 'c_plus_f', 'c_plus'),
+(159, 'Both B and C', 40, 'c_plus_f', 'c_plus'),
+(160, 'It is a technique to ensure that a private member of a base class can be accessed', 41, 'c_plus_f', 'c_plus'),
+(161, 'It is a technique to optimize the multiple inheritances', 41, 'c_plus_f', 'c_plus'),
+(162, 'It is a technique to avoid the multiple inheritances of the classes', 41, 'c_plus_f', 'c_plus'),
+(163, 'It is a C++ technique to avoid multiple copies of the base class into the derived or child classes', 41, 'c_plus_f', 'c_plus'),
+(164, 'An object is an instance of its class', 42, 'c_plus_f', 'c_plus'),
+(165, 'A class is an instance of its object', 42, 'c_plus_f', 'c_plus'),
+(166, 'An object is the instance of the data type of that class', 42, 'c_plus_f', 'c_plus'),
+(167, 'Both A and C', 42, 'c_plus_f', 'c_plus'),
+(168, 'Distributed', 43, 'c_plus_f', 'c_plus'),
+(169, 'Multi-level', 43, 'c_plus_f', 'c_plus'),
+(170, 'Multiple', 43, 'c_plus_f', 'c_plus'),
+(171, 'Hierarchal', 43, 'c_plus_f', 'c_plus'),
+(172, 'Modularity', 44, 'c_plus_f', 'c_plus'),
+(173, 'Abstraction', 44, 'c_plus_f', 'c_plus'),
+(174, 'Encapsulation', 44, 'c_plus_f', 'c_plus'),
+(175, 'None of the above', 44, 'c_plus_f', 'c_plus'),
+(176, 'The private part of its class.', 45, 'c_plus_f', 'c_plus'),
+(177, 'The part declared as public of its class.', 45, 'c_plus_f', 'c_plus'),
+(178, 'Class of which it is the member.', 45, 'c_plus_f', 'c_plus'),
+(179, 'None of the above', 45, 'c_plus_f', 'c_plus');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
