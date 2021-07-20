@@ -187,57 +187,26 @@ include 'statictics_script.php';
  	 	<li class="active">
  	 		<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Starting With C++</a>
  	 	  <ul class="collapse list-unstyled" id="homeSubmenu">
- 	 	  	<!--<li>
-                            <a href="c_video_file.php?action=video1">Fact About C</a>
- 	 	  	</li>-->
+ 	 	  	
  	 	  	<li>
- 	 	  		<a href="c_video_file.php?action=video2">Installing of IDE</a>
+ 	 	  		<a href="c++_video_file.php?action=video1">Installation of IDE</a>
  	 	  	</li>
-<!--                        <li>
- 	 	  		<a href="#video3">Foundation of C</a>
- 	 	  	</li>-->
-
+                        
  	 	  </ul>
  	 	</li>
  	 	
-<!-- 	 	<li>
- 	 		<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">C Environment Setup</a>
- 	 		<ul class="collapse list-unstyled" id="pageSubmenu">
- 	 			<li>
-                                    <a href="c_video_file.php?action=video3">Installation On Unix/Linux</a>
- 	 			</li>
- 	 			<li>
- 	 				<a href="c_video_file.php?action=video4">Installation On Windows</a>
- 	 			</li>
-                                <li>
- 	 				<a href="c_video_file.php?action=video5">Installation On Mac Os</a>
- 	 			</li>
- 	 			
 
- 	 		</ul>
- 	 	</li>-->
                 <li>
  	 		<a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">C++ Basic</a>
  	 		<ul class="collapse list-unstyled" id="pageSubmenu2">
  	 			
  	 			<li>
- 	 				<a href="c_video_file.php?action=video6">Input and Output</a>
+ 	 				<a href="c++_video_file.php?action=video2">Input and Output</a>
  	 			</li>
                                 <li>
- 	 				<a href="c_video_file.php?action=video7">Constants Operators</a>
+ 	 				<a href="c++_video_file.php?action=video3">Constants and Operators</a>
  	 			</li>
-<!--                                <li>
- 	 				<a href="c_video_file.php?action=video8">Identifiers And Keywords</a>
- 	 			</li>
-                                <li>
- 	 				<a href="c_video_file.php?action=video9">DataTypes And Variables</a>
-                                </li> comment 
-                                <li>
- 	 				<a href="c_video_file.php?action=video10">Constants And Literals</a>
- 	 			</li>
-                                <li>
- 	 				<a href="c_video_file.php?action=video11">Operators</a>
- 	 			</li>-->
+
  	 			
 
  	 		</ul>
@@ -255,16 +224,16 @@ include 'statictics_script.php';
  	 		<ul class="collapse list-unstyled" id="pageSubmenu3">
  	 			
  	 			<li>
- 	 				<a href="c_video_file.php?action=video12">If Else</a>
+ 	 				<a href="c++_video_file.php?action=video4">If Else</a>
  	 			</li>
                                 <li>
                                     <a href="c_video_file.php?action=coding1">Coding1</a>
  	 			</li>
                                 <li>
- 	 				<a href="c_video_file.php?action=video13">For While Do While</a>
+ 	 				<a href="c++_video_file.php?action=video5">For While and Do While</a>
  	 			</li>
                                 <li>
- 	 				<a href="c_video_file.php?action=video14">Arrays and Pointers</a>
+ 	 				<a href="c++_video_file.php?action=video6">Arrays and Pointers</a>
  	 			</li>
 <!--                                <li>
  	 				<a href="c_video_file.php?action=video15">Arrays and Pointers</a>
@@ -286,18 +255,18 @@ include 'statictics_script.php';
                                 {
                                 ?>
                                 <li style="pointer-events: none; color: red;">
-                                    <a href="quiz.php?type=c_1st&course=c">Quiz</a>
+                                    <a href="quiz.php?type=c_plus_1st&course=c_plus">Quiz-1</a>
  	 			</li>
                                 <?php
                                 }
                                 else { ?>
                                 <li >
-                                    <a href="quiz.php?type=c_1st&course=c">Quiz</a>
+                                    <a href="quiz.php?type=c_plus_1st&course=c_plus">Quiz-1</a>
  	 			</li>
                                 <?php }  }else{
                                     ?>
                                 <li >
-                                    <a href="quiz.php?type=c_1st&course=c">Quiz</a>
+                                    <a href="quiz.php?type=c_plus_1st&course=c_plus">Quiz-1</a>
  	 			</li>
                                 <?php
                                 }
@@ -323,16 +292,16 @@ include 'statictics_script.php';
  	 		<ul class="collapse list-unstyled" id="pageSubmenu4">
  	 			
  	 			<li>
-                                    <a href="c_video_file.php?action=video17">Access Modifiers</a>
+                                    <a href="c++_video_file.php?action=video7">Access Modifiers</a>
  	 			</li>
                                 <li>
- 	 				<a href="c_video_file.php?action=video18">Constructors</a>
+ 	 				<a href="c++_video_file.php?action=video8">Constructors</a>
  	 			</li>
                                 <li>
- 	 				<a href="c_video_file.php?action=video18">Inheritance And Encapsulation</a>
+ 	 				<a href="c++_video_file.php?action=video9">Inheritance And Encapsulation</a>
  	 			</li>
                                 <li>
- 	 				<a href="c_video_file.php?action=video18">Polymorphism</a>
+ 	 				<a href="c++_video_file.php?action=video10">Polymorphism</a>
  	 			</li>
                                 
                                 
@@ -344,7 +313,7 @@ include 'statictics_script.php';
  	 		<ul class="collapse list-unstyled" id="pageSubmenu5">
  	 			
  	 			<li>
-                                    <a href="c_video_file.php?action=video19">Friend Function</a>
+                                    <a href="c++_video_file.php?action=video11">Friend Function</a>
  	 			</li>
                                 
                                 <?php 
@@ -356,13 +325,13 @@ include 'statictics_script.php';
                                 {
                                 ?>
                                 <li style="pointer-events: none; color: red;">
- 	 				<a href="quiz.php?type=c_2nd&course=c">Quiz</a>
+ 	 				<a href="quiz.php?type=c_plus_2nd&course=c_plus">Quiz-2</a>
  	 			</li>
                                  <?php
                                 }else{
                                     ?>
                                 <li>
- 	 				<a href="quiz.php?type=c_2nd&course=c">Quiz</a>
+ 	 				<a href="quiz.php?type=c_plus_2nd&course=c_plus">Quiz-2</a>
  	 			</li>
                                  <?php
                                 }
@@ -378,7 +347,7 @@ include 'statictics_script.php';
  	 		<ul class="collapse list-unstyled" id="pageSubmenu5">
  	 			
  	 			<li>
-                                    <a href="c_video_file.php?action=video19">Details of Map</a>
+                                    <a href="c++_video_file.php?action=video12">Details of Map</a>
  	 			</li>
 <!--                                <li>
  	 				<a href="c_video_file.php?action=video20">Memory Management</a>
@@ -393,11 +362,11 @@ include 'statictics_script.php';
  	 		<ul class="collapse list-unstyled" id="pageSubmenu6">
  	 			
  	 			<li>
-                                    <a href="c_video_file.php?action=video19">STL and Template</a>
+                                    <a href="c++_video_file.php?action=video13">STL </a>
  	 			</li>
-<!--                                <li>
- 	 				<a href="c_video_file.php?action=video20">Memory Management</a>
- 	 			</li>-->
+                        <li>
+                                    <a href="c++_video_file.php?action=video14">Template</a>
+ 	 			</li>
                                 
                                 
  	 		</ul>
@@ -415,16 +384,16 @@ include 'statictics_script.php';
  	 		<ul class="collapse list-unstyled" id="pageSubmenu4">
  	 			
  	 			<li>
-                                    <a href="c_video_file.php?action=video17">Access Modifiers</a>
+                                    <a href="c++_video_file.php?action=video7">Access Modifiers</a>
  	 			</li>
                                 <li>
- 	 				<a href="c_video_file.php?action=video18">Constructors</a>
+ 	 				<a href="c++_video_file.php?action=video8">Constructors</a>
  	 			</li>
                                 <li>
- 	 				<a href="c_video_file.php?action=video18">Inheritance And Encapsulation</a>
+ 	 				<a href="c++_video_file.php?action=video9">Inheritance And Encapsulation</a>
  	 			</li>
                                 <li>
- 	 				<a href="c_video_file.php?action=video18">Polymorphism</a>
+ 	 				<a href="c++_video_file.php?action=video10">Polymorphism</a>
  	 			</li>
                                 
                                 
@@ -437,7 +406,7 @@ include 'statictics_script.php';
  	 		<ul class="collapse list-unstyled" id="pageSubmenu5">
  	 			
  	 			<li>
-                                    <a href="c_video_file.php?action=video19">Friend Function</a>
+                                    <a href="c++_video_file.php?action=video11">Friend Function</a>
  	 			</li>
                                 
                                 <?php 
@@ -449,13 +418,13 @@ include 'statictics_script.php';
                                 {
                                 ?>
                                 <li style="pointer-events: none; color: red;">
- 	 				<a href="quiz.php?type=c_2nd&course=c">Quiz</a>
+ 	 				<a href="quiz.php?type=c_plus_2nd&course=c_plus">Quiz-2</a>
  	 			</li>
                                  <?php
                                 }else{
                                     ?>
                                 <li>
- 	 				<a href="quiz.php?type=c_2nd&course=c">Quiz</a>
+ 	 				<a href="quiz.php?type=c_plus_2nd&course=c_plus">Quiz-2</a>
  	 			</li>
                                  <?php
                                 }
@@ -471,7 +440,7 @@ include 'statictics_script.php';
  	 		<ul class="collapse list-unstyled" id="pageSubmenu5">
  	 			
  	 			<li>
-                                    <a href="c_video_file.php?action=video19">Details of Map</a>
+                                    <a href="c++_video_file.php?action=video12">Details of Map</a>
  	 			</li>
 <!--                                <li>
  	 				<a href="c_video_file.php?action=video20">Memory Management</a>
@@ -486,8 +455,13 @@ include 'statictics_script.php';
  	 		<ul class="collapse list-unstyled" id="pageSubmenu6">
  	 			
  	 			<li>
-                                    <a href="c_video_file.php?action=video19">STL and Template</a>
+                                    <a href="c++_video_file.php?action=video13">STL</a>
  	 			</li>
+                                 	 <li>
+                                    <a href="c++_video_file.php?action=video14">Template</a>
+ 	 			</li>
+                                 	 			
+
 <!--                                <li>
  	 				<a href="c_video_file.php?action=video20">Memory Management</a>
  	 			</li>-->
@@ -506,16 +480,16 @@ include 'statictics_script.php';
  	 		<ul class="collapse list-unstyled" id="pageSubmenu4">
  	 			
  	 			<li>
-                                    <a href="c_video_file.php?action=video17">Access Modifiers</a>
+                                    <a href="c++_video_file.php?action=video7">Access Modifiers</a>
  	 			</li>
                                 <li>
- 	 				<a href="c_video_file.php?action=video18">Constructors</a>
+ 	 				<a href="c++_video_file.php?action=video8">Constructors</a>
  	 			</li>
                                 <li>
- 	 				<a href="c_video_file.php?action=video18">Inheritance And Encapsulation</a>
+ 	 				<a href="c++_video_file.php?action=video9">Inheritance And Encapsulation</a>
  	 			</li>
                                 <li>
- 	 				<a href="c_video_file.php?action=video18">Polymorphism</a>
+ 	 				<a href="c++_video_file.php?action=video10">Polymorphism</a>
  	 			</li>
                                 
                                 
@@ -528,7 +502,7 @@ include 'statictics_script.php';
  	 		<ul class="collapse list-unstyled" id="pageSubmenu5">
  	 			
  	 			<li>
-                                    <a href="c_video_file.php?action=video19">Friend Function</a>
+                                    <a href="c++_video_file.php?action=video11">Friend Function</a>
  	 			</li>
                                 
                                 <?php 
@@ -540,13 +514,13 @@ include 'statictics_script.php';
                                 {
                                 ?>
                                 <li style="pointer-events: none; color: red;">
- 	 				<a href="quiz.php?type=c_2nd&course=c">Quiz</a>
+ 	 				<a href="quiz.php?type=c_plus_2nd&course=c_plus">Quiz</a>
  	 			</li>
                                  <?php
                                 }else{
                                     ?>
                                 <li>
- 	 				<a href="quiz.php?type=c_2nd&course=c">Quiz</a>
+ 	 				<a href="quiz.php?type=c_plus_2nd&course=c_plus">Quiz</a>
  	 			</li>
                                  <?php
                                 }
@@ -562,7 +536,7 @@ include 'statictics_script.php';
  	 		<ul class="collapse list-unstyled" id="pageSubmenu5">
  	 			
  	 			<li>
-                                    <a href="c_video_file.php?action=video19">Details of Map</a>
+                                    <a href="c++_video_file.php?action=video12">Details of Map</a>
  	 			</li>
 <!--                                <li>
  	 				<a href="c_video_file.php?action=video20">Memory Management</a>
@@ -577,7 +551,10 @@ include 'statictics_script.php';
  	 		<ul class="collapse list-unstyled" id="pageSubmenu6">
  	 			
  	 			<li>
-                                    <a href="c_video_file.php?action=video19">STL and Template</a>
+                                    <a href="c++_video_file.php?action=video13">STL </a>
+ 	 			</li>
+                                <li>
+                                    <a href="c++_video_file.php?action=video14">Template</a>
  	 			</li>
 <!--                                <li>
  	 				<a href="c_video_file.php?action=video20">Memory Management</a>
@@ -610,7 +587,7 @@ include 'statictics_script.php';
                  }else{
                 ?>
                 <li style="pointer-events: none; color: red;">
- 	 				<a href="#">Final Assassment</a>
+ 	 				<a href="#">Final Assessment</a>
  	        </li>
                 <?php
                  }
@@ -648,8 +625,8 @@ include 'statictics_script.php';
             if (isset($_GET["action"])){
             $c=$_GET["action"];
             
-            Insert($c,"c","c_statictics");
-            $query = "SELECT  src FROM  c_video WHERE video_id = '" . $c . "' ";
+            // Insert($c,"c","c_statictics");
+            $query = "SELECT  src FROM  c_plus_video WHERE video_id = '" . $c++ . "' ";
             $result = mysqli_query($con, $query) or die($mysqli_error($con));
             $num = mysqli_num_rows($result);
             $row = mysqli_fetch_array($result);   

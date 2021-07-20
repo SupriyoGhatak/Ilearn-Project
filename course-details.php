@@ -59,48 +59,33 @@
                     <div class="content_wrapper">
                         <h4 class="title">Objectives</h4>
                         <div class="content">
-                            When you enter into any new area of science, you almost always find yourself with a
-                            baffling new language of
-                            technical terms to learn before you can converse with the experts. This is certainly
-                            true in astronomy both in
-                            terms of terms that refer to the cosmos and terms that describe the tools of the trade,
-                            the most prevalent
-                            being the telescope.
+                            In this course,learners will be put on a fast track to success by helping them master Modern C++ programming skills within a short time.
                             <br>
                             <br>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                            ut aliquip ex ea
-                            commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum. Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim
-                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo consequat. Duis aute
-                            irure dolor in reprehenderit in voluptate velit esse cillum.
-                        </div>
+                            It takes you from C++ basics to advanced topics like inheritance and polymorphic functions. 
+                            You’ll also learn several important concepts along the way like how to manage memory, 
+                            how to use functions and pointers, classes, constructors and a lot more.
+                            <br>
+                            <br>
+                            <h6 class ="text"> Learning Outcomes :</h1>
+                            <br>
+                           After the course the students are expected to be able to :
+                           <ul>
+                               <li> learn the fundamental programming concepts and methodologies which are essential to building good C++ programs.</li>
+                               <li> practice the fundamental programming methodologies in the C/C++ programming language via laboratory experiences. </li>                           
 
-                        <h4 class="title">Eligibility</h4>
+                               <li> approach​ the programming tasks using techniques learned and write​ pseudo-code.</li>
+                               <li>  write reusable modules (collections of functions). </li>
+                           </ul>
+                        </div>
+                        
+
+                        <h4 class="title">Course Prerequisites</h4>
                         <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                            ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                            This course is very much beginner friendly hence all that is needed is an understanding of fundamental programming concepts.
                             <br>
                             <br>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                            ut aliquip ex ea
-                            commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum. Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim
-                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo consequat. Duis aute
-                            irure dolor in reprehenderit in voluptate velit esse cillum.
+                           
                         </div>
 
                         <h4 class="title">Course Outline</h4>
@@ -283,7 +268,10 @@
                             ?>
                     
                             <a onmouseover="this.style.background='black'" class="primary-btn2 text-uppercase enroll rounded-0 text-black" ><button class="dis" style="text-decoration: none; border:none; background: none; color: white;"  value="Enroll the course"disabled="true">Enroll the course</button></a>
-                              <?php }}else { ?>
+                              <?php }
+                              else{?>
+                            <a href="course-buy-c++.php" class="primary-btn2 text-uppercase enroll rounded-0 text-black">Enroll the course</a>
+                              <?php } }else { ?>
                     
                     <a href="course-buy-c++.php" class="primary-btn2 text-uppercase enroll rounded-0 text-black">Enroll the course</a>
                         <?php }} else { ?> 
@@ -345,8 +333,8 @@
                                         <div class="thumb">
                                             <img src="img/blog/c1.jpg" alt="">
                                         </div>
-                                        <div class="desc">
-                                            <h5><a href="#">Emilly Blunt</a>
+                                        <div class="desc"> 
+                                            <h5><a href="#">Lisa Paul</a>
                                                 <div class="star">
                                                     <span class="ti-star checked"></span>
                                                     <span class="ti-star checked"></span>
@@ -356,9 +344,7 @@
                                                 </div>
                                             </h5>
                                             <p class="comment">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                                eiusmod tempor incididunt ut labore et dolore.
-                                            </p>
+                                                Learned a lot from these lectures,very much informative.                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -370,7 +356,7 @@
                                             <img src="img/blog/c2.jpg" alt="">
                                         </div>
                                         <div class="desc">
-                                            <h5><a href="#">Elsie Cunningham</a>
+                                            <h5><a href="#">Tarun Raj</a>
                                                 <div class="star">
                                                     <span class="ti-star checked"></span>
                                                     <span class="ti-star checked"></span>
@@ -380,8 +366,7 @@
                                                 </div>
                                             </h5>
                                             <p class="comment">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                                eiusmod tempor incididunt ut labore et dolore.
+                                                Concepts are well described in detail.
                                             </p>
                                         </div>
                                     </div>
@@ -394,7 +379,7 @@
                                             <img src="img/blog/c3.jpg" alt="">
                                         </div>
                                         <div class="desc">
-                                            <h5><a href="#">Maria Luna</a>
+                                            <h5><a href="#">Rita Ghosh</a>
                                                 <div class="star">
                                                     <span class="ti-star checked"></span>
                                                     <span class="ti-star checked"></span>
@@ -404,8 +389,7 @@
                                                 </div>
                                             </h5>
                                             <p class="comment">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                                eiusmod tempor incididunt ut labore et dolore.
+                                                Would 100% recommend this course.
                                             </p>
                                         </div>
                                     </div>

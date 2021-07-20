@@ -171,7 +171,9 @@ include 'statictics_script.php';
          <?php 
         if($_SESSION['java']>0)
         { 
-            
+          $sum=calculate("java","java_statictics"); 
+          $sum=($sum/19)*100;
+          $sum=number_format((float)$sum, 2, '.', '');
         ?>
               <div class="col-md-4 my-3">
                 <div class="bg-mattBlackLight px-3 py-3">
@@ -180,12 +182,12 @@ include 'statictics_script.php';
                     <div
                       class="progress-bar bg-info text-mattBlackDark"
                       role="progressbar"
-                      style="width: 50%;"
+                      style="width: <?php echo $sum; ?>%;"
                       aria-valuenow="25"
                       aria-valuemin="0"
                       aria-valuemax="100"
                     >
-                      50
+                      <?php echo $sum; ?>&nbsp;%
                     </div>
                   </div>
                 </div>
