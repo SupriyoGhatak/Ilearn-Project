@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jul 20, 2021 at 05:08 AM
+-- Generation Time: Jul 28, 2021 at 11:35 AM
 -- Server version: 10.4.10-MariaDB
 -- PHP Version: 7.3.12
 
@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `answer` (
   `type` varchar(255) NOT NULL,
   `course` varchar(255) NOT NULL,
   PRIMARY KEY (`aid`)
-) ENGINE=MyISAM AUTO_INCREMENT=180 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=240 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `answer`
@@ -221,7 +221,67 @@ INSERT INTO `answer` (`aid`, `answers`, `ans_id`, `type`, `course`) VALUES
 (176, 'The private part of its class.', 45, 'c_plus_f', 'c_plus'),
 (177, 'The part declared as public of its class.', 45, 'c_plus_f', 'c_plus'),
 (178, 'Class of which it is the member.', 45, 'c_plus_f', 'c_plus'),
-(179, 'None of the above', 45, 'c_plus_f', 'c_plus');
+(179, 'None of the above', 45, 'c_plus_f', 'c_plus'),
+(180, 'It is a type of system software', 46, 'rdbms_1st', 'rdbms'),
+(181, 'It is a type of application software', 46, 'rdbms_1st', 'rdbms'),
+(182, 'It is a type of general software', 46, 'rdbms_1st', 'rdbms'),
+(183, 'Both A and C', 46, 'rdbms_1st', 'rdbms'),
+(184, 'Degree', 47, 'rdbms_1st', 'rdbms'),
+(185, 'Tuples', 47, 'rdbms_1st', 'rdbms'),
+(186, 'Entity', 47, 'rdbms_1st', 'rdbms'),
+(187, 'All of the above', 47, 'rdbms_1st', 'rdbms'),
+(188, 'Create', 48, 'rdbms_1st', 'rdbms'),
+(189, 'Alter', 48, 'rdbms_1st', 'rdbms'),
+(190, 'Delete', 48, 'rdbms_1st', 'rdbms'),
+(191, 'All of the above', 48, 'rdbms_1st', 'rdbms'),
+(192, 'Queries', 49, 'rdbms_1st', 'rdbms'),
+(193, 'Domains', 49, 'rdbms_1st', 'rdbms'),
+(194, 'Relations', 49, 'rdbms_1st', 'rdbms'),
+(195, 'All of the above', 49, 'rdbms_1st', 'rdbms'),
+(196, 'Functional Dependencies', 50, 'rdbms_2nd', 'rdbms'),
+(197, 'Transitive Dependencies', 50, 'rdbms_2nd', 'rdbms'),
+(198, 'Trivial Functional Dependency', 50, 'rdbms_2nd', 'rdbms'),
+(199, 'Multivalued Dependencies', 50, 'rdbms_2nd', 'rdbms'),
+(200, 'A -> C.', 51, 'rdbms_2nd', 'rdbms'),
+(201, 'B -> C.', 51, 'rdbms_2nd', 'rdbms'),
+(202, '(A,B) is a composite determinant.', 51, 'rdbms_2nd', 'rdbms'),
+(203, 'C is a determinant.', 51, 'rdbms_2nd', 'rdbms'),
+(204, 'A -> B.', 52, 'rdbms_2nd', 'rdbms'),
+(205, 'B -> A.', 52, 'rdbms_2nd', 'rdbms'),
+(206, 'C -> A.', 52, 'rdbms_2nd', 'rdbms'),
+(207, '(B,C) -> A.', 52, 'rdbms_2nd', 'rdbms'),
+(208, 'First normal form', 53, 'rdbms_2nd', 'rdbms'),
+(209, 'Second normal form', 53, 'rdbms_2nd', 'rdbms'),
+(210, 'Third normal form', 53, 'rdbms_2nd', 'rdbms'),
+(211, 'All of the above', 53, 'rdbms_2nd', 'rdbms'),
+(212, 'Reflexivity rule', 54, 'rdbms_f', 'rdbms'),
+(213, 'Transitivity rule', 54, 'rdbms_f', 'rdbms'),
+(214, 'Pseudotransitivity rule', 54, 'rdbms_f', 'rdbms'),
+(215, 'Augmentation rule', 54, 'rdbms_f', 'rdbms'),
+(216, 'Primary key', 55, 'rdbms_f', 'rdbms'),
+(217, 'Secondary key', 55, 'rdbms_f', 'rdbms'),
+(218, 'Candidate key', 55, 'rdbms_f', 'rdbms'),
+(219, 'Foreign key', 55, 'rdbms_f', 'rdbms'),
+(220, 'Lossless decomposition', 56, 'rdbms_f', 'rdbms'),
+(221, ' Lossless-join decomposition', 56, 'rdbms_f', 'rdbms'),
+(222, 'All of the mentioned', 56, 'rdbms_f', 'rdbms'),
+(223, 'None of the mentioned', 56, 'rdbms_f', 'rdbms'),
+(224, ' A->BC', 57, 'rdbms_f', 'rdbms'),
+(225, ' A->B', 57, 'rdbms_f', 'rdbms'),
+(226, ' B->C', 57, 'rdbms_f', 'rdbms'),
+(227, 'None', 57, 'rdbms_f', 'rdbms'),
+(228, '2', 58, 'rdbms_f', 'rdbms'),
+(229, '7', 58, 'rdbms_f', 'rdbms'),
+(230, '10', 58, 'rdbms_f', 'rdbms'),
+(231, '12', 58, 'rdbms_f', 'rdbms'),
+(232, 'A', 59, 'rdbms_f', 'rdbms'),
+(233, 'E', 59, 'rdbms_f', 'rdbms'),
+(234, 'B,C', 59, 'rdbms_f', 'rdbms'),
+(235, 'D', 59, 'rdbms_f', 'rdbms'),
+(236, 'Lossy-join decomposition', 60, 'rdbms_f', 'rdbms'),
+(237, 'Lossy decomposition', 60, 'rdbms_f', 'rdbms'),
+(238, ' Lossless-join decomposition', 60, 'rdbms_f', 'rdbms'),
+(239, 'Both Lossy and Lossy-join decomposition', 60, 'rdbms_f', 'rdbms');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

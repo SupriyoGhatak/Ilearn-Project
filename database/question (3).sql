@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jul 20, 2021 at 05:08 AM
+-- Generation Time: Jul 28, 2021 at 11:35 AM
 -- Server version: 10.4.10-MariaDB
 -- PHP Version: 7.3.12
 
@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `question` (
   `type` varchar(255) NOT NULL,
   `course` varchar(255) NOT NULL,
   PRIMARY KEY (`qid`)
-) ENGINE=MyISAM AUTO_INCREMENT=46 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=61 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `question`
@@ -87,7 +87,22 @@ INSERT INTO `question` (`qid`, `question`, `ans_id`, `type`, `course`) VALUES
 (42, 'Which of the following statements is correct about the class?', 164, 'c_plus_f', 'c_plus'),
 (43, 'Which of the following is not a kind of inheritance?', 168, 'c_plus_f', 'c_plus'),
 (44, 'Which of the following refers to the wrapping of data and its functionality into a single individual entity?', 174, 'c_plus_f', 'c_plus'),
-(45, 'A function declared as the \" friend \" function can always access the data in _______.', 178, 'c_plus_f', 'c_plus');
+(45, 'A function declared as the \" friend \" function can always access the data in _______.', 178, 'c_plus_f', 'c_plus'),
+(46, 'A Database Management System is a type of _________software.', 180, 'rdbms_1st', 'rdbms'),
+(47, 'Rows of a relation are known as the _______.', 187, 'rdbms_1st', 'rdbms'),
+(48, 'Which one of the following is a type of Data Manipulation Command?', 190, 'rdbms_1st', 'rdbms'),
+(49, 'In a relation database, every tuples divided into the fields are known as the______.', 193, 'rdbms_1st', 'rdbms'),
+(50, 'A table is in 3NF if it is in 2NF and if it has no ____________', 197, 'rdbms_2nd', 'rdbms'),
+(51, 'If attributes A and B determine attribute C, then it is also true that:', 202, 'rdbms_2nd', 'rdbms'),
+(52, 'If attribute A determines both attributes B and C, then it is also true that:', 204, 'rdbms_2nd', 'rdbms'),
+(53, 'Every Boyee-Codd normal form is in', 211, 'rdbms_2nd', 'rdbms'),
+(54, 'Which of the following is not Armstrong Axiom?', 214, 'rdbms_f', 'rdbms'),
+(55, 'The minimal set of super key is called', 218, 'rdbms_f', 'rdbms'),
+(56, 'The relation employee(ID,name,street,Credit,street,city,salary) is decomposed into employee1 (ID, name)\r\nemployee2 (name, street, city, salary).This type of decomposition is called', 223, 'rdbms_f', 'rdbms'),
+(57, 'There are two functional dependencies with the same set of attributes on the left side of the arrow:\r\nA->BC\r\nA->B\r\nThis can be combined as', 224, 'rdbms_f', 'rdbms'),
+(58, 'Consider a relation R(A,B,C,D,E) with the following functional dependencies:\r\n\r\nABC -> DE and\r\nD -> AB\r\nThe number of superkeys of R is:', 230, 'rdbms_f', 'rdbms'),
+(59, 'Suppose relation R(A,B,C,D,E) has the following functional dependencies:\r\n\r\nA -> B\r\nB -> C\r\nBC -> A\r\nA -> D\r\nE -> A\r\nD -> E\r\nWhich of the following is not a key?', 234, 'rdbms_f', 'rdbms'),
+(60, 'Inst_dept (ID, name, salary, dept name, building, budget) is decomposed into\r\n\r\ninstructor (ID, name, dept name, salary)\r\ndepartment (dept name, building, budget)\r\nThis comes under', 239, 'rdbms_f', 'rdbms');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

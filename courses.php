@@ -173,9 +173,9 @@
                 </div>
                 <div class="course_content">
                   <span class="price">Rs450</span>
-                  <span class="tag mb-4 d-inline-block">RDBMS</span>
+                  <span class="tag mb-4 d-inline-block">DBMS</span>
                   <h4 class="mb-3">
-                      <a href="course-details-c.php">Realtional Database And Management System</a>
+                      <a href="course-details-rdbms.php">Database Management System</a>
                   </h4>
                   <p>
                     One make creepeth man bearing their one firmament won't fowl

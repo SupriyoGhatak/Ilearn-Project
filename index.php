@@ -228,12 +228,12 @@
                 </div>
                 <div class="course_content">
                   <span class="price">Rs450</span>
-                  <span class="tag mb-4 d-inline-block">RDBMS</span>
+                  <span class="tag mb-4 d-inline-block">DBMS</span>
                   <h4 class="mb-3">
-                      <a href="course-details-c.php">Relational Databases</a>
+                      <a href="course-details-c.php">Database Management System</a>
                   </h4>
                   <p>
-                    This course is a quick,fun introduction to creating relational databases using proven concepts.
+                    This course is a quick,fun introduction to creating databases with basic concepts.
                   </p>
                   <div
                     class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4"
