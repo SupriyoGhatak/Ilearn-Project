@@ -89,7 +89,7 @@
 
                   QUESTIONS:
             </div>
-            <div class="timerBox"  id="countdown">Time Left:&nbsp;<span></span></div>
+            <div class="timerBox"  id="countdown">Time:-&nbsp;<span></span></div>
             </div>
               <form name="myForm" id="myForm" method="POST" action="final_exam_script.php?type=<?php echo $type; ?>&course=<?php echo $course; ?>">
                   
@@ -116,7 +116,10 @@
                        while($row = mysqli_fetch_assoc($result)) {
                       ?>
                   <input type="radio" id="<?php echo $row['ans_id']; ?>" name="quizcheck[<?php  echo $i; ?>]" value="<?php echo $row['aid']; ?>">
-                  <label for="<?php echo $row['ans_id']; ?>"><?php echo $row['answers']; ?></label><br>
+                  <label for="<?php echo $row['ans_id']; ?>">
+                        <input type="radio" id="<?php echo $row['ans_id']; ?>" name="quizcheck[<?php  echo $i; ?>]" value="<?php echo $row['aid']; ?>">
+                            <?php echo $row['answers']; ?></label>
+                <br>
                 <?php
                        }}
                 ?>

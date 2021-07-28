@@ -60,50 +60,21 @@
                     <div class="content_wrapper">
                         <h4 class="title">Objectives</h4>
                         <div class="content">
-                            When you enter into any new area of science, you almost always find yourself with a
-                            baffling new language of
-                            technical terms to learn before you can converse with the experts. This is certainly
-                            true in astronomy both in
-                            terms of terms that refer to the cosmos and terms that describe the tools of the trade,
-                            the most prevalent
-                            being the telescope.
+                            In this course,learners will master all the building blocks of Database Management System.
                             <br>
                             <br>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                            ut aliquip ex ea
-                            commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum. Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim
-                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo consequat. Duis aute
-                            irure dolor in reprehenderit in voluptate velit esse cillum.
+                            Databases form the backbone of all major applications today – tightly or loosely coupled, intranet or internet based, financial, social, administrative, and so on. 
+                            Structured Database Management Systems (DBMS) based on relational and other models have long formed the basis for such databases. 
+                            We intend to provide the learners will all such knowledge.
                         </div>
 
-                        <h4 class="title">Eligibility</h4>
+                        <h4 class="title">Course Prerequisites</h4>
                         <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                            ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                            This course is very much beginner friendly hence all that is needed is an understanding of fundamental programming concepts.
                             <br>
                             <br>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                            ut aliquip ex ea
-                            commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum. Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim
-                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo consequat. Duis aute
-                            irure dolor in reprehenderit in voluptate velit esse cillum.
+                           
                         </div>
-
                         <h4 class="title">Course Outline</h4>
                         <div class="content">
                             <ul class="course_list">
@@ -113,111 +84,83 @@
                                 </li>
                                 <div class="collapse" id="click1">
                                     <ul style="color: black;">
-                                        <li>hi</li>
+                                        <li>Introduction to DBMS</li>
                                             <li style="padding-bottom: 10px;">
-                                                bye
+                                                Disadvantages of File System
                                             </li>
                                         </ul>
                                 </div> 
                                 
                                 <li class="justify-content-between d-flex">
-                                    <p>Basics of HTML</p>
+                                    <p>Types of Keys</p>
                                     <botton class="primary-btn text-uppercase" data-toggle="collapse" data-target="#click2" type="button" style="color: black">View Details</botton>  
                                 </li>
                                 <div class="collapse" id="click2">
                                     <ul style="color: black;">
-                                        <li>hi</li>
-                                            <li style="padding-bottom: 10px;">
-                                                bye
-                                            </li>
+                                        <li>Super Key | Candidate Key | Primary key</li>
+                                            
                                         </ul>
                                 </div> 
                                 <li class="justify-content-between d-flex">
-                                    <p>Getting Know about HTML</p>
+                                    <p>Functional Dependency</p>
                                     <botton class="primary-btn text-uppercase" data-toggle="collapse" data-target="#click3" type="button" style="color: black">View Details</botton>  
                                 </li>
                                 <div class="collapse" id="click3">
                                     <ul style="color: black;">
-                                        <li>hi</li>
+                                        <li>What is functional dependency?</li>
                                             <li style="padding-bottom: 10px;">
-                                                bye
+                                                Inference Rules
                                             </li>
                                         </ul>
                                 </div> 
                                 <li class="justify-content-between d-flex">
-                                    <p>Tags and Attributes</p>
+                                    <p>Attribute Closure</p>
                                     <botton class="primary-btn text-uppercase" data-toggle="collapse" data-target="#click4" type="button" style="color: black">View Details</botton>  
                                 </li>
                                 <div class="collapse" id="click4">
                                     <ul style="color: black;">
-                                        <li>hi</li>
+                                        <li>Introduction</li>
                                             <li style="padding-bottom: 10px;">
-                                                bye
+                                                Finding number of candidate keys
                                             </li>
                                         </ul>
                                 </div> 
                                 <li class="justify-content-between d-flex">
-                                    <p>Basics of CSS</p>
+                                    <p>Normalization</p>
                                     <botton class="primary-btn text-uppercase" data-toggle="collapse" data-target="#click5" type="button" style="color: black">View Details</botton>  
                                 </li>
                                 <div class="collapse" id="click5">
                                     <ul style="color: black;">
-                                        <li>hi</li>
+                                        <li>Basic Concept</li>
                                             <li style="padding-bottom: 10px;">
-                                                bye
+                                                First Normal Form
+                                            </li>
+                                            <li style="padding-bottom: 10px;">
+                                                Second Normal Form
+                                            </li>
+                                            <li style="padding-bottom: 10px;">
+                                                Third Normal Form
+                                            </li>
+                                            <li style="padding-bottom: 10px;">
+                                                Boyce Codd Normal Form
                                             </li>
                                         </ul>
                                 </div> 
                                 <li class="justify-content-between d-flex">
-                                    <p>Getting Familiar with CSS</p>
+                                    <p>Dependency Preservation</p>
                                     <botton class="primary-btn text-uppercase" data-toggle="collapse" data-target="#click6" type="button" style="color: black">View Details</botton>  
                                 </li>
                                 <div class="collapse" id="click6">
                                     <ul style="color: black;">
-                                        <li>hi</li>
+                                        <li>Basic Concept</li>
                                             <li style="padding-bottom: 10px;">
-                                                bye
+                                                Introduction to lossless join
                                             </li>
                                         </ul>
                                 </div> 
 
-                                <li class="justify-content-between d-flex">
-                                    <p>Introduction to Bootstrap</p>
-                                    <botton class="primary-btn text-uppercase" data-toggle="collapse" data-target="#click7" type="button" style="color: black">View Details</botton>  
-                                </li>
-                                <div class="collapse" id="click7">
-                                    <ul style="color: black;">
-                                        <li>hi</li>
-                                            <li style="padding-bottom: 10px;">
-                                                bye
-                                            </li>
-                                        </ul>
-                                </div> 
-
-                                <li class="justify-content-between d-flex">
-                                    <p>Responsive Design</p>
-                                    <botton class="primary-btn text-uppercase" data-toggle="collapse" data-target="#click8" type="button" style="color: black">View Details</botton>  
-                                </li>
-                                <div class="collapse" id="click8">
-                                    <ul style="color: black;">
-                                        <li>hi</li>
-                                            <li style="padding-bottom: 10px;">
-                                                bye
-                                            </li>
-                                        </ul>
-                                </div> 
-                                <li class="justify-content-between d-flex">
-                                    <p>Canvas in HTML 5</p>
-                                    <botton class="primary-btn text-uppercase" data-toggle="collapse" data-target="#click9" type="button" style="color: black">View Details</botton>  
-                                </li>
-                                <div class="collapse" id="click9">
-                                    <ul style="color: black;">
-                                        <li>hi</li>
-                                            <li style="padding-bottom: 10px;">
-                                                bye
-                                            </li>
-                                        </ul>
-                                </div> 
+                                
+                               
 
                             </ul>
                             
@@ -298,7 +241,7 @@
                                     <span>Outstanding</span>
                                 </div>
                                 <div class="d-flex flex-row reviews justify-content-between">
-                                    <span>Puncuality</span>
+                                    <span>Punctuality</span>
                                     <div class="star">
                                         <i class="ti-star checked"></i>
                                         <i class="ti-star checked"></i>
@@ -339,7 +282,7 @@
                                             <img src="img/blog/c1.jpg" alt="">
                                         </div>
                                         <div class="desc">
-                                            <h5><a href="#">Emilly Blunt</a>
+                                            <h5><a href="#">Lisa Paul</a>
                                                 <div class="star">
                                                     <span class="ti-star checked"></span>
                                                     <span class="ti-star checked"></span>
@@ -349,8 +292,7 @@
                                                 </div>
                                             </h5>
                                             <p class="comment">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                                eiusmod tempor incididunt ut labore et dolore.
+                                               Learned a lot from these lectures,very much informative.     
                                             </p>
                                         </div>
                                     </div>
@@ -363,7 +305,7 @@
                                             <img src="img/blog/c2.jpg" alt="">
                                         </div>
                                         <div class="desc">
-                                            <h5><a href="#">Elsie Cunningham</a>
+                                            <h5><a href="#">Tarun Raj</a>
                                                 <div class="star">
                                                     <span class="ti-star checked"></span>
                                                     <span class="ti-star checked"></span>
@@ -373,8 +315,7 @@
                                                 </div>
                                             </h5>
                                             <p class="comment">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                                eiusmod tempor incididunt ut labore et dolore.
+                                                Concepts are well described in detail.
                                             </p>
                                         </div>
                                     </div>
@@ -387,7 +328,7 @@
                                             <img src="img/blog/c3.jpg" alt="">
                                         </div>
                                         <div class="desc">
-                                            <h5><a href="#">Maria Luna</a>
+                                            <h5><a href="#">Rita Ghosh</a>
                                                 <div class="star">
                                                     <span class="ti-star checked"></span>
                                                     <span class="ti-star checked"></span>
@@ -397,8 +338,7 @@
                                                 </div>
                                             </h5>
                                             <p class="comment">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                                eiusmod tempor incididunt ut labore et dolore.
+                                                Would 100% recommend this course.
                                             </p>
                                         </div>
                                     </div>

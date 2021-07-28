@@ -3,6 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/wamp64/www/Ilearn-Project/statictics_script.php</file>
             <file>file:/C:/wamp64/www/Ilearn-Project/course-details-c.php</file>
             <file>file:/C:/wamp64/www/Ilearn-Project/java_video_file.php</file>
@@ -15,6 +16,10 @@
             <file>file:/C:/wamp64/www/Ilearn-Project/course-details-rdbms.php</file>
             <file>file:/C:/wamp64/www/Ilearn-Project/dashcourses.php</file>
             <file>file:/C:/wamp64/www/Ilearn-Project/test.php</file>
+=======
+            <file>file:/C:/wamp64/www/Ilearn-Project/index.php</file>
+            <file>file:/C:/wamp64/www/Ilearn-Project/courses.php</file>
+>>>>>>> d4dadee0fac0ee89c44f29ea0e79cdd59e20250c
         </group>
     </open-files>
 </project-private>

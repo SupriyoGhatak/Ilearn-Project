@@ -56,7 +56,7 @@
             <div class="main_title">
               <h2 class="mb-3">Our Popular Courses</h2>
               <p>
-                Replenish man have thing gathering lights yielding shall you
+                Explore our programs to find the most suitable one for you.
               </p>
             </div>
           </div>
@@ -76,8 +76,7 @@
                       <a href="course-details.php">C++ Basic And Advance</a>
                   </h4>
                   <p>
-                    One make creepeth man bearing their one firmament won't fowl
-                    meat over sea
+                    A comprehensive C++ course to start learning from the basics and progress towards the advanced topics.
                   </p>
                   <div
                     class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4"
@@ -109,8 +108,7 @@
                       <a href="course-details-c.php">Programming On C</a>
                   </h4>
                   <p>
-                    One make creepeth man bearing their one firmament won't fowl
-                    meat over sea
+                    A very well structured course to help you master programming with C in a structured manner.
                   </p>
                   <div
                     class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4"
@@ -142,10 +140,7 @@
                       <a href="course-details-java.php">Fundamental Of Java</a>
                   </h4>
                   <p>
-                    One make creepeth man bearing their one firmament won't fowl
-                    meat over sea d
-                    
-                    ahsdbkasbdkjasdbkasjdb
+                    Learn valuable core Java concepts and skills from scratch from this learner-friendly course.
                   </p>
                   <div
                     class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4"
@@ -173,13 +168,12 @@
                 </div>
                 <div class="course_content">
                   <span class="price">Rs450</span>
-                  <span class="tag mb-4 d-inline-block">RDBMS</span>
+                  <span class="tag mb-4 d-inline-block">DBMS</span>
                   <h4 class="mb-3">
-                      <a href="course-details-c.php">Realtional Database And Management System</a>
+                      <a href="course-details-rdbms.php">Database Management System</a>
                   </h4>
                   <p>
-                    One make creepeth man bearing their one firmament won't fowl
-                    meat over sea
+                    This course is a quick,fun introduction to creating databases using proven concepts.
                   </p>
                   <div
                     class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4"
