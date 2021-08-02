@@ -92,7 +92,7 @@ include 'Connection/common.php';
                  }
                   if($course=="rdbms"){
                  echo '<script>alert("Better Luck Next Time, Try Again")</script>';
-                 echo '<script>window.location="rdbms_video_file.php"</script>';
+                 echo '<script>window.location="dbms_video_file.php"</script>';
                  }
              //echo '<script>alert("Better Luck Next Time, Try Again")</script>';
             //echo '<script>window.location="c_video_file.php"</script>';

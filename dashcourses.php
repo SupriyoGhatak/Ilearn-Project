@@ -189,7 +189,7 @@
           $item_array = array(
                 'product_name' => "Relational Database Management System",
                 'picture_src' => "img/courses/sql.jpeg",
-              'video_src' => "error1.php"
+              'video_src' => "dbms_video_file.php"
                 
             );
           $_SESSION["cart"][3] = $item_array;  

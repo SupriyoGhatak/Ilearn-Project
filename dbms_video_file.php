@@ -242,7 +242,7 @@ include 'statictics_script.php';
                                 $num7 = mysqli_num_rows($result12);
                                 if($num7>0){
                                 $row1 = mysqli_fetch_assoc($result12);
-                                $check= $row1['c_plus_1st'];
+                                $check= $row1['rdbms_1st'];
                                 if($check>70)
                                 {
                                 ?>
@@ -273,8 +273,8 @@ include 'statictics_script.php';
        $result1 = mysqli_query($con, $sql_r);
         if (mysqli_num_rows($result1) > 0) {
             $row1 = mysqli_fetch_assoc($result1);
-            $check= $row1['c_plus_1st'];
-            $check1=$row1['c_plus_2nd'];
+            $check= $row1['rdbms_1st'];
+            $check1=$row1['rdbms_2nd'];
             if($check>70)
            {
         
@@ -320,7 +320,7 @@ include 'statictics_script.php';
                                                      $sql_r3 = "SELECT * FROM user_exam_result WHERE  user_id = '" . $id . "' ";
                                 $result13 = mysqli_query($con, $sql_r3);
                                 $row3 = mysqli_fetch_assoc($result13);
-                                $check2= $row3['c_plus_2nd'];
+                                $check2= $row3['rdbms_2nd'];
                                 if($check2>70)
                                 {
                                 ?>
@@ -408,7 +408,7 @@ include 'statictics_script.php';
                                 $sql_r3 = "SELECT * FROM user_exam_result WHERE  user_id = '" . $id . "' ";
                                 $result13 = mysqli_query($con, $sql_r3);
                                 $row3 = mysqli_fetch_assoc($result13);
-                                $check2= $row3['c_plus_2nd'];
+                                $check2= $row3['rdbms_2nd'];
                                 if($check2>70)
                                 {
                                 ?>
@@ -628,7 +628,7 @@ include 'statictics_script.php';
         else
         {
             
-            if($c=="coding1"){
+            if($dbms=="coding1"){
             ?>
              <h1><center>Coding Question</center></h1>
              <p style="color: black;"><strong><h2><center>Find minimum and maximum element in an array</center></h2></strong><br>
@@ -675,7 +675,7 @@ include 'statictics_script.php';
             <?php 
             
             }
-            else if($c=="coding2")
+            else if($dbms=="coding2")
             {    
             ?>
              
